@@ -2,6 +2,7 @@
 
 
 current changes include:
+
 -Poland is guaranteed by UK from game start
 -Rubber refs will no longer be nuked (i.e all 3 levels will not be instantly blown up but will take longer if targeted)
 -Production cost of steel refs reduced from 12000 - 10000
