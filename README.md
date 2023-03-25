@@ -110,6 +110,27 @@ Patch 3 (very small changes)
 -Made changes to fuel consumption of infantry and support companies that were made in TFB to fix the issue with no training without fuel (this is a TFB change)
 
 
-Patch 4 (for now... no pun intended):
+Patch 4:
 
--Czech tanks are not able to be converted (this applied only to light tanks not being upgradable)
+-Czech tanks are now able to be converted (this applied only to light tanks not being upgradable)
+
+-Infantry equipment  reduced by a further 1 defence per tech
+
+-Field marshal trait for entrenchment further reduced from 25% to 20%
+
+-Infantry radios now give 5% defence instead of 10% per level but also give 5% hard and soft attack instead of 2.5%
+
+-Fix Host tool
+
+-Japan will now auto declare war on China
+
+-Naval training now does not damage ships
+
+-Removed fuel consumption when training units (this likely won't fix any problems relating to xp or even units not training)
+
+-Moved 750 oil of 900 oil from Romania into 3 states in Libya, Romania keeps the resource rights to these states.
+
+-Phillipines is now annexable by USA after France has Capitulated
+
+-Malaysia and DEI will no longer make units
+
