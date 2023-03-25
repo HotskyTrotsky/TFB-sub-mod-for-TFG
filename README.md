@@ -125,8 +125,8 @@ Changes:
 
 -Changes to Suspension are as follows (Subject to approval):
 
->Tank wheeled suspension can no longer be used on regular tanks and assault guns.
+Tank wheeled suspension can no longer be used on regular tanks and assault guns.
 
->Half tracked suspension is not allowed on regular tanks but is allowed for assault guns.
+Half tracked suspension is not allowed on regular tanks but is allowed for assault guns.
 
->Added a new tank suspension which has a -7.5% production cost but -15% hardness and >12.5% reliability (Basically what the wheeled suspensions had but lower stats, this maybe a option to have it unlocked later in a certain tech)
+Added a new tank suspension which has a -7.5% production cost but -15% hardness and >12.5% reliability (Basically what the wheeled suspensions had but lower stats, this maybe a option to have it unlocked later in a certain tech)
