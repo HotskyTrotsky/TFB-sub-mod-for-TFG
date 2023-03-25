@@ -103,3 +103,30 @@ Patch 3 (very small changes)
 -changes to Hungary and Romania focus tree that allows some focuses to continue even if requirements are not met
 
 -Made changes to fuel consumption of infantry and support companies that were made in TFB to fix the issue with no training without fuel (this is a TFB change)
+
+
+Patch 4:
+Changes:
+-Infantry equipment  reduced by a further 1 defence per tech
+
+-Field marshal trait for entrenchment further reduced from 25% to 20%
+
+-Infantry radios now give 5% defence instead of 10% per level but also give 5% hard and soft attack instead of 2.5%
+
+-Fix Host tool
+
+-Japan will now auto declare war on China
+
+-Naval training now does not damage ships
+
+-Removed fuel consumption when training units (this likely won't fix any problems relating to xp or even units not training)
+
+-Moved 750 oil of 900 oil from Romania into 3 states in Libya, Romania keeps the resource rights to these states.
+
+-Changes to Suspension are as follows (Subject to approval):
+
+>Tank wheeled suspension can no longer be used on regular tanks and assault guns.
+
+>Half tracked suspension is not allowed on regular tanks but is allowed for assault guns.
+
+>Added a new tank suspension which has a -7.5% production cost but -15% hardness and >12.5% reliability (Basically what the wheeled suspensions had but lower stats, this maybe a option to have it unlocked later in a certain tech)
