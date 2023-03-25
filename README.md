@@ -108,3 +108,8 @@ Patch 3 (very small changes)
 -changes to Hungary and Romania focus tree that allows some focuses to continue even if requirements are not met
 
 -Made changes to fuel consumption of infantry and support companies that were made in TFB to fix the issue with no training without fuel (this is a TFB change)
+
+
+Patch 4 (for now... no pun intended):
+
+-Czech tanks are not able to be converted (this applied only to light tanks not being upgradable)
