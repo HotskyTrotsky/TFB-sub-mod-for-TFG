@@ -1,6 +1,7 @@
-current changes include:
+# TFB sub mod for TFG
 
-Patch 1:
+
+current changes include:
 
 -Poland is guaranteed by UK from game start
 
@@ -8,7 +9,7 @@ Patch 1:
 
 -Production cost of steel refs reduced from 12000 - 10000
 
--excavation tech 2 enables level 2 steel refinery and excavation tech 3 enables level 3 steel refinery
+-excavation tech 2 enables level 2 steel refinary and excavation tech 3 enables level 3 steel refinary
 
 -Spain has been given 100 trains at start to improve supply during civil war
 
@@ -54,79 +55,4 @@ Torpedo3 = 30 - 20
 
 Torpedo4 = 36 - 24
 
-These naval changes will almost certainly change however its to restrict a Heavy cruiser and light cruiser meta from developing.
-
-Further changes with patch 2:
-
--Combat width changes to fit 30w:
-
-Forrest = 80 to 90 reinforce = 40 - 60
-
-Urban = 140 to 120 reinforce = 20 - 30
-
-Dense Urban = 200 to 180 reinforce = 40 - 30
-
-Jungle = 80 to 90 reinforce = 40 - 30
-
-Marsh = 80 to 90 reinforce = 40 - 30
-
--Now able to assign CAS to divisions
-
--Changes to field marshal:
-
-Offensive doctrine now gives: 5% terrain penalty reduction
-
-Defensive doctrine: 30% max entrenchment to 25%
-
--Artillery tech 2,3,4 stat buffs give 2.5% attack to light, medium, heavy tanks (in total 7.5% by 1942)
-
--Infantry equipment 1,2,3,4,5 have had defence value reduced by 2.
-
-Inf1 14 to 12
-
-inf2 16 to 14
-
-inf3 18 to 16
-
-inf4 20 to 18
-
-inf5 24 to 22
-
--Reduced the defence upgrade percentage of infantry equipment from 10% per level to 5%
-
-Overall this should reduce the amount of defence across the board (not drastically we are talking between 20-40 defence per infantry division)
-
-Patch 3 (very small changes)
-
--Brought files up to date with TFB changes made on 22/03/2023 (changes to sonar, soviet focus tree ect.. just look at the change logs of Regular TFB)
-
--changes to Hungary and Romania focus tree that allows some focuses to continue even if requirements are not met
-
--Made changes to fuel consumption of infantry and support companies that were made in TFB to fix the issue with no training without fuel (this is a TFB change)
-
-
-Patch 4:
-Changes:
--Infantry equipment  reduced by a further 1 defence per tech
-
--Field marshal trait for entrenchment further reduced from 25% to 20%
-
--Infantry radios now give 5% defence instead of 10% per level but also give 5% hard and soft attack instead of 2.5%
-
--Fix Host tool
-
--Japan will now auto declare war on China
-
--Naval training now does not damage ships
-
--Removed fuel consumption when training units (this likely won't fix any problems relating to xp or even units not training)
-
--Moved 750 oil of 900 oil from Romania into 3 states in Libya, Romania keeps the resource rights to these states.
-
--Changes to Suspension are as follows (Subject to approval):
-
-Tank wheeled suspension can no longer be used on regular tanks and assault guns.
-
-Half tracked suspension is not allowed on regular tanks but is allowed for assault guns.
-
-Added a new tank suspension which has a -7.5% production cost but -15% hardness and -12.5% reliability (Basically what the wheeled suspensions had but lower stats, this maybe a option to have it unlocked later in a certain tech)
+These naval changes will almost certainly change however its to restrict a Heavy cruiser and light crusier meta from developing.
