@@ -299,6 +299,14 @@ NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to 
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 5
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 2.5
 
+NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0			-- fuel consumption ratio while training
+NDefines.NMilitary.OUT_OF_FUEL_TRAINING_XP_GAIN_MULT = 0.08		-- xp gain mult from training when a unit is out of fuel
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- Chances one ship get damage each hour while on training
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0					-- If an accident happens, how likely it is to be a critical hit
+NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0				-- Scale the value below in case of critical hit
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 0							-- Amount of strength loss in a training accident
+NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0						-- Amount of strength loss in a training accident, propotional to the maximum strength of the ship
+	
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 300
