@@ -137,6 +137,128 @@ allow_wargoals = {
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_40_DESC"
 	}
 }
+horst_host_country = {
+	name = "Select Host"
+	group = "RULE_GROUP_TFB"
+	icon = "GFX_volunteers"
+	# axis
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = SPR
+		text = "Spain"
+		desc = ""
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = ""
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = ""
+	}
+	option = {
+		name = FIN
+		text = "Finland"
+		desc = ""
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+
+	# Co-prosperity Sphere
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = MAN
+		text = "Manchukuo"
+		desc = ""
+	}
+	option = {
+		name = SIA
+		text = "Siam"
+		desc = ""
+	}
+
+	# allies
+	option = {
+		name = ENG
+		text = "Great Britain"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = ""
+	}
+	option = {
+		name = RAJ
+		text = "British Raj"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = ""
+	}
+	option = {
+		name = MEX
+		text = "Mexico"
+		desc = ""
+	}
+	option = {
+		name = BRA
+		text = "Brazil"
+		desc = ""
+	}
+	option = {
+		name = HOL
+		text = "Netherlands"
+		desc = ""
+	}
+	# comintern
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = ""
+	}
+	option = {
+		name = MON
+		text = "Mongolia"
+		desc = ""
+	}
+}
 allow_access = {
 	name = "RULE_ALLOW_MILITARY_ACCESS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"

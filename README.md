@@ -134,3 +134,15 @@ Patch 4:
 
 -Malaysia and DEI will no longer make units
 
+
+Patch 5:
+
+-Upgrade to Host tool
+
+-Multiple division training changes such as: Max level from 2 to 4, A peace time training idea to all nations, Reduced minimum requirements for training new divisions. 
+
+-Juggle tech added
+
+-Changes to artillery tech to have cannons unlocked in the middle path, however there is an increase cost to that tech and date changes to compensate less research. It does make the tech tree wacky....;)
+
+-Added decisions for UK and Italy on developing supply in Africa depending on who is pushing
