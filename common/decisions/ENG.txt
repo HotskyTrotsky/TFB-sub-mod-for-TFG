@@ -908,12 +908,12 @@ operations = {
 	
 		fire_only_once = yes
 	
-		days_remove = 30
+		days_remove = 45
 	
 		cost = 25
 	
 		modifier = {
-			civilian_factory_use = 10
+			civilian_factory_use = 15
 		}
 
 		complete_effect = {
