@@ -146,3 +146,12 @@ Patch 5:
 -Changes to artillery tech to have cannons unlocked in the middle path, however there is an increase cost to that tech and date changes to compensate less research. It does make the tech tree wacky....;)
 
 -Added decisions for UK and Italy on developing supply in Africa depending on who is pushing
+
+
+Patch 5 (continued for TFB update)
+
+- Changed the IC cost of everything from 20% more expensive to only 10%
+
+-Kept millitary factory construction cost the same (not increased unlike in TFB)
+
+-Other than that eveything else in the latest TFB patch is the same
