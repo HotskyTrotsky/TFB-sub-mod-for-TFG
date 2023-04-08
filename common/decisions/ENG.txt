@@ -678,7 +678,7 @@ political_actions = {
 		}
 	}
 
-	ENG_britain_demands_treaty_compliance = { # ENG demanding scuttling of ships to maintain Washington Naval Treaty
+#	ENG_britain_demands_treaty_compliance = { # ENG demanding scuttling of ships to maintain Washington Naval Treaty
 
 		icon = generic_naval
 		
@@ -1316,7 +1316,7 @@ special_projects = {
 
 }
 
-ENG_enforce_the_naval_treaties = {
+# ENG_enforce_the_naval_treaties = {
 
 	ENG_demand_treaty_compliance = {
 
