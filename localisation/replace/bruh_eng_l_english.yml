@@ -281,11 +281,9 @@
   ENG_blood_prop:0 "Urgent Call For Blood!"
   ENG_german_prop:0 "We Beat 'Em Before..."
   ENG_war_savings_prop:0 "Back The Great Attack"
-  Develop_Africa_Railways:0 "Supply build up in Africa"
-  Develop_Africa_Advanced_Railways:0 "Supply expansion towards Tobruk"
 
   #### TOOLTIP ####
-  ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y40 20 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
+  ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y26 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
   ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
   ENG_special_tech_unlock:0 "§YUnlocks decisions to fund special research projects.§!"
   ENG_equip_foreign_exiles_tt:0 "Create Foreign Exile Brigades, Spawning §Y12 30 Width Divisions§! in Southern England"
