@@ -155,3 +155,28 @@ Patch 5 (continued for TFB update)
 -Kept millitary factory construction cost the same (not increased unlike in TFB)
 
 -Other than that eveything else in the latest TFB patch is the same
+
+
+Patch 6
+
+-Removed Itallian Naval designer that gave 20% speed and - 25% naval range
+
+-Removed engine 3 from Itallian starting ships and tech
+
+-Reduced the bonus adminrals gives from defense from -2.5% visability per level to -1%
+
+-Increased the naval hit chances given by fire control (roughly 2.5% - 5% increase depending on tech level)
+
+-Decreased Anti Air from ship modules across the board (includes multiple dual purpose batteries), Anti Air 1 and 2 are much lower but Anti air 3 and 4 scale higher.
+
+-Introduced new logistics which is a merge of hosre-drawn and motorised (bad attempt at making tiny logo included)
+
+-Changes to Manchu AI
+
+-Home guard units that UK spawns are now 30w but will only spawn 26
+
+-UK cannot gain cb on USA through naval treaties
+
+-Reduced peace time trainning to -50%
+
+-Increased Xp loss reduction that field hospitals gives from -10% to -20%

@@ -614,6 +614,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_heavy_anti_tank_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_heavy_at_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_logistics_company_horse_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_horse_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_logistics_company_mot_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_mot_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_logistics_company_mot_horse_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_mot_horse_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_hq_company_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_hq.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_assault_engineer_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_static_engineer_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_siege_artillery_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_siege_art_icon.dds" noOfFrames = 2 }
@@ -744,7 +745,8 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_heavy_anti_tank_brigade_icon_small"					textureFile = "gfx/texticons/unit_heavy_anti_tank_icon_small.dds" legacy_lazy_load = no noOfFrames = 2}	
 	spriteType = { name = "GFX_unit_heavy_anti_air_icon_small"							textureFile = "gfx/texticons/unit_heavy_anti_air_icon_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
 	spriteType = { name = "GFX_unit_logistics_company_horse_icon_small"					textureFile = "gfx/texticons/support_logistics_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
-	spriteType = { name = "GFX_unit_logistics_company_mot_icon_small"					textureFile = "gfx/texticons/support_logistics_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_logistics_company_mot_icon_small"					textureFile = "gfx/texticons/support_logistics_small.dds" legacy_lazy_load = no noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_logistics_company_mot_icon_horse_small"				textureFile = "gfx/texticons/support_logistics_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
 	spriteType = { name = "GFX_unit_hq_company_icon_small"								textureFile = "gfx/texticons/support_hq_small.dds" legacy_lazy_load = no noOfFrames = 2 }	
 	spriteType = { name = "GFX_unit_siege_artillery_icon_small"							textureFile = "gfx/texticons/unit_super_heavy_armor_icon_art_small.dds" legacy_lazy_load = no noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_recon_mot_icon_small"								textureFile = "gfx/texticons/support_motorized_recon.dds" legacy_lazy_load = no noOfFrames = 2 }
