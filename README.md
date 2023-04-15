@@ -186,7 +186,7 @@ Patch 7
 
 -Removed Wheel suspension
 
--Made Mechansied suspension only avaible for SPAA and gives -20% defense 
+-Made Mechansied suspension only avaible for SPAA
 
 -Added a new suspension which is a watered down version of the wheel suspensions (Halve the stats) which can be used for everything
 
