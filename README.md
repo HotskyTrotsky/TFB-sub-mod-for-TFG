@@ -180,3 +180,43 @@ Patch 6
 -Reduced peace time trainning to -50%
 
 -Increased Xp loss reduction that field hospitals gives from -10% to -20%
+
+
+Patch 7
+
+-Removed Wheel suspension
+
+-Made Mechansied suspension only avaible for SPAA and gives -20% defense 
+
+-Added a new suspension which is a watered down version of the wheel suspensions (Halve the stats) which can be used for everything
+
+-Reduced Dozer blades defense from 10 to 7
+
+-Increased hard attack of medium TD1 cannon from 46 to 52 and medium TD2 from 58 to 64
+
+-Increased Research bonus from electrical computer techs as such:
+4% to 5%
+5% to 7.5%
+8% to 10%
+8% to 12%
+
+-Logistical horse and motorised is now improved by researching the logistics tech however it does now require more equipment and has been reduced from -50% to -40%
+
+-Field Hospital techs have had experience loss reduction increased by roughly 5% each level
+
+-Reduced air loses from trainning
+
+-Reduced accident base chance
+
+-Tank design companies will be applied more broadly to tank types (note not all but most)
+
+-Cavalry leader advisors no longer grant bonus to mechanised (they still boost motorised and cavalry)
+
+-Artillery designer now effects pack artillery and motorised rocket artillery
+
+-Fixed Raj focus so that they can't just skip Red Eagle Divison (Roisa your reign of terror is over)
+
+-Set removing modules from existing designs should not cost xp
+
+-Few minor bug fixes with host tool
+
