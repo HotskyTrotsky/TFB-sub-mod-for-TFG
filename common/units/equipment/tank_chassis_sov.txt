@@ -274,6 +274,7 @@ equipments = {
 			special_type_slot_3 = inherit
 		}
 		upgrades = {
+			tank_nsb_med_engine_1_upgrade
 			tank_nsb_med_armor_2_upgrade
 		}
 		maximum_speed = 5.5
@@ -448,9 +449,10 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
-			#tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_engine_1_upgrade
 			tank_nsb_heavy_armor_1_upgrade
 		}
 		maximum_speed = 5.0
