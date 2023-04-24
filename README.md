@@ -180,3 +180,70 @@ Patch 6
 -Reduced peace time trainning to -50%
 
 -Increased Xp loss reduction that field hospitals gives from -10% to -20%
+
+
+Patch 7
+
+-Removed Wheel suspension
+
+-Made Mechansied suspension only avaible for SPAA
+
+-Added a new suspension which is a watered down version of the wheel suspensions (Halve the stats) which can be used for everything
+
+-Reduced Dozer blades defense from 10 to 7
+
+-Increased hard attack of medium TD1 cannon from 46 to 52 and medium TD2 from 58 to 64
+
+-Increased Research bonus from electrical computer techs as such:
+4% to 5%
+5% to 7.5%
+8% to 10%
+8% to 12%
+
+-Logistical horse and motorised is now improved by researching the logistics tech however it does now require more equipment
+
+-Added LW air designer
+
+-Reduced air loses from trainning
+
+-Reduced accident base chance
+
+-Tank design companies will be applied more broadly to tank types (note not all but most)
+
+-Cavalry leader advisors no longer grant bonus to mechanised (they still boost motorised and cavalry)
+
+-Artillery designer now effects pack artillery and motorised rocket artillery
+
+-Fixed Raj focus so that they can't just skip Red Eagle Divison (Roisa your reign of terror is over)
+
+-Set removing modules from existing designs should not cost xp
+
+-Few minor bug fixes with host tool
+
+
+
+Patch 8 
+
+-Added air deisgner, It contains changes to base research costs of most techs relating to it.
+
+-Heavy arty buffs as follow:
+HA1: Soft attack 28 to 32 Breakthrough 2 to 4
+HA2: Soft attack 30 to 34 Breakthrough 5 to 8
+HA3: Soft attack 34 to 38 Breakthrough 6 to 10
+HA4: Soft attack 40 to 44 Breakthrough 7 to 12
+
+-Change logistics (again i know...) so you can only have 1 at a time so:
+Logistics company - cheapest but less supply reduction
+Horse-drawn - Requires horses but better than logistics
+motorised - requires motorised and fuel
+mechanised - requires 5 mechanised and motorised is the best for logistics but requires mechanised researched, it also adds more hp (from 1 to 5)
+
+-Fixed the province Zhengzhou, When china did the floods this tile would retain the flooded modifier even after it was suppose to be removed (aka it would forever have this modifier)
+
+-Hydropnuematic suspensions now gives 5% speed increase
+
+-Removed option to leave USA out of strike west
+
+-Removed decision to annex Vichy if you capture Paris as Free France
+
+

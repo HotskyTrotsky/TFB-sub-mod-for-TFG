@@ -97,6 +97,7 @@ NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.20		-- MIC speed m
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0			-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0			-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.EQUIPMENT_MODULE_REMOVE_XP_COST = 0						-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2		-- Fraction of the hull industry cost which is always included in the refitting cost.
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.05	-- Minimum fraction of a naval equipment's strategic resource cost that any conversion will cost.
 NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.2		-- Fraction of the chassis industry cost which is always included in the conversion cost.
@@ -308,7 +309,9 @@ NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0					-- If an accident 
 NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_DAMAGE_SCALE = 0				-- Scale the value below in case of critical hit
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 0							-- Amount of strength loss in a training accident
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0						-- Amount of strength loss in a training accident, propotional to the maximum strength of the ship
-	
+
+NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.025							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.1 				--Training exercises cause more accidents	
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 300
