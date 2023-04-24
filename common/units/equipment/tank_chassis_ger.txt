@@ -493,6 +493,9 @@ equipments = {
 		armor_value = 85
 		defense = 10
 		breakthrough = 70
+		upgrades = {
+		tank_nsb_Heavy_engine_1_upgrade
+		}
 	}
 
 	# Tiger 2

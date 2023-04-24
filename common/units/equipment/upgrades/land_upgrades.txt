@@ -72,7 +72,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
@@ -109,7 +109,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
@@ -161,7 +161,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 5
 		}
 
@@ -169,8 +169,40 @@ upgrades = {
 			1 = {
 				OR = {
 					has_tech = ger_p34_tank_2  # Second Wave Upgrade
-					has_tech = sov_heavy_tank_4 #KV-1 Model 41
 					has_tech = sov_medium_tank_3
+				}
+			}
+		}
+
+		resource_cost_thresholds = {
+			1 = {
+				steel = 2 
+			}
+
+		}
+
+		maximum_speed = 0.1
+		
+		add_stats = {
+			fuel_consumption = 0.1
+			build_cost_ic = 2
+		}
+	}
+	tank_nsb_Heavy_engine_1_upgrade = {
+		abbreviation = "eng"
+		max_level = 1
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 5
+		}
+
+		level_requirements = {
+			1 = {
+				OR = {
+					has_tech = sov_heavy_tank_4 #KV-1 Model 41
+					has_tech = ger_heavy_tank_1
 				}
 			}
 		}
@@ -195,7 +227,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
@@ -241,7 +273,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
@@ -277,7 +309,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
@@ -317,7 +349,7 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
+			cost_by_level = 0
 			cost_by_level_for_licensed_equipment = 2
 		}
 
