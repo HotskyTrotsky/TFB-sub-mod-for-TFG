@@ -23,7 +23,7 @@ st_country_powers = {
 	}	
 	effects = {
 		observer_click = {
-			owner = { set_temp_variable = { ROOT.marks = this}	WST = {change_tag_from =var:marks}	}			
+			owner = { set_temp_variable = { ROOT.marks = this}	HST = {change_tag_from =var:marks}	}			
 		}
 		change_host_nation_click = {
 			ROOT = { clr_country_flag = host }
@@ -39,7 +39,7 @@ st_country_powers = {
 				}
 			}
 		}
-		
+
 		addpp_click = {
 			owner={
 				set_temp_variable = { ROOT.marks = this}
@@ -13766,8 +13766,9 @@ st_country_powers = {
 							}
 						}
 					} 
-				}
-			}
+					if = { limit = { check_variable = { Root.selected_cheat = 17 } } add_command_power = 25 }
+				}	
+		}
 			GER={
 				set_variable = { this.target_country = Root.target_country }
 				set_variable = { this.selected_cheat = Root.selected_cheat }
@@ -13777,7 +13778,7 @@ st_country_powers = {
 		}
 		
 	
-			annex_country_click = {
+		annex_country_click = {			
 			owner = { set_variable = { ROOT.taker = this } }
 			var:ROOT.marked_states^0 = { owner = { set_variable = { ROOT.target = this } } }
 			if = { limit = { check_variable = { ROOT.target = ROOT.taker } } }
@@ -13787,34 +13788,6 @@ st_country_powers = {
 						#every_state = { limit = { is_core_of = var:ROOT.target} add_core_of = var:ROOT.taker }
 						annex_country = { target=PREV	transfer_troops=yes	}
 						every_state = { limit = { is_core_of = var:ROOT.target is_owned_by = var:Root.taker } add_compliance = 80 }
-						}
-					}
-				}
-
-			ROOT = {
-				for_each_scope_loop = {
-					array = marked_states
-					clear_variable = mark_status
-				}
-				clear_array = marked_states
-				clear_variable = target
-				clear_variable = taker
-				clear_variable = first_marked_state
-			}
-		}	
-			
-		puppet_country_click = {
-			owner = {
-				set_variable = { ROOT.taker = this }
-			}
-			var:ROOT.marked_states^0 = { owner = { set_variable = { ROOT.target = this } } }
-			if ={ 
-				limit = { check_variable = { ROOT.target = ROOT.taker } }
-			}
-			else={
-				var:ROOT.target = {
-					var:ROOT.taker = {
-						puppet = PREV
 						}
 					}
 				}
@@ -13829,8 +13802,36 @@ st_country_powers = {
 				clear_variable = taker
 				clear_variable = first_marked_state
 			}
-		
 		}	
+		
+		puppet_country_click = {
+			owner = {
+				set_variable = { ROOT.taker = this }
+			}
+			var:ROOT.marked_states^0 = { owner = { set_variable = { ROOT.target = this } } }
+			if ={ 
+				limit = { check_variable = { ROOT.target = ROOT.taker } }
+			}
+			else={
+				var:ROOT.target = {
+					var:ROOT.taker = {
+						puppet = PREV
+					}
+				}
+			}
+
+			ROOT = {
+				for_each_scope_loop = {
+					array = marked_states
+					clear_variable = mark_status
+				}
+				clear_array = marked_states
+				clear_variable = target
+				clear_variable = taker
+				clear_variable = first_marked_state
+			}
+
+		}
 		
 		toogle_mark_click = {
 			if = {
@@ -13841,9 +13842,9 @@ st_country_powers = {
 			else = {
 				clear_variable = mark_status
 				remove_from_array = { ROOT.marked_states = THIS }
-		}				
+			}
 			set_variable = { ROOT.first_marked_state = ROOT.marked_states^0 }
-		}
+		}				
 		mill_add_click = { owner = { news_event = { id = horsttool.1 days = 0} add_offsite_building = { type = arms_factory level = 1 }	} }
 		civ_add_click = { owner = { news_event = { id = horsttool.1 days = 0} add_offsite_building = { type = industrial_complex level = 1 } } }
 
@@ -13871,6 +13872,7 @@ st_country_powers = {
 		cheat14_click = { set_variable = { Root.selected_cheat = 14 } ROOT = { clr_country_flag = cheating } }
 		cheat15_click = { set_variable = { Root.selected_cheat = 15 } ROOT = { clr_country_flag = cheating } }
 		cheat16_click = { set_variable = { Root.selected_cheat = 16 } ROOT = { clr_country_flag = cheating } }
+		cheat17_click = { set_variable = { Root.selected_cheat = 17 } ROOT = { clr_country_flag = cheating } }
 		}
 		properties = {
 			toogle_mark = { frame = mark_status }
@@ -13913,13 +13915,15 @@ st_country_powers = {
 		cheat15_text_visible = { ROOT = { has_country_flag = cheating } }
 		cheat16_visible = { ROOT = { has_country_flag = cheating } }
 		cheat16_text_visible = { ROOT = { has_country_flag = cheating } }
+		cheat17_visible = { ROOT = { has_country_flag = cheating } }
+		cheat17_text_visible = { ROOT = { has_country_flag = cheating } }
 		pause_blocker_all_visible ={ has_global_flag=blocking_pauses}
 		pause_blocker_major_visible ={ }
 		pause_blocker_host_visible ={has_global_flag=blocking_pauses }	
 		pause_blocker_all_text_visible ={ has_global_flag=blocking_pauses}
 		pause_blocker_major_text_visible ={ }
 		pause_blocker_host_text_visible ={has_global_flag=blocking_pauses }
-		clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }	
+		clear_all_markings_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		award_states_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
 		annex_country_click_enabled = {	check_variable = { ROOT.marked_states^num > 0 }	}
 		puppet_country_click_enabled = { check_variable = { ROOT.marked_states^num > 0 } }
@@ -13939,7 +13943,7 @@ st_country_powers = {
 		fix_production_click_enabled = {}
 
 		# fix_xp_click_enabled = {}
-	}
+	}   
 }
 }
 

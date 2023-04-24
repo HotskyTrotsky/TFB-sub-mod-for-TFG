@@ -261,10 +261,11 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_tech_bonus = {
-				name = naval
-				bonus = 0.5
+				name = bomb_bonus
+				bonus = 0.50
 				uses = 2
-				category = naval_bomber
+				category = tactical_bomber
+				
 			}
 		}
 	}
@@ -302,7 +303,7 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
-				category = light_fighter
+				technology = improved_small_airframe
 			}
 		}
 	}
@@ -323,7 +324,7 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.75
 				uses = 1
-				technology = fighter3
+				technology = advanced_small_airframe
 			}
 		}
 	}
@@ -361,7 +362,6 @@ focus_tree = {
 				name = bomb_bonus
 				bonus = 0.50
 				uses = 2
-				category = tactical_bomber
 				category = cat_strategic_bomber
 			}
 		}
@@ -507,7 +507,7 @@ focus_tree = {
 				bonus = 0.75
 				ahead_reduction = 0.5
 				uses = 1
-				technology = fighter4
+				technology = modern_small_airframe
 			}
 		}
 	}
@@ -1033,6 +1033,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_ideas = ENG_special_air_service_idea
+			Royal_Commandos_increase_double = yes
 		}
 	}
 	
@@ -1071,6 +1072,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+		Royal_Commandos_increase_double = yes
 			add_tech_bonus = {
 				name = mar_bonus
 				bonus = 0.5
@@ -1093,6 +1095,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+		Royal_Commandos_increase_double = yes
 			hidden_effect = {
 				set_technology = {
 					commandos = 1
