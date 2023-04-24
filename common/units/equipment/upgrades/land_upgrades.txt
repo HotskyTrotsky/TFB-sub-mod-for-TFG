@@ -169,7 +169,8 @@ upgrades = {
 			1 = {
 				OR = {
 					has_tech = ger_p34_tank_2  # Second Wave Upgrade
-				#	has_tech = sov_heavy_tank_4 #KV-1 Model 41
+					has_tech = sov_heavy_tank_4 #KV-1 Model 41
+					has_tech = sov_medium_tank_3
 				}
 			}
 		}
