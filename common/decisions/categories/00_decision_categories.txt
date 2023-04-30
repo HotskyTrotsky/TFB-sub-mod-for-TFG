@@ -457,3 +457,22 @@ officer_training = {
 	priority = 100
 	
 }
+
+Eng_Uprising = {
+	icon = homeisles
+	#picture = North_ENG_State
+	scripted_gui = ENG_Uprising_Ui
+	allowed = {
+		tag = ENG
+	}
+	visible = {
+	ROOT = {
+		has_completed_focus = Commence_Resistance_Operations
+		#has_capitulated = yes
+		NOT = {
+		has_completed_focus = Liberation
+		}
+			}
+		}
+	priority = 6
+}

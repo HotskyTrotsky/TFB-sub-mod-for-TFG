@@ -194,6 +194,69 @@ spriteTypes = {
 		name = "GFX_FRA_propaganda_bg"
 		texturefile = "gfx/interface/propaganda/FRA_propaganda_bg.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_UK_Map"
+		texturefile = "gfx/interface/Uprising/UK_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_Ireland_Clean"
+		texturefile = "gfx/interface/Uprising/Ireland_Clean.dds"
+	}
+	spriteType = {
+		name = "GFX_Ireland_Contested_1"
+		texturefile = "gfx/interface/Uprising/Ireland_Contested_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Ireland_Contested_2"
+		texturefile = "gfx/interface/Uprising/Ireland_Contested_2.dds"
+	}
+	spriteType = {
+		name = "GFX_North_ENG_Clean"
+		texturefile = "gfx/interface/Uprising/North_ENG_Clean.dds"
+	}
+	spriteType = {
+		name = "GFX_North_ENG_Contested_1"
+		texturefile = "gfx/interface/Uprising/North_ENG_Contested_1.dds"
+	}
+	spriteType = {
+		name = "GFX_North_ENG_Contested_2"
+		texturefile = "gfx/interface/Uprising/North_ENG_Contested_2.dds"
+	}
+	spriteType = {
+		name = "GFX_North_ENG_Contested_3"
+		texturefile = "gfx/interface/Uprising/North_ENG_Contested_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Scotland_Clean"
+		texturefile = "gfx/interface/Uprising/Scotland_Clean.dds"
+	}
+	spriteType = {
+		name = "GFX_Scotland_Contested_1"
+		texturefile = "gfx/interface/Uprising/Scotland_Contested_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Scotland_Contested_2"
+		texturefile = "gfx/interface/Uprising/Scotland_Contested_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Wales_Clean"
+		texturefile = "gfx/interface/Uprising/ENG_Wales_Clean.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Wales_Contested_1"
+		texturefile = "gfx/interface/Uprising/ENG_Wales_Contested_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Wales_Contested_2"
+		texturefile = "gfx/interface/Uprising/ENG_Wales_Contested_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Wales_Contested_3"
+		texturefile = "gfx/interface/Uprising/ENG_Wales_Contested_3.dds"
+	}
+
+	
 	spriteType = {
 		name = "GFX_USA_election_bg"
 		texturefile = "gfx/interface/election/USA_election_bg.dds"
@@ -566,6 +629,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_portrait_christopher_lee"
 		texturefile = "gfx/leaders/ENG/portrait_eng_christopher_lee.dds"
+	}
+	SpriteType = {
+		name = "GFX_Portrait_Clement_Attlee"
+		texturefile = "gfx/leaders/ENG/Portrait_Clement_Attlee.dds"
 	}
 	
 	spriteType = {

@@ -1,0 +1,103 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ENG_Uprising_Ui_Window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 600 }
+				#BACKGROUND
+				
+				
+				iconType = {
+					name ="UK_Map"
+					spriteType = "GFX_UK_Map"
+					position = { x=0 y=0 }
+				}
+				
+				##Regions
+				
+				####Scotland 3 levels
+				iconType = {
+					name = "Scotland_Clean"
+					spriteType = "GFX_Scotland_Clean"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				iconType = {
+					name = "Scotland_Contested_1"
+					spriteType = "GFX_Scotland_Contested_1"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name = "Scotland_Contested_2"
+					spriteType = "GFX_Scotland_Contested_2"
+					position = { x=0 y=0 }
+				}
+				
+				
+				####Northern England 4 levels
+				iconType = {
+					name ="North_ENG_Clean"
+					spriteType = "GFX_North_ENG_Clean"
+					position = { x=0 y=0 }
+				}
+				
+				iconType = {
+					name ="North_ENG_Contested_1"
+					spriteType = "GFX_North_ENG_Contested_1"
+					position = { x=0 y=0 }
+				}
+				
+				iconType = {
+					name ="North_ENG_Contested_2"
+					spriteType = "GFX_North_ENG_Contested_2"
+					position = { x=0 y=0 }
+				}
+				
+				iconType = {
+					name ="North_ENG_Contested_3"
+					spriteType = "GFX_North_ENG_Contested_3"
+					position = { x=0 y = 0}
+				}
+				
+				
+				####Ireland 3 levels
+				iconType = {
+					name ="Ireland_Clean"
+					spriteType = "GFX_Ireland_Clean"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name ="Ireland_Contested_1"
+					spriteType = "GFX_Ireland_Contested_1"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name ="Ireland_Contested_2"
+					spriteType = "GFX_Ireland_Contested_2"
+					position = { x=0 y=0 }
+				}
+				
+				
+				####England and Wales 4 levels
+				iconType = {
+					name ="ENG_Wales_Clean"
+					spriteType = "GFX_ENG_Wales_Clean"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name ="ENG_Wales_Contested_1"
+					spriteType = "GFX_ENG_Wales_Contested_1"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name ="ENG_Wales_Contested_2"
+					spriteType = "GFX_ENG_Wales_Contested_2"
+					position = { x=0 y=0 }
+				}
+				iconType = {
+					name ="ENG_Wales_Contested_3"
+					spriteType = "GFX_ENG_Wales_Contested_3"
+					position = { x=0 y=0 }
+				}
+	}
+}

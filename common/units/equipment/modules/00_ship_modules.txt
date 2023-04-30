@@ -131,132 +131,132 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 	}
 
-	dp_light_battery_1 = {
-		abbreviation = "sae"
-		category = dp_light_battery
-		gui_category = ship_light_battery
-		sfx = sfx_ui_sd_module_turret
-	
-		add_stats = {
-			lg_attack = 1
-			anti_air_attack = 0.5
-			build_cost_ic = 100
-		}
-		multiply_stats = {
-			naval_speed = -0.01
-		}
-		build_cost_resources = {
-			steel = 1
-		}
-		add_average_stats = {
-			lg_armor_piercing = 0.5
-		}
-		
-		can_convert_from = {
-			module_category = ship_light_battery
-			convert_cost_ic = 100
-		}
-		critical_parts = { damaged_light_guns }
-	}
-
-	dp_light_battery_2 = {
-		abbreviation = "saf"
-		category = dp_light_battery
-		gui_category = ship_light_battery
-		sfx = sfx_ui_sd_module_turret
-	
-		add_stats = {
-			lg_attack = 1.5
-			anti_air_attack = 1
-			build_cost_ic = 130
-		}
-		multiply_stats = {
-			naval_speed = -0.02
-		}
-		build_cost_resources = {
-			steel = 2
-		}
-		add_average_stats = {
-			lg_armor_piercing = 1
-		}
-		
-		can_convert_from = {
-			module_category = ship_light_battery
-			convert_cost_ic = 85 #conversion cost from ANY ship_light_battery module
-		}
-		
-		can_convert_from = {
-			module = ship_light_battery_1
-			convert_cost_ic = 55 #conversion cost from that specific module
-		}
-		critical_parts = { damaged_light_guns }
-	}
-
-	dp_light_battery_3 = {
-		abbreviation = "sag"
-		category = dp_light_battery
-		gui_category = ship_light_battery
-		sfx = sfx_ui_sd_module_turret
-	
-		add_stats = {
-			lg_attack = 2
-			anti_air_attack = 1.5
-			build_cost_ic = 160
-		}
-		multiply_stats = {
-			naval_speed = -0.03
-		}
-		build_cost_resources = {
-			steel = 3
-		}
-		add_average_stats = {
-			lg_armor_piercing = 1.75
-		}
-		
-		can_convert_from = {
-			module_category = ship_light_battery
-			convert_cost_ic = 85
-		}
-		
-		can_convert_from = {
-			module= ship_light_battery_2
-			convert_cost_ic = 55
-		}
-		critical_parts = { damaged_light_guns }
-	}
-
-	dp_light_battery_4 = {
-		abbreviation = "sah"
-		category = dp_light_battery
-		gui_category = ship_light_battery
-		sfx = sfx_ui_sd_module_turret
-	
-		add_stats = {
-			lg_attack = 3
-			anti_air_attack = 2
-			build_cost_ic = 185
-		}
-		multiply_stats = {
-			naval_speed = -0.04
-		}
-		build_cost_resources = {
-			steel = 4
-		}
-		add_average_stats = {
-			lg_armor_piercing = 1.75
-		}
-		
-		can_convert_from = {
-			module_category = ship_light_battery
-			convert_cost_ic = 200
-		}
-			
-		can_convert_from = {
-			module = ship_light_battery_3
-			convert_cost_ic = 130
-		}
-		critical_parts = { damaged_light_guns }
-	}
+#	dp_light_battery_1 = {
+#		abbreviation = "sae"
+#		category = dp_light_battery
+#		gui_category = ship_light_battery
+#		sfx = sfx_ui_sd_module_turret
+#	
+#		add_stats = {
+#			lg_attack = 1
+#			anti_air_attack = 0.5
+#			build_cost_ic = 100
+#		}
+#		multiply_stats = {
+#			naval_speed = -0.01
+#		}
+#		build_cost_resources = {
+#			steel = 1
+#		}
+#		add_average_stats = {
+#			lg_armor_piercing = 0.5
+#		}
+#		
+#		can_convert_from = {
+#			module_category = ship_light_battery
+#			convert_cost_ic = 100
+#		}
+#		critical_parts = { damaged_light_guns }
+#	}
+#
+#	dp_light_battery_2 = {
+#		abbreviation = "saf"
+#		category = dp_light_battery
+#		gui_category = ship_light_battery
+#		sfx = sfx_ui_sd_module_turret
+#	
+#		add_stats = {
+#			lg_attack = 1.5
+#			anti_air_attack = 1
+#			build_cost_ic = 130
+#		}
+#		multiply_stats = {
+#			naval_speed = -0.02
+#		}
+#		build_cost_resources = {
+#			steel = 2
+#		}
+#		add_average_stats = {
+#			lg_armor_piercing = 1
+#		}
+#		
+#		can_convert_from = {
+#			module_category = ship_light_battery
+#			convert_cost_ic = 85 #conversion cost from ANY ship_light_battery module
+#		}
+#		
+#		can_convert_from = {
+#			module = ship_light_battery_1
+#			convert_cost_ic = 55 #conversion cost from that specific module
+#		}
+#		critical_parts = { damaged_light_guns }
+#	}
+#
+#	dp_light_battery_3 = {
+#		abbreviation = "sag"
+#		category = dp_light_battery
+#		gui_category = ship_light_battery
+#		sfx = sfx_ui_sd_module_turret
+#	
+#		add_stats = {
+#			lg_attack = 2
+#			anti_air_attack = 1.5
+#			build_cost_ic = 160
+#		}
+#		multiply_stats = {
+#			naval_speed = -0.03
+#		}
+#		build_cost_resources = {
+#			steel = 3
+#		}
+#		add_average_stats = {
+#			lg_armor_piercing = 1.75
+#		}
+#		
+#		can_convert_from = {
+#			module_category = ship_light_battery
+#			convert_cost_ic = 85
+#		}
+#		
+#		can_convert_from = {
+#			module= ship_light_battery_2
+#			convert_cost_ic = 55
+#		}
+#		critical_parts = { damaged_light_guns }
+#	}
+#
+#	dp_light_battery_4 = {
+#		abbreviation = "sah"
+#		category = dp_light_battery
+#		gui_category = ship_light_battery
+#		sfx = sfx_ui_sd_module_turret
+#	
+#		add_stats = {
+#			lg_attack = 3
+#			anti_air_attack = 2
+#			build_cost_ic = 185
+#		}
+#		multiply_stats = {
+#			naval_speed = -0.04
+#		}
+#		build_cost_resources = {
+#			steel = 4
+#		}
+#		add_average_stats = {
+#			lg_armor_piercing = 1.75
+#		}
+#		
+#		can_convert_from = {
+#			module_category = ship_light_battery
+#			convert_cost_ic = 200
+#		}
+#			
+#		can_convert_from = {
+#			module = ship_light_battery_3
+#			convert_cost_ic = 130
+#		}
+#		critical_parts = { damaged_light_guns }
+#	}
 
 
 
@@ -1303,7 +1303,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
+			naval_speed = 0.05
 		}
 		
 		can_convert_from = {
@@ -1327,7 +1327,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.25
+			naval_speed = 0.1
 		}
 		
 		can_convert_from = {
@@ -1355,7 +1355,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.30
+			naval_speed = 0.15
 			
 		}
 		
@@ -1383,7 +1383,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = 0.35
+			naval_speed = 0.2
 			
 		}
 		
@@ -1523,7 +1523,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
+			naval_speed = 0.1
 			
 		}
 		
@@ -1547,7 +1547,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.25
+			naval_speed = 0.15
 			
 		}
 		
@@ -1576,7 +1576,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.3
+			naval_speed = 0.2
 			
 		}
 		
@@ -1604,7 +1604,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.35
+			naval_speed = 0.25
 			
 		}
 		
@@ -1859,10 +1859,10 @@ equipment_modules = {
 			build_cost_ic = 90
 		}
 		multiply_stats = {
-			naval_speed = -0.01			
+			naval_speed = -0.03			
 		}
 		build_cost_resources = {
-			steel = 0
+			steel = 1
 		}
 		critical_parts = { damaged_torpedoes }
 	}
@@ -1880,10 +1880,10 @@ equipment_modules = {
 			build_cost_ic = 120
 		}
 		multiply_stats = {
-			naval_speed = -0.02		
+			naval_speed = -0.05		
 		}
 		build_cost_resources = {
-			steel = 0
+			steel = 1
 		}
 		 
 		dismantle_cost_ic = 60
@@ -1914,10 +1914,12 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.015
 		}
 		multiply_stats = {
-			naval_speed = -0.03			
+			naval_speed = -0.07			
 		}
 		dismantle_cost_ic = 60
-
+		build_cost_resources = {
+			steel = 1
+		}
 		can_convert_from = {
 			module_category = ship_torpedo
 			convert_cost_ic = 60
@@ -1938,10 +1940,12 @@ equipment_modules = {
 			naval_torpedo_hit_chance_factor = 0.02
 		}
 		multiply_stats = {
-			naval_speed = -0.04			
+			naval_speed = -0.09			
 		}
 		dismantle_cost_ic = 60
-
+		build_cost_resources = {
+			steel = 1
+		}
 		can_convert_from = {
 			module_category = ship_torpedo
 			convert_cost_ic = 60

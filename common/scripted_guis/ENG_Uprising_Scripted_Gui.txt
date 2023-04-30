@@ -1,0 +1,64 @@
+scripted_gui = {
+
+	ENG_Uprising_Ui = {
+		context_type = decision_category
+		window_name = "ENG_Uprising_Ui_Window"
+		#context_type = player_context
+		
+		visible = {
+		has_completed_focus = Commence_Resistance_Operations
+			}
+		
+		triggers = {
+		
+		Scotland_Clean_visible = {
+		check_variable = { Scotland_State = 0 }
+		}
+		Scotland_Contested_1_visible = {
+		 check_variable = { Scotland_State = 1 }
+		}
+		Scotland_Contested_2_visible = {
+		check_variable = { Scotland_State = 2}
+		}
+		
+		
+		North_ENG_Clean_visible = {
+		check_variable = { North_Eng_State = 0 }
+		}
+		North_ENG_Contested_1_visible = {
+		 check_variable = { North_Eng_State = 1 }
+		}
+		North_ENG_Contested_2_visible = {
+		check_variable = { North_Eng_State = 2}
+		}
+		North_ENG_Contested_3_visible = {
+		check_variable = { North_Eng_State = 3 }
+		}
+		
+		Ireland_Clean_visible = {
+		check_variable = { Ireland_State = 0 }
+		}
+		Ireland_Contested_1_visible = {
+		 check_variable = { Ireland_State = 1 }
+		}
+		Ireland_Contested_2_visible = {
+		check_variable = { Ireland_State = 2}
+		}
+		
+		
+		ENG_Wales_Clean_visible = {
+		check_variable = { ENG_Wales_State = 0 }
+		}
+		ENG_Wales_Contested_1_visible = {
+		check_variable = { ENG_Wales_State = 1 }
+		}
+		ENG_Wales_Contested_2_visible = {
+		 check_variable = { ENG_Wales_State = 2 }
+		}
+		ENG_Wales_Contested_3_visible = {
+		check_variable = { ENG_Wales_State = 3}
+		}
+		
+			}
+		}
+	}

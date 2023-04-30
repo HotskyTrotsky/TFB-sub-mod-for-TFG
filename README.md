@@ -247,3 +247,45 @@ mechanised - requires 5 mechanised and motorised is the best for logistics but r
 -Removed decision to annex Vichy if you capture Paris as Free France
 
 
+Patch 9
+
+-Added Exiled UK focus tree (Just for daddy quacky._.) + a decision for Germany to set up a puppet government in the British isles. Also includes option if UK leaves after capitulation and is ai that all buffs and the navy of the UK goes to france.
+
+-Australia Manpower buff, When at war with Japan they Australia will gain weekly manpower depending on the Malaya barrier spirit.
+
+-Finland now gets weekly manpower for aslong as the winter war is fought.
+
+-Removed decision to gain war goal on nations that have removed naval treaties (I had thought i had allready done this however i was mistaken but it has now been fixed i promise)
+
+-The exploit to gain the bonuses of tank radios as germany has been fixed (Therefore if you have tank radios researched or are researching it you will not gain the tech from the focus but instead gain 35 pp)
+
+-Removed bonus of ground attack from basic light airframe
+
+-Changed the breakthrough debuff from medium cannon 2s from -10 breakthrough to -10%
+
+-SS and Red Guard divisions no longer have TD but an extra medium tank (Same goes for the Heavy and light red guard divisions)
+
+-Increased research cost of cas and strat bombing techs.
+
+-Fixed German Advisor dive bomber expert which gave bonus to tactical bombers not cas, Soviet Light fighter now gives - 10% production cost to cas not tactical bombers unless you pick the medium bomber designer in which it will give a -5% for tactical bombers.
+
+-Removed Small dual purpose guns
+
+-Reduced speed of destroyer engines by 15%
+
+-Reduced speed of crusier engines by 10%
+
+-Speed factor multiplyer for ship profile changed from 1 > 0.25
+
+-Ship torpedo have increased speed reduction
+
+-Destroyers have increase surface visablity by 2
+
+-Fleet contribution to AA reduced from 20% to 15%
+
+-Reduced torpedo hit chance
+
+-Increased the hitprofle of convoys to compensate for reduced torpedo hit chance
+
+-T34 Engine upgrade is now 1941 tech not 1942
+
