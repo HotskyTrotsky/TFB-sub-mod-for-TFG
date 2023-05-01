@@ -793,7 +793,7 @@ technologies = {
 			small_bomb_bay
 		}
 		
-		research_cost = 1.75
+		research_cost = 2
 		start_year = 1936
 
 		folder = {
@@ -831,7 +831,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			cluster_bombs
 		}
@@ -869,7 +869,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			torpedo_mounting_small
 			torpedo_mounting_medium
@@ -912,7 +912,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			torpedo_mounting2_small
 			torpedo_mounting2_medium
@@ -955,7 +955,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			torpedo_mounting3_small
 			torpedo_mounting3_medium
@@ -994,7 +994,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			large_bomb_bay
 		}
@@ -1037,7 +1037,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			large_bomb
 		}
@@ -1080,7 +1080,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
-		xp_research_bonus = 1.75
+		xp_research_bonus = 2
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}

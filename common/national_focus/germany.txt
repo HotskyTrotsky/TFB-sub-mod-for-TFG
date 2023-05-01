@@ -2053,12 +2053,24 @@ focus_tree = {
 				uses = 2
 				category = cat_light_armor
 			}
+			if = {
+			limit = {
+			NOT = {
+			GER = { has_tech = mot_radio2 }
+			OR = {
+			GER = { is_researching_technology = mot_radio2 }
+					}
+				}
+			}
 			set_technology = {
 				mot_radio2 = 1
+				}
+			}
+		else = {
+		add_political_power = 35
+				}
 			}
 		}
-	}
-	
 	focus = {
 		id = GER_panzer2
 		icon = GFX_ger_second_gen_tanks

@@ -2330,7 +2330,19 @@ heavy_tank_artillery_chassis = {
 			factor = 1
 		}
 	}
-
+	Lord_Protector = {
+		random = no
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		stability_weekly = 0.001
+		conscription_factor = 0.05
+	}
 	hedonist = {
 		random = no
 		stability_factor = -0.05
@@ -5923,7 +5935,7 @@ heavy_tank_artillery_chassis = {
 	dive_bomber = {
 		sprite = 14
 		equipment_bonus = {
-			medium_plane_airframe = {
+			small_plane_cas_airframe = {
 				instant = yes
 				air_ground_attack = 0.1 
 			}

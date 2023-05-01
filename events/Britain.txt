@@ -1,0 +1,1553 @@
+﻿add_namespace = britain 
+
+# Tizard mission event for USA
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.1.a	#sounds good
+		ai_chance = { factor = 90 }
+		add_political_power = -10
+		ENG = {
+			country_event = { days = 1 id = britain.2 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = tizard_relations
+			}
+		}
+		add_tech_bonus = {
+			name = tizard_mission_focus
+			uses = 1
+			bonus = 1.0
+			category = light_fighter
+		}
+		add_tech_bonus = {
+			name = tizard_mission_focus
+			bonus = 1.0
+			uses = 2
+			category = radar_tech
+		}
+		add_ideas = USA_tizard
+	}
+	
+	# option = {
+	# 	name = britain.1.b	#no way 
+	# 	ai_chance = { factor = 10 }
+	# 	#add_opinion_modifier = { target = ENG modifier = tizard_refused }
+	# 	ENG = {
+	# 		country_event = { days = 1 id = britain.3 }
+	# 	}
+	# }
+
+	# option = {
+	# 	name = britain.1.c	#tech_sharing
+	# 	trigger = { has_dlc = "Together for Victory"}
+	# 	ai_chance = { factor = 90 }
+	# 	add_political_power = -10
+	# 	ENG = {
+	# 		country_event = { days = 1 id = britain.21 }
+	# 		add_opinion_modifier = {
+	# 			target = ROOT
+	# 			modifier = tizard_relations
+	# 		}
+	# 	}
+	# 	add_to_tech_sharing_group = tizard_mission
+	# }
+}
+
+# USA helps
+country_event = {
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.2.a
+		add_tech_bonus = {
+			name = tizard_mission_focus
+			bonus = 1.0
+			category = light_fighter
+		}
+		add_tech_bonus = {
+			name = tizard_mission_focus
+			bonus = 1.0
+			uses = 2
+			category = radar_tech
+		}
+		USA = {
+			add_opinion_modifier = { target = ENG modifier = tizard_relations }
+		}
+	}
+}
+
+# USA says no
+country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.3.a
+		add_opinion_modifier = { target = USA modifier = tizard_refused }
+	}
+}
+
+# Burma road china
+country_event = {
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_burma_road
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.4.a
+	}
+}
+
+# Burma road yunnan
+country_event = {
+	id = britain.5
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_burma_road
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.4.a
+	}
+}
+
+#Time for India to be free
+country_event = {
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_report_event_ghandi_women
+
+	trigger = {
+		tag = ENG
+		has_global_flag = indian_independence_promised
+		NOT = { has_idea = indian_independence_promised_idea }
+		RAJ = { is_puppet_of = ENG }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = britain.6.a
+		end_puppet = RAJ
+	}
+	option = {
+		name = britain.6.b
+		RAJ = {
+			add_stability = -0.3
+			add_war_support = -0.2
+		}
+	}
+}
+
+#End trade with Germany event for SWE/NOR
+country_event = {
+	id = britain.7
+	title = britain.7.t
+	desc = britain.7.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = britain.7.a
+		ai_chance = { factor = 60 }
+		GER = {
+				add_opinion_modifier = { target = ROOT modifier = embargo } 
+			}
+	}
+	option = {
+		name = britain.7.b
+		ai_chance = { factor = 40 }
+		ENG = {
+			country_event = britain.8
+		}
+	}
+}
+
+country_event = {
+	id = britain.8
+	title = britain.8.t
+	desc = britain.8.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.8.a
+		ai_chance = { factor = 70 }
+		create_wargoal = {
+				type = take_state
+				target = FROM
+				generator = owned_states
+			}
+		if = {
+			limit = {
+				USA = {
+					NOT = {
+						has_opinion_modifier = unprovoked_aggression
+					}
+				}
+			}
+			USA = {
+				add_opinion_modifier = { target = ROOT modifier = unprovoked_aggression }
+			}
+		}
+	}
+	option = {
+		name = britain.8.b
+		ai_chance = { factor = 30 }
+	}
+}
+
+# Chamberlain Resigns
+country_event = {
+	id = britain.9
+	title = britain.9.t
+	desc = britain.9.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		has_war = yes
+		has_government = democratic
+		POL = { has_capitulated = yes }
+		OR = {
+			has_global_flag = fall_of_france
+			FRA = { surrender_progress > 0.1 }
+			HOL = { surrender_progress > 0.1 }
+			BEL = { surrender_progress > 0.1 }
+			LUX = { surrender_progress > 0.1 }
+			DEN = { surrender_progress > 0.1 }
+			NOR = { surrender_progress > 0.1 }
+			AND = {
+				110 = { is_controlled_by = GER }
+				NOT = { is_in_faction_with = GER }
+			}
+		}
+		NOT = { has_country_flag = chamberlain_died }
+		has_country_leader = {
+			name = "Neville Chamberlain"
+			ruling_only = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = { set_country_flag = chamberlain_resigned }
+	
+	option = {
+		name = britain.9.a
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = GFX_portrait_Winston_Churchill
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+
+# Chamberlain Passes Away
+country_event = {
+	id = britain.10
+	title = britain.10.t
+	desc = britain.10.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		has_government = democratic
+		date > 1940.9.11
+		NOT = { has_country_flag = chamberlain_resigned }
+		has_country_leader = {
+			name = "Neville Chamberlain"
+			ruling_only = yes
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = { set_country_flag = chamberlain_died }
+
+	option = {
+		name = britain.10.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = GFX_portrait_Winston_Churchill
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
+	}
+	option = {
+		name = britain.10.b
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Lord Edward Halifax"
+			desc = "POLITICS_EDWARD_HALIFAX_DESC"
+			picture = GFX_portrait_Lord_Edward_Halifax
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+	}
+}
+
+# React to Rise of the CommieNazis 
+country_event = {
+	id = britain.11
+	title = britain.11.t
+	desc = britain.11.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+
+	is_triggered_only = yes
+	trigger = {
+		is_faction_leader = yes
+	}
+	
+	option = {
+		name = britain.11.a
+		add_war_support = 0.1
+		every_other_country = {
+				limit = {
+					NOT = { has_war_with = ENG }
+					is_in_faction = no
+					has_government = democratic
+					is_puppet = no
+					OR = {
+						capital_scope = {
+								is_on_continent = europe
+						}
+						capital_scope = {
+								is_on_continent = asia
+						}
+						num_of_factories > 30
+					}
+				}
+				country_event = britain.12
+			}
+	}
+	
+	option = {
+		name = britain.11.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# React to British call
+country_event = {
+	id = britain.12
+	title = britain.12.t
+	desc = britain.12.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.12.a
+		add_war_support = 0.1 #glorious crusade to free Europe from commienazi menace
+		ENG = { add_to_faction = ROOT }
+		ROOT = {
+			add_ai_strategy = {
+				type = alliance
+				id = "ENG"
+				value = 200
+			}
+		}
+	}
+	
+	option = {
+		name = britain.12.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# France wants to join allies
+country_event = {
+	id = britain.13
+	title = britain.13.t
+	desc = britain.13.d
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.13.a
+		add_to_faction = FROM
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "ENG"
+				value = 200
+			}
+		}
+		FROM = { country_event = { id = france.29} }
+		hidden_effect = {
+			news_event = { id = news.175 }
+		}
+	}
+	
+	option = {
+		name = britain.13.b
+		ai_chance = { factor = 0 }
+		FROM = { 
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = FRA_go_with_britain_reject
+			}
+			country_event = { id = france.30 }
+		}
+		hidden_effect = {
+			news_event = { id = news.176 }
+		}
+	}
+}
+
+# Germany demands Slovenia from Yugoslavia
+country_event = {
+	id = britain.14
+	title = britain.14.t
+	desc = britain.14.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+	
+	option = { # Abandon Yugoalvia
+		name = britain.14.a
+		ai_chance = { factor = 90 }
+		YUG = {
+			add_opinion_modifier = { target = ENG modifier = western_betrayal }
+		}		
+		if = {
+			limit = {
+				country_exists = FRA
+			}
+			FRA = { country_event = { id = france.25 hours = 2 } }
+		}
+		else = {
+			if = {
+				limit = {
+					ITA = {
+						OR = {					
+							is_in_faction_with = GER
+							exists = no
+						}
+					}
+				}
+				YUG = {
+					add_opinion_modifier = { target = FRA modifier = western_betrayal }
+					country_event = { id = yugoslavia.5 hours = 6 }
+				}			
+			}
+		}
+	}
+	
+	option = { # Support Yugoslavia
+		name = britain.14.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_in_faction_with = GER
+			}
+		}
+		if = {
+			limit = {
+				is_in_faction_with = GER
+				is_faction_leader = yes
+			}
+			remove_from_faction = GER
+		}
+		if = {
+			limit = {
+				is_in_faction_with = GER
+				is_faction_leader = no
+			}
+			GER = { remove_from_faction = ENG }
+		}
+		add_political_power = -200
+		add_stability = -0.05
+		add_opinion_modifier = { target = GER modifier = condemn_aggression }
+		effect_tooltip = {
+			GER = {
+				create_wargoal = {
+					type = take_state_focus
+					target = YUG
+					generator = { 102 }
+				}
+			}
+		}
+		add_to_faction = YUG
+		YUG = {
+			add_ai_strategy = {
+				type = alliance
+				id = "ENG"
+				value = 200
+			}
+		}
+		if = {
+			limit = {
+				FRA = {
+					is_puppet = no
+					NOT = { has_war_with = YUG }
+				}
+			}
+			FRA = { country_event = { id = france.26 hours = 2 } }
+		}
+		YUG = {
+			add_opinion_modifier = { target = ENG modifier = offered_support }
+		}
+	}	
+}
+
+# France leaves the Allies
+country_event = {
+	id = britain.15
+	title = britain.15.t
+	desc = britain.15.d
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.15.a
+		FRA = {
+			add_opinion_modifier = { target = ENG modifier = abandoned_yugoslavia }
+		}
+	}
+}
+
+# King dies
+country_event = {
+	id = britain.16
+	title = britain.16.t
+	desc = britain.16.d
+	picture = GFX_report_event_europe_funeral
+	
+	trigger = {
+		tag = ENG
+		date > 1936.1.19
+		has_start_date < 1936.01.02
+	}	
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 7 }
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_king_died
+			remove_ideas = george_v
+			add_ideas = ENG_king_edward
+		}		
+	}
+	
+	option = {
+		name = britain.16.a
+		effect_tooltip = {
+			remove_ideas = george_v		
+			add_ideas = ENG_king_edward
+		}
+	}
+}
+
+# King abdicates
+country_event = {
+	id = britain.17
+	title = britain.17.t
+	desc = britain.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	trigger = {
+		tag = ENG
+		has_country_flag = ENG_king_died
+		date > 1936.12.1
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 14 }
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+
+	option = {
+		name = britain.17.a
+		effect_tooltip = {
+			remove_ideas = ENG_king_edward
+			add_ideas = ENG_george_vi		
+		}
+	}
+}
+
+# Return of the Nazi King
+country_event = {
+	id = britain.18
+	title = britain.18.t
+	desc = britain.18.d
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		tag = ENG
+		has_idea = ENG_george_vi
+		has_government = fascism
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 14 }
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = ENG_george_vi		
+		}
+	}
+
+	option = {
+		name = britain.18.a
+		effect_tooltip = {
+			remove_ideas = ENG_george_vi	
+		}
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			picture = GFX_portrait_Edward_VIII
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				inexperienced_imperialist				
+			}
+		}
+	}
+
+	option = {
+		name = britain.18.b	
+		effect_tooltip = {
+			remove_ideas = ENG_george_vi	
+		}
+		add_ideas = ENG_king_edward_fascism
+	}
+}
+
+
+country_event = {
+	id = britain.21
+	title = britain.21.t
+	desc = britain.21.d
+	picture = GFX_report_event_physics_lab_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.21.a
+		add_to_tech_sharing_group = tizard_mission
+		USA = {
+			add_opinion_modifier = { target = ENG modifier = tizard_relations }
+		}
+	}
+}
+
+# Stanley Baldwin Resigns
+country_event = {
+    id = britain.22
+    title = britain.22.t
+    desc = britain.22.d
+    picture = GFX_report_event_royal_parade
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+        original_tag = ENG
+        has_government = democratic
+        has_idea = ENG_george_vi
+        date > 1937.5.27
+        has_start_date < 1936.01.02
+        NOT = { has_country_flag = baldwin_resigned }
+    }
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = britain.22.a
+        retire_country_leader = yes
+        create_country_leader = {
+        	name = "Neville Chamberlain"
+        	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+        	picture = GFX_portrait_Neville_Chamberlain
+        	expire = "1965.1.1"
+        	ideology = conservatism
+        	traits = {
+        		chamberlain_appeaser rearmer
+        	}
+        }
+        set_country_flag = baldwin_resigned
+      }
+}
+
+#RAJ gets to choose sides in Indian civil war
+country_event = {
+	id = britain.23
+	title = britain.23.t
+	desc = britain.23.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	#side with government
+	option = {
+		ai_chance = {
+			factor = 100
+			modifier = {
+				has_government = fascism
+				factor = 0
+			}
+		}
+		name = britain.23.a
+		start_civil_war = {
+				ideology = fascism
+				size = 0.5
+		}
+	}
+	#side with fascists
+	option = {
+		name = britain.23.b
+		start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5
+		}
+		random_other_country = {
+			limit = {
+				original_tag = RAJ
+				has_government = neutrality
+				is_puppet_of = ENG
+			}
+			set_cosmetic_tag = RAJ_UK
+		}
+	}
+}
+
+# Shadow Scheme Factories
+country_event = {
+    id = britain.24
+    title = britain.24.t
+    desc = britain.24.d
+    picture = GFX_report_event_generic_factory
+ 
+    fire_only_once = yes
+ 
+    trigger = {
+        original_tag = ENG
+        has_completed_focus = shadow_scheme_focus
+        has_war = yes
+    }
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = britain.24.a
+        random_owned_controlled_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = shadow_scheme_2AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = shadow_scheme_2AF
+		}
+    }
+}
+
+### Anglo-Soviet Agreement
+country_event = {
+	id = britain.500
+	title = britain.500.t
+	desc = britain.500.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.500.a
+		add_political_power = 100
+		ENG = { add_political_power = 100 }
+	}
+	
+	option = {
+		name = britain.500.b
+		
+	}
+}
+### Operation Countenance
+country_event = {
+	id = britain.501
+	title = britain.501.t
+	desc = britain.501.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.501.a
+		ENG = { country_event = { id = britain.502 hours = 6 } }
+	}
+	
+	option = {
+		name = britain.501.b
+		ENG = { country_event = { id = britain.503 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = britain.502
+	title = britain.502.t
+	desc = britain.502.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.502.a
+		SOV = {
+			transfer_state= 416
+			transfer_state= 418
+			transfer_state= 266
+			transfer_state= 420
+			transfer_state= 419
+		}
+		set_autonomy = {
+			target = PER
+			autonomous_state = autonomy_protectorate
+		}
+	}
+	
+}
+
+country_event = {
+	id = britain.503
+	title = britain.503.t
+	desc = britain.503.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.501.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = PER
+		}	
+	}
+	
+	option = {
+		name = britain.501.b
+	}
+}
+
+country_event = {
+	id = britain.504
+	title = britain.504.t
+	desc = britain.504.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.504.a
+		effect_tooltip = {
+			ENG = {
+				create_wargoal = {
+					type = topple_government
+					target = ITA
+				}
+			}
+		}
+	}
+}
+###Franco-British-Union 
+country_event = {
+id = britain.511
+title = britain.511.t
+desc = britain.511.d
+fire_only_once = yes
+is_triggered_only = yes
+
+option = {
+name = britain.511.a
+set_global_flag = flag_franco_british_union
+hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				FRA = {
+					add_state_core = PREV
+				}
+			}
+		}
+		FRA = {
+			annex_country = { target = ENG transfer_troops = yes }
+		}
+		custom_effect_tooltip = FRA_franco_british_cores
+		hidden_effect = {
+			FRA = { set_cosmetic_tag = FRA_UK }
+			FRA = {add_ideas = ENG_raf_idea}
+			FRA = {add_ideas = Learn_from_loss}
+			FRA = {add_ideas = ENG_british_fighter_discount2}
+			FRA = {add_ideas = ENG_anti_submarine_training_school}
+			FRA = {add_ideas = ENG_secure_the_imperial_shipping_routes}
+			FRA = {add_ideas = ENG_expand_the_repair_yards}
+			FRA = {add_ideas = ENG_prepare_for_the_inevitable_idea}
+			FRA = {add_ideas = ENG_merchant_navy}
+			FRA = {air_experience = 1000}
+			FRA = {annex_country = {target = IRQ transfer_troops = yes}}
+			FRA = {annex_country = {target = MAL transfer_troops = yes}}
+			}
+			
+		}
+	}
+
+
+
+
+### Battle for Britain
+	country_event = {
+	id = britain.505
+	#hidden = yes
+	title = britain.505.t
+	desc = britain.505.d
+	picture = GFX_report_event_UK_bombing
+	fire_only_once = yes
+	#is_triggered_only = yes
+		trigger = {
+		ENG = {
+		has_war = yes
+		has_government = democratic
+		}
+		ENG = { surrender_progress > 0.3 }
+		OR = {
+			126 = {
+		NOT = { is_controlled_by = ENG }
+					}
+				}
+			}
+		immediate = {
+			ENG = { add_to_faction = USA }
+			ENG = {
+						hidden_effect = {
+					division_template = {
+						name = "English Millita"
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+					
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+					
+							infantry = { x = 2 y = 0 }
+					
+							artillery_brigade = { x = 3 y = 0}
+							artillery_brigade = { x = 3 y = 1}
+						}
+						support = {
+							engineer = { x = 0 y = 0 }   
+						}
+					}
+					# 26 Spawn Ins
+					126 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					122 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					123 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					127 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					338 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					125 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					129 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					128 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					132 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					130 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					131 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					133 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					121 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+					136 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+						120 = {
+						if = {					
+							limit = { is_controlled_by = ENG }
+							create_unit = { division = "division_template = \"English Millita\" force_equipment_variants = { infantry_equipment_0 = { owner = \"ENG\" } }" owner = ENG }
+						}
+					}
+				}
+			}
+		}
+			#custom_effect_tooltip = ENG_home_guard_tt
+			}
+		option = {
+		name = britain.505.a
+		}
+	}
+
+country_event = {
+	id = britain.506
+	title = britain.506.t
+	desc = britain.506.d
+	#option = { # Become Britain in exile
+	#	name = britain.506.a
+	#	}
+	hidden = yes
+	fire_only_once = yes
+		trigger = {
+		ENG = {
+		has_capitulated = yes
+		has_war_with = GER
+		has_government = democratic
+			}
+			NOT = {
+			ITA = {
+				surrender_progress > 0.25
+			}
+			GER = {
+				surrender_progress > 0.25
+			}
+		}
+		}
+		mean_time_to_happen = { days = 2 }
+		immediate = {
+			country_event = britain.507
+			}
+	}
+	
+	# Becoming Britain in exile
+	country_event = {
+	id = britain.507
+	#hidden = yes
+	title = britain.507.t
+	desc = britain.507.d
+	picture = GFX_report_event_UK_bombing
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+		option = { # Become Britain in exile
+		name = britain.507.a
+		GER = { country_event = britain.508 }
+		}
+		immediate = {
+		set_global_flag = achievement_Britain_surrender
+	}
+	}
+	
+	# UK goes into Exile
+	country_event = {
+	id = britain.508
+	title = britain.508.t
+	desc = britain.508.d
+	picture = GFX_report_event_generic_rifles
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+		option = { # Become Britain in exile
+		name = britain.508.a
+		custom_effect_tooltip = Set_Up_Uk_Puppet_tt
+		ai_chance = {
+			factor = 85
+		}
+		hidden_effect = {
+		ENG = {
+		set_cosmetic_tag = ENG_EXILE
+		remove_ideas = { british_austerity_idea }
+		remove_ideas = { ENG_shadow_scheme_idea }
+		remove_ideas = { ENG_shadow_scheme_idea2 }
+		remove_ideas = { ENG_british_fighter_discount }
+		remove_ideas = { ENG_british_fighter_discount2 }
+		remove_ideas = { ENG_expand_army }
+		remove_ideas = { ENG_special_air_service_idea }
+		remove_ideas = { ENG_expand_the_repair_yards }
+		remove_ideas = { ENG_refitting_yards }
+		remove_ideas = { ENG_secure_the_imperial_shipping_routes }
+		remove_ideas = { ENG_merchant_navy }
+		remove_ideas = { ENG_anti_submarine_training_school }
+		remove_ideas = { ENG_watu_idea }
+		remove_ideas = { ENG_fortify_the_empire_2 }
+		remove_ideas = { ENG_colonial_elite }
+		remove_ideas = { ENG_service_overseas_idea }
+		remove_ideas = { ENG_imperial_conscription_idea }
+		remove_ideas = { ENG_prepare_for_the_inevitable_idea }
+		remove_ideas = { ENG_war_cabinet_idea }
+		remove_ideas = { ENG_chiefs_of_staff_committee_idea }
+		remove_ideas = { stiff_upper_lip }
+		#remove_ideas = { ENG_the_sun_never_sets_idea_1 }
+		load_focus_tree = Eng_Exile_focus
+			}
+			hidden_effect = {
+			create_dynamic_country = {
+				set_cosmetic_tag = FAC_ENG
+				original_tag = ENG
+				save_event_target_as = Facist_Britain
+				
+				every_state = {
+					limit = { 
+						OR = {
+							state = 127
+							state = 126
+							state = 125
+							state = 129
+							state = 130
+							state = 131
+							state = 121
+							state = 136
+							state = 120
+							state = 133
+							state = 132
+							state = 128
+							state = 122
+							state = 338
+							state = 123
+							state = 119
+							state = 113
+							state = 134
+							state = 135
+						}
+					}
+					#add_core_of = PREV
+					event_target:Facist_Britain = { transfer_state = PREV }
+				}
+				set_rule = { 
+					can_join_factions = yes 
+					can_create_factions = no
+					can_not_declare_war = no
+				}
+				set_capital = { state = 126 }
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 22
+					fascism = 46
+					neutrality = 30
+					communism = 2
+				}
+				create_country_leader = {
+					name = "Oswald Mosley"
+					#desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+					picture = "Portrait_Britain_Oswald_Mosley.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					set_politics = {
+					ruling_party = fascism
+				}
+					traits = {
+						
+					}
+				}
+				GER = { add_to_faction = event_target:Facist_Britain }
+				add_ideas = Defeated_Nation
+				add_ideas = German_Payments_1
+				add_ideas = German_Occupiers
+				add_ideas = Deeply_Unpopular_1
+				load_focus_tree = Facist_Britain_focus
+				#ENG = {
+				#	transfer_units_fraction = {
+				#		target = event_target:Facist_Britain
+				#		#size = 0.95
+				#		#stockpile_ratio = 0.1
+						
+				#	}
+				#}
+				}
+				ENG = {
+				create_wargoal = { type = annex_everything target = BNP}
+					}
+				}
+			}
+		}
+		option = { # annex uk
+		name = britain.508.b
+		custom_effect_tooltip = Take_All_Uk_tt
+		ai_chance = {
+			factor = 85
+		}
+		hidden_effect = {
+		ENG = {
+		set_cosmetic_tag = ENG_EXILE
+		remove_ideas = { british_austerity_idea }
+		remove_ideas = { ENG_shadow_scheme_idea }
+		remove_ideas = { ENG_shadow_scheme_idea2 }
+		remove_ideas = { ENG_british_fighter_discount }
+		remove_ideas = { ENG_british_fighter_discount2 }
+		remove_ideas = { ENG_expand_army }
+		remove_ideas = { ENG_special_air_service_idea }
+		remove_ideas = { ENG_expand_the_repair_yards }
+		remove_ideas = { ENG_refitting_yards }
+		remove_ideas = { ENG_secure_the_imperial_shipping_routes }
+		remove_ideas = { ENG_merchant_navy }
+		remove_ideas = { ENG_anti_submarine_training_school }
+		remove_ideas = { ENG_watu_idea }
+		remove_ideas = { ENG_fortify_the_empire_2 }
+		remove_ideas = { ENG_colonial_elite }
+		remove_ideas = { ENG_service_overseas_idea }
+		remove_ideas = { ENG_imperial_conscription_idea }
+		remove_ideas = { ENG_prepare_for_the_inevitable_idea }
+		remove_ideas = { ENG_war_cabinet_idea }
+		remove_ideas = { ENG_chiefs_of_staff_committee_idea }
+		remove_ideas = { stiff_upper_lip }
+		#remove_ideas = { ENG_the_sun_never_sets_idea_1 }
+		load_focus_tree = Eng_Exile_focus
+				}
+			}
+		}
+	}
+	country_event = {
+	id = britain.509
+	title = britain.509.t
+	desc = britain.509.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.509.a
+		retire_country_leader = yes
+			create_country_leader = {
+			name = "Clement Attlee"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/ENG/Portrait_Clement_Attlee.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+			complete_national_focus = Form_A_Coalition
+	}
+	option = {
+		name = britain.509.c
+		retire_country_leader = yes
+			create_country_leader = {
+			name = "Bernard Montogomery"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "Portrait_Britain_Bernard_Montgomery.dds"
+			expire = "1965.1.1"
+			ideology = moderatism
+			set_politics = {
+				ruling_party = neutrality
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.60
+			}
+			complete_national_focus = Millitary_Takes_Charge
+		#effect_tooltip = {
+		#	ENG = {
+		#	retire_country_leader = yes
+		#	create_country_leader = {
+		#	name = "Bernard Montogomery"
+		#	#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+		#	picture = portrait_ENG_bernard_montgomery
+		#	expire = "1965.1.1"
+		#	ideology = conservatism
+			
+		#			}
+		#		}
+		#	}
+		}
+	option = {
+		name = britain.509.b
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = GFX_portrait_Winston_Churchill
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
+		add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
+		complete_national_focus = Stick_with_Churchill
+	}
+}
+country_event = {
+	id = britain.510
+	title = britain.510.t
+	desc = britain.510.d
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = britain.510.a
+			complete_national_focus = An_Army_Marches_Together
+	}
+	option = {
+		name = britain.510.b
+		complete_national_focus = Specialised_Armed_Forces
+		}
+}
+country_event = {
+	id = britain.512
+	title = britain.512.t
+	desc = britain.512.d
+	picture = GFX_report_event_report_event_CAN_edward3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+	trigger = {
+	ENG = {has_completed_focus = Form_A_Coalition }
+	}
+		name = britain.512.a
+			complete_national_focus = A_New_Union
+		}
+	option = {
+	trigger = {
+	ENG = {has_completed_focus = Stick_with_Churchill }
+	}
+		name = britain.512.b
+		complete_national_focus = A_New_United_Kingdom
+		}
+		option = {
+		trigger = {
+	ENG = {has_completed_focus = Millitary_Takes_Charge }
+	}
+		name = britain.512.c
+		complete_national_focus = A_New_Army
+		}
+}
+country_event = {
+	id = britain.513
+	title = britain.513.t
+	desc = britain.513.d
+	picture = GFX_report_event_destroyers
+	
+	fire_only_once = yes
+	trigger = {
+	ENG = {has_completed_focus = Preparing_For_The_Final_Hurdle }
+		337 = {
+		is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+		Option = {
+		name = britain.513.a
+				}
+				immediate = {
+				337 = {
+			add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+					}
+					add_building_construction = {
+				type = naval_base
+				level = 10
+				instant_build = yes
+					}
+					add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+					}
+					add_building_construction = {
+				type = Radar_station
+				level = 5
+				instant_build = yes
+					}
+					add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 13003
+					}
+				}	
+			}
+		}
+	
+	Country_event = {
+	id = britain.600
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+	AST = {
+	has_war_with = JAP
+		}
+	}
+	immediate = {
+		AST = {
+		add_ideas = ASN_ALLIES_the_sun_never_sets_idea_1
+			}
+		}
+	}
+	

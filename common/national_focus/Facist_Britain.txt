@@ -1,0 +1,865 @@
+﻿focus_tree = {
+	id = Facist_Britain_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1
+			tag = BNP
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+	id = New_Dawn
+		icon = GFX_ENG_1937_It_Happened_Here
+		x = 8
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Deeply_Unpopular_1 
+			add_idea = Deeply_Unpopular_2
+				}
+				add_ideas = ENG_king_edward_Under_Mosley
+		}
+	}
+	
+	focus = {
+	id = Form_BlackShirt_Battalions
+		icon = GFX_PB_ENG_BUF_AUX
+		relative_position_id = New_Dawn
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = New_Dawn}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	GER = {
+	division_template = {
+					name = "British Blackshirt Battalion"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery_brigade = { x = 3 y = 0 }
+						anti_tank_brigade = { x = 3 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					127 = {
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					}                                                                                                                      
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					}                                                                                                                       
+					129 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					}
+					125 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					}
+					123 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					create_unit = { division = "division_template = \"British Blackshirt Battalion\" start_experience_factor = 0.3" owner = GER }
+					}
+				}
+			}
+		}
+	focus = {
+	id = Commit_To_German_War_Effort
+		icon = GFX_goal_economic_friendship
+		relative_position_id = Form_BlackShirt_Battalions
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Form_BlackShirt_Battalions}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = German_Payments_1 
+			add_idea = German_Payments_2
+				}
+		}
+	}
+	focus = {
+		id = Cement_Control_Over_Southern_England
+		icon = GFX_goal_mosley_youth
+		relative_position_id = Commit_To_German_War_Effort
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Commit_To_German_War_Effort}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Deeply_Unpopular_2 
+			add_idea = Deeply_Unpopular_3
+				}
+		}
+	}
+	focus = {
+		id = Provide_Tank_Battalion_For_Germany
+		icon = GFX_Focus_Mobile_Warfare_Doctrine
+		relative_position_id = Commit_To_German_War_Effort
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Commit_To_German_War_Effort}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	BNP = {
+	set_technology = {
+    eng_medium_tank_4 = 1
+	}
+		create_equipment_variant = {
+		name = "Tank, Crusader, Mk I"
+		type = eng_medium_tank_chassis_a15
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_gun_2
+		turret_type_slot = tank_medium_turret_2
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_2
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_2.dds"
+		}
+		division_template = {
+					name = "BlackShirt Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.5" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.5" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.5" owner = BNP }
+						}
+						transfer_units_fraction = {
+						target = GER
+						size = 0
+						stockpile_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+						army_ratio = 1
+						}
+				}
+			}
+		}
+		focus = {
+		id = Establish_Secret_Police
+		icon = GFX_Generic_Arrests
+		relative_position_id = Provide_Tank_Battalion_For_Germany
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Provide_Tank_Battalion_For_Germany}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			remove_ideas = Deeply_Unpopular_3 
+			}
+		}
+		focus = {
+		id = Fully_Commit_To_German_War_Industry
+		icon = GFX_Goal_ENG_fascist_youth
+		relative_position_id = Establish_Secret_Police
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_Secret_Police}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = German_Payments_2 
+			add_idea = German_Payments_3
+				}
+			}
+		}
+		
+		focus = {
+		id = Establish_First_Army_Corps
+		icon = GFX_goal_recruit_the_auxilliaries
+		relative_position_id = Fully_Commit_To_German_War_Industry
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Fully_Commit_To_German_War_Industry}
+		mutually_exclusive = { }
+		
+		cost = 15
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	BNP = {
+		
+		division_template = {
+					name = "BlackShirt Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					division_template = {
+					name = "British Reformed Blackshirt Battalion"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+						}                                                                                                                   
+						127 = {                                                                                                             
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					129 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					125 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					123 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}
+						transfer_units_fraction = {
+						target = GER
+						size = 0
+						stockpile_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+						army_ratio = 1
+						}
+				}
+			}
+		}
+		focus = {
+		id = All_Arms_For_The_Fuhrer
+		icon = GFX_Goal_ENG_blackshirts
+		relative_position_id = Establish_First_Army_Corps
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_First_Army_Corps}
+		mutually_exclusive = { }
+		
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	BNP = {
+		
+		division_template = {
+					name = "BlackShirt Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					division_template = {
+					name = "British Reformed Blackshirt Battalion"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+						}                                                                                                                   
+						127 = {                                                                                                             
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					129 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					125 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					123 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}
+						transfer_units_fraction = {
+						target = GER
+						size = 0
+						stockpile_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+						army_ratio = 1
+						}
+				}
+			}
+		}
+		
+		focus = {
+		id = The_2nd_Army_Corps
+		icon = GFX_Generic_German_Soldiers2
+		relative_position_id = All_Arms_For_The_Fuhrer
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = All_Arms_For_The_Fuhrer}
+		mutually_exclusive = { }
+		
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	BNP = {
+		
+		division_template = {
+					name = "BlackShirt Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					division_template = {
+					name = "British Reformed Blackshirt Battalion"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+						}                                                                                                                   
+						127 = {                                                                                                             
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					129 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					125 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					123 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}
+						transfer_units_fraction = {
+						target = GER
+						size = 0
+						stockpile_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+						army_ratio = 1
+						}
+				}
+			}
+		}
+		
+		focus = {
+		id = The_3rd_Army_Corps
+		icon = GFX_goal_fascist_guns
+		relative_position_id = The_2nd_Army_Corps
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = The_2nd_Army_Corps}
+		mutually_exclusive = { }
+		
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	BNP = {
+		
+		division_template = {
+					name = "BlackShirt Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					division_template = {
+					name = "British Reformed Blackshirt Battalion"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"BlackShirt Tank Division\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+						}                                                                                                                   
+						127 = {                                                                                                             
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					129 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					125 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}                                                                                                                       
+					123 = {                                                                                                                 
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					create_unit = { division = "division_template = \"British Reformed Blackshirt Battalion\" start_experience_factor = 0.75" owner = BNP }
+					}
+						transfer_units_fraction = {
+						target = GER
+						size = 0
+						stockpile_ratio = 0
+						navy_ratio = 0
+						air_ratio = 0
+						army_ratio = 1
+						}
+				}
+			}
+		}
+	}

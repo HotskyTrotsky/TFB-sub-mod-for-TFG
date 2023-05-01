@@ -1,0 +1,4605 @@
+﻿focus_tree = {
+	id = Eng_Exile_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1
+			tag = ENG
+		}
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 50 }
+	
+	focus = {
+	id = ENG_Exiled
+		icon = GFX_Generic_Great_War_Memories
+		x = 15
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	transfer_state = 331
+			add_state_core = 331
+	set_capital =  { state = 331 }
+			add_ideas = {
+			Eng_In_Exile
+			Industry_In_Ruins
+			Fractured_Empire
+			Rock_Bottom_Morale
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 400
+			}
+
+			331 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 12505
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+	id = Think_on_loss
+		icon = GFX_Generic_Memories_of_the_War
+		relative_position_id = ENG_Exiled
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = ENG_Exiled }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = {
+			Learn_from_loss
+			}
+		}
+	}
+	
+	focus = {
+	id = A_New_Path
+		icon = GFX_ENG_Starship_Troopers_Reference
+		relative_position_id = ENG_Exiled
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Think_on_loss}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			country_event = britain.509
+			}
+		}
+		
+		
+		### Churchill path ####
+		
+		
+		
+		focus = {
+		id = Stick_with_Churchill
+		icon = GFX_ENG_Prime_Minister_Churchill
+		relative_position_id = ENG_Exiled
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Path}
+		mutually_exclusive = {
+		focus = Millitary_Takes_Charge
+		focus = Form_A_Coalition
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+		id = Unite_the_Empire
+		icon = GFX_ENG_Imperial_Federalism_Retained
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Stick_with_Churchill}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Fractured_Empire 
+			add_idea = Disunited_Empire 
+				}
+			}
+		}
+			
+	focus = {
+		id = Compromise_With_Caribbean
+		icon = GFX_ENG_Partition_The_West_Indies
+		available = {
+			any_owned_state = {
+				is_core_of = BAS
+				free_building_slots = { #less than 24 unlocked slots
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+		}
+		x = -2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}		
+		prerequisite = { focus = Unite_the_Empire }
+		relative_position_id = Stick_with_Churchill
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+			every_owned_state = {
+				limit = { 
+					has_state_flag = ENG_industrial_expansion_target
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = BAS
+				}
+			}
+			add_core_of = ROOT
+				}
+			random_owned_state = {
+				limit = { 
+					is_core_of = BAS 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = BAS 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = BAS 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = BAS 	
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+		}
+	}
+	focus = {
+		id = Grant_Ghana_Support
+		icon = GFX_PB_ENG_Focus_on_Africa
+		available = {
+			any_owned_state = {
+				is_core_of = GHA
+				free_building_slots = { #less than 24 unlocked slots
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+		}
+		x = 2
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}		
+		prerequisite = { focus = Unite_the_Empire }
+		relative_position_id = Stick_with_Churchill
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+			every_owned_state = {
+				limit = { 
+					has_state_flag = ENG_industrial_expansion_target
+				}
+				add_extra_state_shared_building_slots = 8
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = GHA
+				}
+			}
+			add_core_of = ROOT
+				}
+			random_owned_state = {
+				limit = { 
+					is_core_of = GHA 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = GHA 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = GHA 
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+			random_owned_state = {
+				limit = { 
+					is_core_of = GHA 	
+					NOT = {
+						has_state_flag = ENG_industrial_expansion_target
+					}	
+				}
+				add_extra_state_shared_building_slots = 8
+				set_state_flag = ENG_industrial_expansion_target
+			}
+		}
+	}
+	focus = {
+		id = Secure_Loans_From_Allies
+		icon = GFX_Focus_ENG_Hearts_and_Minds
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Grant_Ghana_Support}
+		prerequisite = {focus = Compromise_With_Caribbean}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Industry_In_Ruins 
+			add_idea = Industry_In_Development 
+				}
+				USA = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				CAN = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				SAF = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				RAJ = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				BRA = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				MEX = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+				AST = {add_timed_idea = { idea = Loans_To_UK days = 120 }
+				}
+			}
+		}
+		
+		focus = {
+		id = Civillian_Industry_Expansion_In_Colonies
+		icon = GFX_Generic_British_Industry
+		available = {
+		}
+		prerequisite = { focus = Secure_Loans_From_Allies }
+		
+		x = 0
+		y = 4
+		relative_position_id = Stick_with_Churchill
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_state_flag = ENG_industrial_expansion_target
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_state_flag = ENG_industrial_expansion_target
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_military_factories
+		icon = GFX_generic_arms_factory
+		available = {
+		}
+		prerequisite = { focus = Civillian_Industry_Expansion_In_Colonies }
+		x = 0
+		y = 5
+		relative_position_id = Stick_with_Churchill
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_state_flag = ENG_industrial_expansion_target
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_state_flag = ENG_industrial_expansion_target
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}				
+		}
+	}
+	focus = {
+		id = Improve_Industrial_capacity
+		icon = GFX_PB_ENG_Ministry_of_Work
+		relative_position_id = Stick_with_Churchill
+		x = -2
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Civillian_Industry_Expansion_In_Colonies}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		swap_ideas = { 
+			remove_idea = Industry_In_Development 
+			add_idea = Industry_Fixed 
+				}
+			}
+		}
+		focus = {
+		id = Invest_Into_Caribbean_Exports
+		icon = GFX_ENG_Home_Rule_For_The_West_Indies
+		relative_position_id = Stick_with_Churchill
+		x = 2
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Civillian_Industry_Expansion_In_Colonies}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = West_Indies_Sugar_Coffee_Exports
+			}
+		}
+		
+		focus = {
+		id = A_United_Empire
+		icon = GFX_ENG_Empire_Equals
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = ENG_military_factories}
+		prerequisite = {focus = Invest_Into_Caribbean_Exports }
+		prerequisite = {focus = Improve_Industrial_capacity }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			remove_ideas = Disunited_Empire
+			remove_ideas = Industry_Fixed
+			add_ideas = Industry_Up_And_Running
+			}
+		}
+		####Millitary
+		focus = {
+		id = Attention_To_Armed_Forces
+		icon = GFX_ENG_General_Staff
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_United_Empire}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			country_event = britain.510
+			}
+		}
+		
+		focus = {
+		id = Distribute_American_Movies
+		icon = GFX_Generic_British_Army
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Attention_To_Armed_Forces }
+		
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Rock_Bottom_Morale 
+			add_idea = Morale_On_The_Rise 
+				}
+			}
+		}
+		
+		focus = {
+		id = Improve_Morale_With_Extra_Rations
+		icon = GFX_Generic_British_Army
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 10
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Distribute_American_Movies }
+		
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Morale_On_The_Rise 
+			add_idea = Improved_Morale 
+				}
+			}
+		}
+		
+		focus = {
+		id = Specialised_Armed_Forces
+		icon = GFX_focus_eng_special_air_service
+		relative_position_id = Stick_with_Churchill
+		x = 3
+		y = 8
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Attention_To_Armed_Forces}
+		mutually_exclusive = { focus = An_Army_Marches_Together}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			}
+		}
+		
+		focus = {
+		id = Intergrate_Commandos_And_SAS
+		icon = GFX_Generic_ENG_SAS
+		relative_position_id = Stick_with_Churchill
+		x = 3
+		y = 10
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Specialised_Armed_Forces focus = Expand_Army_Command}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_ideas = Special_Forces_Detatchments
+					division_template = {
+					name = "British Commandos"
+					division_names_group = ENG_INF_01
+						regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						marine = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					331 = {
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					}
+			}
+		}
+		
+		focus = {
+		id = Loosen_Command_Structures
+		icon = GFX_Generic_British_Officers
+		relative_position_id = Stick_with_Churchill
+		x = 0
+		y = 11
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Improve_Morale_With_Extra_Rations }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			remove_ideas = Improved_Morale 
+				}
+		}
+		
+		focus = {
+		id = An_Army_Marches_Together
+		icon = GFX_Imperial_Army
+		relative_position_id = Stick_with_Churchill
+		x = -2
+		y = 8
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Attention_To_Armed_Forces}
+		mutually_exclusive = { focus = Specialised_Armed_Forces }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	swap_ideas = { 
+			remove_idea = Rock_Bottom_Morale 
+			add_idea = Morale_On_The_Rise 
+				}
+			}
+		}
+		
+		focus = {
+		id = A_Rifle_In_Every_Hand
+		icon = GFX_Focus_Rifle_Bullets
+		relative_position_id = Stick_with_Churchill
+		x = -2
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = An_Army_Marches_Together}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = The_Basics_Arms_Workshops
+			}
+		}
+		
+		focus = {
+		id = A_Lion_In_Every_Soldier
+		icon = GFX_ENG_Pursue_Further_Centralization
+		relative_position_id = Stick_with_Churchill
+		x = -2
+		y = 12
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Loosen_Command_Structures}
+		prerequisite = {focus = A_Rifle_In_Every_Hand}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = All_Soliders_A_Lion 
+			}
+		}
+		
+		
+		##### Overlord #####
+		
+		
+		focus = {
+		id = Preparing_For_The_Final_Hurdle
+		icon = GFX_focus_generic_national_security
+		relative_position_id = Loosen_Command_Structures
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Loosen_Command_Structures focus = Puchase_Additional_Ships}
+		mutually_exclusive = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = Preparing_For_The_Final_Hurdle 
+			331 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					province = 12505
+					instant_build = yes
+				}
+			}
+			}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+			}
+		}
+		
+		focus = {
+		id = Gathering_Additional_Ships
+		icon = GFX_ENG_Imperial_Arsenal
+		relative_position_id = Preparing_For_The_Final_Hurdle
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Preparing_For_The_Final_Hurdle}
+
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	custom_effect_tooltip = ENG_New_Ships_tt
+	hidden_effect = {
+	ENG = {
+	create_equipment_variant = {
+		name = "Converted_Fishing_Tawler"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Carrier_Crusie_Liner"
+		type = ship_hull_carrier_conversion_ca
+		name_group = ENG_CVL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Cruise_Liner"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_depth_charge_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cruise_Liner_Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_carrier_conversion_ca
+			equipment_variant = "Converted_Carrier_Crusie_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+					}
+				}
+			}
+		}
+	}
+		focus = {
+		id = Gathering_Additional_Supplies
+		icon = GFX_SOV_production_targets
+		relative_position_id = Preparing_For_The_Final_Hurdle
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Preparing_For_The_Final_Hurdle}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 2500
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+			}
+				}
+		}
+		focus = {
+		id = Request_Additional_Units_From_Allies
+		icon = GFX_CAN_lets_go_canada
+		relative_position_id = Preparing_For_The_Final_Hurdle
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Preparing_For_The_Final_Hurdle}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+				USA = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				CAN = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				SAF = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				RAJ = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				BRA = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				MEX = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+				AST = {add_timed_idea = { idea = Contributing_Divisions_To_British_Operation_Overlord days = 70 }
+				}
+	division_template = {
+					name = "Allied supporting division"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+					464 = {
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					}
+					331 = {
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = ENG }
+					}
+				}
+			}
+		}
+		focus = {
+		id = Commence_Operation_Overlord
+		icon = GFX_CAN_home_isles
+		relative_position_id = Preparing_For_The_Final_Hurdle
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Request_Additional_Units_From_Allies focus = Gathering_Additional_Ships focus = Gathering_Additional_Supplies} 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+				}
+		}
+		
+		
+		
+		
+		###Coalition path ###
+		
+		
+		
+		focus = {
+		id = Form_A_Coalition
+		icon = GFX_ENG_1937_National_Unity
+		relative_position_id = ENG_Exiled
+		x = -6
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Path}
+		mutually_exclusive = { 
+		focus = Stick_with_Churchill 
+		focus = Millitary_Takes_Charge 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+		id = Leftist_Manifesto
+		icon = GFX_goal_yrk_union
+		relative_position_id = Form_A_Coalition
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Form_A_Coalition}
+		mutually_exclusive = { 
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Fractured_Empire 
+			add_idea = Empire_Of_Equality 
+				}
+			}
+		}
+		
+		focus = {
+		id = Ensuring_Food_Supply
+		icon = GFX_goal_bread_and_peace
+		relative_position_id = Leftist_Manifesto
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Leftist_Manifesto}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Rock_Bottom_Morale 
+			add_idea = Morale_On_The_Rise 
+				}
+				add_stability = 0.2
+				add_war_support = 0.2
+			}
+		}
+		focus = {
+		id = Pass_Left_Wing_Economic_Policies
+		icon = GFX_goal_socialist_industry
+		relative_position_id = Leftist_Manifesto
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Bring_Back_Government_Economic_Institutions}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Industry_In_Development 
+			add_idea = Industry_Fixed
+			}
+			add_political_power = 50
+			}
+		}
+		
+		focus = {
+		id = Bring_Back_Government_Economic_Institutions 
+		icon = GFX_GBR_exchequer
+		relative_position_id = Form_A_Coalition
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Form_A_Coalition}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Industry_In_Ruins 
+			add_idea = Industry_In_Development
+				}
+			}
+		}
+		focus = {
+		id = Solidify_Labour_Control 
+		icon = GFX_GBR_labour_party
+		relative_position_id = Bring_Back_Government_Economic_Institutions
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Leftist_Manifesto}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+				add_stability = 0.1
+				add_war_support = 0.1
+				add_political_power = 150
+			}
+		}
+		
+		focus = {
+		id = Contact_Resistance
+		icon = GFX_goal_ENG_the_black_market
+		relative_position_id = Solidify_Labour_Control
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Solidify_Labour_Control}
+		prerequisite = {focus = Pass_Left_Wing_Economic_Policies}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Morale_On_The_Rise 
+			add_idea = Improved_Morale
+				}
+			}
+		}
+		
+		focus = {
+		id = The_Journalist
+		icon = GFX_Eric_Blair
+		relative_position_id = Contact_Resistance
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Contact_Resistance}
+		mutually_exclusive = { 
+		}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = Covert_Resistance_Networks
+			}
+		}
+		
+		focus = {
+		id = The_Captain
+		icon = GFX_Bill_Alexander
+		relative_position_id = Contact_Resistance
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Contact_Resistance}
+		mutually_exclusive = { 
+		}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			remove_ideas = Improved_Morale 
+			}
+		}
+		
+		focus = {
+		id = The_Mathematician 
+		icon = GFX_Alan_turing
+		relative_position_id = Contact_Resistance
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Contact_Resistance focus = Stick_with_Churchill}
+		mutually_exclusive = { 
+		}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	custom_effect_tooltip = ENG_Alan_Turing_tt
+	
+			hidden_effect = {
+					123 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					338 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					127 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					126 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					125 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					129 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					128 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					122 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					132 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					130 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					131 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					121 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					133 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					136 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					120 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					119 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					113 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					135 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					134 = {
+					add_dynamic_modifier = { modifier = Alan_Turing_Intel }
+					}
+					add_operation_token = {
+					tag = BNP
+					token = token_army
+					}
+					add_decryption = {
+					target = BNP
+					amount = 1000
+					}
+					add_intel = {
+					target = BNP
+					civilian_intel = 1000
+					army_intel = 1000
+					navy_intel = 1000
+					airforce_intel = 1000
+					}
+					
+				}
+			}
+		}
+		
+		focus = {
+		id = Commence_Resistance_Operations 
+		icon = GFX_Generic_Female_Partisans
+		relative_position_id = The_Captain
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = The_Mathematician}
+		prerequisite = {focus = The_Captain}
+		prerequisite = {focus = The_Journalist}
+		mutually_exclusive = { 
+		}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_Commence_Operations_tt
+			}
+		}
+		
+		focus = {
+		id = Secure_Civillian_Industrial_Sectors
+		icon = GFX_ENG_shadow_scheme
+		relative_position_id = Commence_Resistance_Operations 
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Commence_Resistance_Operations }
+		mutually_exclusive = { 
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	custom_effect_tooltip = ENG_Commence_Operations_Civs_tt
+			remove_ideas = Industry_Fixed
+			}
+		}
+		
+		focus = {
+		id = Secure_Arms_Industrial_Sectors
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = Commence_Resistance_Operations 
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Commence_Resistance_Operations }
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	custom_effect_tooltip = ENG_Commence_Operations_Mils_tt
+			add_ideas = The_Basics_Arms_Workshops
+			}
+		}
+		
+		focus = {
+		id = Start_Supplying_Resistance
+		icon = GFX_NOR_purchase_guns
+		relative_position_id = Commence_Resistance_Operations 
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Secure_Arms_Industrial_Sectors }
+		prerequisite = {focus = Secure_Civillian_Industrial_Sectors }
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 2500
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+			}
+			}
+		}
+		
+		focus = {
+		id = Supply_IRA
+		icon = GFX_goal_ira_guns
+		relative_position_id = Start_Supplying_Resistance 
+		x = -4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Start_Supplying_Resistance }
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_IRA_tt
+			}
+		}
+		focus = {
+		id = Supply_The_Scottish
+		icon = GFX_goal_glasgow_guns
+		relative_position_id = Start_Supplying_Resistance 
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Start_Supplying_Resistance }
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_Scotland_tt
+			}
+		}
+		focus = {
+		id = Supply_Northern_England
+		icon = GFX_goal_liverpool_guns
+		relative_position_id = Start_Supplying_Resistance 
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Start_Supplying_Resistance }
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_North_England_tt
+			}
+		}
+		focus = {
+		id = Supply_Wales_England
+		icon = GFX_goal_socialist_guns
+		relative_position_id = Start_Supplying_Resistance 
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Start_Supplying_Resistance }
+		mutually_exclusive = { 
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_Wales_England_tt
+			}
+		}
+		focus = {
+		id = Remember_Remember_The_5th_Of_November
+		icon = GFX_goal_socialist_revolution
+		relative_position_id = Start_Supplying_Resistance
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Supply_Wales_England focus = Supply_The_Scottish focus = Supply_IRA}
+		prerequisite = {focus = Supply_Northern_England }
+		mutually_exclusive = { 
+		}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			custom_effect_tooltip = ENG_Uprising_tt
+			}
+		}
+		
+		
+		
+		
+		
+		### Millitary take over ####
+		
+		
+		
+		focus = {
+		id = Millitary_Takes_Charge
+		icon = GFX_goal_Millitary_In_Charge
+		relative_position_id = ENG_Exiled
+		x = 6
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Path}
+		mutually_exclusive = { 
+		focus = Stick_with_Churchill 
+		focus = Form_A_Coalition
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+		id = Assert_Control
+		icon = GFX_PB_ENG_Haig_Son
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Millitary_Takes_Charge}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Industry_In_Ruins 
+			add_idea = Industry_Serves_The_Army
+				}
+			}
+		}
+		
+		focus = {
+		id = Army_With_A_State
+		icon = GFX_ENG_royal_army
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Assert_Control}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Rock_Bottom_Morale 
+			add_idea = Morale_On_The_Rise
+				}
+			swap_ideas = { 
+			remove_idea = Fractured_Empire 
+			add_idea = Army_With_A_State
+				}
+				add_manpower = 120000
+			}
+		}
+		focus = {
+		id = Sieze_Control_Of_Colonial_Industry
+		icon = GFX_goal_total_war
+		relative_position_id = Millitary_Takes_Charge
+		x = 2
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_With_A_State}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 12
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 16
+				}
+			}
+		}
+		focus = {
+		id = Regroup_Scattered_Forces
+		icon = GFX_Generic_British_Soldiers02
+		relative_position_id = Millitary_Takes_Charge
+		x = -2
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_With_A_State}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Morale_On_The_Rise 
+			add_idea = Improved_Morale
+}			
+			division_template = {
+					name = "Reformed British Division"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					331 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+					464 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+					465 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+				}
+			}
+		focus = {
+		id = Scavange_Equipment
+		icon = GFX_NOR_purchase_guns
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_With_A_State}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 2500
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+			}
+			}
+		}
+		focus = {
+		id = Army_Reformed
+		icon = GFX_GBR_royal_army
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 6
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Regroup_Scattered_Forces}
+		prerequisite = {focus = Scavange_Equipment}
+		prerequisite = {focus = Sieze_Control_Of_Colonial_Industry}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			remove_ideas = Improved_Morale
+			}
+		}
+		
+		focus = {
+		id = Divert_Supplies_To_Army
+		icon = GFX_FIN_shipyard
+		relative_position_id = Millitary_Takes_Charge
+		x = -2
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_Reformed}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = Diverted_Supplies
+			}
+		}
+		
+		focus = {
+		id = Buy_Equipment_Off_Allies
+		icon = GFX_ENG_Expand_British_Economic_Sphere
+		relative_position_id = Millitary_Takes_Charge
+		x = 2
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_Reformed}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			USA = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				CAN = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				SAF = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				RAJ = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				BRA = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				MEX = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				AST = {add_timed_idea = { idea = Equipment_Sold days = 120 }
+				}
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 2500
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 25
+			}
+			}
+		}
+		
+		focus = {
+		id = Expand_Arm_Workshops
+		icon = GFX_generic_arms_factory
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Army_Reformed}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = The_Basics_Arms_Workshops
+			}
+		}
+		
+		focus = {
+		id = Expand_Army_Command
+		icon = GFX_Imperial_Army
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Expand_Arm_Workshops focus = Buy_Equipment_Off_Allies focus = Divert_Supplies_To_Army}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_ideas = Expanded_Army_Command
+			}
+		}
+		
+		focus = {
+		id = Puchase_Additional_Ships
+		icon = GFX_convoy_protection
+		relative_position_id = Millitary_Takes_Charge
+		x = 0
+		y = 11
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Expand_Army_Command}
+		mutually_exclusive = { 
+		}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	custom_effect_tooltip = ENG_New_Ships_tt
+	add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			hidden_effect = {
+			ENG = {
+	create_equipment_variant = {
+		name = "Converted_Fishing_Tawler"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Carrier_Crusie_Liner"
+		type = ship_hull_carrier_conversion_ca
+		name_group = ENG_CVL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Cruise_Liner"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_depth_charge_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cruise_Liner_Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+						}
+					}
+				}
+			}
+		}
+		
+		######Liberation############
+		focus = {
+		id = Liberation
+		icon = GFX_Generic_British_Isles
+		x = 35
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+			BNP = {
+			has_capitulated = yes
+			}
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	set_capital =  { state = 126 }
+	ENG= {
+		annex_country = {
+		target = BNP
+		transfer_troops = yes
+				}
+			}
+			remove_ideas = Covert_Resistance_Networks
+			remove_ideas = Eng_In_Exile
+			
+		}
+	}
+		
+		focus = {
+		id = Round_Up_Traitors
+		icon = GFX_generic_police_state
+		relative_position_id = Liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Liberation }
+		mutually_exclusive = { }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+		#	BNP = {
+		#	has_capitulated = yes
+		#	}
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Making_Arrests
+		}
+	}
+	
+	focus = {
+		id = Traitor_King
+		icon = GFX_ENG_Personality_Cult
+		relative_position_id = Round_Up_Traitors
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Round_Up_Traitors}
+		mutually_exclusive = { }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+		#	BNP = {
+		#	has_capitulated = yes
+		#	}
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		country_event = britain.512
+		}
+	}		
+	
+	
+	
+	#### Union of Britain
+	focus = {
+	id = A_New_Union
+		icon = GFX_ENG_pluralistic_nationalism
+		relative_position_id = Traitor_King
+		x = -4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Traitor_King}
+		mutually_exclusive = {focus = A_New_United_Kingdom focus = A_New_Army }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+		#	BNP = {
+		#	has_capitulated = yes
+		#	}
+			ENG = {
+			has_completed_focus = Form_A_Coalition
+			}
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		remove_ideas = ENG_george_vi
+		#remove_ideas = Covert_Resistance_Networks
+		}
+	}
+
+	focus = {
+	id = A_New_Leader_Of_The_Union
+		icon = GFX_ENG_Prime_Minister_Blair
+		relative_position_id = A_New_Union
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Union}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		retire_country_leader = yes
+			create_country_leader = {
+			name = "Eric Blair"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/ENG/Portrait_England_Eric_Blair.dds"
+			expire = "1965.1.1"
+			ideology = anti_revisionism
+			set_politics = {
+				ruling_party = communism
+				}
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.40
+			}
+		
+		}
+	}
+	
+	
+	focus = {
+	id = Reform_Peoples_Army
+		icon = GFX_generic_red_guard
+		relative_position_id = A_New_Leader_Of_The_Union
+		x = -4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Leader_Of_The_Union}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+		
+		}
+	}
+	
+	focus = {
+	id = Union_Of_Britain_Navy
+		icon = GFX_ENG_navy
+		relative_position_id = Reform_Peoples_Army
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Reform_Peoples_Army}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Union_Of_Britain_Naval
+		
+		}
+	}
+	focus = {
+	id = Union_Of_Britain_Airforce
+		icon = GFX_ENG_airforce
+		relative_position_id = Reform_Peoples_Army
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Reform_Peoples_Army}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = ENG_british_fighter_discount2
+		}
+	}
+	focus = {
+	id = Union_Of_Britain_Army
+		icon = GFX_ENG_army
+		relative_position_id = Reform_Peoples_Army
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Reform_Peoples_Army}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = ENG_expand_army
+		
+		}
+	}
+	
+	focus = {
+	id = Union_Of_Britain_High_Command
+		icon = GFX_ENG_officer_corps
+		relative_position_id = Union_Of_Britain_Army
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_Army}
+		prerequisite = {focus = Union_Of_Britain_Airforce focus = Union_Of_Britain_Navy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Union_Of_Britain_High_Command
+		
+		}
+	}
+	
+	focus = {
+	id = Union_Of_Britain_Marines
+		icon = GFX_UOB_red
+		relative_position_id = Union_Of_Britain_High_Command
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_High_Command}
+		prerequisite = {focus = Union_Of_Britain_Navy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Union_Of_Britain_Special_Forces
+		division_template = {
+					name = "British Commandos"
+					division_names_group = ENG_MAR_01
+						regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						marine = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = ENG }
+					}
+		}
+	}
+	
+	focus = {
+	id = Union_Of_Britain_Red_Devils
+		icon = GFX_goal_ENG_miltary_first_state
+		relative_position_id = Union_Of_Britain_High_Command
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_High_Command}
+		prerequisite = {focus = Union_Of_Britain_Airforce}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Red_Devils
+		division_template = {
+		name = "Red Devils" 
+		division_names_group = ENG_PAR_02
+	
+		regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+		pack_artillery_brigade = { x = 3 y = 3 }
+		
+		pack_artillery_brigade = { x = 4 y = 0 }
+		pack_artillery_brigade = { x = 4 y = 1 }
+		pack_artillery_brigade = { x = 4 y = 2 }
+		pack_artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		assault_engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
+		hq_company = { x = 1 y = 0 }
+				}
+			}
+			126 = {                                                                                                                
+					create_unit = { division = "division_template = \"Red Devils\" start_experience_factor = 0.7" owner = ENG }
+					create_unit = { division = "division_template = \"Red Devils\" start_experience_factor = 0.7" owner = ENG }
+					create_unit = { division = "division_template = \"Red Devils\" start_experience_factor = 0.7" owner = ENG }
+					create_unit = { division = "division_template = \"Red Devils\" start_experience_factor = 0.7" owner = ENG }
+				}
+		}
+	}
+	
+	focus = {
+	id = Union_Of_Britain_Armored_Investment
+		icon = GFX_ENG_tank
+		relative_position_id = Union_Of_Britain_High_Command
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_High_Command}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		ENG = {
+		set_technology = {
+		eng_medium_tank_4 = 1
+				}
+		create_equipment_variant = {
+		name = "Tank, Crusader, Mk I"
+		type = eng_medium_tank_chassis_a15
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_gun_2
+		turret_type_slot = tank_medium_turret_2
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_2
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_2.dds"
+		}
+			}
+		}
+	}
+	
+		focus = {
+		id = Union_Of_Britain_Armored_Divisions
+		icon = GFX_ENG_britannias_tanks
+		relative_position_id = Union_Of_Britain_Armored_Investment
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_Armored_Investment}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		division_template = {
+					name = "Union Of Britain Tank Division"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"Union Of Britain Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Union Of Britain Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Union Of Britain Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Union Of Britain Tank Division\" start_experience_factor = 0.5" owner = ENG }
+						}
+		
+		}
+	}
+	
+	focus = {
+	id = Peoples_Economy
+		icon = GFX_ENG_Socialist_Revolution
+		relative_position_id = A_New_Leader_Of_The_Union
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Leader_Of_The_Union}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Ensured_Workers_Rights
+		
+		}
+	}
+	focus = {
+	id = Centralized_Civilian_Economy
+		icon = GFX_ENG_TUC
+		relative_position_id = Peoples_Economy
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Peoples_Economy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Industrial_Central_Planning_1
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+	id = Centralized_War_Economy
+		icon = GFX_goal_red_star_gold_wreath
+		relative_position_id = Centralized_Civilian_Economy
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Centralized_Civilian_Economy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = Industrial_Central_Planning_1
+		add_idea = Industrial_Central_Planning_2
+		}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	
+	focus = {
+	id = Union_Of_Britain_Is_Born
+		icon = GFX_generic_revolutionary_government
+		relative_position_id = Centralized_War_Economy
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		#prerequisite = {focus = Union_Of_Britain_High_Command}
+		prerequisite = {focus = Centralized_War_Economy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		remove_ideas = Making_Arrests
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+	id = Prepare_European_Workers_Liberation
+		icon = GFX_dday
+		relative_position_id = Union_Of_Britain_Is_Born
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_Is_Born}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_ideas = Preparing_For_The_Final_Hurdle
+		}
+	}
+	focus = {
+	id = Workers_Of_The_World_Break_The_Chains_Of_Facism
+		icon = GFX_FRA_french_revanchism
+		relative_position_id = Prepare_European_Workers_Liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Prepare_European_Workers_Liberation}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_ideas = Breaking_The_Chains_Of_Facism
+		}
+	}
+	
+	focus = {
+	id = Support_Soviet_War_Effort
+		icon = GFX_SOV_production_targets
+		relative_position_id = Union_Of_Britain_Is_Born
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Union_Of_Britain_Is_Born}
+		
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		SOV = { add_offsite_building = { type = arms_factory level = 15 } }
+			SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
+		
+		}
+	}
+	
+	focus = {
+	id = Additional_Support_Soviet_War_Effort
+		icon = GFX_SOV_production_targets
+		relative_position_id = Support_Soviet_War_Effort
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Support_Soviet_War_Effort}
+		
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			SOV = { add_offsite_building = { type = arms_factory level = 15 } }
+			SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
+		
+		}
+	}
+	
+	#### Maintaining Democracy and United Kingdom
+	focus = {
+	id = A_New_United_Kingdom
+		icon = GFX_Focus_ENG_New_Nationalism
+		relative_position_id = Traitor_King
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Traitor_King}
+		mutually_exclusive = {focus = A_New_Union focus = A_New_Army }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+			BNP = {
+			has_capitulated = yes
+			}
+			ENG = {
+			has_completed_focus = Stick_with_Churchill
+			}
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+		
+		}
+	}	
+	focus = {
+	id = Restore_Old_Government_Structures
+		icon = GFX_Focus_ENG_London_Calling
+		relative_position_id = A_New_United_Kingdom
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_United_Kingdom}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Restored_Institutions
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+	id = Start_To_Repay_Loans
+		icon = GFX_goal_economic_friendship
+		relative_position_id = Restore_Old_Government_Structures
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Restore_Old_Government_Structures}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_timed_idea = { idea = Repaying_Debt  days = 120 }
+		
+		}
+	}
+
+	focus = {
+	id = New_Economic_Plan
+		icon = GFX_PB_ENG_Mosleyplan
+		relative_position_id = Start_To_Repay_Loans
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Start_To_Repay_Loans}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = Industry_Up_And_Running
+			add_idea = Industry_Up_And_Running_2 
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			}
+		
+		}
+	focus = {
+	id = New_War_Economic_Plan
+		icon = GFX_Focus_Study_Submachineguns
+		relative_position_id = New_Economic_Plan
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = New_Economic_Plan}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		swap_ideas = { 
+			remove_idea = Industry_Up_And_Running_2
+			add_idea = Industry_Up_And_Running_3 
+				}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+	id = Deliever_On_Colonial_Promises
+		icon = GFX_Generic_British_Jungle
+		relative_position_id = Restore_Old_Government_Structures
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Restore_Old_Government_Structures}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		every_controlled_state = {
+		limit = {
+					is_core_of = BAS
+				}
+				add_dynamic_modifier = { modifier = autonomous_state }
+				#add_dynamic_modifier = { modifier = semi_autonomous_state }
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = GHA
+				}
+				add_dynamic_modifier = { modifier = autonomous_state }
+				#add_dynamic_modifier = { modifier = semi_autonomous_state }
+			}
+		
+		}
+	}
+
+	focus = {
+	id = Colonial_Intergration
+		icon = GFX_ENG_African_Settlement
+		relative_position_id = Deliever_On_Colonial_Promises
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Deliever_On_Colonial_Promises}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		every_controlled_state = {
+		limit = {
+					is_core_of = BAS
+				}
+				remove_dynamic_modifier = { modifier = autonomous_state }
+				add_dynamic_modifier = { modifier = semi_autonomous_state }
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = GHA
+				}
+				remove_dynamic_modifier = { modifier = autonomous_state }
+				add_dynamic_modifier = { modifier = semi_autonomous_state }
+			}
+		
+		}
+	}
+
+	focus = {
+	id = Form_Colonial_Peace_Keepeing_Force
+		icon = GFX_ENG_Neo_Victorianism
+		relative_position_id = Colonial_Intergration
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Colonial_Intergration}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		division_template = {
+					name = "Colonial Regiment"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					126 = {
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					}
+					128 = {
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					}
+					123 = {
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Colonial Regiment\" start_experience_factor = 0.5" owner = ENG }
+					}
+		}
+	}
+
+	focus = {
+	id = United_Kingdom_And_The_Empire
+		icon = GFX_Focus_ENG_New_Commonwealths
+		relative_position_id = Form_Colonial_Peace_Keepeing_Force
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = New_War_Economic_Plan}
+		prerequisite = {focus = Form_Colonial_Peace_Keepeing_Force}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		remove_ideas = Making_Arrests
+		every_controlled_state = {
+		limit = {
+					is_core_of = BAS
+				}
+				remove_dynamic_modifier = { modifier = semi_autonomous_state }
+
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = GHA
+				}
+				remove_dynamic_modifier = { modifier = semi_autonomous_state }
+
+			}
+		}
+	}
+
+	focus = {
+	id = Prepare_Operation_Neptune
+		icon = GFX_generic_army_high_command
+		relative_position_id = United_Kingdom_And_The_Empire
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = United_Kingdom_And_The_Empire}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 9000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 600
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+			}
+		}
+	}
+	focus = {
+	id = Beaches_Of_Europe
+		icon = GFX_ENG_lessons_of_the_weltkrieg
+		relative_position_id = Prepare_Operation_Neptune
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		
+		prerequisite = {focus = Prepare_Operation_Neptune}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_ideas = Breaking_The_Chains_Of_Facism
+		
+		}
+	}
+
+	focus = {
+	id = Soviet_Support
+		icon = GFX_SOV_production_targets
+		relative_position_id = United_Kingdom_And_The_Empire
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = United_Kingdom_And_The_Empire}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			SOV = { add_offsite_building = { type = arms_factory level = 15 } }
+			SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
+		
+		
+		}
+	}
+	focus = {
+	id = Allied_Support
+		icon = GFX_goal_MAF_Support_Anglos
+		relative_position_id = United_Kingdom_And_The_Empire
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = United_Kingdom_And_The_Empire}
+		mutually_exclusive = {}
+		available = {
+		ENG = {
+		has_political_power > 250
+			}
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			CAN = { add_offsite_building = { type = arms_factory level = 3 } }
+			CAN = { add_offsite_building = { type = industrial_complex level = 3 } }
+			AST = { add_offsite_building = { type = arms_factory level = 3 } }
+			AST = { add_offsite_building = { type = industrial_complex level = 3 } }
+			RAJ = { add_offsite_building = { type = arms_factory level = 3 } }
+			RAJ = { add_offsite_building = { type = industrial_complex level = 3 } }
+			SAF = { add_offsite_building = { type = arms_factory level = 3 } }
+			SAF = { add_offsite_building = { type = industrial_complex level = 3 } }
+			BRA = { add_offsite_building = { type = arms_factory level = 3 } }
+			BRA = { add_offsite_building = { type = industrial_complex level = 3 } }
+			MEX = { add_offsite_building = { type = arms_factory level = 3 } }
+			MEX = { add_offsite_building = { type = industrial_complex level = 3 } }
+			USA = { add_offsite_building = { type = arms_factory level = 3 } }
+			USA = { add_offsite_building = { type = industrial_complex level = 3 } }
+			add_political_power = -250			
+		}
+	}
+
+	focus = {
+	id = Reform_The_Navy
+		icon = GFX_BEL_Battleship_Investements
+		relative_position_id = Restore_Old_Government_Structures
+		x = 2
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Restore_Old_Government_Structures}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+			add_ideas = ENG_anti_submarine_training_school
+			add_ideas = ENG_secure_the_imperial_shipping_routes
+			add_ideas = ENG_expand_the_repair_yards
+			add_ideas = ENG_merchant_navy
+		
+		}
+	}
+	focus = {
+	id = Reform_The_Airforce
+		icon = GFX_GBR_royal_air_force
+		relative_position_id = Restore_Old_Government_Structures
+		x = -2
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Restore_Old_Government_Structures}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = ENG_british_fighter_discount2
+		
+		}
+	}
+	#####Form the Millitary Republic
+	
+	focus = {
+	id = A_New_Army
+		icon = GFX_Focus_ENG_Fuller_Government
+		relative_position_id = Traitor_King
+		x = 4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Traitor_King}
+		mutually_exclusive = {focus = A_New_United_Kingdom focus = A_New_Union }
+		available = {
+			126 = {
+				is_controlled_by = ENG
+			}
+			BNP = {
+			has_capitulated = yes
+			}
+			ENG = {
+			has_completed_focus = Millitary_Takes_Charge
+			}
+		}
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+		}
+	}	
+	focus = {
+		id = A_New_Government_Structure
+		icon = GFX_ENG_Strengthen_The_National_Government
+		relative_position_id = A_New_Army
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Army}
+		mutually_exclusive = {}
+		available = {
+			ENG = {
+			has_completed_focus = Millitary_Takes_Charge
+			}
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		every_controlled_state = {
+				limit = {
+				NOT = {
+					is_core_of = ENG
+					}
+				}
+				add_dynamic_modifier = { modifier = semi_autonomous_state }
+				}
+		}
+	}
+	focus = {
+		id = Question_Of_Monarchy
+		icon = GFX_ENG_Emperor_Protects
+		relative_position_id = A_New_Government_Structure
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Government_Structure}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		remove_ideas = ENG_george_vi
+		add_stability = -0.25
+			}
+		}
+	focus = {
+	id = Restore_The_Lower_House
+		icon = GFX_PB_ENG_the_Hammers
+		relative_position_id = A_New_Government_Structure
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = A_New_Government_Structure}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Restored_Institutions
+		}
+	}
+	focus = {
+	id = Lord_Protector
+		icon = GFX_ENG_Cromwellian_Legacy
+		relative_position_id = Restore_The_Lower_House
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Restore_The_Lower_House}
+		prerequisite = {focus = Question_Of_Monarchy}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_country_leader_trait = Lord_Protector
+		}
+	}
+	focus = {
+	id = Republican_Ideals
+		icon = GFX_ENG_Republican_Victory
+		relative_position_id = Lord_Protector
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Lord_Protector}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_stability = 0.3
+		add_political_power = 120
+		remove_ideas = Making_Arrests
+		}
+	}
+	focus = {
+	id = Economy_Of_War
+		icon = GFX_FIN_manner
+		relative_position_id = Lord_Protector
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Lord_Protector}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	swap_ideas = {
+		remove_idea = Industry_Serves_The_Army
+		add_idea = War_Time_Economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+						
+					}
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+				}
+				
+		}
+	}
+
+	focus = {
+	id = Centralized_Control
+		icon = GFX_goal_burning_parliament
+		relative_position_id = Economy_Of_War
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Economy_Of_War}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	add_ideas =	Industrial_Central_Planning_2
+	every_controlled_state = {
+				limit = {
+				NOT = {
+					is_core_of = ENG
+					}
+				}
+				remove_dynamic_modifier = { modifier = semi_autonomous_state }
+				add_dynamic_modifier = { modifier = autonomous_state }
+				}
+			}
+		}
+
+
+	focus = {
+	id = Reestablish_The_Airforce
+		icon = GFX_focus_generic_copy_plane_designs
+		relative_position_id = Centralized_Control
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Centralized_Control}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = ENG_british_fighter_discount2
+		}
+	}
+	focus = {
+	id = Reestablish_Round_Heads
+		icon = GFX_Focus_Dvend_Evropa
+		relative_position_id = Centralized_Control
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Centralized_Control}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_ideas = Round_Heads
+		126 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+					128 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+					123 = {
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Reformed British Division\" start_experience_factor = 0.5" owner = ENG }
+					}
+		}
+	}
+	focus = {
+	id = Reestablish_Cavalry_Scouts
+		icon = GFX_ENG_The_Future_Of_Warfare
+		relative_position_id = Centralized_Control
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Centralized_Control}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		ENG = {
+		set_technology = {
+		eng_medium_tank_5 = 1
+		mechanised_infantry = 1
+				}
+		create_equipment_variant = {
+		name = "Tank, Crusader, Mk I"
+		type = eng_medium_tank_chassis_a27
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_gun_3
+		turret_type_slot = tank_medium_turret_3
+		suspension_type_slot = tank_christie_suspension
+		special_type_slot_1 = tank_radio_3
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		special_type_slot_4 = smoke_launchers
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_2.dds"
+				}
+			}
+			division_template = {
+					name = "Cavalry Scouts"
+					division_names_group = ENG_ARM_02
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					126 = {                                                                                                                
+					create_unit = { division = "division_template = \"Cavalry Scouts\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Cavalry Scouts\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Cavalry Scouts\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { division = "division_template = \"Cavalry Scouts\" start_experience_factor = 0.5" owner = ENG }
+						}
+		}
+	}
+	focus = {
+	id = Europe_Awaits
+		icon = GFX_goal_ENG_home_defense
+		relative_position_id = Reestablish_Round_Heads
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Reestablish_Round_Heads}
+		prerequisite = {focus = Reestablish_Cavalry_Scouts focus = Reestablish_The_Airforce}
+		mutually_exclusive = {}
+		available = {
+		}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 9000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 600
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+				}
+			}
+		}
+	}

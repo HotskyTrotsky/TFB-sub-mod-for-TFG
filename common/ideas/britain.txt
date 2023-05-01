@@ -2155,6 +2155,760 @@ ideas = {
 				}
 			}
 		}
+		### British Exiled ideas ####
+		Eng_In_Exile = {
+		name = Eng_In_Exile
+		picture = idea_ENG_memories_dunkirk
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.3
+			}
+		}
+		
+		Rock_Bottom_Morale = {
+		name = Rock_Bottom_Morale
+		picture = idea_hol_caved_to_the_british
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			army_org_factor = -0.3
+		army_morale_factor = -0.3
+		breakthrough_factor = -0.3
+			}
+		}
+		
+		Morale_On_The_Rise = {
+		name = Morale_On_The_Rise
+		picture = idea_hol_caved_to_the_british
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			army_org_factor = -0.2
+		army_morale_factor = -0.2
+		breakthrough_factor = -0.2
+			}
+		}
+		
+		Improved_Morale = {
+		name = Improved_Morale
+		picture = idea_hol_caved_to_the_british
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			army_org_factor = -0.1
+		army_morale_factor = -0.1
+		breakthrough_factor = -0.1
+			}
+		}
+		
+		Diverted_Supplies = {
+		name = Diverted_Supplies
+		picture = ENG_PB_Rationing
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			out_of_supply_factor = -0.20
+				supply_node_range = 0.15
+			}
+		}
+		
+		All_Soliders_A_Lion = {
+		name = All_Soliders_A_Lion
+		picture = idea_ENG_awoken
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+			breakthrough_factor = 0.1
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
+			
+			}
+		}
+		Expanded_Army_Command = {
+		name = Expanded_Army_Command
+		picture = ENG_Waning_Military
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			max_planning = 0.05
+			planning_speed = 0.1
+			max_command_power = 25
+			}
+		}
+		Special_Forces_Detatchments = {
+		name = Special_forces_Detatchments
+		picture = idea_eng_special_air_service
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			special_forces_cap = 0.35
+			special_forces_training_time_factor = -0.20
+			special_forces_no_supply_grace = 120
+			special_forces_out_of_supply_factor = -0.1
+			special_forces_attack_factor = 0.15
+			special_forces_defence_factor = 0.15
+			}
+			equipment_bonus = {
+				sf_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					}
+				}
+		}
+		The_Basics_Arms_Workshops = {
+		name = The_Basics_Arms_Workshops
+		picture = ENG_PB_War_Powers_Act
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			equipment_bonus = {
+		infantry_equipment = {
+		build_cost_ic = -0.15 instant = yes
+			}
+		pack_artillery_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		squad_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		radio_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		support_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		artillery_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		rocket_artillery_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			}
+		anti_tank_equipment = {
+		build_cost_ic = -0.10 instant = yes
+			} 
+		anti_air_equipment = {
+		build_cost_ic = -0.10 instant = yes
+							}
+						}
+					}
+					
+		Preparing_For_The_Final_Hurdle = {
+		name = Preparing_For_The_Final_Hurdle
+		picture = idea_eng_preparing_the_second_front
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			naval_invasion_prep_speed = 0.5		
+			naval_invasion_capacity	= 10	
+			naval_invasion_penalty = -0.3
+			}
+		}
+		
+		Contributing_Divisions_To_British_Operation_Overlord = {
+		name = Contributing_Divisions_To_British_Operation_Overlord
+		picture = ENG_PB_New_Rifle
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			industrial_capacity_factory = -0.025
+			civilian_factory_use = 2
+			}
+		}
+		
+		Learn_from_loss = {
+		name = Learn_from_loss
+		picture = idea_cze_planning_bonus
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			experience_gain_air = 0.25
+			experience_gain_army = 0.25
+			experience_gain_navy = 0.25
+			land_doctrine_cost_factor = -0.25
+			air_doctrine_cost_factor = -0.25
+			naval_doctrine_cost_factor = -0.25
+			}
+		}
+		
+		Fractured_Empire = {
+		name = Fractured_Empire
+		picture = idea_ENG_imperial_instability
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			conscription_factor = -0.8
+			non_core_manpower = -0.9
+			}
+		}
+		Disunited_Empire = {
+		name = Disunited_Empire
+		picture = idea_ENG_imperial_instability
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			conscription_factor = -0.4
+			non_core_manpower = -0.45
+			}
+		}
+		Army_With_A_State = {
+		name = Army_With_A_State
+		picture = idea_ENG_recruitment
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			non_core_manpower = -0.9
+			}
+		}
+		Empire_Of_Equality = {
+		name = Empire_Of_Equality
+		picture = generic_syndicalist_militia
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			non_core_manpower = 0.25
+			}
+		}
+		Covert_Resistance_Networks = {
+		name = Covert_Resistance_Networks
+		picture = ENG_PB_National_Security_Act
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			political_power_factor = 0.25
+			}
+		}
+		War_Of_Liberation = {
+		name = War_Of_Liberation
+		picture = generic_phoenix
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.25
+				supply_consumption_factor = -0.85
+				out_of_supply_factor = -0.90
+				pocket_penalty = -0.5
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				dig_in_speed_factor = 0.5
+				no_supply_grace = 0.5
+			}
+		}
+		Early_War_Of_Liberation = {
+		name = Early_War_Of_Liberation
+		picture = generic_phoenix
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.5
+				out_of_supply_factor = -0.45
+				pocket_penalty = -0.25
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				dig_in_speed_factor = 0.25
+				no_supply_grace = 0.25
+			}
+		}
+		Industry_Serves_The_Army = {
+		name = Industry_Serves_The_Army
+		picture = ENG_War_to_End_All_Wars
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_industrial_complex_factor = -0.50
+				production_speed_arms_factory_factor = -0.50
+				production_speed_dockyard_factor = -0.50
+				industrial_capacity_dockyard = -0.60
+			}
+		}
+		Industry_In_Ruins = {
+		name = Industry_In_Ruins
+		picture = idea_POL_disjointed_industry
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.50
+				production_speed_arms_factory_factor = -0.50
+				production_speed_dockyard_factor = -0.50
+				industrial_capacity_factory = -0.60
+				industrial_capacity_dockyard = -0.60
+				production_factory_start_efficiency_factor = -0.60
+			}
+		}
+		Industry_In_Development = {
+		name = Industry_In_Development
+		picture = idea_POL_disjointed_industry
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+				industrial_capacity_factory = -0.40
+				industrial_capacity_dockyard = -0.40
+				production_factory_start_efficiency_factor = -0.40
+			}
+		}
+		
+		Industry_Fixed = {
+		name = Industry_Fixed
+		picture = idea_POL_succesful_four_year_plan
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				production_factory_start_efficiency_factor = -0.20
+			}
+		}
+		Industry_Up_And_Running= {
+		name = Industry_Up_And_Running
+		picture = idea_ENG_natonalisation
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		Industry_Up_And_Running_2= {
+		name = Industry_Up_And_Running_2
+		picture = idea_ENG_natonalisation
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		
+		Industry_Up_And_Running_3= {
+		name = Industry_Up_And_Running_3
+		picture = idea_ENG_natonalisation
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		War_Time_Economy = {
+		name = War_Time_Economy
+		picture = idea_ENG_natonalisation
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		
+		Loans_To_UK = {
+		name = Loans_To_UK
+		picture = ENG_PB_Imperial_Bank
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.01
+				
+			}
+		}
+		Equipment_Sold = {
+		name = Equipment_Sold
+		picture = ENG_PB_War_Powers_Act
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.01
+				industrial_capacity_factory = -0.025
+			}
+		}
+		
+		West_Indies_Sugar_Coffee_Exports = {
+		name = West_Indies_Sugar_Coffee_Exports
+		picture = idea_IEA_Coffee_Business
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		#### Facist UK
+		
+		Deeply_Unpopular_1 = {
+		name = Deeply_Unpopular_1
+		picture = idea_ENG_deeply_unpopular_govt
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		modifier = {
+			surrender_limit = -0.3 
+			}
+		}
+		
+		Deeply_Unpopular_2 = {
+		name = Deeply_Unpopular_2
+		picture = idea_ENG_deeply_unpopular_govt
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		modifier = {
+			surrender_limit = -0.2 
+			}
+		}
+		
+		Deeply_Unpopular_3 = {
+		name = Deeply_Unpopular_3
+		picture = idea_ENG_deeply_unpopular_govt
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		modifier = {
+			surrender_limit = -0.1 
+			}
+		}
+		
+		German_Occupiers = {
+		name = German_Occupiers
+		picture = idea_GER_spying
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		modifier = {
+			 conscription_factor = -0.95
+			}
+		}
+		
+		Defeated_Nation = {
+		name = Defeated_Nation
+		picture = A_Brutal_War
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		modifier = {
+		stability_factor = -0.15
+		war_support_factor = -0.15
+		army_org_factor = -0.3
+		army_morale_factor = -0.3
+		breakthrough_factor = -0.3
+			}
+		}
+		
+		German_Payments_1 = {
+		name = German_Payments_1
+		picture = ENG_WW1_Reparations
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.6
+				mic_to_target_factor = 0.6
+				trade_cost_for_target_factor = -0.5
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+		German_Payments_2 = {
+		name = German_Payments_2
+		picture = ENG_WW1_Reparations
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
+				trade_cost_for_target_factor = -0.75
+				extra_trade_to_target_factor = 0.75
+			}
+		}
+		German_Payments_3 = {
+		name = German_Payments_3
+		picture = ENG_WW1_Reparations
+		allowed = {
+		always = no
+			}
+		removal_cost = -1
+		targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.9
+				mic_to_target_factor = 0.9
+				trade_cost_for_target_factor = -0.9
+				extra_trade_to_target_factor = 1
+			}
+		}
+		ENG_king_edward_Under_Mosley = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.5
+				war_support_factor = 0.05				
+			}
+		}
+		
+		#####Liberation
+		
+		Making_Arrests = {
+		name = Making_Arrests
+		picture = idea_EGL_the_black_book
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				weekly_manpower = -1000
+			}
+		}
+		
+		###Union of britain
+		
+		
+		Ensured_Workers_Rights = {
+		name = Ensured_Workers_Rights
+		picture = ENG_PB_WUP_Workers_Chrater_Expanded
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		Industrial_Central_Planning_1 = {
+		name = Industrial_Central_Planning_1
+		picture = idea_ENG_centralised_planning
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		Industrial_Central_Planning_2 = {
+		name = Industrial_Central_Planning_2
+		picture = idea_ENG_centralised_planning
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		Union_Of_Britain_Naval = {
+		name = Union_Of_Britain_Naval
+		picture = ENG_naval_devotion
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+		modifier = {
+		production_speed_dockyard_factor = 0.15
+		}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.1 instant = yes
+					}
+				}
+
+		}
+		Union_Of_Britain_High_Command = {
+		name = Union_Of_Britain_High_Command
+		picture = advisors_england2
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.10
+				command_power_gain_mult = 0.10
+				land_reinforce_rate = 0.025
+				army_org_regain = 0.025
+			}
+		}
+		Union_Of_Britain_Special_Forces = {
+		name = Union_Of_Britain_Special_Forces
+		picture = idea_eng_special_air_service
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+			special_forces_no_supply_grace = 120
+				special_forces_out_of_supply_factor = -0.1
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+			}
+		}
+		Red_Devils = {
+		name = Red_Devils
+		picture = idea_por_volunteers_in_the_war3
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				paradrop_organization_factor = 0.1
+				paratrooper_aa_defense = 0.1
+			}
+		}
+		
+		Breaking_The_Chains_Of_Facism = {
+		name = Breaking_The_Chains_Of_Facism
+		picture = idea_ENG_BRITISH_RESISTANCE
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+		
+		Round_Heads = {
+		name = Round_Heads
+		picture = ENG_PB_Soldier_Focus
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_regain = 0.025
+				army_morale_factor = 0.025
+				army_infantry_defence_factor = 0.025
+				army_infantry_attack_factor = 0.025
+				breakthrough_factor = 0.025
+			}
+		}
+		
+		Repaying_Debt = {
+		name = Repaying_Debt
+		picture = ENG_PB_Imperial_Bank
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		Restored_Institutions = {
+		name = Restored_Institutions
+		picture = idea_ENG_government
+		allowed = {
+		always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				political_power_factor = 0.15
+				stability_factor = 0.1
+			}
+		}
+		
+		
 	}
 	
 	
