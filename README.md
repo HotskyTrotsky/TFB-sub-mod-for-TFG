@@ -289,3 +289,31 @@ Patch 9
 
 -T34 Engine upgrade is now 1941 tech not 1942
 
+
+Patch 10
+
+-Fixed GFX bug with naval combat not showing aircraft
+
+-The Malay barrier idea is no longer present for New Zealand
+
+-Netherlands, Belgium, Luxembourg automatically joins the allies with Germany does around Maginot
+
+-Barbarossa bonus has been nerfed (Removed all supply bonuses and replaced with free factory repair and factory repair speeds, Attack bonus down from 15% to 10% same for defence, planning speed bonus from 25% to 15%.)
+
+-Finland no longer gets strat bombers from purchase aircraft focus.
+
+-Removed cost increase in amphibious tank module
+
+-Nerfed Japan late and mid war naval invasion bonuses 20 to 10, 10 to 5. Furthermore, they will only last for 1 year after declaring war on USA
+
+-Added new strat bombing techs to help scale better over time, plus increased based cost.
+
+-Soviet politicised military no longer has field marshal promotion cost
+
+-Removed anti air debuff from light SPAA, to compensate medium SPAA get a +20% bonus to AA.
+
+-Military police added to SS and Red Guard divisions.
+
+-Updated mod to incorporate TFB changes that are relevant (i.e a lot of changes around nerfing destroyers were not needed since there was a debuff in patch 9 however some changes such as the bonuses from defense for admirals gives armor bonus instead of visibility. Most of the changes made in recent TFB have been ported over.) 
+This also includes the Romanian focus changes.
+

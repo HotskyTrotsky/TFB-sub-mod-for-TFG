@@ -121,6 +121,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_large_bomb2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_cluster_bombs"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cluster_bombs.dds"
 		legacy_lazy_load = no
@@ -329,6 +334,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_large_bomb_bay"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb_bay_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_large_bomb_bay2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb_bay_2_icon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
