@@ -2340,14 +2340,22 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_tac_1_medium"
-		texturefile = "gfx/interface/technologies/lw_tech_tac_1.dds"
+		texturefile = "gfx/interface/technologies/lw_tech_cas_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_tac_2_medium"
-		texturefile = "gfx/interface/technologies/lw_tech_tac_2.dds"
+		texturefile = "gfx/interface/technologies/lw_tech_tac_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_tac_3_medium"
+		texturefile = "gfx/interface/technologies/lw_tech_tac_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_4_medium"
+		texturefile = "gfx/interface/technologies/lw_tech_big_bomb.dds"
+	}
+	SpriteType = {
+		name = "GFX_tac_5_medium"
 		texturefile = "gfx/interface/technologies/lw_tech_fritz_x.dds"
 	}
 	SpriteType = {
@@ -2358,10 +2366,10 @@ spriteTypes = {
 		name = "GFX_tank_buster_2_medium"
 		texturefile = "gfx/interface/technologies/lw_tech_at_cannon_2.dds"
 	}
-	SpriteType = {
-		name = "GFX_tac_3_medium"
-		texturefile = "gfx/interface/technologies/lw_tech_fritz_x.dds"
-	}
+	#SpriteType = {
+	#	name = "GFX_tac_3_medium"
+	#	texturefile = "gfx/interface/technologies/lw_tech_fritz_x.dds"
+	#}
 	SpriteType = {
 		name = "GFX_fuel_injection_medium"
 		texturefile = "gfx/interface/technologies/lw_tech_fuel_injection.dds"

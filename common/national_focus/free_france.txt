@@ -49,6 +49,10 @@
 				add_legitimacy = 15
 			}
 			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 25
+			}
+			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 20000
 			}
@@ -84,12 +88,11 @@
 					type = medium_tank_chassis
 					amount = 280
 			}
-			add_equipment_to_stockpile = {
-				type = train_equipment_1
-				amount = 25
 			}
 		}
-	}
+
+	
+
 	focus = {
 		id = FRA_appeal_to_overseas_territories
 		icon = GFX_goal_generic_radar
