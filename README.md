@@ -314,6 +314,3 @@ Patch 10
 
 -Military police added to SS and Red Guard divisions.
 
--Updated mod to incorporate TFB changes that are relevant (i.e a lot of changes around nerfing destroyers were not needed since there was a debuff in patch 9 however some changes such as the bonuses from defense for admirals gives armor bonus instead of visibility. Most of the changes made in recent TFB have been ported over.) 
-This also includes the Romanian focus changes.
-
