@@ -1653,7 +1653,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 5
+				naval_invasion_capacity = 10
 				invasion_preparation = -0.1
 				amphibious_invasion = 0.1
 			}
@@ -1684,7 +1684,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 10
+				naval_invasion_capacity = 20
 				invasion_preparation = -0.25
 				amphibious_invasion = 0.25
 			}
@@ -1895,7 +1895,6 @@ ideas = {
 				
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

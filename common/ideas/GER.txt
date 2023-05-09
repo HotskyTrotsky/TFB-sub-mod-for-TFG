@@ -1562,17 +1562,15 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 			modifier = {
 				army_speed_factor = 0.05
-				#supply_consumption_factor = -0.2
-				planning_speed = 0.1
-				industry_free_repair_factor = 0.5
-				industry_repair_factor = 0.5
-				#no_supply_grace = 96
-				#out_of_supply_factor = -0.2
+				supply_consumption_factor = -0.2
+				planning_speed = 0.25
+				no_supply_grace = 96
+				out_of_supply_factor = -0.2
 			}
 
 		}
@@ -2684,7 +2682,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

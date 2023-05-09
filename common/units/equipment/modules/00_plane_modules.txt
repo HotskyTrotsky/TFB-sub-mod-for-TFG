@@ -1017,44 +1017,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 25
-				weight = 0
-			}
-		}
-		mission_type_stats = {
-			limit = {
-				port_strike
-			}
-			add_stats = {
-				naval_strike_attack = 4
-				weight = 0
-			}
-		}
-		dismantle_cost_ic = 12
-	}
-	large_bomb_bay2 = {
-		abbreviation = "lbb"
-		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = strategic_bomber
-
-		add_stats = {
-			build_cost_ic =25
-			air_agility = -20
-			weight = 20
-		}
-		##xp_cost = 2
-		allow_mission_type = {
-			strategic_bomber
-			port_strike
-		}
-		
-		mission_type_stats = {
-			limit = {
-				strategic_bomber
-			}
-			add_stats = {
-				air_bombing = 29
+				air_bombing = 30
 				weight = 0
 			}
 		}
@@ -1076,7 +1039,7 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
-			build_cost_ic = 30
+			build_cost_ic = 25
             weight = 20
             air_agility = -20
 			
@@ -1091,7 +1054,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 33
+				air_bombing = 34
 			}
 		}
 		mission_type_stats = {
@@ -1099,42 +1062,7 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				naval_strike_attack = 8
-			}
-		}
-		dismantle_cost_ic = 12
-	}
-	large_bomb2 = {
-		abbreviation = "lb"
-		category = strat_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = strategic_bomber
-
-		add_stats = {
-			build_cost_ic = 30
-            weight = 20
-            air_agility = -20
-			
-		}
-		#xp_cost = 2
-		allow_mission_type = {
-			strategic_bomber
-			port_strike
-		}
-		mission_type_stats = {
-			limit = {
-				strategic_bomber
-			}
-			add_stats = {
-				air_bombing = 37
-			}
-		}
-		mission_type_stats = {
-			limit = {
-				port_strike
-			}
-			add_stats = {
-				naval_strike_attack = 10
+				naval_strike_attack = 16
 			}
 		}
 		dismantle_cost_ic = 12

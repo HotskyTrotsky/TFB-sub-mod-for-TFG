@@ -2791,25 +2791,6 @@ focus_tree = {
 					target = GER
 					modifier = ENG_imperial_trade
 				}
-
-				# COMINTERN
-				send_embargo = SOV
-				send_embargo = MON
-	
-				# ALLIES
-				send_embargo = CAN
-				send_embargo = USA
-				send_embargo = MEX
-				send_embargo = BRA
-				send_embargo = IRE
-				send_embargo = ENG
-				send_embargo = FRA
-				send_embargo = HOL
-				send_embargo = POL
-				send_embargo = RAJ
-				send_embargo = AST
-				send_embargo = NZL
-				send_embargo = SAF
 			}
 		}
 	}
@@ -3546,11 +3527,6 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
-				ENG = {
-				add_to_faction = HOL
-				add_to_faction = BEL
-				add_to_faction = LUX
-				}
 			}
 			add_timed_idea = { idea = GER_blitzkrieg days = 60 }
 		}

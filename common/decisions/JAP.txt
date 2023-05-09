@@ -988,9 +988,6 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			USA = { 
-				send_embargo = JAP
-			}
 			if = {
 				limit = {
 					FRA = {
@@ -3341,38 +3338,6 @@ political_actions = {
 			target = CHI
 			type = annex_everything
 
-			}
-		}
-	}
-	
-	Expanded_Naval_Operations = {
-		priority = 100
-		allowed = { tag = JAP }
-
-		icon = jap_conquer_china
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		days_mission_timeout = 365
-		is_good = no
-		fire_only_once = yes
-
-		visible = {
-			always = yes
-		}
-
-		activation = {
-			JAP = {
-			has_war_with = USA
-			}
-		}
-
-		timeout_effect = {
-			remove_ideas = {
-			JAP_mid_war_military_bonus
-			JAP_late_war_military_bonus
 			}
 		}
 	}

@@ -880,11 +880,11 @@ focus_tree = {
 				amount = 100
 				producer = GER
 			}
-			#add_equipment_to_stockpile = {
-			#	type = large_plane_airframe
-			#	amount = 100
-			#	producer = GER
-			#}
+			add_equipment_to_stockpile = {
+				type = large_plane_airframe
+				amount = 100
+				producer = GER
+			}
 		}
 	}
 	

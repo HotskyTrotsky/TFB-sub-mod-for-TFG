@@ -2465,7 +2465,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			#build_cost_ic = 0.11
+			build_cost_ic = 0.11
 		}
 	}
 

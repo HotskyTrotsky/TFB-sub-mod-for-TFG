@@ -4530,7 +4530,7 @@ ideas = {
 				land_doctrine_cost_factor = 0.2
 				naval_doctrine_cost_factor = 0.2
 				air_doctrine_cost_factor = 0.2
-				#promote_cost_factor = 5
+				promote_cost_factor = 5
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
 				conscription = -0.03
@@ -9762,7 +9762,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9790,7 +9789,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9824,7 +9822,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9853,7 +9850,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9882,7 +9878,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9917,7 +9912,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9952,7 +9946,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -9982,7 +9975,6 @@ ideas = {
 			
 			research_bonus = {
 				artillery = 0.15
-				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

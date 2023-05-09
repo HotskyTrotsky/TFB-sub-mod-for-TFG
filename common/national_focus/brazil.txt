@@ -1139,12 +1139,17 @@ focus_tree = {
 		relative_position_id = BRA_military_modernisation
 
 		cost = 5
-
+		available = {
+		#		has_tech = mechanised_infantry
+		}
 		ai_will_do = {
 			factor = 8
 		}
 
 		completion_reward = {
+		set_technology = {
+			#		special_mechanised_infantry = 1
+				}
 			army_experience = 10
 			add_tech_bonus = {
 				name = tnk_bonus
