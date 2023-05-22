@@ -184,12 +184,12 @@
 		icon = GFX_Focus_Mobile_Warfare_Doctrine
 		relative_position_id = Commit_To_German_War_Effort
 		x = 0
-		y = 1
+		y = 2
 		offset = {
 			x = 0
 			y = 0
 		}
-		prerequisite = {focus = Commit_To_German_War_Effort}
+		prerequisite = {focus = Cement_Control_Over_Southern_England}
 		mutually_exclusive = { }
 		
 		cost = 10

@@ -654,8 +654,14 @@ spriteTypes = {
 		name = "GFX_portrait_NZL_peter_fraser"
 		texturefile ="gfx/leaders/NZL/portrait_kiwi_peter_fraser.dds"
 	}
-	
-
+	spriteType = {
+		name = "GFX_idea_Fate_Of_Med"
+		textureFile = "gfx/interface/ideas/Fate_Of_Med.dds"
+	}
+spriteType = {
+		name = "GFX_idea_All_Quiet_On_The_Western_Front"
+		textureFile = "gfx/interface/ideas/GER_Festung_Europa.dds"
+	}
 
 	### AUTONOMY ###
 	

@@ -5601,17 +5601,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy_double = yes
-				
-			}
+			
 		}
 	}
 
@@ -5645,17 +5635,6 @@ focus_tree = {
 			add_to_variable = { SOV_the_red_army_acclimatization_hot_climate_gain_factor = 0.15 }
 			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_an_adaptable_army_ns_tt
-
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy_double = yes
-			}
 		}
 	}
 
@@ -5694,6 +5673,17 @@ focus_tree = {
 		prerequisite = { focus = NKVD_Forced_labour }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 			swap_ideas = {
 				remove_idea = NKVD_F
 				add_idea = NKVD_S
@@ -5712,6 +5702,17 @@ focus_tree = {
 		prerequisite = { focus = Sharashka }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 				swap_ideas = {
 				remove_idea = NKVD_S
 				add_idea = NKVD_C
@@ -5769,6 +5770,17 @@ focus_tree = {
 		prerequisite = { focus = NKVD_Status }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 			swap_ideas = {
 				remove_idea = NKVD_Stat_1
 				add_idea = NKVD_Stat_2
@@ -5787,6 +5799,17 @@ focus_tree = {
 		prerequisite = { focus = Bravery }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 			swap_ideas = {
 				remove_idea = NKVD_Stat_2
 				add_idea = NKVD_Stat_3
@@ -5850,6 +5873,17 @@ focus_tree = {
 		prerequisite = { focus = T-34 }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 		add_ideas = t-34_1
 			}
 		}
@@ -5865,6 +5899,17 @@ focus_tree = {
 		prerequisite = { focus = Combined }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 				swap_ideas = {
 				remove_idea = t-34_1
 				add_idea = T-34_2
@@ -5907,6 +5952,8 @@ focus_tree = {
 		prerequisite = { focus = SOV_red_army }
 		mutually_exclusive = { focus = NKVD_Forced_labour focus = NKVD_Status focus = T-34 }
 		completion_reward = {
+			RG_armored_division_heavy = yes
+			SOV_swap_RG_medium_heavy = yes
 			add_ideas = SOV_okmo
 			add_tech_bonus = {
 				name = tnk_bonus
@@ -5919,7 +5966,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Battle
-		icon =GFX_SOV_breakthrough_priority GFX_SOV_red_army
+		icon = GFX_SOV_breakthrough_priority
 		x = 0
 		y = 1
 		cost = 5
@@ -5928,6 +5975,17 @@ focus_tree = {
 		prerequisite = { focus = KV-1 }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 			add_ideas = KV_1
 			}
 		}
@@ -5943,6 +6001,17 @@ focus = {
 		prerequisite = { focus = Battle }
 		
 		completion_reward = {
+			if = {
+				limit = { has_country_flag = RG_armored_division_medium }
+				SOV_increase_RG_cap_medium_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_light }
+				SOV_increase_RG_cap_light_double = yes
+			} else_if = {
+				limit = { has_country_flag = RG_armored_division_heavy }
+				SOV_increase_RG_cap_heavy_double = yes
+				
+			}
 swap_ideas = {
 				remove_idea = KV_1
 				add_idea = KV_2

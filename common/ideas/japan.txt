@@ -1604,9 +1604,28 @@ ideas = {
 
 		## Post China War Ideas ##
 
+		JAP_early_war_industry_debuff = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_buildings_factor = -0.20
+			}
+		}
+
 		JAP_early_war_industry_bonus = {
 			allowed = {
-				original_tag = AST
+				original_tag = JAP
 				always = no
 			}
 	
@@ -1625,7 +1644,6 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
-				production_speed_buildings_factor = -0.20
 			}
 		}
 
@@ -1653,7 +1671,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 10
+				naval_invasion_capacity = 5
 				invasion_preparation = -0.1
 				amphibious_invasion = 0.1
 			}
@@ -1684,7 +1702,7 @@ ideas = {
 			}
 
 			modifier = {
-				naval_invasion_capacity = 20
+				naval_invasion_capacity = 10
 				invasion_preparation = -0.25
 				amphibious_invasion = 0.25
 			}
@@ -1895,6 +1913,7 @@ ideas = {
 				
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

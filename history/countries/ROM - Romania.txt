@@ -11,7 +11,7 @@ if = {
 
 set_research_slots = 5
 set_stability = 0.6
-set_war_support = 0.6
+set_war_support = 0.4
 
 # Starting tech
 set_technology = {
@@ -66,6 +66,7 @@ if = {
 }
 add_ideas = neutrality_idea
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
+add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
 add_ideas = peace_training
 
 #Kick off kings crazy life

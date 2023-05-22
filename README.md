@@ -289,3 +289,66 @@ Patch 9
 
 -T34 Engine upgrade is now 1941 tech not 1942
 
+
+Patch 10
+
+-Fixed GFX bug with naval combat not showing aircraft
+
+-The Malay barrier idea is no longer present for New Zealand
+
+-Netherlands, Belgium, Luxembourg automatically joins the allies with Germany does around Maginot
+
+-Barbarossa bonus has been nerfed (Removed all supply bonuses and replaced with free factory repair and factory repair speeds, Attack bonus down from 15% to 10% same for defence, planning speed bonus from 25% to 15%.)
+
+-Finland no longer gets strat bombers from purchase aircraft focus.
+
+-Removed cost increase in amphibious tank module
+
+-Nerfed Japan late and mid war naval invasion bonuses 20 to 10, 10 to 5. Furthermore, they will only last for 1 year after declaring war on USA
+
+-Added new strat bombing techs to help scale better over time, plus increased based cost.
+
+-Soviet politicised military no longer has field marshal promotion cost
+
+-Removed anti air debuff from light SPAA, to compensate medium SPAA get a +20% bonus to AA.
+
+-Military police added to SS and Red Guard divisions.
+
+
+Patch 11
+
+-Added changes to Soviet focus tree to change red guard division to heavy tank
+
+-Added mech logistics to SS and Red Guard Divisions
+
+-Spaced out Molsey focus tree so that 1 focus was not overlapping (not that it mattered at all)
+
+-Increased damage resistance for Forts, Coastal forts, Ports, Sythentic oil refs, Steel Mills
+
+-Added a new State of the Mediterranean spirit which will give a attack modifier for axis against the soviets depending on how much of africa it owns or how far the allies have pushed into the med (Italy).
+
+-Light Assault gun no longer has reduced soft and hard attack penalty from: -30% hard and -30% soft to: -10% soft and - 15% hard.
+
+-Non Major propoganadas are now 25 pp cost.
+
+-Updated the mod to fit with TFB changes made on the 12/05/2023 (which includes infastructure, Maginot line, El Alamein and africa changes. However there is allready a implemntation of around the maginot adding benelux countries to allies thus was not needed.)
+
+-Fixed State of Med not showing which states matter.
+
+-Updated some missing changes from TFB from 14/05/2023 However this does not include the Germany tank designer (for now).
+
+-Fixed State of Med not increasing when Vichy spawned and takes north africa. To compensate the starting level is reduced by 2.
+
+-Reverted changes to infra cost, and construction bonus. Also reverted production output from military factories.
+
+-Cost for applying medals reduce to 5 pp however the cost of adding another increases is much higher.
+
+Patch 12 (As of 21/05/2023)
+
+-Fixed Imperial conference
+
+-Added fortresses as in TFB (From what i can tell these cannot be built but are just added from focuses or events)
+
+-Gave the Soviet national focus 'Germans are coming' : -5% consumer goods, 15% factory output, 5% factory efficiency max, 10% efficiency growth, 10% resource extraction (Keep in mind this will be removed as soon as Germany declares and also ends with the end of the 5 year plan).
+
+-Added 2 upgrades for Motorized Rocket Artillery which upgrade breakthrough, soft attack, hard attack, defense. However they can only be upgraded after certain techs have been researched which are : Rocket Artillery (1940), Rocket Artillery Upgrade (1941-42), Experimental Rockets (1943), Rocket Artillery 2 (1944). Also costs extra steel per upgrade and the standard xp cost. Also increased the naval invasion penalty of motorised rocket artillery from -20 to -60.
