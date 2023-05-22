@@ -492,4 +492,84 @@ upgrades = {
 		hard_attack = 0.05
 		ap_attack = 0.05
 	}
+	Rocket_artillery_soft_upgrade = {
+		max_level = 4
+		cost = land
+		level_requirements = {
+			1 = {
+			has_tech = rocket_artillery
+			}
+			2 = {
+			has_tech = rocket_artillery2
+			}
+			3 = {
+			has_tech = experimental_rockets
+			}
+			4 = {
+			has_tech = rocket_artillery4
+			}
+			
+		}
+
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			1 = {
+				steel = 2
+			}
+			2 = {
+				steel = 3
+			}
+			3 = {
+				steel = 4 
+			}
+			4 = {
+				steel = 5 
+			}
+			
+		}
+		add_stats = {
+		soft_attack = 3
+		hard_attack = 1
+			}
+		}
+		
+		
+	Rocket_artillery_accuracy_upgrade = {
+		max_level = 4
+		cost = land
+		level_requirements = {
+			1 = {
+			has_tech = rocket_artillery
+			}
+			2 = {
+			has_tech = rocket_artillery2
+			}
+			3 = {
+			has_tech = experimental_rockets
+			}
+			4 = {
+			has_tech = rocket_artillery4
+			}
+			
+		}
+
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			1 = {
+				steel = 2
+			}
+			2 = {
+				steel = 3
+			}
+			3 = {
+				steel = 4 
+			}
+			4 = {
+				steel = 5 
+			}
+			
+		}
+		add_stats = {
+		breakthrough = 3
+		defense = 1
+		}
+	}
 }

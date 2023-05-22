@@ -5,7 +5,7 @@ oob = "ITA_1936"
 set_research_slots = 6
 set_stability = 0.6
 set_war_support = 0.65
-
+set_variable = { AFRICA_COMMONWEALTH_BASES_LEVEL = 6 } #What level variable to use
 #set_variable = { ITA_poster_center_icon_frame = 1 }
 set_variable = { ITA_new_propaganda_campaign = 0 } #Used to pick a poster slot
 set_variable = { ITA_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
@@ -29,6 +29,7 @@ add_ideas = {
 	ITA_outdated_industry
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
+	AFRICA_COMMONWEALTH_controls_axis_idea_6
 }
 
 

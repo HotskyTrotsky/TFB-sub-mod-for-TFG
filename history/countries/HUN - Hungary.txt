@@ -31,6 +31,7 @@ if = {
 		HUN_treaty_of_triannon
 		HUN_hussar_legacy
 		peace_training
+		AFRICA_COMMONWEALTH_controls_axis_idea_6
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

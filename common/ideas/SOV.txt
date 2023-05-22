@@ -3109,6 +3109,11 @@ KV_2 = {
 				production_speed_arms_factory_factor = 0.35
 				political_power_gain = -0.1
 				production_speed_bunker_factor = -0.25
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				local_resources_factor = 0.1
 			}
 		}
 
@@ -6089,10 +6094,6 @@ KV_2 = {
 					}
 					OR = {
 						has_completed_focus = T-34
-						AND = {
-							has_completed_focus = SOV_tank1
-							has_completed_focus = SOV_new_corps2
-						}
 					}
 
 				}
@@ -6148,10 +6149,7 @@ KV_2 = {
 			available = {
 				OR = {
 					has_completed_focus = SOV_depoliticize_industry
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps3
-					}
+					
 				}
 			}
 			
@@ -6407,10 +6405,7 @@ KV_2 = {
 			available = {
 				OR = {
 					has_completed_focus = KV-1
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps4
-					}
+					
 				}
 			}
 			
@@ -6756,10 +6751,7 @@ KV_2 = {
 			available = {
 				OR = {
 					has_completed_focus = SOV_depoliticize_industry
-					AND = {
-						has_completed_focus = SOV_tank1
-						has_completed_focus = SOV_new_corps
-					}		
+						
 				}
 			}
 			
@@ -9984,6 +9976,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10011,6 +10004,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10044,6 +10038,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10072,6 +10067,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10100,6 +10096,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10134,6 +10131,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10168,6 +10166,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }
@@ -10197,6 +10196,7 @@ KV_2 = {
 			
 			research_bonus = {
 				artillery = 0.15
+				heavy_artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

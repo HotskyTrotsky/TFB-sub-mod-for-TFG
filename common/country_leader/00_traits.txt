@@ -6454,7 +6454,7 @@ heavy_tank_artillery_chassis = {
 				surface_visibility = -0.1 naval_speed = 0.1 hg_attack = -0.1
 			}
 			screen_ship = {
-				surface_visibility = -0.1 naval_speed = 0.1
+				surface_visibility = -0.05 naval_speed = 0.05
 			}
 			submarine = {
 				sub_visibility = -0.1 surface_visibility = -0.1 naval_speed = 0.1
@@ -9208,6 +9208,26 @@ heavy_tank_artillery_chassis = {
 			}
 		}
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cautious_arbiter = {
+		random = no
+		political_power_factor = 0.10
+		war_support_factor = -0.05
+		communism_acceptance = 30
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	viceroy_emeritus = {
+		random = no
+		generate_wargoal_tension = 0.1
+		
 		ai_will_do = {
 			factor = 1
 		}

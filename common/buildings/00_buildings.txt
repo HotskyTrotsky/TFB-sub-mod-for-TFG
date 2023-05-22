@@ -90,6 +90,7 @@ buildings = {
 		max_level = 10
 		value = 1
 		allied_build = yes
+		damage_factor = 0.1
 	}
 
 	bunker = {
@@ -104,6 +105,21 @@ buildings = {
 		max_level = 10
 		value = 1
 		allied_build = yes
+		damage_factor = 0.1
+	}
+		fortress = {
+		show_on_map = 1 
+		has_destroyed_mesh = no
+		base_cost = 3000
+		per_level_extra_cost = 1000
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 19
+		land_fort = 1 # Maybe get rid of?
+		max_level = 5
+		value = 10 # Normal forts have 1 health
+		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
+		#allied_build = yes
 	}
 
 	coastal_bunker = {
@@ -119,8 +135,23 @@ buildings = {
 		max_level = 10
 		value = 1
 		allied_build = yes
+		damage_factor = 0.1
 	}
-
+coastal_fortress = {
+		show_on_map = 1 
+		has_destroyed_mesh = no
+		base_cost = 2500
+		per_level_extra_cost = 800
+		provincial = yes
+		disabled_in_dmz = yes
+		only_costal = yes
+		icon_frame = 20
+		naval_fort = 1 # Maybe get rid of?
+		max_level = 5
+		value = 10 # Normal forts have 1 health
+		damage_factor = -0.5 # modifies the damage that this building gets from air bombing or land combat.
+		#allied_build = yes
+	}
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
@@ -159,7 +190,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		
+		damage_factor = 0.025
 		show_modifier = yes
 		fuel_gain_from_states = 5.0 
 	}
@@ -192,7 +223,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-		
+		damage_factor = 0.025
 		show_modifier = yes
 	}
 
