@@ -54,7 +54,7 @@
  continuous_fuel_desc:0 "We need to focus on fuel production."
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
-
+NO_ASIA_attache:0 "Attache to the Sino-Japanese War"
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
  CHI_adopt_guerilla_tactics:0 "Adopt Guerilla Tactics"
@@ -95,6 +95,15 @@
  POL_purchase_equipment:0 "Buy From Our Friends"
  POL_purchase_usa:0 "Buy From the Americans"
  POL_purchase_commonwealth:0 "Buy From the Commonwealth"
+
+ #####Annex countries
+ SAF_Annex_CAN:0 "Annex Canada (If Ai)"
+ CAN_Annex_SAF:0 "Annex South Africa (If Ai)"
+ ROM_Annex_HUN:0 "Annex Hungry (If Ai)"
+ ROM_Annex_BUL:0 "Annex Bulgaria (If Ai)"
+ HUN_Annex_ROM:0 "Annex Romania (If Ai)"
+ HUN_Annex_BUL:0 "Annex Bulgaria (If Ai)"
+ ENG_Annex_AST:0 "Annex Australia (If Ai)"
  #### COUNTRIES ####
  OMA_neutrality:0 "British Middle Eastern Protectorate"
  IRQ_neutrality:0 "Protectorate of Iraq"
@@ -202,12 +211,23 @@
  POL_morale:0 "Polish Morale"
  POL_morale_desc:0 "The Polish are a proud people, but eventually their spirit will break when they realize that help is not coming."
  POL_war_decisions:0 "Polish War Descsions"
+  NO_ASIA_attache_idea:0 "Attache to the Sino-Japanese War."
 
  All_Quiet_On_The_Western_Front:0 "All Quiet On The Western Front"
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
  rail_way_plural:0 "Railways"
 
+ROM_LIBYA_OIL_START:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_START_desc:0 "§G+750 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_0:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_0_desc:0 "§R0 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_1:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_1_desc:0 "§G+250 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_2:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_2_desc:0 "§G+500 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_3:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_3_desc:0 "§G+750 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"
  synthetic_rubber_refinery_desc:0 "This building provides the state with"
@@ -1134,7 +1154,8 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  navy_chief_anti_submarine_1:0 "Anti-Submarine\n(Specialist)"
  navy_chief_anti_submarine_2:0 "Anti-Submarine\n(Expert)"
  navy_chief_anti_submarine_3:0 "Anti-Submarine\n(Genius)"
-
+NO_ASIA_NAME:0 "No Asia"
+ NO_ASIA_DESC:0 "A game without Asia, made for small player count lobbies"
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
  RULE_OPTION_ENABLED:0 "Enabled"

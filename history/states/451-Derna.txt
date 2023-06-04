@@ -36,6 +36,7 @@ state={
 		}
 		add_core_of = LBA
 		set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+		set_state_flag = AXIS_ROM_OIL
 	}
 
 	provinces={

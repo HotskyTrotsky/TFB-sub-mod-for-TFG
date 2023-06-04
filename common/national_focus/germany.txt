@@ -6429,11 +6429,23 @@ focus_tree = {
 		id = GER_japan_friend
 		icon = GFX_goal_indyclone_befriend_japan
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				AND = {
+					JAP = { is_puppet = no }
+					NOT = { has_war_with = JAP }
+				}
+			}
+			else = {
 			AND = {
 				country_exists = JAP
 				JAP = { is_puppet = no }
 				NOT = { has_war_with = JAP }
 			}
+		}
 		}
 		x = 44
 		y = 0
@@ -6474,10 +6486,22 @@ focus_tree = {
 		id = GER_japan_friend2
 		icon = GFX_goal_military_agreement_germany
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				AND = {
+					JAP = { is_puppet = no }
+					NOT = { has_war_with = JAP }
+				}
+			}
+			else = {
 			AND = {
 				country_exists = JAP
 				JAP = { is_puppet = no }
 				NOT = { has_war_with = JAP }
+				}
 			}
 		}
 		prerequisite = { focus = GER_japan_friend }

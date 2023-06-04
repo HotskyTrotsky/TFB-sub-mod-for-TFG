@@ -343,12 +343,48 @@ Patch 11
 
 -Cost for applying medals reduce to 5 pp however the cost of adding another increases is much higher.
 
-Patch 12 (As of 21/05/2023)
+Patch 12
 
--Fixed Imperial conference
+-Fixed Imperial confrence
 
--Added fortresses as in TFB (From what i can tell these cannot be built but are just added from focuses or events)
+-Added fortressess as in TFB
 
--Gave the Soviet national focus 'Germans are coming' : -5% consumer goods, 15% factory output, 5% factory efficiency max, 10% efficiency growth, 10% resource extraction (Keep in mind this will be removed as soon as Germany declares and also ends with the end of the 5 year plan).
+-Gave the national focus 'Germans are coming" -5% consumer goods, 15% factory output, 5% factory effciency max, 10% effciency growth, 10% resource extraction
 
--Added 2 upgrades for Motorized Rocket Artillery which upgrade breakthrough, soft attack, hard attack, defense. However they can only be upgraded after certain techs have been researched which are : Rocket Artillery (1940), Rocket Artillery Upgrade (1941-42), Experimental Rockets (1943), Rocket Artillery 2 (1944). Also costs extra steel per upgrade and the standard xp cost. Also increased the naval invasion penalty of motorised rocket artillery from -20 to -60.
+
+
+
+
+
+Patch 13 
+
+-Reduced the planning debuff from having max intel on local region from -100% to -20% (this can be stacked with other nations i think)
+
+-Commonwealth tanks can mount medium cannon 1 on early hulls.
+
+-Moved the Oil in Africa so that it starts in Moldova (Romania) However they will lose it if italy loses Libya (Bengahzi, Tripoli, Tobruk). The reason being is sometimes Romania would not gain access to the oil due to no legal transport path.
+
+
+
+
+Patch 14
+
+-Buff from Veterancy is decreased
+
+-Minor propaganda changes (increased bonus)
+
+-Pulled number of changes form TFB (Ethiopia changes from 31/06/2023)
+
+-Some other clear housing of code to try and slim down (This may break something however during current testing it seems to be a-okay. Whole purpose was to try keep the mod file small and deleting files needed)
+
+-Australia can no longer annex DEI
+
+-USA does not start with Philippines (both this and the previous changes were not known to happen when implementing No Asia)
+
+-Overhauled No Asia to include USA with a new focus tree which allows it to annex Mexico and Brazil. USA plays more like a minor nation since it’s a reduced state and focus tree is not as strong.
+
+-Added decisions for Romania, Hungry, South Africa, Canada, Australia to annex nations (Romania can annex hungry and Bulgaria, Hungry can annex Romania and Bulgaria, Canada can annex South Africa, UK can annex Australia)
+
+-Added some new division icons as options.
+
+-Potential fix for Romanian oil resetting when a hot join happens. (Difficult to test in single player however, I added a monthly check which should set the idea correlated with amount of oil to the variable set when changing control of state. That way if it does reset after a hot join, it should fix its self after a month.) 
