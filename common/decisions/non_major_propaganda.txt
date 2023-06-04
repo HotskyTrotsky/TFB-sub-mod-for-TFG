@@ -13,7 +13,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -31,8 +31,8 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			compliance_gain = 0.01
-			resistance_target = -0.025
+			compliance_gain = 0.02
+			resistance_target = -0.05
 		}
 
 		complete_effect = {
@@ -60,7 +60,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -79,8 +79,8 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-            industrial_capacity_factory = 0.025
-            production_lack_of_resource_penalty_factor = -0.1
+            industrial_capacity_factory = 0.05
+            production_lack_of_resource_penalty_factor = -0.2
 		}
 
 		complete_effect = {
@@ -108,7 +108,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -130,9 +130,9 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-            industry_air_damage_factor = -0.125
-            static_anti_air_hit_chance_factor = 0.05
-            industry_repair_factor = 0.125
+            industry_air_damage_factor = -0.25
+            static_anti_air_hit_chance_factor = 0.1
+            industry_repair_factor = 0.25
 		}
 
 		complete_effect = {
@@ -160,7 +160,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -178,8 +178,8 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-            experience_loss_factor = -0.05
-            experience_gain_army_factor = 0.05
+            experience_loss_factor = -0.1
+            experience_gain_army_factor = 0.1
 		}
 
 		complete_effect = {
@@ -207,7 +207,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -225,7 +225,7 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-            research_speed_factor = 0.0375
+            research_speed_factor = 0.075
 		}
 
 		complete_effect = {
@@ -253,7 +253,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = BUL
 				original_tag = YUG
 				original_tag = SPR
-				#original_tag = VIC
+				original_tag = VIC
 				original_tag = SIA
 			}
 		}
@@ -274,10 +274,10 @@ AXIS_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-            industry_free_repair_factor = 0.125
-            industry_repair_factor = 0.125
-            production_speed_infrastructure_factor = 0.075
-            production_speed_rail_way_factor = 0.075
+            industry_free_repair_factor = 0.25
+            industry_repair_factor = 0.25
+            production_speed_infrastructure_factor = 0.15
+            production_speed_rail_way_factor = 0.15
 		}
 
 		complete_effect = {
@@ -318,8 +318,8 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			compliance_gain = 0.005
-			resistance_target = -0.025
+			compliance_gain = 0.01
+			resistance_target = -0.05
 		}
 
 		complete_effect = {
@@ -355,7 +355,7 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			research_speed_factor = 0.0375
+			research_speed_factor = 0.075
 		}
 
 		complete_effect = {
@@ -393,8 +393,8 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_power_projection_factor = 0.125
-			air_untrained_pilots_penalty_factor = -0.25
+			air_power_projection_factor = 0.25
+			air_untrained_pilots_penalty_factor = -0.5
 		}
 
 		complete_effect = {
@@ -432,8 +432,8 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_factory = 0.025
-			production_lack_of_resource_penalty_factor = -0.1
+			industrial_capacity_factory = 0.05
+			production_lack_of_resource_penalty_factor = -0.2
 		}
 
 		complete_effect = {
@@ -473,10 +473,10 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			navy_max_range_factor = 0.125
-			naval_strike = 0.05
-			naval_speed_factor = 0.05
-			naval_has_potf_in_combat_attack = 0.05
+			navy_max_range_factor = 0.25
+			naval_strike = 0.1
+			naval_speed_factor = 0.1
+			naval_has_potf_in_combat_attack = 0.1
 		}
 
 		complete_effect = {
@@ -517,9 +517,9 @@ MAN_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industry_air_damage_factor = -0.125
-			static_anti_air_hit_chance_factor = 0.05
-			industry_repair_factor = 0.125
+			industry_air_damage_factor = -0.25
+			static_anti_air_hit_chance_factor = 0.1
+			industry_repair_factor = 0.25
 		}
 
 		complete_effect = {
@@ -604,9 +604,9 @@ MON_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_speed_supply_node_factor = 0.075
-			production_speed_rail_way_factor = 0.075
-			supply_consumption_factor = -0.05
+			production_speed_supply_node_factor = 0.15
+			production_speed_rail_way_factor = 0.15
+			supply_consumption_factor = -0.10
 		}
 
 		complete_effect = {
@@ -647,7 +647,7 @@ MON_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.025
+			consumer_goods_factor = -0.05
 		}
 
 		complete_effect = {
@@ -691,9 +691,9 @@ MON_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			experience_gain_army_factor = 0.075
-			command_power_gain_mult = 0.075
-			breakthrough_factor = 0.05
+			experience_gain_army_factor = 0.15
+			command_power_gain_mult = 0.15
+			breakthrough_factor = 0.1
 		}
 
 		complete_effect = {
@@ -733,7 +733,7 @@ MON_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			research_speed_factor = 0.025
+			research_speed_factor = 0.05
 		}
 
 		complete_effect = {
@@ -773,10 +773,10 @@ MON_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			political_power_factor = 0.05
-			command_power_gain_mult = 0.05
-			war_support_weekly = 0.005
-			communism_drift = 0.05
+			political_power_factor = 0.1
+			command_power_gain_mult = 0.1
+			war_support_weekly = 0.01
+			communism_drift = 0.1
 		}
 
 		complete_effect = {
@@ -805,7 +805,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -817,9 +817,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1938.1.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_two_ocean_navy_act
 			}
+		}
 		}
 
 		days_remove = 365
@@ -829,7 +837,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.05
+			industrial_capacity_dockyard = 0.15
 		}
 
 		complete_effect = {
@@ -854,7 +862,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -866,9 +874,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1938.9.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_the_giant_wakes
 			}
+		}
 		}
 
 		days_remove = 365
@@ -878,7 +894,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.0125
+			consumer_goods_factor = -0.025
 		}
 
 		complete_effect = {
@@ -903,7 +919,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -915,9 +931,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1939.9.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_fair_labour_standards_act
 			}
+		}
 		}
 
 		days_remove = 365
@@ -927,7 +951,7 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_factory = 0.0375
+			industrial_capacity_factory = 0.075
 		}
 
 		complete_effect = {
@@ -952,7 +976,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -975,8 +999,8 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			stability_weekly = 0.0025
-			command_power_gain_mult = 0.125
+			stability_weekly = 0.005
+			command_power_gain_mult = 0.25
 		}
 
 		complete_effect = {
@@ -1001,7 +1025,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -1027,9 +1051,9 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			naval_detection = 0.125
-			convoy_escort_efficiency = 0.125
-			convoy_retreat_speed = 0.125
+			naval_detection = 0.25
+			convoy_escort_efficiency = 0.25
+			convoy_retreat_speed = 0.25
 		}
 
 		complete_effect = {
@@ -1054,7 +1078,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = MEX
 				original_tag = BRA
 				original_tag = HOL
-				original_tag = PHI
+				# original_tag = PHI
 				original_tag = NOR
 				original_tag = POL
 				#original_tag = INS
@@ -1066,9 +1090,17 @@ ALLIES_propaganda_campaigns = {
 			NOT = {
 				has_country_flag = ALLIES_running_prop
 			}
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+				}
+				date > 1941.1.1
+			}
+			else = {
 			USA = {
 				has_completed_focus = USA_wartime_industry
 			}
+		}
 		}
 
 		days_remove = 365
@@ -1078,8 +1110,8 @@ ALLIES_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_factory_efficiency_gain_factor = 0.05
-			line_change_production_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+			line_change_production_efficiency_factor = 0.1
 		}
 
 		complete_effect = {
@@ -1129,9 +1161,9 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			research_sharing_per_country_bonus_factor = 0.25
-			command_power_gain_mult = 0.125
-			autonomy_gain = 0.25
+			research_sharing_per_country_bonus_factor = 0.5
+			command_power_gain_mult = 0.25
+			autonomy_gain = 0.5
 		}
 
 		complete_effect = {
@@ -1175,8 +1207,8 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			production_factory_start_efficiency_factor = 0.05
-			line_change_production_efficiency_factor = 0.025
+			production_factory_start_efficiency_factor = 0.1
+			line_change_production_efficiency_factor = 0.05
 		}
 
 		complete_effect = {
@@ -1223,9 +1255,9 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_home_defence_factor = 0.125
-			army_core_attack_factor = 0.1
-			army_core_defence_factor = 0.1
+			air_home_defence_factor = 0.25
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
 			minimum_training_level = -0.1
 		}
 
@@ -1270,10 +1302,10 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			civilian_intel_to_others = -7.5
-			airforce_intel_to_others = -7.5
-			navy_intel_to_others = -7.5
-			army_intel_to_others = -7.5
+			civilian_intel_to_others = -15
+			airforce_intel_to_others = -15
+			navy_intel_to_others = -15
+			army_intel_to_others = -15
 		}
 
 		complete_effect = {
@@ -1321,9 +1353,9 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_air_superiority_agility_factor = 0.025
-			air_interception_defence_factor = 0.025
-			air_mission_efficiency = 0.05
+			air_air_superiority_agility_factor = 0.05
+			air_interception_defence_factor = 0.05
+			air_mission_efficiency = 0.1
 		}
 
 		complete_effect = {
@@ -1370,8 +1402,8 @@ COM_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			local_resources_factor = 0.05
-			min_export = -0.05
+			local_resources_factor = 0.1
+			min_export = -0.1
 		}
 
 		complete_effect = {

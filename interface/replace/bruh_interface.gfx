@@ -10,6 +10,39 @@ spriteTypes = {
     	looping = no
     	play_on_show = yes
 	}
+	###########Icons asked to be added
+	spriteType = { 
+        name = "GFX_div_templ_065_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_065.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_065_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_065.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_066_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_066.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_066_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_066.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_067_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_067.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_067_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_067.dds"
+    }
+	spriteType = { 
+        name = "GFX_div_templ_068_large"
+        textureFile = "gfx/interface/counters/division_templates_large/custom_template_068.dds"
+    }
+	spriteType = {
+        name = "GFX_div_templ_068_small"
+        textureFile = "gfx/interface/counters/division_templates_small/custom_template_068.dds"
+    }
 	
 	### UI ###
 	
@@ -662,7 +695,10 @@ spriteType = {
 		name = "GFX_idea_All_Quiet_On_The_Western_Front"
 		textureFile = "gfx/interface/ideas/GER_Festung_Europa.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_ROM_LIBYA_OIL"
+		textureFile = "gfx/interface/ideas/ROM_oil.dds"
+	}
 	### AUTONOMY ###
 	
 	SpriteType = {

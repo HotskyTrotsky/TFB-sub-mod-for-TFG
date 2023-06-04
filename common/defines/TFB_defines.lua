@@ -177,7 +177,7 @@ NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.5		-- reduction fact
 NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.005		-- Experience scale for lend leased equipment used in combat.
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.8
 NDefines.NMilitary.SLOWEST_SPEED = 2
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.10
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05 			-- 0.10 -- changes division experience benefits
 NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 25.0		   -- When the transport plane was shot down we drop unit with almost NONE equipment
 NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 50.0		   -- When the transport plane was shot down we drop unit with almost NONE manpower
 NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 7.5			   -- When the transport plane was shot down we drop unit with almost NONE strenght
@@ -515,6 +515,11 @@ NDefines.NIntel.DYNAMIC_INTEL_SOURCE_AIR_RECON_ABSOLUTE_MAXIMUMS =	{25, 25, 25, 
 NDefines.NIntel.RECON_PLANE_INTEL_BASE = 0.04 				-- intel base amount for a strategic area per plane
 NDefines.NIntel.RECON_PLANE_LAND_DISTRIBUTION = { 15.0, 10.0, 0.0, 10.0 }    -- controls for land and sea zones how much of each intel typee is given (civ, army, navy, air)
 NDefines.NIntel.RECON_PLANE_SEA_DISTRIBUTION = { 0.0, 0.0, 15.0, 0.0 }
+
+
+
+
+
 
 NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0.2 -- supply from one civilian factory
 NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0.3 -- supply from one military factory

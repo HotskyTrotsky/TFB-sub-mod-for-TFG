@@ -3319,3 +3319,16 @@
  germany.1050.a:0 "$GER_karl_donitz$ was the Führer’s preferred successor."
  germany.1050.b:0 "$GER_albert_speer$ will fulfill the Führer’s ambitions."
  germany.1050.c:0 "$GER_heinz_guderian$ will get us out of this mess."
+
+###########No Asia
+generic.1170.t:0 "Yellow River Flood"
+generic.1170.d:0 "In a desperate attempt to halt the oncoming Japanese offensive the Chinese military have flooded the yellow river valley. The death toll is unknown however it has appeared to have the intended effect of slowing down the IJA's offensive although this is a telling sign of the increasing intensity and ferocity of the ongoing conflict."
+generic.1171.t:0 "Capture Of Wuhan"
+generic.1171.d:0 "In the early hours IJA forces enter the city of Wuhan without resistance as the Chinese military was forced out at risk of encirclement and battered from previous IJA attacks. Wuhan is believed to be the central target of the latest Japanese offensive in a bid to secure the last remaining industrial cities within China. However, this continued aggression has prompted aid to be delivered from overseas solving the supply issues for the Chinese military forces. The loss of Wuhan has not signalled any changes in the mood within the Chinese government in its peace terms with Japan which is the complete withdrawal of Japanese forces from China."
+generic.1172.t:0 "Capture Of Nanchang"
+generic.1172.d:0 "Further offensives on behalf of the IJA have led to the capture of another significant city within central China and a complete success for Japan in securing industrial locations. However, it was followed by several crushing defeats by the newly reformed Chinese military which prevented the capture of Changsha. This is a growing sign that the Chinese forces are yet finished and are setting up for a war of attrition."
+generic.1173.t:0 "Stalemate In The Sino Japanese War"
+generic.1173.d:0 "Recent months have led to a reduced amount of activity along the whole frontline, IJA forces are too small and have over stretched supply lines with Maoist forces fighting a guerrilla offensive in Northern China. The decrease in activity is also a potential sign of build-up on behalf of the Chinese forces in preparation for upcoming offensives."
+generic.1174.t:0 "Chinese Counter offensives"
+generic.1174.d:0 "The silent on within the Sino-Japanese conflict was broken with the massing of 2 million Chinese forces launching a offensive to recapture Wuhan. However initial gains looked promising IJA forces were reinforced and put halt to the Chinese attacks. The Chinese offensives have continued in attempt to break down the Japanese forces however this has only increased the causalities on both sides and has propelled the conflict into a deadly phase."
+

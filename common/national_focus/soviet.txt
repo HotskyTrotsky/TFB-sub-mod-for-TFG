@@ -1572,6 +1572,25 @@ focus_tree = {
 		cost = 5
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+				ENG = {
+					OR = {
+						has_war_with = GER
+						has_war_with = ITA
+						has_war_with = JAP
+					}	
+				}	
+			}
+			else = {
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
@@ -1584,6 +1603,7 @@ focus_tree = {
 					has_war_with = JAP
 				}
 			}
+		}
 		}
 
 		completion_reward = {
@@ -1606,6 +1626,25 @@ focus_tree = {
 				factor = 0
 				has_civil_war = yes
 			}	
+		}
+		
+		bypass = {
+			OR = {
+				PER = { is_puppet = yes }
+
+				419 = { NOT = { is_controlled_by = PER } } # tibriz
+				420 = { NOT = { is_controlled_by = PER } } # gilan
+				421 = { NOT = { is_controlled_by = PER } } # kurdistan
+				417 = { NOT = { is_controlled_by = PER } } # hamadan
+				266 = { NOT = { is_controlled_by = PER } } # tehran
+				416 = { NOT = { is_controlled_by = PER } } # khorasan
+				418 = { NOT = { is_controlled_by = PER } } # semnan
+				411 = { NOT = { is_controlled_by = PER } } # isfahan
+				413 = { NOT = { is_controlled_by = PER } } # khuzestan
+				414 = { NOT = { is_controlled_by = PER } } # kerman
+				412 = { NOT = { is_controlled_by = PER } } # fars
+				410 = { NOT = { is_controlled_by = PER } } # sistan
+			}
 		}
 		
 		available = {

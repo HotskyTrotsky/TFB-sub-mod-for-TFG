@@ -1,0 +1,15 @@
+characters={
+	Boogie={
+		name=Boogie
+		portraits={
+			civilian={
+				large= "GFX_animated_Boogie"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ popular_figurehead the_masses_opium}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

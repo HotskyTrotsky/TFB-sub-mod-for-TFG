@@ -1,3 +1,58 @@
+
+USA_Check_Flag = {
+###BRA
+	if = {
+	limit = {
+	AND = {
+	USA = {has_full_control_of_state = 500} 
+	BRA = {is_ai = yes}
+		}
+	}
+	set_cosmetic_tag = USA_BRA
+	}
+	if = {
+	limit = {
+	AND = {
+	USA = {has_full_control_of_state = 500} 
+	BRA = {is_ai = yes}
+	has_cosmetic_tag = USA_MEX
+		}
+	}
+	set_cosmetic_tag = USA_BRA_MEX
+	}
+	#####Mex
+	if = {
+	limit = {
+	AND = {
+	USA = {has_full_control_of_state = 277}
+	MEX = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = USA_MEX
+	}
+	if = {
+	limit = {
+	AND = {
+	USA = {has_full_control_of_state = 277} 
+	BRA = {is_ai = yes}
+	has_cosmetic_tag = USA_BRA
+		}
+	}
+	set_cosmetic_tag = USA_BRA_MEX
+	}
+	####Bra and Mex
+	if = {
+	limit = {
+	AND = {
+	USA = {has_full_control_of_state = 500}
+	USA = {has_full_control_of_state = 277}
+	BRA = {is_ai = yes}
+	MEX = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = USA_BRA_MEX
+		}
+	}
 USA_neutrality_level_up = {
 	if = {
 		limit = { has_idea = USA_neutrality_idea_3 }

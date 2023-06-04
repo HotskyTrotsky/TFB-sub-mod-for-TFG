@@ -16,6 +16,165 @@
 #	}
 #
 
+######Changing flags
+Check_ROM_Flag = {
+###Annexed Hungry
+	if = {
+	limit = {
+	AND = {
+	ROM = {has_full_control_of_state = 43} 
+	HUN = {is_ai = yes}
+		}
+	}
+	set_cosmetic_tag = ROM_HUN
+	}
+	if = {
+	limit = {
+	AND = {
+	ROM = {has_full_control_of_state = 43} 
+	HUN = {is_ai = yes}
+	has_cosmetic_tag = ROM_BUL
+		}
+	}
+	set_cosmetic_tag = ROM_BUL_HUN
+	}
+	#####Annex Bul
+	if = {
+	limit = {
+	AND = {
+	ROM = {has_full_control_of_state = 48}
+	BUL = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = ROM_BUL
+	}
+	if = {
+	limit = {
+	AND = {
+	ROM = {has_full_control_of_state = 48} 
+	BUL = {is_ai = yes}
+	has_cosmetic_tag = ROM_HUN
+		}
+	}
+	set_cosmetic_tag = ROM_BUL_HUN
+	}
+	####Bul and rom
+	if = {
+	limit = {
+	AND = {
+	ROM = {has_full_control_of_state = 43}
+	ROM = {has_full_control_of_state = 48}
+	BUL = {is_ai = yes}
+	HUN = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = ROM_BUL_HUN
+		}
+	}
+	
+Check_HUN_Flag = {
+##Annexed ROM
+	if = {
+	limit = {
+	AND = {
+	HUN = {has_full_control_of_state = 46} 
+	ROM = {is_ai = yes}
+		}
+	}
+	set_cosmetic_tag = HUN_ROM
+	}
+	if = {
+	limit = {
+	AND = {
+	HUN = {has_full_control_of_state = 46} 
+	ROM = {is_ai = yes}
+	has_cosmetic_tag = HUN_BUL
+		}
+	}
+	set_cosmetic_tag = HUN_BUL_ROM
+	}
+	#####Annex Bul
+	if = {
+	limit = {
+	AND = {
+	HUN = {has_full_control_of_state = 48}
+	BUL = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = HUN_BUL
+	}
+	if = {
+	limit = {
+	AND = {
+	HUN = {has_full_control_of_state = 48} 
+	BUL = {is_ai = yes}
+	has_cosmetic_tag = HUN_ROM
+		}
+	}
+	set_cosmetic_tag = HUN_BUL_ROM
+	}
+	####bul rom
+	if = {
+	limit = {
+	AND = {
+	HUN = {has_full_control_of_state = 46}
+	HUN = {has_full_control_of_state = 48}
+	BUL = {is_ai = yes}
+	ROM = {is_ai = yes}
+			}
+		}
+	set_cosmetic_tag = HUN_BUL_ROM
+		}
+	}
+	
+	
+	
+Check_CAN_Flag = {
+###SAF
+	if = {
+	limit = {
+	AND = {
+	CAN = {has_full_control_of_state = 275} 
+	SAF = {is_ai = yes}
+		}
+	}
+	set_cosmetic_tag = CAN_SAF
+	}
+}
+Check_SAF_Flag = {
+###CAN
+	if = {
+	limit = {
+	AND = {
+	SAF = {has_full_control_of_state = 276} 
+	CAN = {is_ai = yes}
+		}
+	}
+	set_cosmetic_tag = CAN_SAF
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #####################################
 ### emergency_factory_conversion ####
 #####################################
