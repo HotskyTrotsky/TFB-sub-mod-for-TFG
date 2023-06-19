@@ -38,6 +38,7 @@ war_measures = {
 	}
 }
 USA_aid_britain = {
+
 	USA_establish_personal_communication_with_former_naval_person = {
 
 		icon = generic_political_discourse
@@ -159,6 +160,177 @@ USA_aid_britain = {
 }
 
 operations = {
+Lend_Lease_Guns = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_equipment = { infantry_equipment > 3999 }
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		visible = {
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no	
+
+		days_re_enable = 30
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					target = CAN
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = SAF
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = AST
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = ENG
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+				add_war_support = 0.01
+			}
+		}
+	}
+	Lend_Lease_Trucks = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_equipment = { motorized_equipment > 999 }
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		visible = {
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no	
+
+		days_re_enable = 30
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					target = CAN
+					type = motorized_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = SAF
+					type = motorized_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = AST
+					type = motorized_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = ENG
+					type = motorized_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				add_war_support = 0.01
+			}
+		}
+	}
+	Lend_Lease_Support = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_equipment = { support_equipment > 999 }
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		visible = {
+			USA = {
+			has_completed_focus = Lend_Lease_Act
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no	
+
+		days_re_enable = 30
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					target = CAN
+					type = support_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = SAF
+					type = support_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = AST
+					type = support_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				send_equipment = {
+					target = ENG
+					type = support_equipment
+					amount = 250
+					old_prioritised = yes
+				}
+				add_war_support = 0.01
+			}
+		}
+	}
 	USA_join_the_allies = {
 		icon = generic_operation
 		allowed = {
@@ -309,7 +481,10 @@ operations = {
 		}
 
 		visible = {
-			always = yes
+		NOT = {
+		has_global_flag = NO_ASIA
+		}
+		#	always = yes
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -351,7 +526,9 @@ operations = {
 		}
 
 		visible = {
-			always = yes
+			NOT = {
+		has_global_flag = NO_ASIA
+		}
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -385,7 +562,9 @@ operations = {
 		}
 
 		visible = {
-			always = yes
+			NOT = {
+		has_global_flag = NO_ASIA
+		}
 		}
 		fire_only_once = yes
 		complete_effect = {
@@ -2002,7 +2181,10 @@ USA_propaganda_campaigns = {
 
 		available = {
 			USA_propaganda_poster_slot_available = yes
+			OR = {
 			has_completed_focus = USA_the_giant_wakes
+			has_completed_focus = Giant_Wakes
+			}
 		}
 
 		days_remove = 365
@@ -2038,7 +2220,10 @@ USA_propaganda_campaigns = {
 
 		available = {
 			USA_propaganda_poster_slot_available = yes
+			OR = {
 			has_completed_focus = USA_fair_labour_standards_act
+			has_completed_focus = Fair_Labour_Standards_Act
+			}
 		}
 
 		days_remove = 365
@@ -2154,7 +2339,10 @@ USA_propaganda_campaigns = {
 
 		available = {
 			USA_propaganda_poster_slot_available = yes
+			OR = {
 			has_completed_focus = USA_wartime_industry
+			has_completed_focus = Wartime_Industry
+			}
 		}
 
 		days_remove = 365
@@ -2308,7 +2496,10 @@ USA_propaganda_campaigns = {
 
 		available = {
 			USA_propaganda_poster_slot_available = yes
+			OR = {
 			has_completed_focus = USA_expand_the_USMC
+			has_completed_focus = Marine_Corp
+			}
 		}
 
 		days_remove = 365
@@ -2387,7 +2578,10 @@ USA_propaganda_campaigns = {
 
 		available = {
 			USA_propaganda_poster_slot_available = yes
+			OR = {
 			has_completed_focus = USA_army_of_the_united_states
+			has_completed_focus = United_States_Army
+			}
 			or = {
 				has_war = yes
 				date > 1941.1.1
@@ -2424,8 +2618,14 @@ USA_election_campaigns = {
 		priority = 1000
 		icon = generic_army_support
 		available = {
+			NOT = {
+		has_global_flag = NO_ASIA 
+			}
 		}
 		visible = {
+			NOT = {
+		has_global_flag = NO_ASIA
+			}
 		}
 
 		cost = 0

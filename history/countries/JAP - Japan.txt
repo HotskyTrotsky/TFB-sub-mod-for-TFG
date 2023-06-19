@@ -21,6 +21,7 @@ add_ideas = {
 	JAP_bushido_spirit
 	JAP_gekokoju
 	JAP_island_hopping8
+	no_grinding_0
 }
 
 if = {
@@ -1125,4 +1126,6 @@ if = {
 			}
 		}	
 	}
-	
+	1936.1.1.13 = {
+		set_global_flag = NO_ASIA
+	}

@@ -2698,6 +2698,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_trait = {
+				character = HUN_lajos_veress
+				trait = panzer_leader
+			}
+			HUN_lajos_veress = {
+				add_attack = 1
+				add_logistics = 2
+			}
 			add_tech_bonus = {
 				name = HUN_develop_tanks
 				bonus = 0.75
@@ -3078,6 +3086,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_trait = {
+				character = HUN_géza_lakatos
+				trait = infantry_leader
+			}
+			HUN_géza_lakatos = {
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			add_ideas = HUN_expanded_reserve
 		}
 	}

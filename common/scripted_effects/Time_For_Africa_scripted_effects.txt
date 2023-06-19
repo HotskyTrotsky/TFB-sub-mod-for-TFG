@@ -64,8 +64,125 @@ Vichy_Spawn = {
 				}
 			}
 		}
-
-
+		#######For some reason hotjoins cause this to reset so i have added a means to check the romanian oil on monthly basis
+Check_ROM_OIL = {
+	ROM = {
+	if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 0 }} 
+	swap_ideas = {
+	remove_idea = ROM_LIBYA_OIL_1
+	remove_idea = ROM_LIBYA_OIL_2
+	remove_idea = ROM_LIBYA_OIL_3
+	add_idea = ROM_LIBYA_OIL_0
+		}
+	}
+	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 1 }} 
+	swap_ideas = {
+	remove_idea = ROM_LIBYA_OIL_0
+	remove_idea = ROM_LIBYA_OIL_2
+	remove_idea = ROM_LIBYA_OIL_3
+	add_idea = ROM_LIBYA_OIL_1
+		}
+	}
+	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 2 }} 
+	swap_ideas = {
+	remove_idea = ROM_LIBYA_OIL_0
+	remove_idea = ROM_LIBYA_OIL_1
+	remove_idea = ROM_LIBYA_OIL_3
+	add_idea = ROM_LIBYA_OIL_2
+		}
+	}
+	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 3 }} 
+	swap_ideas = {
+	remove_idea = ROM_LIBYA_OIL_0
+	remove_idea = ROM_LIBYA_OIL_1
+	remove_idea = ROM_LIBYA_OIL_2
+	add_idea = ROM_LIBYA_OIL_3
+		}
+	}
+		}
+	}
+ROM_LIBYA_OIL_UP = {
+	if = {
+		limit = { has_idea = ROM_LIBYA_OIL_2 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_2
+			add_idea = ROM_LIBYA_OIL_3
+		}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = 250
+			}
+		}
+	}
+	else_if = {
+		limit = { has_idea = ROM_LIBYA_OIL_1 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_1
+			add_idea = ROM_LIBYA_OIL_2
+		}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = 250
+			}
+		}
+	}
+else_if = {
+		limit = { has_idea = ROM_LIBYA_OIL_0 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_0
+			add_idea = ROM_LIBYA_OIL_1
+			}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = 250
+			}
+		}
+	}
+	}
+	ROM_LIBYA_OIL_DOWN = {
+	if = {
+		limit = { has_idea = ROM_LIBYA_OIL_1 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_1
+			add_idea = ROM_LIBYA_OIL_0
+		}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = -250
+			}
+		}
+	}
+	else_if = {
+		limit = { has_idea = ROM_LIBYA_OIL_2 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_2
+			add_idea = ROM_LIBYA_OIL_1
+		}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = -250
+			}
+		}
+	}
+	else_if = {
+		limit = { has_idea = ROM_LIBYA_OIL_3 }
+		swap_ideas = {
+			remove_idea = ROM_LIBYA_OIL_3
+			add_idea = ROM_LIBYA_OIL_2
+		}
+		79 = {
+		add_resource = {
+		type = oil
+		amount = -250
+			}
+		}
+	}
+}
 AFRICA_COMMONWEALTH_AXIS_bases_level_down = {
 	if = {
 		limit = { has_idea = AFRICA_COMMONWEALTH_controls_axis_idea_16 }

@@ -1,0 +1,31 @@
+#focus_tree = {
+#	id = venezuelan_focus
+#	
+#	country = {
+#		factor = 0
+#		
+#		modifier = {
+#			add = 10
+#			tag = VEN
+#		}
+#	}
+#	
+#focus = {
+#		id = ProductionLine
+#		icon = GFX_goal_generic_consumer_goods
+#		x = 10
+#		y = 0
+#		cost = 0
+#		
+#		ai_will_do = {
+#			factor = 200
+#		}
+#
+#		available_if_capitulated = yes
+#		completion_reward = {
+#			every_country={
+#				remove_ideas = starting_cap
+#			}
+#		}
+#	}
+#}

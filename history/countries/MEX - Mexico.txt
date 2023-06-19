@@ -102,6 +102,7 @@ if = {
 		PACIFIC_COMMONWEALTH_controls_original
 		father_check
 		peace_training
+		no_grinding_0
 	}
 }
 

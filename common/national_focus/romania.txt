@@ -3547,6 +3547,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_trait = {
+				character = ROM_gheorghe_avramescu
+				trait = infantry_leader
+			}
+			ROM_gheorghe_avramescu = {
+			add_attack = 1
+			add_defense = 1
+			add_logistics = 1
+			}
 			custom_effect_tooltip = ROM_royal_guards_divisions_tt
 			hidden_effect = {
 				if = {

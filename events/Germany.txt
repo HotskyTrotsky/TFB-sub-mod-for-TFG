@@ -5842,3 +5842,39 @@ country_event = {
 		name = germany.2003.a
 	}
 }
+
+country_event = {
+	id = germany.2004
+	title = germany.2004.t
+	desc = germany.2004.d
+	picture = GFX_news_event_042
+	
+	trigger = {
+	num_divisions_in_states = {
+	count > 5
+	states = {451 663 450 449 662 661 448}
+		}
+	}
+	mean_time_to_happen = {
+	days = 2
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+	#GER_erwin_rommel = {
+	#add_max_trait = 1
+	#}
+	add_trait = {
+		character = GER_erwin_rommel
+		trait = panzer_leader
+		}
+		add_trait = {
+		character = GER_erwin_rommel
+		trait = desert_fox
+		}
+	}
+	option = {
+		name = germany.2003.a
+	}
+}

@@ -77,7 +77,83 @@ ideas = {
 			}
 		}
 
-
+	################Romanian Oil From Libya
+	
+	ROM_LIBYA_OIL_START = {
+			name = ROM_LIBYA_OIL_START
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ROM_LIBYA_OIL
+			
+			removal_cost = -1	
+		}
+	ROM_LIBYA_OIL_0 = {
+			name = ROM_LIBYA_OIL_0
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ROM_LIBYA_OIL
+			
+			removal_cost = -1	
+		}
+	ROM_LIBYA_OIL_1 = {
+			name = ROM_LIBYA_OIL_1
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ROM_LIBYA_OIL
+			
+			removal_cost = -1	
+		}
+		ROM_LIBYA_OIL_2 = {
+			name = ROM_LIBYA_OIL_2
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ROM_LIBYA_OIL
+			
+			removal_cost = -1	
+		}
+	ROM_LIBYA_OIL_3 = {
+			name = ROM_LIBYA_OIL_3
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ROM_LIBYA_OIL
+			
+			removal_cost = -1	
+		}
 
 
 

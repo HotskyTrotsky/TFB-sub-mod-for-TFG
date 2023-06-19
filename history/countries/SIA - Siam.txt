@@ -53,7 +53,10 @@ set_popularities = {
 	fascism = 20
 	neutrality = 80
 }
-
+add_ideas = {
+		peace_training
+		no_grinding_0
+	}
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_prawat_chumsai
 recruit_character = SIA_greg

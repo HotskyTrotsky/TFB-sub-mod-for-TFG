@@ -91,8 +91,296 @@
 			}
 		}
 
-	
+	focus = {
+		id = Merge_Exiled_Nations
+		icon = GFX_goal_generic_propaganda
+		x = 9
+		y = 7
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			date > 1941.1.1
+		}
 
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = Head_Of_Exiled_Nations
+			}
+		}
+		focus = {
+		id = Greece
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			GRE = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = GRE transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = Norway
+		icon = GFX_goal_generic_propaganda
+		x = 4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			NOR = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = NOR transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = Denmark
+		icon = GFX_goal_generic_propaganda
+		x = 5
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			DEN = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = DEN transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = luxembourg
+		icon = GFX_goal_generic_propaganda
+		x = 3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			LUX = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = LUX transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = Belgium
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			BEL = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = BEL transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = Netherlands
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			HOL = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = HOL transfer_troops = yes }
+			}
+		}
+		focus = {
+		id = Poland
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Merge_Exiled_Nations}
+		relative_position_id = Merge_Exiled_Nations
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			POL = {
+				AND = {
+				is_ai = yes
+				has_war = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			annex_country = { target = POL transfer_troops = yes }
+			}
+		}
 	focus = {
 		id = FRA_appeal_to_overseas_territories
 		icon = GFX_goal_generic_radar

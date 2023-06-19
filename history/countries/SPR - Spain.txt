@@ -143,6 +143,7 @@ if = {
 		SPR_national_strikes_3	
 		SPA_neutrality_idea
 		peace_training
+		no_grinding_0
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz

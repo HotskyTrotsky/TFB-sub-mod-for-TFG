@@ -1,7 +1,23 @@
 ideas = {
 
 	country = {
-		
+		Head_Of_Exiled_Nations = {
+			picture = spr_torchbearers_of_tomorrow
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			removal_cost = -1
+			
+			cancel = {
+				has_global_flag = fall_of_france
+			}
+			
+			modifier = {
+				compliance_gain = 0.1
+				}
+			}
 		FRA_incompetent_command = {
 			picture = chi_incompetent_officers
 			allowed = {

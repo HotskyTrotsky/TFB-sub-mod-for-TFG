@@ -32,6 +32,7 @@ if = {
 		HUN_hussar_legacy
 		peace_training
 		AFRICA_COMMONWEALTH_controls_axis_idea_6
+		no_grinding_0
 	}
 }
 set_variable = { axis_poster_center_icon_frame = 1 }

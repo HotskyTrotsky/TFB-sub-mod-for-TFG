@@ -106,6 +106,26 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = infantry_leader
+
+			}
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = organizer
+			}
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = trickster
+			}
+			JAP_toshizo_nishio = {
+				#add_skill_level = 3
+				add_attack = 4
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 3
+			}
 			swap_ideas = {
 				add_idea = JAP_militarism_showa
 				remove_idea = JAP_militarism
@@ -126,6 +146,16 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
+			add_trait = {
+			character = JAP_keisuke_fujie
+			trait = infantry_leader
+			}
+			JAP_keisuke_fujie = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			remove_ideas = JAP_gekokoju2
 		}
 	}
@@ -143,6 +173,20 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
+			add_trait = {
+				character = JAP_hitoshi_imamura
+				trait = infantry_leader
+			}
+			add_trait = {
+				character = JAP_hitoshi_imamura
+				trait = JAP_samurai_legacy
+			}
+			JAP_hitoshi_imamura = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			swap_ideas = {
 				add_idea = JAP_toseiha2
 				remove_idea = JAP_toseiha
@@ -358,6 +402,28 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = infantry_leader
+
+			}
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = organizer
+
+			}
+			add_trait = {
+				character = JAP_toshizo_nishio
+				trait = trickster
+
+			}
+			JAP_toshizo_nishio = {
+				#add_skill_level = 3
+				add_attack = 4
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 3
+			}
 			swap_ideas = {
 				add_idea = JAP_gekokoju2
 				remove_idea = JAP_gekokoju
@@ -465,6 +531,16 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_trait = {
+			character = JAP_keisuke_fujie
+			trait = infantry_leader
+			}
+			JAP_keisuke_fujie = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			add_ideas = JAP_mil_government
 		}
 	}
@@ -490,6 +566,20 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_trait = {
+				character = JAP_hitoshi_imamura
+				trait = infantry_leader
+			}
+			add_trait = {
+				character = JAP_hitoshi_imamura
+				trait = JAP_samurai_legacy
+			}
+			JAP_hitoshi_imamura = {
+				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			create_country_leader = {
 				name = "Hirohito"
 				desc = "POLITICS_Hirohito_DESC"

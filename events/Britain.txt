@@ -331,7 +331,8 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				
+				viceroy_emeritus
+				cautious_arbiter
 			}
 		}
 	}
@@ -982,7 +983,10 @@ hidden_effect = {
 			FRA = {annex_country = {target = IRQ transfer_troops = yes}}
 			FRA = {annex_country = {target = MAL transfer_troops = yes}}
 			}
-			
+			ai_chance = { factor = 90 }
+		}
+		option = {
+		name = britain.511.b
 		}
 	}
 

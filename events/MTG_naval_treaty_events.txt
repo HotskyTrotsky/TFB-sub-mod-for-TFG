@@ -111,13 +111,13 @@ country_event = {
 			limit = {
 				NOT = { has_naval_treaty_trigger = yes }
 			}
-			activate_mission = MTG_treaty_reduction_mission
+			#activate_mission = MTG_treaty_reduction_mission
 			FROM = {
 				country_event = { id = MTG_naval_treaty.5 days = 3 }
 			}
 		}
 		else = {
-			activate_mission = MTG_treaty_reduction_signatory_mission
+			#activate_mission = MTG_treaty_reduction_signatory_mission
 			FROM = {
 				country_event = { id = MTG_naval_treaty.5 days = 3 }
 			}
@@ -213,7 +213,7 @@ country_event = {
 		name = MTG_naval_treaty.5.a 
 		effect_tooltip = {
 			FROM = {
-				activate_mission = MTG_treaty_reduction_mission
+				#activate_mission = MTG_treaty_reduction_mission
 			}
 		}
 	}

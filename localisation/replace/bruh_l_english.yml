@@ -54,7 +54,7 @@
  continuous_fuel_desc:0 "We need to focus on fuel production."
  continuous_licensing:0 "License Production"
  continuous_licensing_desc:0 "We need to produce licensed equipment at record speeds."
-
+NO_ASIA_attache:0 "Attache to the Sino-Japanese War"
  form_mutapa:0 "Unite South Africa"
  form_mutapa_category:0 "Unite South Africa"
  CHI_adopt_guerilla_tactics:0 "Adopt Guerilla Tactics"
@@ -95,6 +95,15 @@
  POL_purchase_equipment:0 "Buy From Our Friends"
  POL_purchase_usa:0 "Buy From the Americans"
  POL_purchase_commonwealth:0 "Buy From the Commonwealth"
+
+ #####Annex countries
+ SAF_Annex_CAN:0 "Annex Canada (If Ai)"
+ CAN_Annex_SAF:0 "Annex South Africa (If Ai)"
+ ROM_Annex_HUN:0 "Annex Hungry (If Ai)"
+ ROM_Annex_BUL:0 "Annex Bulgaria (If Ai)"
+ HUN_Annex_ROM:0 "Annex Romania (If Ai)"
+ HUN_Annex_BUL:0 "Annex Bulgaria (If Ai)"
+ ENG_Annex_AST:0 "Annex Australia (If Ai)"
  #### COUNTRIES ####
  OMA_neutrality:0 "British Middle Eastern Protectorate"
  IRQ_neutrality:0 "Protectorate of Iraq"
@@ -202,12 +211,23 @@
  POL_morale:0 "Polish Morale"
  POL_morale_desc:0 "The Polish are a proud people, but eventually their spirit will break when they realize that help is not coming."
  POL_war_decisions:0 "Polish War Descsions"
+  NO_ASIA_attache_idea:0 "Attache to the Sino-Japanese War."
 
  All_Quiet_On_The_Western_Front:0 "All Quiet On The Western Front"
  father_check:0 "No Father?"
  father_check_desc:0 "Some players need some fatherly guidance due to a lack of that in their life"
  rail_way_plural:0 "Railways"
 
+ROM_LIBYA_OIL_START:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_START_desc:0 "§G+750 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_0:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_0_desc:0 "§R0 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_1:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_1_desc:0 "§G+250 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_2:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_2_desc:0 "§G+500 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ROM_LIBYA_OIL_3:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_3_desc:0 "§G+750 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"
  synthetic_rubber_refinery_desc:0 "This building provides the state with"
@@ -276,6 +296,16 @@
  motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
 
  MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
+ GetAdmiralNameTitle_def:0 "Admiral [THIS.GetName]"
+ GetShipCount_def:0 "£fleet_texticon Ship Count: [?THIS.get_num_ships]"
+ GetCommandLimit_under_def:0 "£command_power_texticon §GCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetCommandLimit_equal_def:0 "£command_power_texticon §HCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetCommandLimit_over_def:0 "£command_power_texticon §RCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetCommandLimit_disabled:0 "£command_power_texticon §RCmd Limit: §0(DISABLED)§!"
+ GetAdmiralPortrait_tt:0 "[GetAdmiralPortrait]"
+
+ startingevent.29.t:0 "Naval Fleet Size §0(Important)§!"
+ startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet that contains capitals or light cruisers will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\nFor each Command Limit you are over the cap, your country will deal 1% less naval damage. Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
 
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
@@ -1134,13 +1164,17 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  navy_chief_anti_submarine_1:0 "Anti-Submarine\n(Specialist)"
  navy_chief_anti_submarine_2:0 "Anti-Submarine\n(Expert)"
  navy_chief_anti_submarine_3:0 "Anti-Submarine\n(Genius)"
-
+NO_ASIA_NAME:0 "No Asia"
+ NO_ASIA_DESC:0 "A game without Asia, made for small player count lobbies"
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
  RULE_OPTION_ENABLED:0 "Enabled"
  RULE_OPTION_ENABLED_DESC:0 "Enabled"
  RULE_OPTION_DISABLED:0 "Disabled"
  RULE_OPTION_DISABLED_DESC:0 "Disabled"
+ RULE_NAVY_CAP:0 "Admiral Command Limit"
+ RULE_OPTION_NAVY_CAP_ENABLED_DESC:0 "Limit the amount of ships a single Admiral can command"
+ RULE_OPTION_NAVY_CAP_DISABLED_DESC:0 "Allow Admirals to have an unlimited number of ships under them"
  RULE_CHINA_WAVES:0 "Chinese Waves"
  RULE_OPTION_THREE_WAVES:0 "3 Waves (Max)"
  RULE_OPTION_THREE_WAVES_DESC:0 "Spawn all 3 waves of conscripts (Default balance)"

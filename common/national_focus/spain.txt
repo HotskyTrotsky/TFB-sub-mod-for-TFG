@@ -1024,6 +1024,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_trait = {
+				character = SPR_gonzalo_queipo_de_llano
+				trait = infantry_leader
+			}
+			SPR_gonzalo_queipo_de_llano = {
+				add_defense = 1
+				add_planning = 1
+			}
 			army_experience = 50
 			add_timed_idea = { idea = SPA_foreign_training_staff days = 730 }
 		}
@@ -2382,6 +2390,36 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			
+			remove_trait = {
+				character = SPA_emilio_mola
+				trait = thorough_planner
+			}
+			remove_trait = {
+				character = SPA_emilio_mola
+				trait = organisational_leader
+			}
+			remove_trait = {
+				character = SPA_emilio_mola
+				trait = trait_cautious
+			}
+			add_trait = {
+				character = SPA_emilio_mola
+				trait = organizer
+			}
+			add_trait = {
+				character = SPA_emilio_mola
+				trait = infantry_leader
+			}
+			add_trait = {
+				character = SPA_emilio_mola
+				trait = urban_assault_specialist
+			}
+			SPA_emilio_mola = {
+				add_attack = 1
+				add_defense = 4
+				add_logistics = 2
+			}
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = SPA_the_army_of_africa_model
@@ -2409,6 +2447,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_trait = {
+				character = SPA_jose_enrique_varela
+				trait = inflexible_strategist
+			}
+			SPA_jose_enrique_varela = {
+				add_defense = 1
+			}
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 0.5
@@ -2435,6 +2480,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			remove_trait = {
+				character = SPA_juan_yague
+				trait = trait_reckless
+			}
+			add_trait = {
+				character = SPA_juan_yague
+				trait = hill_fighter
+			}
+			add_trait = {
+				character = SPA_juan_yague
+				trait = trickster
+			}
+			SPA_juan_yague = {
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+			}
 			add_tech_bonus = {
 				name = SPA_artillery_modernization
 				bonus = 0.5
@@ -2495,6 +2557,42 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_trait = {
+				character = SPR_jose_millan_astray
+				trait = commando
+			}
+			add_trait = {
+				character = SPR_jose_millan_astray
+				trait = naval_invader
+			}
+			add_trait = {
+				character = SPR_jose_millan_astray
+				trait = swamp_fox
+			}
+			remove_trait = {
+				character = SPR_jose_millan_astray
+				trait = trait_reckless
+			}
+			remove_trait = {
+				character = SPR_jose_millan_astray
+				trait = war_hero
+			}
+			add_trait = {
+				character = SPA_agustin_munoz_grandes
+				trait = infantry_leader
+			}
+			add_trait = {
+				character = SPA_agustin_munoz_grandes
+				trait = commando
+			}
+			add_trait = {
+				character = SPA_agustin_munoz_grandes
+				trait = trait_mountaineer
+			}
+			SPA_agustin_munoz_grandes = {
+				add_defense = 1
+				add_logistics = 1
+			}
 			add_tech_bonus = {
 				name = SPA_expand_the_special_forces
 				bonus = 0.5
@@ -2527,6 +2625,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_trait = {
+				character = SPA_miguel_cabanellas
+				trait = expert_improviser
+			}
+			add_trait = {
+				character = SPA_miguel_cabanellas
+				trait = cavalry_leader
+			}
+			remove_trait = {
+				character = SPA_miguel_cabanellas
+				trait = old_guard
+			}
+			SPA_miguel_cabanellas = {
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+			}
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 0.5
@@ -2559,6 +2674,51 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			remove_trait = {
+				character = SPA_francisco_franco
+				trait = logistics_wizard
+			}
+			remove_trait = {
+				character = SPA_francisco_franco
+				trait = organisational_leader
+			}
+			remove_trait = {
+				character = SPA_francisco_franco
+				trait = expert_delegator
+			}
+			add_trait = {
+				character = SPA_francisco_franco
+				trait = panzer_leader
+			}
+			add_trait = {
+				character = SPA_francisco_franco
+				trait = trickster
+			}
+			add_trait = {
+				character = SPA_francisco_franco
+				trait = organizer
+			}
+			SPA_francisco_franco = {
+				add_attack = 2
+				add_defense = 2
+				add_logistics = 2
+			}
+			remove_trait = {
+				character = SPR_mohamed_meziane
+				trait = career_officer
+			}
+			add_trait = {
+				character = SPR_mohamed_meziane
+				trait = trait_engineer
+			}
+			add_trait = {
+				character = SPR_mohamed_meziane
+				trait = panzer_leader
+			}
+			SPR_mohamed_meziane = {
+				add_planning = 1
+				add_logistics = 1
+			}
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
 				bonus = 1.0

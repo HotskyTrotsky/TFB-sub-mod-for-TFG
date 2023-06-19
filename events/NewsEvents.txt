@@ -3566,6 +3566,16 @@ news_event = {
 	option = {
 		name = news.117.b
 		trigger = { TAG = JAP }
+		JAP_yasuji_okamura = {
+		#add_skill_level = 4
+		add_attack = 4
+		add_defense = 4
+		add_logistics = 4
+		}
+		add_trait = {
+		character = JAP_yasuji_okamura
+		trait = infantry_leader
+		}
 	}
 	option = {
 		name = news.100.c
@@ -13101,9 +13111,9 @@ news_event = {
 	
 	major = yes
 	is_triggered_only = yes
-	trigger = {
-		
-	}
+	#trigger = {
+	#	
+	#}
 	
 	immediate = {
 
@@ -13121,4 +13131,136 @@ news_event = {
 		name = news.400.a
 	}
 	
+}
+news_event = {
+	id = news.401
+	title = news.401.t
+	desc = news.401.d 
+	picture = GFX_news_event_news_event_capture_london
+	hidden = yes
+
+	trigger = {
+	AND = {
+		date > 1940.6.22
+		GER = {
+		has_war = yes
+			}
+			}
+		}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+			limit = {
+			has_idea = no_grinding_0
+				}
+				swap_ideas = {
+				remove_idea = no_grinding_0
+				add_idea = no_grinding_1
+				
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+}
+news_event = {
+	id = news.402
+	title = news.402.t
+	desc = news.402.d 
+	picture = GFX_news_event_news_event_capture_london
+	hidden = yes
+
+	trigger = {
+		AND = {
+		date > 1941.6.22
+		GER = {
+		has_war = yes
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+			limit = {
+			has_idea = no_grinding_1
+				}
+				swap_ideas = {
+				remove_idea = no_grinding_1
+				add_idea = no_grinding_2
+				
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+}
+news_event = {
+	id = news.403
+	title = news.403.t
+	desc = news.403.d 
+	picture = GFX_news_event_news_event_capture_london
+	hidden = yes
+
+	trigger = {
+		AND = {
+		date > 1942.6.22
+		GER = {
+		has_war = yes
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+			limit = {
+			has_idea = no_grinding_2
+				}
+				swap_ideas = {
+				remove_idea = no_grinding_2
+				add_idea = no_grinding_3
+				
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+}
+news_event = {
+	id = news.404
+	title = news.404.t
+	desc = news.404.d 
+	picture = GFX_news_event_news_event_capture_london
+	hidden = yes
+
+	trigger = {
+		AND = {
+		date > 1943.6.22
+		GER = {
+		has_war = yes
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+			limit = {
+			has_idea = no_grinding_3
+				}
+				remove_ideas = no_grinding_3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
 }

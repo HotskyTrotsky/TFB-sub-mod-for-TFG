@@ -471,7 +471,7 @@
 		bypass = {
 			
 		}
-
+		available_if_capitulated = yes
 		complete_tooltip = {
 			every_owned_state = {
 				limit = {
@@ -2752,8 +2752,34 @@
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	completion_reward = {
-		
-		
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 9000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 600
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 300
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 200
+			}
 		}
 	}
 	

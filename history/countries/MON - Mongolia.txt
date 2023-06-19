@@ -1,40 +1,5 @@
 ﻿capital = 330
-
-oob = "MON_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	support_weapons = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	basic_train = 1
-}
-
-add_ideas = {
-	limited_conscription
-	MON_collectivisation_1
-	MON_nomad_1
-	peace_training
-}
-
-set_variable = { mon_poster_center_icon_frame = 1 }
-
-set_convoys = 100
-
-set_politics = {
-	ruling_party = communism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	communism = 60
-	neutrality = 40
-}
-
+recruit_character = MON_singer
 recruit_character = MON_khorloogiin_choibalsan
 recruit_character = MON_tong_shangzhi
 recruit_character = MON_oboi_kangan
@@ -56,3 +21,38 @@ recruit_character = MON_dagva
 recruit_character = MON_ganbaatar
 recruit_character = MON_ulanhu
 recruit_character = MON_khan
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	basic_train = 1
+}
+
+add_ideas = {
+	limited_conscription
+	MON_collectivisation_1
+	MON_nomad_1
+	peace_training
+	no_grinding_0
+}
+
+set_variable = { mon_poster_center_icon_frame = 1 }
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 60
+	neutrality = 40
+}

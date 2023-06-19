@@ -2013,6 +2013,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_trait = {
+				character = GER_maximilian_von_weichs
+				trait = cavalry_leader
+			}
+			add_trait = {
+				character = GER_maximilian_von_weichs
+				trait = combined_arms_expert
+			}
 			add_tech_bonus = {
 				name = tnk_bonus
 				bonus = 0.5
@@ -2041,6 +2049,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		GER_sepp_dietrich = {
+		add_attack = 2
+		add_defense = 1
+		add_logistics = 2
+		}
 			add_tech_bonus = {
 				name = tnk_bonus
 				bonus = 0.75
@@ -4309,6 +4322,18 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_trait = {
+				character = GER_erich_von_manstein
+				trait = panzer_leader
+			}
+			add_trait = {
+				character = GER_erwin_von_witzleben
+				trait = infantry_leader
+			}
+		GER_erwin_von_witzleben = {
+		add_attack = 2
+		add_defense = 1
+		}
 			add_ideas = triumphant_will
 			add_political_power = 200
 		}
@@ -5358,6 +5383,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		add_trait = {
+				character = GER_sepp_dietrich
+				trait = Organizer
+			}
 			swap_ideas = {
 				add_idea = GER_general_staff2
 				remove_idea = general_staff
@@ -6429,11 +6458,23 @@ focus_tree = {
 		id = GER_japan_friend
 		icon = GFX_goal_indyclone_befriend_japan
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				AND = {
+					JAP = { is_puppet = no }
+					NOT = { has_war_with = JAP }
+				}
+			}
+			else = {
 			AND = {
 				country_exists = JAP
 				JAP = { is_puppet = no }
 				NOT = { has_war_with = JAP }
 			}
+		}
 		}
 		x = 44
 		y = 0
@@ -6474,10 +6515,22 @@ focus_tree = {
 		id = GER_japan_friend2
 		icon = GFX_goal_military_agreement_germany
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				AND = {
+					JAP = { is_puppet = no }
+					NOT = { has_war_with = JAP }
+				}
+			}
+			else = {
 			AND = {
 				country_exists = JAP
 				JAP = { is_puppet = no }
 				NOT = { has_war_with = JAP }
+				}
 			}
 		}
 		prerequisite = { focus = GER_japan_friend }

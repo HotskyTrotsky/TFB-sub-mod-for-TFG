@@ -272,6 +272,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = extra_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
 			module = auto_loader
 			count < 2
 		}

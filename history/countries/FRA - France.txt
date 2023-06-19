@@ -90,6 +90,7 @@ if = {
 	add_ideas = {
 	MTG_naval_treaty_adherent
 	peace_training
+	no_grinding_0
 		}
 	}
 if = {

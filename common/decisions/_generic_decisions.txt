@@ -189,6 +189,227 @@ political_actions = {
 		}
 	}
 
+	SAF_Annex_CAN = {
+	icon = generic_political_discourse
+	available = {
+			tag = SAF
+			CAN = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = SAF
+			CAN = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = CAN transfer_troops = yes }
+		CAN = {
+			every_unit_leader = {
+				set_nationality = SAF
+			}
+		}
+		464 = {set_compliance = 60}
+		465 = {set_compliance = 60}
+		468 = {set_compliance = 60}
+		466 = {set_compliance = 60}
+		276 = {set_compliance = 60}
+		682 = {set_compliance = 60}
+		683 = {set_compliance = 60}
+		467 = {set_compliance = 60}
+		469 = {set_compliance = 60}
+		472 = {set_compliance = 60}
+		470 = {set_compliance = 60}
+		473 = {set_compliance = 60}
+		440 = {set_compliance = 60}
+		471 = {set_compliance = 60}
+		740 = {set_compliance = 60}
+		739 = {set_compliance = 60}
+		Check_SAF_Flag = yes
+		}
+	}
+	CAN_Annex_SAF = {
+	icon = generic_political_discourse
+	available = {
+			tag = CAN
+			SAF = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = CAN
+			SAF = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = SAF transfer_troops = yes }
+		SAF = {
+			every_unit_leader = {
+				set_nationality = CAN
+			}
+		}
+		541 = {set_compliance = 60}
+		681 = {set_compliance = 60}
+		719 = {set_compliance = 60}
+		275 = {set_compliance = 60}
+		Check_CAN_Flag = yes
+		}
+	}
+	ROM_Annex_HUN = {
+	icon = generic_political_discourse
+	available = {
+			tag = ROM
+			HUN = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = ROM
+			HUN = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = HUN transfer_troops = yes }
+		HUN = {
+			every_unit_leader = {
+				set_nationality = ROM
+			}
+		}
+		155 = {set_compliance = 60}
+		154 = {set_compliance = 60}
+		43 = {set_compliance = 60}
+		Check_ROM_Flag = yes
+		}
+	}
+	ROM_Annex_BUL = {
+	icon = generic_political_discourse
+	available = {
+			tag = ROM
+			BUL = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = ROM
+			BUL = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = BUL transfer_troops = yes }
+		BUL = {
+			every_unit_leader = {
+				set_nationality = ROM
+			}
+		}
+		211 = {set_compliance = 60}
+		801 = {set_compliance = 60}
+		48 = {set_compliance = 60}
+		212 = {set_compliance = 60}
+		Check_ROM_Flag = yes
+		}
+	}
+	HUN_Annex_ROM = {
+	icon = generic_political_discourse
+	available = {
+			tag = HUN
+			ROM = {
+			is_ai = yes
+			}
+			GER = {has_completed_focus = GER_second_vienna_award}
+		}
+		cost = 5
+		visible = {
+			tag = HUN
+			ROM = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = ROM transfer_troops = yes }
+		ROM = {
+			every_unit_leader = {
+				set_nationality = HUN
+			}
+		}
+		81 = {set_compliance = 60}
+		46 = {set_compliance = 60}
+		79 = {set_compliance = 60}	
+		Check_HUN_Flag = yes
+		}
+	}
+	HUN_Annex_BUL = {
+	icon = generic_political_discourse
+	available = {
+			tag = HUN
+			BUL = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = HUN
+			BUL = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = BUL transfer_troops = yes }
+		BUL = {
+			every_unit_leader = {
+				set_nationality = HUN
+			}
+		}
+		211 = {set_compliance = 60}
+		801 = {set_compliance = 60}
+		48 = {set_compliance = 60}
+		212 = {set_compliance = 60}	
+		Check_HUN_Flag = yes
+		}
+	}
+	
+	ENG_Annex_AST = {
+	icon = generic_political_discourse
+	available = {
+			tag = ENG
+			AST = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = ENG
+			AST = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = AST transfer_troops = yes }
+		AST = {
+			every_unit_leader = {
+				set_nationality = ENG
+			}
+		}
+		518 = {set_compliance = 60}
+		517 = {set_compliance = 60}
+		285 = {set_compliance = 60}
+		519 = {set_compliance = 60}
+		522 = {set_compliance = 60}	
+		520 = {set_compliance = 60}	
+		521 = {set_compliance = 60}	
+		523 = {set_compliance = 60}
+		737 = {set_compliance = 60}	
+		634 = {set_compliance = 60}	
+		}	
+	}
+	
 	promises_of_peace = {
 
 		icon = generic_political_discourse
@@ -701,6 +922,33 @@ propaganda_efforts = {
 }
 
 operations = {
+	NO_ASIA_attache = {
+        cost = 100
+
+        fire_only_once = yes
+
+        available = {
+			command_power > 49
+			date > 1938.1.1
+			NOT = {
+				GER = {
+					has_completed_focus = GER_danzig_or_war
+				}
+			}
+        }
+
+        visible = {
+        	has_global_flag = NO_ASIA
+		}
+
+        complete_effect = {
+			add_command_power = -50
+			add_ideas = NO_ASIA_attache_idea
+		}
+		ai_will_do = {
+			factor = 999
+		}
+	}
 	#MTG_TEST_NAVAL_MIXED_VS_MIXED_EARLY = { #MTG_TODO_GABRIEL: remove before launch (no seriously do not ship with this (hehe get it don't SHIP with it)) 
 #
 	#	icon = generic

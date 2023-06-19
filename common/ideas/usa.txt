@@ -1,7 +1,970 @@
 ideas = {
 
 	country = {
+		#######No Asia Ideas
+		Neutral = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+		#####Starting Ideas
+		#Naval_Focus_Pacific = {
+		#
+		#	picture = generic_disjointed_gov			
+		#	
+		#	allowed = {
+		#		always = no
+		#	}
+		#
+		#	allowed_civil_war = {
+		#		has_government = democratic
+		#	}
+		#
+		#	removal_cost = -1
+		#	
+		#	modifier = {
+		#	industrial_capacity_dockyard = -0.25
+		#	}
+		#	equipment_bonus = {
+		#		ship_hull_heavy = {
+		#			build_cost_ic = 0.15 instant = yes
+		#		}
+		#		ship_hull_carrier = {
+		#			build_cost_ic = 0.15 instant = yes
+		#		}
+		#
+		#	}
+		#}
+
+		Enemy_In_The_East = {
+
+			picture = imperial_glory_idea			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			naval_invasion_capacity = -5
+			industrial_capacity_dockyard = -0.50
+			industrial_capacity_factory = -0.50
+			consumer_goods_factor = 0.05
+			}
+			research_bonus = { ship_modules_tech = -0.50}
+			research_bonus = { naval_equipment = -0.50 }
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 0.5 instant = yes
+				}
+			}
+		}
+		Enemy_In_The_East_1 = {
+
+			picture = imperial_glory_idea			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			naval_invasion_capacity = -5
+			industrial_capacity_dockyard = -0.25
+			industrial_capacity_factory = -0.25
+			consumer_goods_factor = 0.025
+			}
+			research_bonus = {ship_modules_tech = -0.25}
+			research_bonus = { naval_equipment = -0.25 }
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 0.25 instant = yes
+				}
+	
+			}
+		}
+		Enemy_In_The_East_2 = {
+
+			picture = imperial_glory_idea			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			industrial_capacity_dockyard = -0.25
+			industrial_capacity_factory = -0.25
+			#consumer_goods_factor = 0.5
+			}
+			research_bonus = {ship_modules_tech = 0.05}
+				research_bonus = { naval_equipment = 0.05 }
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = 0.25 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.25 instant = yes
+				}
+			}
+		}
+		The_Great_Depression_0 = {
+
+			picture = great_depression			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = 69
+				political_power_cost = 1.75
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.25
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = -0.25
+			}
+		}
+		
+		Disarmed_Nation_0 = {
+
+			picture = disarmed_nation			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = -0.5
+			}
+		}
+		
+		Disarmed_Nation_1 = {
+			picture = disarmed_nation			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			conscription_factor = -0.25
+			}
+		}
+		No_Funds_For_Military_0 = {
+
+			picture = generic_army_problems			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.25
+				max_command_power_mult = -0.1
+				research_speed_factor = -0.15
+			}
+		}
+		######
+		########Expand Research and development
+		No_Funds_For_Military_1 = {
+
+			picture = generic_army_problems			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.25
+				max_command_power_mult = -0.1
+				research_speed_factor = -0.05
+			}
+		}
+		
+		#####USACE
+		No_Funds_For_Military_2 = {
+
+			picture = generic_army_problems			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.20
+				max_command_power_mult = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+		#####OSS
+		No_Funds_For_Military_3 = {
+
+			picture = generic_army_problems			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.1
+				max_command_power_mult = -0.025
+				research_speed_factor = 0.05
+			}
+		}
+		
+		#####Pentagon
+		No_Funds_For_Military_4 = {
+
+			picture = ETH_conservative_high_command			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.025
+				research_speed_factor = 0.05
+				naval_invasion_capacity = 2
+			}
+		}
+		###########
+		#####Continue New deal
+		The_Great_Depression_1 = {
+
+			picture = great_depression			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.75
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = -0.15
+				economy_cost_factor = 69
+			}
+		}
+		#####WPA
+		The_Great_Depression_2 = {
+
+			picture = great_depression			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.20
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.15
+				economy_cost_factor = 69
+			}
+		}
+		#######2nd new deal
+		The_Great_Depression_3 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.20
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		#####Tackling Waste
+		The_Great_Depression_4 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		##########Robinson Patman act
+		The_Great_Depression_5 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.20
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.2
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		
+		#########Side with Unions
+		The_Great_Depression_Union_1 = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.18
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.15
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		####Negotiate with Unions
+		The_Great_Depression_Union_2 = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.15
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		
+		#####Rebuilding the nation
+		
+		The_Great_Depression_Union_3 = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.15
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		
+		#######Side with Business
+		The_Great_Depression_Business_1 = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.20
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		####Address Strikes
+		The_Great_Depression_Business_2 = {
+
+			picture = FRA_factory_strikes			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.20
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		#########Fair Labour Act
+		The_Great_Depression_6 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.15
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		#####Balance Budget
+		The_Great_Depression_7 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.75
+				consumer_goods_factor = 0.10
+				local_resources_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		#####Agricultural Adjustment Act
+		The_Great_Depression_8 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = -0.25
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		###Federal Housing Act
+		The_Great_Depression_9 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		#####Nation Reborn
+		The_Great_Depression_10 = {
+
+			picture = new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		########Landon Deal
+		The_Great_Depression_Landon_0 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.25
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.15
+				economy_cost_factor = 69
+			}
+		}
+		#####Gold Standard
+		The_Great_Depression_Landon_1 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.20
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.25
+				economy_cost_factor = 69
+			}
+		}
+		###Infastructure Investment
+		The_Great_Depression_Landon_2 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.25
+				consumer_goods_factor = 0.20
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.20
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		#######Labour Mangement
+		The_Great_Depression_Landon_3 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.20
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.10
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		#######Tax Reform
+		The_Great_Depression_Landon_4 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.15
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		######Pension Reform
+		The_Great_Depression_Landon_5 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.10
+				local_resources_factor = 0.10
+				industrial_capacity_factory = -0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.75
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		#######Invest into small business
+		The_Great_Depression_Landon_6 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.75
+				consumer_goods_factor = 0.12
+				local_resources_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		#####Balance Budget
+		The_Great_Depression_Landon_7 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.07
+				local_resources_factor = 0.10
+				industrial_capacity_factory =  0.05
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = -0.25
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		######Federal Housing
+		The_Great_Depression_Landon_8 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = 0.02
+				local_resources_factor = 0.10
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = -0.25
+				production_speed_infrastructure_factor = 0.5
+				economy_cost_factor = 69
+			}
+		}
+		#####Wilikies New Deal
+		The_Great_Depression_Landon_9 = {
+
+			picture = wilkies_new_deal			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.5
+			}
+		}
 		USA_tackling_waste_idea = {
 
 			picture = generic_disjointed_gov			
@@ -2226,7 +3189,10 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
+			OR = {
 				has_completed_focus = USA_main_battle_tanks
+				has_completed_focus = Main_Battle_Tank
+				}
 			}
 
 			
@@ -2287,7 +3253,10 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
+			OR = {
 				has_completed_focus = USA_tank_destroyer_doctrine
+				has_completed_focus = Tank_destroyers
+				}
 			}
 
 			
@@ -2654,7 +3623,10 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
+				OR = {
 				has_completed_focus = USA_wartime_industry
+				has_completed_focus = Wartime_Industry
+				}
 			}
 			
 

@@ -343,12 +343,89 @@ Patch 11
 
 -Cost for applying medals reduce to 5 pp however the cost of adding another increases is much higher.
 
-Patch 12 (As of 21/05/2023)
+Patch 12
 
--Fixed Imperial conference
+-Fixed Imperial confrence
 
--Added fortresses as in TFB (From what i can tell these cannot be built but are just added from focuses or events)
+-Added fortressess as in TFB
 
--Gave the Soviet national focus 'Germans are coming' : -5% consumer goods, 15% factory output, 5% factory efficiency max, 10% efficiency growth, 10% resource extraction (Keep in mind this will be removed as soon as Germany declares and also ends with the end of the 5 year plan).
+-Gave the national focus 'Germans are coming" -5% consumer goods, 15% factory output, 5% factory effciency max, 10% effciency growth, 10% resource extraction
 
--Added 2 upgrades for Motorized Rocket Artillery which upgrade breakthrough, soft attack, hard attack, defense. However they can only be upgraded after certain techs have been researched which are : Rocket Artillery (1940), Rocket Artillery Upgrade (1941-42), Experimental Rockets (1943), Rocket Artillery 2 (1944). Also costs extra steel per upgrade and the standard xp cost. Also increased the naval invasion penalty of motorised rocket artillery from -20 to -60.
+
+
+
+
+
+Patch 13 
+
+-Reduced the planning debuff from having max intel on local region from -100% to -20% (this can be stacked with other nations i think)
+
+-Commonwealth tanks can mount medium cannon 1 on early hulls.
+
+-Moved the Oil in Africa so that it starts in Moldova (Romania) However they will lose it if italy loses Libya (Bengahzi, Tripoli, Tobruk). The reason being is sometimes Romania would not gain access to the oil due to no legal transport path.
+
+
+
+
+Patch 14
+
+-Buff from Veterancy is decreased
+
+-Minor propaganda changes (increased bonus)
+
+-Pulled number of changes form TFB (Ethiopia changes from 31/06/2023)
+
+-Some other clear housing of code to try and slim down (This may break something however during current testing it seems to be a-okay. Whole purpose was to try keep the mod file small and deleting files needed)
+
+-Australia can no longer annex DEI
+
+-USA does not start with Philippines (both this and the previous changes were not known to happen when implementing No Asia)
+
+-Overhauled No Asia to include USA with a new focus tree which allows it to annex Mexico and Brazil. USA plays more like a minor nation since it’s a reduced state and focus tree is not as strong.
+
+-Added decisions for Romania, Hungry, South Africa, Canada, Australia to annex nations (Romania can annex hungry and Bulgaria, Hungry can annex Romania and Bulgaria, Canada can annex South Africa, UK can annex Australia)
+
+-Added some new division icons as options.
+
+-Potential fix for Romanian oil resetting when a hot join happens. (Difficult to test in single player however, I added a monthly check which should set the idea correlated with amount of oil to the variable set when changing control of state. That way if it does reset after a hot join, it should fix its self after a month.) 
+
+Patch 14.1
+
+-Germany cannot annex vichy until after 1941
+
+-Free France now have focuses to annex Norway, Denmark, Greece, Netherlands, Belgium, Luxembourg if they are Ai at war with germany. This is to try and speed the game up but also remove exiled units.
+
+-Reworked USA No asia focuses tree to be less powerful but also fixed a lot which was not working with the focus tree such as events for elections not firing but also for them to join the allies.
+
+-If UK is capitulated and is AI the decision for france to annex UK is not optional.
+
+-Fixed exiled UK churchil in charge not being able to progress through focus tree.
+
+
+Patch 15
+
+-Intergrated TFB Changes to Germany tank designer
+
+-Ported over changes made in TFB
+
+Patch 16 as of 18/06/2023
+(There was a patch 15 but it only covered minor bug fixes and therefore was not worth mentioning.)
+-New highly Experimental Air changes which include:
+125 new airframes unquie to nations
+air tech trees for: Germany (Hungary, Romania, Finland) Italy (Bulgaria, Spain) UK (Commonwealth nations) USA (Brazil, Mexico) Japan (Manchucko, Siam) Soviets (Mongolia, China) France.
+New Modules
+New starting aircraft
+This is early Alpha version of this and alot of balancing and editing to airframes is needed, there may also be a rework on modules and how they work. Overall this largly just a shell of what it will become, the aim being to keep the air designer but also add the flair of TFB which is nation specific airframes.
+Main purpose to make this available is to find bugs and help find a balance. There is a version of the mod in which it does not have the air changes but keeps the other patches in case this does not function and needs to be reworked.
+
+-Fixed M3 lee (or grant *looks down upon in british*) not showing a icon
+-Removed some elemets of Host tool (Not needed since TFB added Host tool a while back this is clearing some unnessacy files.)
+-Fixed some other changes that happened from TFB
+-Made Mexican focus tree all 35 day focuses.
+-Reform the Union of britain army focus now gives something (exiled UK communist military path.)
+
+-Introduced no grinding idea for all nations that lowers as the war goes on. (starts at -100% experiance gain to -75% by 1940 june, -50% 1941 june, -25% 1942 june, and is removed by 1943 june.)
+-Generals will now gain traits that could be grinded however these are locked behind focuses or events (For example Rommel gets panzer leader and desert fox if germany has more than 5 units in africa, and Japan gains traits for taking Nanjing).
+Be aware this is WIP and may not be 100% functional (events are a bit quirky however initial testing shows it should work).
+
+

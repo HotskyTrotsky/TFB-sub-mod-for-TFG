@@ -1523,6 +1523,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			add_trait = {
+				character =  SOV_ivan_konev
+				trait = panzer_leader
+			}
 			add_ideas = SOV_guards_ideas
 
 			if = {
@@ -1572,6 +1576,25 @@ focus_tree = {
 		cost = 5
 		
 		available = {
+			if = {
+				limit = {
+					has_global_flag = NO_ASIA
+
+				}
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+				ENG = {
+					OR = {
+						has_war_with = GER
+						has_war_with = ITA
+						has_war_with = JAP
+					}	
+				}	
+			}
+			else = {
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
@@ -1585,83 +1608,84 @@ focus_tree = {
 				}
 			}
 		}
+		}
 
 		completion_reward = {
 			add_ideas = SOV_technical_assistance
 		}
 	}
 
+	# focus = {
+	# 	id = SOV_preemptive_invasion_of_iran
+	# 	icon = GFX_focus_generic_attack_iran
+	# 	prerequisite = { focus = SOV_technical_assistance }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = SOV_technical_assistance
+	# 	cost = 5
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			factor = 0
+	# 			has_civil_war = yes
+	# 		}	
+	# 	}
+		
+	# 	available = {
+	# 		country_exists = PER
+	# 		NOT = { has_war_with = PER }
+	# 		is_subject = no
+	# 		any_enemy_country = { is_major = yes }
+	# 		291 = {
+	# 			controller = {
+	# 			is_in_faction_with = eng
+	# 			}
+
+	# 		}
+		
+	# 		444 = {
+	# 			controller = {
+	# 			is_in_faction_with = eng
+	# 			}
+				
+	# 		}
+	# 	}
+
+	# 	search_filters = {}
+				
+	# 	completion_reward = {
+	# 		PER = {
+	# 			set_country_flag = SOV_ultimatum_sent_flag
+	# 			country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
+	# 		}
+		
+	# 		effect_tooltip = {
+	# 			custom_effect_tooltip = if_they_accept_tt
+	# 			ROOT = {
+	# 				puppet = PER
+	# 			}
+
+	# 			custom_effect_tooltip = if_they_refuse_tt
+	# 			effect_tooltip = {
+	# 				activate_mission = SOV_preparations_for_operation_countenance
+	# 				custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
+	# 			}
+	# 			custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
+	# 		}
+	# 	}
+	# }
+	
 	focus = {
-		id = SOV_preemptive_invasion_of_iran
-		icon = GFX_focus_generic_attack_iran
+		id = SOV_persian_corridor
+		icon = GFX_SOV_narkom_for_arms_industry
 		prerequisite = { focus = SOV_technical_assistance }
 		x = 0
 		y = 1
 		relative_position_id = SOV_technical_assistance
 		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
 		
-		available = {
-			country_exists = PER
-			NOT = { has_war_with = PER }
-			is_subject = no
-			any_enemy_country = { is_major = yes }
-			291 = {
-				controller = {
-				is_in_faction_with = eng
-				}
-				
-			}
-
-			444 = {
-				controller = {
-				is_in_faction_with = eng
-				}
-				
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			PER = {
-				set_country_flag = SOV_ultimatum_sent_flag
-				country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
-			}
-
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				ROOT = {
-					puppet = PER
-				}
-
-				custom_effect_tooltip = if_they_refuse_tt
-				effect_tooltip = {
-					activate_mission = SOV_preparations_for_operation_countenance
-					custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
-				}
-				custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_persian_corridor
-		icon = GFX_SOV_narkom_for_arms_industry
-		prerequisite = { focus = SOV_preemptive_invasion_of_iran }
-		x = 0
-		y = 1
-		relative_position_id = SOV_preemptive_invasion_of_iran
-		cost = 5
-		
-		available = { }
+		available = { ENG = { has_completed_focus = ENG_operation_countenance }}
 		
 		completion_reward = {
 					every_controlled_state = {
@@ -5379,6 +5403,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_trait = {
+				character = SOV_grigory_kulik
+				trait = fortress_buster
+			}
+			SOV_grigory_kulik = {
+				add_attack = 3
+				add_defense = 1
+				add_planning = 3
+				add_logistics = 3
+			}
 			add_ideas = militarized_schools
 		}
 	}
@@ -5399,6 +5433,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			SOV_konstantin_rokossovsky = {
+				add_attack = 2
+				add_logistics = 1
+			}
 			add_ideas = SOV_positive
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_heroes_forward
@@ -6170,6 +6208,19 @@ focus = {
 		relative_position_id = SOV_dual_command
 
 	completion_reward = {
+		add_trait = {
+			character = SOV_vasily_kuznetsov
+			trait = infantry_leader
+		}
+		SOV_vasily_kuznetsov = {
+			add_attack = 1
+			add_defense = 1
+			add_logistics = 1
+		}
+		add_trait = {
+			character = SOV_georgy_zhukov
+			trait = panzer_leader
+		}
 		custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {
 				every_army_leader = {
@@ -6406,6 +6457,13 @@ focus = {
 		}
 
 		completion_reward = {
+			add_trait = {
+				character = SOV_nikolay_vatutin
+				trait = infantry_leader
+			}
+			SOV_nikolay_vatutin = {
+				add_attack = 3
+			}
 			add_ideas = SOV_stavka_idea
 
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
@@ -6506,10 +6564,6 @@ focus = {
 		}
 	}
 	
-	
-	
-
-
 	focus = {
 		id = SOV_transpolar_flights
 

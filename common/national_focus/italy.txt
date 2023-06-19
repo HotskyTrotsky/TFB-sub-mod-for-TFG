@@ -2399,6 +2399,11 @@
 		cost = 2
 
 		completion_reward = {
+			ITA_sebastiano_visconti_prasca = {
+			add_skill_level = 1
+			add_attack = 2
+			add_planning = 1
+			}
 			create_wargoal = {
 				type = take_state_focus
 				target = GRE
@@ -2724,6 +2729,22 @@
 		}
 		
 		completion_reward = {
+			add_trait = {
+				character = ITA_sebastiano_visconti_prasca
+				trait = trait_engineer
+			}
+			add_trait = {
+				character = ITA_sebastiano_visconti_prasca
+				trait = organizer
+			}
+			add_trait = {
+				character = ITA_sebastiano_visconti_prasca
+				trait = infantry_leader
+			}
+			add_trait = {
+				character = ITA_sebastiano_visconti_prasca
+				trait = trait_mountaineer
+			}
 			every_controlled_state = {
 				limit = {
 					is_core_of = GRE
@@ -3686,6 +3707,10 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_trait = {
+				character = ITA_giovanni_messe
+				trait = panzer_leader
+			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ITA_giovanni_messe2
 			add_timed_idea = {
@@ -3905,11 +3930,11 @@
 				name = "Enrico Frattini"
 				picture = "Portrait_Italy_Generic_land_5.dds"
 				traits = { commando }
-				skill = 3
-				attack_skill = 3
+				skill = 4
+				attack_skill = 5
 				defense_skill = 3
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 3
 			}
 			add_tech_bonus = {
 				name = sf_bonus

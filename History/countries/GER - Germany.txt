@@ -177,6 +177,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_axis_original
 	peace_training
 	AFRICA_COMMONWEALTH_controls_axis_idea_6
+	no_grinding_0
 }
 
 

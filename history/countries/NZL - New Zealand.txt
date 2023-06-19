@@ -107,6 +107,8 @@ add_ideas = {
 	#ASN_ALLIES_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
+	no_grinding_0
+	peace_training
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
