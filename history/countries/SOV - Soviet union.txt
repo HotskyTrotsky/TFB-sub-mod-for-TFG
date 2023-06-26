@@ -574,7 +574,8 @@ set_variable = { SOV_defense_industry_production_speed_bunker_factor = 0 } #-> M
 set_variable = { SOV_defense_industry_max_dig_in_factor = 0 } #-> Military Engineering University
 set_variable = { SOV_defense_industry_army_artillery_defence_factor = 0 } #-> Military Engineering University
 
-
+###invest into far east reserves
+set_variable = {SOV.Investment_Into_Far_East_Regiments = 0 }
 #THE RED ARMY NATIONAL SPIRIT VARS
 set_variable = { SOV_the_red_army_mobilization_laws_cost_factor = -0.1 }
 set_variable = { SOV_the_red_army_army_org_factor = -0.15 } # -> Restore Cossack Units / Cohsesion First #Meant to represent disgruntledness
@@ -786,18 +787,20 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "SOV_1936_air_bba"
 		set_technology = {
-			aa_lmg = 1
-			nav_1=1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			iw_large_airframe = 1
-			tac_1 = 1
+			#aa_lmg = 1
+			#nav_1=1
+			#engines_1 = 1
+			#engines_2 = 1
+			#early_bombs = 1
+			#aircraft_construction = 1
+			#iw_small_airframe = 1
+			#basic_small_airframe = 1
+			#iw_medium_airframe = 1
+			#basic_medium_airframe = 1
+			#iw_large_airframe = 1
+			#tac_1 = 1
+			soviet_Inter_War_Fighters = 1
+			soviet_Inter_War_Bombers = 1
 	}
 	else = {
  		set_air_oob = "SOV_1936_air_legacy"
@@ -1602,70 +1605,51 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "I-16"
-		type = small_plane_airframe_1
+		type = small_plane_airframe_1_sov
 		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = Reduced_Materials
+			special_type_slot_2 = empty
 		}
-		icon = "GFX_SOV_fighter1_medium"
+		icon = "GFX_small_plane_airframe_1_sov_medium"
 	}
 	create_equipment_variant = {
 		name = "I-15"
-		type = small_plane_airframe_0
+		type = small_plane_airframe_0_sov
 		modules = {
-			fixed_main_weapon_slot = light_mg_4x
+			fixed_main_weapon_slot = light_mg_2x
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
 			engine_type_slot = engine_1_1x
+			special_type_slot_1 = Reduced_Materials
+			special_type_slot_2 = empty
 		}
-		icon = "GFX_SOV_fighter1_medium"
-	}
-	create_equipment_variant = {
-		name = "LBsh"
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = tank_buster_1
-			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-			engine_type_slot = engine_2_1x
-			special_type_slot_2 = dive_brakes_small
-		}
-		icon = "GFX_SOV_CAS1_medium"
-	}
-	create_equipment_variant = {
-		name = "Il-4"
-		type = small_plane_naval_bomber_airframe_1
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting_small
-			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = dive_brakes_small
-			
-		}
-		icon = "GFX_SOV_naval_bomber1_medium"
+		icon = "GFX_small_plane_airframe_0_sov_medium"
 	}
 	create_equipment_variant = {
 		name = "DB-3"
-		type = medium_plane_airframe_1
+		type = medium_plane_airframe_0_sov
 		modules = {
-			fixed_main_weapon_slot = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = radio_navigation_1
-			special_type_slot_2 = dive_brakes_medium
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Large_Reduced_Materials
 		}
-		icon = "GFX_SOV_tactical_bomber1_medium"
+		icon = "GFX_DB_3_medium"
 	}
 	create_equipment_variant = {
 		name = "TB-3"
-		type = large_plane_airframe_0
+		type = large_plane_airframe_0_sov
 		modules = {
-			fixed_main_weapon_slot = large_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret
+			fixed_main_weapon_slot = strategic_payload_light
+			fixed_auxiliary_weapon_slot_1 = empty
 			engine_type_slot = engine_1_4x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Large_Reduced_Materials
 		}
-		#icon = "GFX_SOV_tactical_bomber1_medium"
+		icon = "GFX_soviet_Inter_War_Bombers_medium"
 	}
 }
 

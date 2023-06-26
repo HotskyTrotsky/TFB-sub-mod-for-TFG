@@ -1,0 +1,182 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  RAJ_limited_autonomy:0 "Permit Limited Autonomy"
+  RAJ_limited_autonomy_desc:0 "The Islamic dissidents of the Punjab have long since been a thorn in our side. Let us begin the process of making amends."
+  RAJ_one_india:0 "One India"
+  RAJ_one_india_desc:0 "One nation, indivisible. A new concept for India, to be certain, but a welcome one in the face of these overwhelming odds."
+  RAJ_pakistan_investments:0 "Punjab Investments"
+  RAJ_pakistan_investments_desc:0 "The western territories have seen little investment in these past few years. Whether the product of mismanagement or intolerance, we cannot let this state of affairs continue."
+  RAJ_foreign_investments:0 "Invite Foreign Investors"
+  RAJ_foreign_investments_desc:0 "For as long as we remember, India has only seen investment from London, completely ignored by other Great Powers. If only they knew what we had to offer."
+  RAJ_supress_seperatism:0 "Suppress Seperatism"
+  RAJ_supress_seperatism_desc:0 "In times of trouble, a nation must remain unified. Until the threat subsides, we must take drastic action."
+  RAJ_empower_the_congress:0 "Empower the Congress"
+  RAJ_empower_the_congress_desc:0 "The National Congress can be trusted with this nation's future and should be given its due authority for the survival of the Raj."
+  RAJ_indian_investments:0 "Bombay Investments"
+  RAJ_indian_investments_desc:0 "One of the industrial centers of India, Bombay is decidedly an easy target for industrial investment."
+  RAJ_follow_the_statute:0 "Follow the Statute of Westminster"
+  RAJ_follow_the_statute_desc:0 "Despite not being mentioned in the Statue, India is just as important as any other dominion. We must push for the same implicit rights the other dominions receive by nature alone."
+  RAJ_towards_dominionhood:0 "Towards Dominionhood"
+  RAJ_towards_dominionhood_desc:0 "Britain has lended its support for Indian dominionhood. Let us take the first steps."
+  RAJ_all_india_federation:0 "All-India Federation"
+  RAJ_all_india_federation_desc:0 "In the dominion to come, we cannot be concerned with differences of religion. Religious freedom is a certainty in Britain, and it will be here too."
+  RAJ_the_dominion_of_india:0 "The Dominion of India"
+  RAJ_the_dominion_of_india_desc:0 "The time has come!"
+  RAJ_commonwealth_investors:0 "Invite Commonwealth Investors"
+  RAJ_commonwealth_investors_desc:0 "As the newest member of the British Commonwealth, it is our duty to ensure we are an economic center of the Empire."
+  RAJ_indian_labourers:0 "Indian Labourers"
+  RAJ_indian_labourers_desc:0 "No other nation on earth has access to the vast manpower we can draw upon. Some may call it slavery, but in matters of national defense, some compromises must be made."
+  RAJ_burma_rail:0 "Burma Rail"
+  RAJ_burma_rail_desc:0 "In order to better supply out troops in Burma we must ensure we have a rail system taht connects us through the mountains."
+
+  ####EXILE
+A_Nation_Broken:0 "A Nation Broken"
+
+A_Future_Without_A_Home_Is_No_Future:0 "A Future Without A Home Is No Future"
+
+A_Sense_Of_Direction:0 "A Sense Of Direction"
+
+A_Guiding_Hand:0 "A Guiding Hand"
+
+Empower_William_Slim:0 "Empower William Slim"
+
+Reestablish_The_Forgotton_Army:0 "Reestablish The Forgotton Army"
+
+Rally_Runaways:0 "Rally Runaways"
+
+Establish_British_Chain_Of_Command:0 "Establish British Chain Of Command"
+
+A_United_Command:0 "A United Command"
+
+Launch_Pick_Up_Raids:0 "Launch Pick Up Raids"
+
+Path_To_Liberation:0 "Path To Liberation"
+
+Send_Orde_Wingate:0 "Send Orde Wingate"
+
+Reach_Out_To_Scatterd_Chindits:0 "Reach Out To Scatterd Chindits"
+
+Reach_Out_To_Gurhkas:0 "Reach Out To Gurhkas"
+
+Wide_Spread_Jungle_Training:0 "Wide Spread Jungle Training"
+
+Liberation_Awaits:0 "Liberation Awaits"
+
+Secure_Support_From_Rural_Regions:0 "Secure Support From Rural Regions"
+
+Source_Weapons_From_Rural_Workshops:0 "Source Weapons From Rural Workshops"
+
+Over_Seas_Support:0 "Over Seas Support"
+
+Plead_For_Further_Equipment:0 "Plead For Further Equipment"
+
+Implement_Slims_Doctrine:0 "Implement Slims Doctrine"
+
+Mobility:0 "Mobility"
+
+Lease_Transport_Aircraft:0 "Lease Transport Aircraft"
+
+Boxes_Formation:0 "Boxes Formation"
+
+Request_Commando_Units_From_Britain:0 "Request Commando Units From Britain"
+
+
+###Exiled left path
+A_New_Direction:0 "A New Direction"
+
+Restablish_Indian_National_Congress:0 "Restablish Indian National Congress"
+
+Compromise_With_Conservative_Faction:0 "Compromise With Conservative Faction"
+
+Allow_Socialist_Groups_Back:0 "Allow Socialist Groups Back"
+
+The_Secret_Agenda:0 "The Secret Agenda"
+##why did i bother with this
+V:0 "V"
+
+Propose_A_New_Economic_Plan:0 "Propose A New Economic Plan"
+
+No_Cash_Crops:0 "No Cash Crops"
+
+Reform_Caste_System:0 "Reform Caste System"
+
+Reach_Out_To_Labour_Workers:0 "Reach Out To Labour Workers"
+
+Secure_Weapon_Workshops:0 "Secure Weapon Workshops"
+
+Scavenge_Equipment:0 "Scavenge Equipment"
+
+Reach_Out_To_Local_Millitas:0 "Reach Out To Local Millitas"
+
+Form_National_Indian_Army:0 "Form National Indian Army"
+
+Learn_From_British:0 "Learn From British"
+
+Reach_Out_To_Local_Leaders:0 "Reach Out To Local Leaders"
+
+Create_A_Underground_Central_Command:0 "Create A Underground Central Command"
+
+Rural_Region_Support:0 "Rural Region Support"
+
+Towards_Liberation:0 "Towards Liberation"
+
+Home_At_Last:0 "Home At Last"
+  #### TOOLTIPS ####
+  RAJ_create_unit_gurkas_tt:0 "Gain an elite unit of Gurkhas in Delhi, a 30 width §YMountaineer§! unit with §Y12 Mountaineer§! and §Y6 Pack Artillery§! battalions."
+  RAJ_create_unit_red_eagles_tt:0 "Gain an elite infantry division in Delhi, a 20 width unit with §Y9 Infantry§! and §Y2 Artillery§! battalions."
+  RAJ_jungle_training_effect:0 "Enables §HJungle Training§!\n§HAll Infantry:\n    Jungle§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
+
+  #### IDEAS ####
+  RAJ_the_sun_never_sets:0 "The Eastern Buffer"
+  RAJ_the_sun_never_sets_desc:0 "Bases Mechanic: for every region we still controll we will recieve a bonus\n§YSingapore\nSumatra\nBurma\nMandalay§!" 
+  RAJ_indian_labour:0 "Indian Labourers"
+
+  Nation_Defeated:0 "Nation Defeated"
+  Scatterd_Army:0 "Scatterd Army"
+  Scatterd_Army_1:0 "Scatterd Army"
+  Scatterd_Army_2:0 "Reorganized Armed Forces"
+  Scatterd_Army_3:0 "Reorganized Armed Forces"
+  Pick_Up_Raids:0 "Pick Up Raids"
+  One_Step_Forward_Five_Steps_Back:0 "One Step Forward Five Steps Back"
+  One_Step_Forward_Five_Steps_Back_1:0 "One Step Forward Five Steps Back"
+  One_Step_Forward_Five_Steps_Back_2:0 "One Step Forward Five Steps Back"
+  One_Step_Forward_Five_Steps_Back_3:0 "Reformed Economy"
+  Lost_At_Sea:0 "Lost At Sea"
+  Lost_At_Sea_1:0 "Lost At Sea"
+  Lost_At_Sea_2:0 "Lost At Sea"
+  Chindits_Offensive:0 "Chindits Offensive"
+  Box_Formation:0 "Box Formation"
+  ###EXILE
+  #### DECISIONS ####
+  RAJ_famine_descsion:0 "Bengal Famine"
+  RAJ_famine_descsion_desc:0 "We must quickly solve this pending famine, before mass starvation ensues."
+  RAJ_risk_of_famine_desc:2 "The Indian system of food production is very fragile. Even a small interruption might cause a collapse.\n§RIf we were to go to war in this current state, a famine is assured in short order.§!"
+
+  Raj_Uprising:0 "Raj Uprising"
+  Syphon_Weapon_Production_Raj:0 "Syphon Weapon Production"
+  Syphon_Factory_Construction_Raj:0 "Syphon Factory Construction"
+  Gather_Support_In_Northern_India:0 "Gather Support In Northern India"
+  Gather_Support_In_Central_India:0 "Gather Support In Central India"
+  Gather_Support_In_South_India:0 "Gather Support In South India"
+  Gather_Support_In_Pakistan:0 "Gather Support In Pakistan"
+  Uprising_Raj:0 "Start The Uprising"
+  Operation_Longcloth:0 "Operation Longcloth"
+  Operation_Dracula:0 "Operation Dracula"
+  ###EXILE
+
+  #### CHARACTERS ####
+  RAJ_mohammad_usman:0 "Mohammad Usman"
+######exiled events
+tfv_raj.213.t:0 "End Of British Rule In India?"
+tfv_raj.213.d:0 "After a hard fought battle for the Indian continent we have lost. Any forces that had not been wiped out have scatterd and getting contact with them may be impossible. However although some elements of Indias upper elite recongize that the invaders may prompt a chance for indepedance this mood has swiftly been eroded. The question is how quickly can we remove the new oprressor."
+tfv_raj.213.a:0 "A Even Worse Oppressor"
+
+tfv_raj.214.t:0 "A New Direction?"
+tfv_raj.214.d:0 "The Course of the Indian nation has came to a stop. However it does not mean it cannot be reborn here and now. However the means and direction to the liberation of India is not as clear. Britain stands as the most ideal candidate to aid in our efforts, inadditon to that many of the military staff and personnel that were lost could be sought out. However there is the theory that time will reveal the true nature of the Foreign Occuipiers and thus a grass route rebellion could be easy way back to Liberation."
+tfv_raj.214.a:0 "A Grass Route Uprising And A Free India."
+tfv_raj.214.b:0 "We Should Work With Britain"
+tfv_raj.215.t:0 "Indian Uprising"
+tfv_raj.215.d:0 "It is clear that since the capitulation of the Indian nation that control was loose. However its been in recent months and years that the control they had was getting worse. Now it seems that it has become clear with local millitas in open revolt and claim to be operating along side Indian National Congress which had been somewhat complacent in working with the Foriegn Occupiers."
+tfv_raj.215.a:0 "Road To A Free Indian Not Yet Closed."
+tfv_raj.215.b:0 "DEPLOY THE GARRISON!"

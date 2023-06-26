@@ -39,8 +39,8 @@ focus_tree = {
 #
 #		}
 #
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
+#		cancel_if_invalid = no
+#		continue_if_invalid = yes
 #		available_if_capitulated = no
 #
 #		complete_tooltip = {
@@ -81,8 +81,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -118,8 +118,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -156,8 +156,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -195,8 +195,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -228,8 +228,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -268,8 +268,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -301,8 +301,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -333,8 +333,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -366,8 +366,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -403,8 +403,8 @@ focus_tree = {
 
 	#	}
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = yes
 	#	available_if_capitulated = no
 	#	search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -437,8 +437,8 @@ focus_tree = {
 
 	#	}
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = yes
 	#	available_if_capitulated = no
 
 	#	complete_tooltip = {
@@ -458,7 +458,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_oil_production
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -472,8 +472,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -493,7 +493,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -506,8 +506,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -532,7 +532,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -549,8 +549,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -573,7 +573,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_invite_german_advisors
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -605,8 +605,8 @@ focus_tree = {
 			is_in_faction_with = GER
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 
@@ -626,7 +626,7 @@ focus_tree = {
 		relative_position_id = ROM_join_axis
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -644,8 +644,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -708,8 +708,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
@@ -748,8 +748,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -842,8 +842,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -874,8 +874,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -941,8 +941,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -974,8 +974,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -994,7 +994,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_seek_alternate_resource
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1008,8 +1008,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -1136,8 +1136,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1185,8 +1185,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -1266,8 +1266,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -1315,8 +1315,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1367,8 +1367,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -1392,7 +1392,7 @@ focus_tree = {
 		relative_position_id = ROM_trade_treaty_with_germany
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1406,8 +1406,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 
@@ -1438,8 +1438,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -1503,8 +1503,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -1540,8 +1540,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -1589,8 +1589,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1635,8 +1635,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -1693,8 +1693,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1739,8 +1739,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1803,8 +1803,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -1837,8 +1837,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -1870,8 +1870,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1923,8 +1923,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1958,8 +1958,8 @@ focus_tree = {
 			
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -1991,8 +1991,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2030,8 +2030,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2116,8 +2116,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2157,8 +2157,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2189,8 +2189,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2228,8 +2228,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2304,8 +2304,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2334,8 +2334,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2366,8 +2366,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2413,8 +2413,8 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		
 		completion_reward = {
@@ -2461,8 +2461,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2510,8 +2510,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2555,8 +2555,8 @@ focus_tree = {
 
 	#	}
 
-	#	cancel_if_invalid = yes
-	#	continue_if_invalid = no
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = yes
 	#	available_if_capitulated = yes
 
 	#	completion_reward = {
@@ -2600,8 +2600,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2686,8 +2686,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2723,8 +2723,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2755,8 +2755,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2792,8 +2792,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2828,8 +2828,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2914,8 +2914,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2946,8 +2946,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -2978,8 +2978,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3014,8 +3014,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3050,8 +3050,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3089,8 +3089,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3125,8 +3125,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3161,8 +3161,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3199,8 +3199,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3230,8 +3230,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3276,8 +3276,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3312,8 +3312,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3393,8 +3393,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3430,8 +3430,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3466,8 +3466,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -3502,8 +3502,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -3542,8 +3542,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3647,8 +3647,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
@@ -3679,8 +3679,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -3719,8 +3719,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3752,8 +3752,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3784,8 +3784,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3822,8 +3822,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
@@ -3886,8 +3886,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3918,8 +3918,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -3950,8 +3950,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -3986,8 +3986,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
@@ -4020,8 +4020,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4057,8 +4057,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {			
@@ -4089,8 +4089,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4127,8 +4127,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4163,8 +4163,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {

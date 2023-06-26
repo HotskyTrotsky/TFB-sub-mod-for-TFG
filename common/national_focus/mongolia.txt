@@ -1575,16 +1575,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#add_trait = {
-			#	character = MON_throat_singer 
-			#	trait = panzer_leader
-			#}
-			#MON_throat_singer = {
-			#	add_attack = 3
-			#	add_defense = 2
-			#	add_planning = 2
-			#	add_logistics = 3
-			#}
 			add_tech_bonus = {
 				name = MONgaria
 				bonus = 0.5

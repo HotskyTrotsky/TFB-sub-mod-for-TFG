@@ -429,3 +429,35 @@ Main purpose to make this available is to find bugs and help find a balance. The
 Be aware this is WIP and may not be 100% functional (events are a bit quirky however initial testing shows it should work).
 
 
+Patch 17
+-Fixed a bug which meant Italy and Japan would gain negitive experience for traits.
+-Brilliant Strategist no longer gives +20% Leader Experience and any other traits that effect experience gain. However when the No grinding spirit gets reduced in 1940, All units that had brilliant strategist will regain the 20% experiance gain.
+-Forgot to mention in previous patch that Free France now has focuses to annex minor nations that have been capitulated (Belgium, Netherlands, Norway, Denmark, Greece, Luxembourgh. When Netherlands is annexed it will hand over DEI territories to Australia.)
+-Fixed Rommel Not getting Panzer leader and Desert Fox, It now works that after fall of france Germany has a year to have atleast 5 divsions in africa.
+-Reverted a bunch of changes made to navy (TFB changes however still have the navy Cap)
+-Added New events and decisions for UK, Hungary, Germany
+UK after finishing army rearmament can now invest into forming the BEF, this will cost 10 civs for 120 days, after the 1st investment it will spawn 2 mixed tank divsions and 6 infantry for france on outbreak of war, after the 2nd investment it will spawn 4 mixed (but slightly better) tank divsions and 13 infantry divsions.
+Hungary will now get an event if Soviet union closes in on Budapest and the date is after 1942 jan which will hand over a % of civs and mils (10% and 5% respectivly) and a favourable trade deal to germany and a cost of 8 civs for 200 days. In return Hungary will spawn 3 tank divisions and 5 infantry next to budapest on west side of river. The number of divisions and type of tank is dependant on what germany has researched and whether the date has passed 1943, or 1944.
+Germany after greece has capitulated but still controls crete can have an option to launch an invasion of crete with paratroopers so long as they have more than 25 transport planes. If agreed it will spawn 4 20w paratrooper divisons on the island (even if there are divisons on the tile).
+Soviet Union can now Invest into divisons of the far east. This costs 8 civs for 120 and comes with 2 investments, However these will only spawn if the axis get close to moscow. The tank template is also dependant on what tech Soviets have researched. (Also only works if they go medium and have the T-34 else if it will spawn light tank divisions). The 1st investment gives 3 medium tanks and 8 Infantry, the 2nd inestment grants a further 3 tanks and 8 Infantry
+-Added a Exiled Focus tree for RAJ, Comes with 2 different paths, 1 will build up for a uprising in India, 2 Rapid build up of forces and large amount of equipment to try and take Raj back with the aid of allies.
+-Change Romanian Focus tree so that focuses don't cancel if requirements are not met.
+-Change some of the middle industry path of Romanian focus tree to be 35 days.
+-New Alpha Air changes which include:
+125 new airframes unique to nations
+air tech trees for: Germany (Hungary, Romania, Finland) Italy (Bulgaria, Spain) UK (Commonwealth nations) USA (Brazil, Mexico) Japan (Manchucko, Siam) Soviets (Mongolia, China) France.
+New Modules with them being set into tiers and limiting what each aircraft can have loosely based off history (For example I-16 that Soviets start off with start with cannons) 
+New starting aircraft
+New events for USA when researching specific airframe
+Air designs can be roughly broken up in to 8(ish) types:
+1 Fighter
+2 CAS which can be split into 2 sub sections that being a dive bomber (Germany gets these early) and a regular CAS (these can have rockets ect)
+3 Heavy fighter
+4 tactical bombers (which can have long range naval bombing for the patrol type aircraft)
+5 strat bomber
+6 fighter – bomber (This is your JU88 can have a lot of CAS weapons but also a few tactical bombs or even heavy fighter guns really you do it all but at a high price and not being ideal the best for everything however has decent range for all of them.)
+7 Dive Naval bombers – these are capable of doing strat bombing (Very bad but its supposed to represent that carrier naval bombers can help damage coastal forts on the pacific) and naval bombing as well as port strikes.
+8 torpedo bombers – only the early versions of torpedoes can be used to port strike and planes can only fit 1 torpedo however they have a higher naval damage but more expensive.
+Japanese Aircraft is more interesting in which favouring the army or navy will mean the research time for the aircraft in the opposing section will be longer.
+France can gain access (after capitulation) to British fighters and bombers as well American fighters and bombers only if they have been researched by them.
+Italy can also gain access to BF109 and JU 87 as well upgrades for the BF109 can be selected if Germany has researched them.This is early Alpha version of this and alot of balancing and editing to airframes is needed, there may also be a rework on modules and how they work. Therefore please go to Suggest Mod changes if you spot somthing broken or too strong or too weak.

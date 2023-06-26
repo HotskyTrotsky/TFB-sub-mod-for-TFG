@@ -13,7 +13,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = RAJ
 			has_dlc = "Together for Victory"
 		}
@@ -814,7 +814,7 @@ focus_tree = {
 		id = RAJ_indian_gurkhas
 		icon = GFX_focus_RAJ_indian_gurkhas
 		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = -1
+		x = 1
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
@@ -967,7 +967,7 @@ focus_tree = {
 		id = RAJ_lions_of_the_great_war
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
@@ -1172,9 +1172,9 @@ focus_tree = {
 		id = RAJ_chindits
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = RAJ_red_eagle_division }
-		x = 1
-		y = 2
-		relative_position_id = RAJ_british_army_support
+		x = 0
+		y = 1
+		relative_position_id = RAJ_red_eagle_division
 
 		cost = 5
 

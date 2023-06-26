@@ -13149,6 +13149,17 @@ news_event = {
 		}
 	immediate = {
 		hidden_effect = {
+			every_character = {
+				limit = {has_trait = brilliant_strategist}
+				remove_trait = {
+					character = ROOT
+					trait = brilliant_strategist
+				}
+				add_trait = {
+					character = ROOT
+					trait = brilliant_strategist_1
+				}
+			}
 			every_country = {
 			limit = {
 			has_idea = no_grinding_0

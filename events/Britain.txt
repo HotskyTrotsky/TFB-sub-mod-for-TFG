@@ -858,6 +858,7 @@ country_event = {
 		
 	}
 }
+
 ### Operation Countenance
 country_event = {
 	id = britain.501
@@ -1552,6 +1553,44 @@ country_event = {
 		AST = {
 		add_ideas = ASN_ALLIES_the_sun_never_sets_idea_1
 			}
+		}
+	}
+	
+	Country_event = {
+	id = britain.601
+	title = britain.601.t
+	desc = britain.601.d
+	picture = GFX_news_event_news_event_P_36_Hawk
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = britain.601.a
+	create_equipment_variant = {
+			name = "P-36 Hawk"
+			type = small_plane_airframe_1_usa
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_Curtiss_P-36_Hawk_medium"
+			}
+		add_equipment_to_stockpile = {
+				type = small_plane_airframe_1_usa
+				amount = 200
+				producer = USA
+				variant_name = "P-36 Hawk"
+			}
+		add_timed_idea = {
+		idea = P_36_Purchase
+		days = 70
+		}
+	}
+	option = {
+	name = britain.601.b
 		}
 	}
 	

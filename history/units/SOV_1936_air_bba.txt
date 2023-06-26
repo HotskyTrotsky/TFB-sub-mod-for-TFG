@@ -5,18 +5,18 @@ air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
 	219 = { 
 		# 15ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_0 = {
+		small_plane_airframe_0_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-15"
 		}
 		# 18ya Bombardirovochnye Aviabrigada
-		medium_plane_airframe_1 =  {
+		medium_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 100
 			version_name = "DB-3"
 		}
-		medium_plane_airframe_1 =  {
+		medium_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 100
 			version_name = "DB-3"
@@ -26,19 +26,19 @@ air_wings = {
 	# MVO Aviatsya Komandovaniya
 	219 = {
 		# 2ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_0 = {
+		small_plane_airframe_0_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-15"
 		}
-		small_plane_airframe_0 = {
+		small_plane_airframe_0_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-15"
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		large_plane_airframe_0 =  {
+		large_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 48
 			version_name = "TB-3"
@@ -49,42 +49,42 @@ air_wings = {
 	# BOVO Aviatsya Komandovaniya -- Minsk
 	219 = {
 		# 8ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
@@ -93,17 +93,17 @@ air_wings = {
 		# 14ya Istrebitel'nye Aviabrigada
 		
 		# 16ya Bombardirovochnye Aviabrigada
-		medium_plane_airframe_1 =  {
+		medium_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 100
 			version_name = "DB-3"
 		}
-		medium_plane_airframe_1 =  {
+		medium_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 100
 			version_name = "DB-3"
 		}
-		medium_plane_airframe_1 =  {
+		medium_plane_airframe_0_sov =  {
 			owner = "SOV" 
 			amount = 100
 			version_name = "DB-3"
@@ -113,42 +113,42 @@ air_wings = {
 	# KOVO Aviatsya Komandovaniya -- Kiev
 	219 = {
 		# 17ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
@@ -160,22 +160,22 @@ air_wings = {
 	219 = {
 		# 12ya Istrebitel'nye Aviabrigada
 		# 20ya Istrebitel'nye Aviabrigada
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_1_sov = {
 			owner = "SOV" 
 			amount = 100
 			version_name = "I-16"
@@ -195,7 +195,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_airframe_1
+			type = small_plane_airframe_1_sov
 			creator = "SOV" 
 			version_name = "I-16"
 		}
@@ -206,7 +206,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = medium_plane_airframe_1
+			type = medium_plane_airframe_0_sov
 			creator = "SOV" 
 			version_name = "DB-3"
 		}

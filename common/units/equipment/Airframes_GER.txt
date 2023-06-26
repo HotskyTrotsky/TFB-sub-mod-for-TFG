@@ -1,0 +1,2027 @@
+equipments = {
+
+
+small_plane_airframe_0_ger = { #German Inter war fighters
+	abbreviation = "afs0"
+	derived_variant_name = fighter_equipment_0
+	year = 1933
+
+	archetype = small_plane_airframe
+	#module_slots = inherit
+	priority = 5
+
+	air_range = 500
+	maximum_speed = 0
+	air_agility = 60
+	air_defence = 5
+	weight = 4
+	naval_strike_attack = 1
+	naval_strike_targetting = 8
+	build_cost_ic = 42
+	resources = {
+			aluminium = 20
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				nav_bomber_weapon_1
+				nav_bomber_weapon_2
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				cas_weapon1
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Gun_Defense
+				Small_Naval
+			}
+		}
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Small_Naval
+			}
+		}
+	}
+	module_count_limit = {
+		module = light_mg_4x
+		count < 2
+	}
+	module_count_limit = {
+		category = Small_Naval
+		count < 2
+	}
+	module_count_limit = {
+		module = early_naval_bomb
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_3_1x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 3
+	}
+	module_count_limit = {
+		module = Small_Naval
+		count < 2
+	}
+	module_count_limit = {
+		module = Reduced_Materials
+		count < 2
+	}
+
+}
+
+small_plane_airframe_1_ger = { #BF109
+	abbreviation = "BF109"
+	derived_variant_name = fighter_equipment_1
+	year = 1937
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		 BF109_plane_engine_upgrade
+		 BF109_plane_armor_upgrade
+	 }
+	air_range = 900
+	maximum_speed = 0
+	air_agility = 66
+	air_defence = 10
+	weight = 5
+	naval_strike_attack = 1
+	naval_strike_targetting = 1
+	build_cost_ic = 48
+	resources = {
+			aluminium = 25
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				cas_weapon1
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				cas_weapon1
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio_Ground
+				Engine_Upgrade
+			}
+		}
+	}
+	
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 2
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 4
+	}
+	module_count_limit = {
+		category = Armor
+		count < 4
+	}
+	module_count_limit = {
+		category = Engine_Upgrade
+		count < 2
+	}
+}
+small_plane_airframe_2_ger = { #Fw_190_A
+	abbreviation = "Fw190"
+	derived_variant_name = fighter_equipment_1
+	year = 1941
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_1_ger
+	priority = 5
+	air_range = 1250
+	maximum_speed = 0
+	air_agility = 80
+	air_defence = 11
+	weight = 6
+	naval_strike_attack = 1
+	naval_strike_targetting = 8
+	build_cost_ic = 52
+	resources = {
+			aluminium = 30
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+				Engine_Upgrade
+			}
+		}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+				Engine_Upgrade
+			}
+		}
+	}
+	module_count_limit = {
+		module = CAS_Module
+		count < 2
+	}
+	module_count_limit = {
+		module = cas_weapon1
+		count < 3
+	}
+	module_count_limit = {
+		module = cas_weapon2
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 2
+	}
+	module_count_limit = {
+		category = Armor
+		count < 2
+	}
+	module_count_limit = {
+		module = Small_Naval
+		count < 0
+	}
+	module_count_limit = {
+		category = Engine_Upgrade
+		count < 2
+	}
+}
+small_plane_airframe_3_ger = { #Fw_190_D
+	abbreviation = "Fw190D"
+	derived_variant_name = fighter_equipment_1
+	year = 1944
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_2_ger
+	priority = 5
+	upgrades = {
+		# BF109_plane_engine_upgrade
+		# BF109_plane_armor_upgrade
+	 }
+	air_range = 1750
+	maximum_speed = 0
+	air_agility = 85
+	air_defence = 15
+	weight = 5
+	naval_strike_attack = 1
+	naval_strike_targetting = 8
+	build_cost_ic = 60
+	resources = {
+			aluminium = 30
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+		}
+	}
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+			Fighter_weapon_1
+			Fighter_weapon_2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 4
+	}
+	module_count_limit = {
+		category = Armor
+		count < 3
+	}
+	module_count_limit = {
+		category = Engine_Upgrade
+		count < 2
+	}
+}
+
+small_plane_airframe_4_ger = { #Me_262 Jet
+	abbreviation = "Me_262"
+	derived_variant_name = fighter_equipment_1
+	year = 1944
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_3_ger
+	priority = 5
+	air_range = 2000
+	maximum_speed = 0
+	air_agility = 85
+	air_defence = 18
+	weight = 5
+	naval_strike_attack = 1
+	naval_strike_targetting = 8
+	build_cost_ic = 65
+	resources = {
+			aluminium = 50
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				Fighter_weapon_4
+				cas_weapon2
+				cas_weapon3
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				Fighter_weapon_4
+				cas_weapon2
+				cas_weapon3
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				Fighter_weapon_4
+				cas_weapon2
+				cas_weapon3
+		}
+	}
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+			Fighter_weapon_1
+			Fighter_weapon_2
+			Fighter_weapon_3
+			cas_weapon2
+				cas_weapon3
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_jet_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+			}
+		}
+	}
+	module_count_limit = {
+		category = Engine_Upgrade
+		count < 2
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 3
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 4
+	}
+	module_count_limit = {
+		category = Armor
+		count < 3
+	}
+	module_count_limit = {
+		module = engine_1_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_3_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_4_1x
+		count < 0
+	}
+}
+small_plane_airframe_5_ger = { #ju-87
+	abbreviation = "JU-87"
+	derived_variant_name = fighter_equipment_1
+	year = 1938
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_0_ger
+	priority = 5
+	air_range = 750
+	maximum_speed = 0
+	air_agility = 440
+	air_defence = 12
+	air_ground_attack = 4
+	weight = 5
+	naval_strike_attack = 1
+	naval_strike_targetting = 8
+	build_cost_ic = 45
+	resources = {
+			aluminium = 30
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+			Dive_Bomber
+			Plane_Armor
+			Special_Module
+			Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+			Plane_Armor
+			Special_Module
+			Plane_Radio
+			Gun_Defense
+			}
+		}
+	}
+	module_count_limit = {
+		module = cas_weapon1
+		count < 3
+	}
+	module_count_limit = {
+		module = cas_weapon2
+		count < 3
+	}
+	module_count_limit = {
+		module = rocket_rails_1
+		count < 0
+	}
+	module_count_limit = {
+		module = light_mg_4x
+		count < 0
+	}
+	module_count_limit = {
+		module = heavy_mg_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = heavy_mg_4x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = early_naval_bomb
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_2_1x
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_3_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_4_1x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 3
+	}
+	module_count_limit = {
+		module = Armor
+		count < 2
+	}
+	module_count_limit = {
+		module = Reduced_Materials
+		count < 2
+	}
+	
+}
+small_plane_airframe_6_ger = { #ju-87 D
+	abbreviation = "JU-87D"
+	derived_variant_name = fighter_equipment_1
+	year = 1944
+
+	archetype = small_plane_airframe
+	#parent = small_plane_airframe_0_ger
+	priority = 5
+	air_range = 1250
+	maximum_speed = 0
+	air_agility = 60
+	air_defence = 15
+	weight = 6
+	air_ground_attack = 6
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 56
+	resources = {
+			aluminium = 30
+			rubber = 5
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+			Dive_Bomber
+			Plane_Armor
+			Special_Module
+			Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+			Plane_Armor
+			Special_Module
+			Plane_Radio
+			Gun_Defense
+			}
+		}
+	}
+	module_count_limit = {
+		module = cas_weapon1
+		count < 3
+	}
+	module_count_limit = {
+		module = cas_weapon2
+		count < 3
+	}
+	module_count_limit = {
+		module = cas_weapon3
+		count < 2
+	}
+	module_count_limit = {
+		module = rocket_rails_1
+		count < 0
+	}
+	module_count_limit = {
+		module = light_mg_4x
+		count < 0
+	}
+	module_count_limit = {
+		module = heavy_mg_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = heavy_mg_4x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = engine_3_1x
+		count < 2
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 3
+	}
+	module_count_limit = {
+		module = armor
+		count < 2
+	}
+	module_count_limit = {
+		module = Reduced_Materials
+		count < 2
+	}
+}
+
+ger_heavy_fighter_1 = { #BF110
+	abbreviation = "BF110"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1937
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1250
+	maximum_speed = 0
+	air_agility = 45
+	air_defence = 18
+	weight = 10
+	naval_strike_attack = 1
+	naval_strike_targetting = 6
+	build_cost_ic = 72
+	resources = {
+			aluminium = 40
+			rubber = 10
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+			}
+		}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+			}
+		}
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 4
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 0
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 0
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 4
+	}
+	module_count_limit = {
+		category = Armor
+		count < 4
+	}
+	module_count_limit = {
+		module = fuel_injection_1
+		count < 2
+	}
+	module_count_limit = {
+		module = fuel_injection_2
+		count < 0
+	}
+}
+ger_heavy_fighter_2 = { #ME210
+	abbreviation = "ME210"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1942
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1750
+	maximum_speed = 0
+	air_agility = 45
+	air_defence = 24
+	weight = 11
+	naval_strike_attack = 1
+	naval_strike_targetting = 6
+	build_cost_ic = 86
+	resources = {
+			aluminium = 45
+			rubber = 10
+		}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+			}
+		}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				CAS_Module
+			}
+		}
+	}
+	module_count_limit = {
+		module = engine_1_2x
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_2_2x
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_3_2x
+		count < 2
+	}
+	module_count_limit = {
+		module = engine_4_2x
+		count < 0
+	}
+	module_count_limit = {
+		module = CAS_Module
+		count < 2
+	}
+	module_count_limit = {
+		module = cas_weapon1
+		count < 3
+	}
+	module_count_limit = {
+		module = cas_weapon2
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_1x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_1_2x
+		count < 3
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_1x
+		count < 2
+	}
+	module_count_limit = {
+		module = aircraft_cannon_2_2x
+		count < 2
+	}
+	module_count_limit = {
+		category = Special_Module
+		count < 4
+	}
+	module_count_limit = {
+		category = Armor
+		count < 4
+	}
+	module_count_limit = {
+		module = fuel_injection_1
+		count < 2
+	}
+	module_count_limit = {
+		module = fuel_injection_2
+		count < 2
+	}
+}
+
+medium_plane_airframe_0_ger = { #Inter-War
+	abbreviation = "afm0"
+	derived_variant_name = tac_bomber_equipment_0
+	year = 1933
+
+	archetype = medium_plane_airframe
+	#module_slots = inherit
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1250
+	maximum_speed = 0
+	air_agility = 15
+	air_defence = 15
+	weight = 10
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 80
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				tac_weapon_1
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				recon_camera
+				cas_weapon1
+			}
+		}
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+	}
+}
+medium_plane_airframe_1_ger = { #He 111
+	abbreviation = "He 111"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1939
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1500
+	maximum_speed = 0
+	air_agility = 20
+	air_defence = 18
+	weight = 11
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 95
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				recon_camera
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				recon_camera
+			}
+		}
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+medium_plane_airframe_2_ger = { #He 111H
+	abbreviation = "He 111H"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1939
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1750
+	maximum_speed = 0
+	air_agility = 25
+	air_defence = 22
+	weight = 12
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 105
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+medium_plane_airframe_3_ger = { #Arado Ar 234
+	abbreviation = "Ar234"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1944
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 2500
+	maximum_speed = 0
+	air_agility = 40
+	air_defence = 30
+	weight = 14
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 160
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				tac_weapon_3
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				tac_weapon_3
+				recon_camera
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				tac_weapon_3
+				recon_camera
+
+			}
+		}
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+				tac_weapon_1
+				tac_weapon_2
+				tac_weapon_3
+				recon_camera
+			}
+		}
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_jet_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+
+Ger_Fighter_Bomber_1 = { #JU 88
+	abbreviation = "JU 88"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1939
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 1750
+	maximum_speed = 0
+	air_agility = 35
+	air_defence = 20
+	weight = 12
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 100
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				cas_weapon1
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+
+Ger_Fighter_Bomber_2 = { #JU 188
+	abbreviation = "JU188"
+	derived_variant_name = tac_bomber_equipment_1
+	year = 1943
+
+	archetype = medium_plane_airframe
+	#parent = medium_plane_airframe_0_ger
+	priority = 5
+	upgrades = {
+		# plane_engine_upgrade
+		# plane_armor_upgrade
+	 }
+	air_range = 2000
+	maximum_speed = 0
+	air_agility = 45
+	air_defence = 24
+	weight = 10
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 125
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				Fighter_weapon_1
+				Fighter_weapon_2
+				Fighter_weapon_3
+				tac_weapon_1
+				tac_weapon_2
+				recon_camera
+				cas_weapon1
+				cas_weapon2
+			}
+		}
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+}
+
+
+large_plane_airframe_0_ger = { #Inter-War
+	abbreviation = "afl0"
+	year = 1937
+
+	archetype = large_plane_airframe
+	#module_slots = inherit
+	priority = 5
+
+	air_range = 2000
+	maximum_speed = 0
+	air_agility = 20
+	air_defence = 20
+	weight = 25
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 100
+	resources = {
+		aluminium = 40
+		rubber = 10
+	}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				Patrol_Boat
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1					
+			}
+		}
+
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				Large_Naval
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+}
+
+large_plane_airframe_1_ger = { #D0 17
+	abbreviation = "DO17"
+	derived_variant_name = strat_bomber_equipment_1
+	year = 1941
+
+	archetype = large_plane_airframe
+	#parent = large_plane_airframe_0_ger
+	priority = 5
+
+	air_range = 2500
+	maximum_speed = 0
+	air_agility = 25
+	air_defence = 25
+	weight = 18
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 125
+	resources = {
+		aluminium = 45
+		rubber = 15
+	}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				Patrol_Boat
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2				
+			}
+		}
+
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				Large_Naval
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+large_plane_airframe_2_ger = { #D0 217
+	abbreviation = "DO217"
+	derived_variant_name = strat_bomber_equipment_1
+	year = 1941
+
+	archetype = large_plane_airframe
+	#parent = large_plane_airframe_0_ger
+	priority = 5
+
+	air_range = 2750
+	maximum_speed = 0
+	air_agility = 30
+	air_defence = 27
+	weight = 22
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 160
+	resources = {
+		aluminium = 50
+		rubber = 10
+	}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				Patrol_Boat
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				Patrol_Boat			
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2				
+			}
+		}
+
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				twin_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				Large_Naval
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+			special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+large_plane_airframe_3_ger = { #Heinkel He 177 Greif
+	abbreviation = "He177"
+	derived_variant_name = strat_bomber_equipment_1
+	year = 1942
+
+	archetype = large_plane_airframe
+	#parent = large_plane_airframe_0_ger
+	priority = 5
+
+	air_range = 3000
+	maximum_speed = 0
+	air_agility = 35
+	air_defence = 30
+	weight = 25
+	naval_strike_attack = 1
+	naval_strike_targetting = 4
+	build_cost_ic = 180
+	resources = {
+		aluminium = 60
+		rubber = 15
+	}
+	module_slots = {
+		fixed_main_weapon_slot = {
+			required = yes
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				strat_weapon_3
+				Patrol_Boat
+			}
+		}
+
+		fixed_auxiliary_weapon_slot_1 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				strat_weapon_3
+				Patrol_Boat			
+			}
+		}
+		fixed_auxiliary_weapon_slot_2 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				strat_weapon_3
+				Patrol_Boat			
+			}
+		}
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				strat_weapon_1
+				strat_weapon_2
+				strat_weapon_3		
+			}
+		}
+
+
+		engine_type_slot = {
+			required = yes
+			allowed_module_categories = {
+				quad_large_plane_engine_type
+			}
+		}
+
+		special_type_slot_1 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				Large_Naval
+			}
+		}
+
+		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+			special_type_slot_3 = {
+			required = no
+			allowed_module_categories = {
+				Special_Module
+				Plane_Armor
+				Gun_Defense
+				Plane_Radio_Ground
+				Plane_Radio
+				}
+			}
+		}
+	}
+}

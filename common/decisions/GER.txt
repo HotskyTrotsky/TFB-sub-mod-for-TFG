@@ -1,6 +1,94 @@
 #Category only allowed for GER
 
 operations = {
+	
+	Rommel_Desert_Fox = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			GER = {
+		num_divisions_in_states = {
+		count > 5
+		states = {451 663 450 449 662 661 448}
+			}
+		}
+			FRA = {
+				has_capitulated = yes
+			}
+		}
+
+		days_mission_timeout = 360
+		fire_only_once = yes
+
+		activation = {
+				FRA = {
+				has_capitulated = yes
+			}
+		}
+
+		is_good = no
+
+		complete_effect = {
+			news_event = {id = germany.2004}
+		}
+
+		timeout_effect = {
+		add_trait = {
+		character = GER_erwin_rommel
+		trait = panzer_leader
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Operation_Mercury = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		#Fail trigger
+		available = {
+			GER = {
+			has_equipment = {
+			transport_plane_equipment_1 > 25
+					}
+				}
+		}
+
+		days_mission_timeout = 120
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			has_war_with = GRE
+			182 = {
+			is_controlled_by = GRE
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			
+		}
+		#Fail
+		complete_effect = {
+			country_event = {id = germany.2005}
+		}
+	}
+
 
 	GER_occupy_hungary = {
 		icon = generic_operation

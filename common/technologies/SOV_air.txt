@@ -1,0 +1,883 @@
+technologies = {
+	
+	soviet_Inter_War_Fighters = {
+
+		enable_equipments = {
+			small_plane_airframe_0_sov
+			small_plane_airframe_1_sov
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			early_torp
+			small_bomb_locks
+			early_naval_bomb
+			recon_camera
+			Reduced_Materials
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			floats
+		}
+		
+	
+		path = {
+			leads_to_tech = I_153
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = LAGG_Series
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = YAK_Series
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = SU_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = PE_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = sovietair_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	I_153 = {
+
+		enable_equipments = {
+			small_plane_airframe_2_sov
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_Series
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = sovietair_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	YAK_Series= {
+
+		enable_equipments = {
+			small_plane_airframe_3_sov
+		}
+		enable_equipment_modules = {
+			fuel_injection
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+			heavy_mg_2x
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = LAGG_Series
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = sovietair_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	YAK_7= {
+
+		enable_equipments = {
+			#small_plane_airframe_2_sov
+		}
+		enable_equipment_modules = {
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_9
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sovietair_folder
+			position = { x = -1 y = 15.5 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	YAK_9 = {
+
+		enable_equipments = {
+			#small_plane_airframe_2_sov
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_3
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sovietair_folder
+			position = { x = -1 y = 17 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	YAK_3 = {
+
+		enable_equipments = {
+			small_plane_airframe_5_sov
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_15
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = sovietair_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	YAK_15 = {
+		dependencies = {
+			jet_engines = 1
+		}
+		enable_equipments = {
+			small_plane_airframe_6_sov
+		}
+		enable_equipment_modules = {
+			jet_engine_1x
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+		}
+		
+	
+		#path = {
+		#	leads_to_tech = Hurricane
+		#	research_cost_coeff = 1
+		#}
+		
+		
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = sovietair_folder
+			position = { x = 5 y = 24 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	LAGG_Series= {
+
+		enable_equipments = {
+			small_plane_airframe_4_sov
+		}
+		enable_equipment_modules = {
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = LA_5
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	LA_5 = {
+
+		enable_equipments = {
+			#small_plane_airframe_3_sov
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = LA_7
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	LA_7 = {
+
+		enable_equipments = {
+			#small_plane_airframe_3_sov
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+		}
+		
+	
+		path = {
+			leads_to_tech = YAK_15
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	SU_2 = {
+
+		enable_equipments = {
+			small_plane_airframe_7_sov
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			Light_Armor_Plates
+			medium_bomb_locks
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = IL_2
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = sovietair_folder
+			position = { x = -6 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			air_equipment
+			cas_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	IL_2 = {
+
+		enable_equipments = {
+			small_plane_airframe_8_sov
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			tank_buster_1
+			large_bomb_locks
+			Reflex_sight_1
+			rocket_rails_1
+			rocket_rails_2
+			tank_buster_2
+			medium_Armor_Plates
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = Il-10
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sovietair_folder
+			position = { x = -6 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			air_equipment
+			cas_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Il-10 = {
+
+		enable_equipments = {
+			small_plane_airframe_9_sov
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			Reflex_sight_2
+			tank_buster_3
+		}
+		
+	
+		#path = {
+		#	leads_to_tech = LA_9
+		#	research_cost_coeff = 1
+		#}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = sovietair_folder
+			position = { x = -6 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			air_equipment
+			cas_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	PE_2 = {
+
+		enable_equipments = {
+			SOV_Fighter_Bomber_1
+		}
+		enable_equipment_modules = {
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			air_air_radar_1
+			medium_bomb_locks
+			Reflex_sight_1
+			rocket_rails_1
+			engine_3_2x
+			tank_buster_2
+			Drop_Tank
+			small_tactical_bombs
+			hmg_defense_turret
+			Medium_Armor_Plates
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = PE_2_upgrade
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = sovietair_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	PE_2_upgrade = {
+
+		enable_equipments = {
+			#SOV_Fighter_Bomber_1
+		}
+		enable_equipment_modules = {
+			medium_tactical_bombs
+			hmg_defense_turret_2x
+			Reflex_sight_2
+			tank_buster_3
+			engine_4_2x
+		}
+		
+	
+		#path = {
+		#	leads_to_tech = LA_9
+		#	research_cost_coeff = 1
+		#}
+		
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = sovietair_folder
+			position = { x = 6 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	soviet_Inter_War_Bombers = {
+
+		enable_equipments = {
+			medium_plane_airframe_0_sov
+			large_plane_airframe_0_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_1_2x
+			small_tactical_bombs
+			Large_Reduced_Materials
+			lmg_defense_turret
+			lmg_defense_turret_2x
+			strategic_payload_light
+			Long_Range_Naval_Bomb
+			flying_boat_medium
+		}
+
+		path = {
+			leads_to_tech = Pe_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = DB_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Pe_8 = {
+
+		enable_equipments = {
+			large_plane_airframe_1_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_2_4x	
+			radio_navigation_1	
+			Heavy_Armor_Plates
+			air_ground_radar_1
+			bomb_sights_1
+			strategic_payload_medium
+			hmg_defense_turret
+			hmg_defense_turret_2x
+			Self_Sealing_Tanks
+		}
+
+		
+		path = {
+			leads_to_tech = Pe_8_Bombing_Upgrade
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = sovietair_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Pe_8_Bombing_Upgrade = {
+
+		enable_equipments = {
+		#	large_plane_airframe_1_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_3_4x
+			strategic_payload_heavy
+			radio_navigation_2
+		}
+
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sovietair_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DB_3 = {
+
+		enable_equipments = {
+			medium_plane_airframe_1_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+		}
+
+		path = {
+			leads_to_tech = IL_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	IL_4 = {
+
+		enable_equipments = {
+			medium_plane_airframe_2_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			medium_tactical_bombs
+			engine_3_2x
+			air_air_radar_1
+			Medium_Armor_Plates
+			Self_Sealing_Tanks
+			hmg_defense_turret_2x
+		}
+
+		
+		path = {
+			leads_to_tech = IL_4_Upgrade
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	IL_4_Upgrade = {
+
+		enable_equipments = {
+		#	medium_plane_airframe_1_sov
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_4_2x
+			large_tactical_bombs
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = sovietair_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

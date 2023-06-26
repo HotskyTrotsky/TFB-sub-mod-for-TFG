@@ -349,7 +349,7 @@ ideas = {
 				max_planning = -0.1
 				planning_speed = -0.25
 				max_dig_in = -2.5
-				experience_gain_factor = -0.4
+			#	experience_gain_factor = -0.4
 			}
 		}
 	
@@ -366,7 +366,7 @@ ideas = {
 				max_planning = -0.25
 				planning_speed = -0.5
 				max_dig_in = -5
-				experience_gain_factor = -0.5
+			#	experience_gain_factor = -0.5
 			}
 		}
 		
@@ -1045,6 +1045,8 @@ ideas = {
 			
 			research_bonus = {
 				naval_equipment = -0.1
+				naval_bomber = -0.75
+				IJA_Air = 0.15
 			}
 			
 			modifier = {
@@ -1070,7 +1072,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_army_strengthened
-			
+			research_bonus = {
+				naval_bomber = -0.5
+				IJA_Air = 0.1
+			}
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = -0.1
@@ -1105,7 +1110,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_navy_strengthened
-			
+			research_bonus = {
+				IJA_Air = -0.5
+				naval_bomber = 0.1
+			}
 			modifier = {
 				production_speed_arms_factory_factor = -0.1
 				production_speed_dockyard_factor = 0.1
@@ -1126,7 +1134,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_navy_dominant
-
+			research_bonus = {
+				IJA_Air = -0.75
+				naval_bomber = 0.15
+			}
 			modifier = {
 				production_speed_arms_factory_factor = -0.2
 				production_speed_dockyard_factor = 0.2
@@ -1231,7 +1242,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.1
+			#	experience_gain_factor = -0.1
 			}
 			
 			targeted_modifier = {
@@ -1264,7 +1275,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.2
+			#	experience_gain_factor = -0.2
 			}
 			
 			targeted_modifier = {
@@ -1297,7 +1308,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.3
+			#	experience_gain_factor = -0.3
 			}
 			
 			targeted_modifier = {
@@ -1330,7 +1341,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.4
+			#	experience_gain_factor = -0.4
 			}
 			
 			targeted_modifier = {
@@ -1363,7 +1374,7 @@ ideas = {
 			picture = jap_intervene_in_china
 			
 			modifier = {
-				experience_gain_factor = -0.5
+			#	experience_gain_factor = -0.5
 			}
 			
 			

@@ -636,7 +636,59 @@ SpriteType = {
  name = "GFX_FRA_early_fighter_f_medium"
  texturefile = "gfx/interface/technologies/FRA_early_fighter.dds"
  }
+ spriteType = {
+		name = "GFX_small_plane_airframe_0_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_fighter_0.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_1_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_fighter_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_2_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_fighter_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_3_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_fighter_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_4_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_fighter_4.dds"
+		legacy_lazy_load = no
+	}
+
+	# eng small_plane_cas_airframe
  
+	spriteType = {
+		name = "GFX_small_plane_cas_airframe_0_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_0.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_cas_airframe_1_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_cas_airframe_2_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_5_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_cas_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_6_eng"
+		textureFile = "gfx/interface/technologies/air/eng/eng_cas_4.dds"
+		legacy_lazy_load = no
+	}
   SpriteType = {
  name = "GFX_ENG_CAS1_f_medium"
  texturefile = "gfx/interface/technologies/ENG_CAS1.dds"
@@ -951,7 +1003,16 @@ SpriteType = {
  name = "GFX_scout_plane2_f_medium"
  texturefile = "gfx/interface/technologies/generic_scout_plane_2_2.dds"
  }
- 
+ spriteType = {
+		name = "GFX_small_plane_airframe_5_ger"
+		textureFile = "gfx/interface/technologies/air/ger/ger_cas_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_small_plane_airframe_6_ger"
+		textureFile = "gfx/interface/technologies/air/ger/ger_cas_3.dds"
+		legacy_lazy_load = no
+	}
   SpriteType = {
  name = "GFX_GER_early_bomber_f_medium"
  texturefile = "gfx/interface/technologies/GER_early_bomber.dds"

@@ -62,6 +62,30 @@ guiTypes = {
 		}
 	}
 
+containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_5_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2_eng"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_6_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3_eng"
+			position = { x=0 y=0 }
+		}
+	}
+
+
 	# cv_small_plane_airframe
 
 	containerWindowType = {
@@ -185,7 +209,29 @@ guiTypes = {
 			position = { x=0 y=0 }
 		}
 	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_5_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
 
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_5_eng"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_6_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_6_eng"
+			position = { x=0 y=0 }
+		}
+	}
 	# cv_small_plane_cas_airframe
 
 	containerWindowType = {
@@ -247,7 +293,6 @@ guiTypes = {
 			position = { x=0 y=0 }
 		}
 	}
-
 	# small_plane_naval_bomber_airframe
 
 	containerWindowType = {

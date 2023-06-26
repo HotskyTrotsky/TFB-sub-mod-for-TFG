@@ -476,3 +476,21 @@ Eng_Uprising = {
 		}
 	priority = 6
 }
+Raj_Uprising = {
+	icon = homeisles
+	#picture = North_ENG_State
+	scripted_gui = RAJ_Uprising_Ui
+	allowed = {
+		tag = RAJ
+	}
+	visible = {
+	ROOT = {
+		has_completed_focus = V
+		#has_capitulated = yes
+		NOT = {
+		has_completed_focus = Liberation
+		}
+			}
+		}
+	priority = 6
+}

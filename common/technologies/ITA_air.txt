@@ -1,0 +1,709 @@
+technologies = {
+	ger_JU_87 = {
+		allow = {
+			AND = {
+			GER = {
+				AND = {
+				has_tech = JU_87_B
+				has_tech = JU_87_B_1
+					}
+				}
+				date > 1940.1.1
+			}
+		}
+		enable_equipments = {
+			small_plane_airframe_5_ger
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			Dive_Brakes
+			medium_bomb_locks
+			Light_Armor_Plates
+			tank_buster_1
+		}
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = itaair_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	ger_BF109 = {
+		allow = {
+			AND = {
+			GER = {
+				AND = {
+				has_tech = BF109_Series
+				has_tech = BF109_E
+				has_tech = BF109_E_Upgrade
+					}
+				}
+				date > 1940.1.1
+			}
+		}
+		enable_equipments = {
+			small_plane_airframe_1_ger
+
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			heavy_mg_2x
+			heavy_mg_4x
+			aircraft_cannon_1_2x
+			Light_Armor_Plates
+		}
+
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = itaair_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	ita_Inter_War_Fighters = {
+
+		enable_equipments = {
+			small_plane_airframe_0_ita
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			early_torp
+			small_bomb_locks
+			early_naval_bomb
+			recon_camera
+			Reduced_Materials
+			floats
+		}
+		
+	
+		path = {
+			leads_to_tech = Fiat_G.50_Freccia
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Breda_Ba.65
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = itaair_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Breda_Ba.65 = {
+
+		enable_equipments = {
+			small_plane_airframe_7_ita
+		}
+		enable_equipment_modules = {
+			Light_Armor_Plates
+			engine_2_1x
+		}
+		
+	
+		
+		path = {
+			leads_to_tech = Breda_Ba.65
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = itaair_folder
+			position = { x = -4 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Fiat_G.50_Freccia = {
+
+		enable_equipments = {
+			small_plane_airframe_1_ita
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = Macchi_C.200_Saetta
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = itaair_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	Macchi_C.200_Saetta = {
+
+		enable_equipments = {
+			small_plane_airframe_2_ita
+		}
+		enable_equipment_modules = {
+			heavy_mg_2x
+			heavy_mg_4x
+			Light_Armor_Plates
+		}
+		
+	
+		path = {
+			leads_to_tech = Macchi_C.2001_Saetta
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Macchi_C.202_Folgore
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = itaair_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Macchi_C.202_Folgore = {
+
+		enable_equipments = {
+			small_plane_airframe_3_ita
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			fuel_injection2
+			radio_navigation_1
+			Drop_Tank
+		}
+		
+	
+		
+		path = {
+			leads_to_tech = Macchi_C.205_Veltro
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = itaair_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Macchi_C.205_Veltro = {
+
+		enable_equipments = {
+			
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			aircraft_cannon_1_1x
+		}
+		
+	
+		
+		path = {
+			leads_to_tech = Macchi_C.205_Veltro
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = itaair_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Macchi_C.2001_Saetta = {
+
+		enable_equipments = {
+			small_plane_airframe_4_ita
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+		}
+		
+	
+		path = {
+			leads_to_tech = Reggiane_Re.2002_Ariete
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = itaair_folder
+			position = { x = -4 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Reggiane_Re.2002_Ariete= {
+
+		enable_equipments = {
+			small_plane_airframe_5_ita
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			aircraft_cannon_1_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = Reggiane_Re.2005_Sagittario
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = itaair_folder
+			position = { x = -4 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Reggiane_Re.2005_Sagittario = {
+
+		enable_equipments = {
+			small_plane_airframe_6_ita
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+			aircraft_cannon_1_2x
+		}
+		
+	
+		path = {
+			leads_to_tech = Reggiane_Re.2005_Sagittario
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = itaair_folder
+			position = { x = -4 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	ita_Inter_War_Bombers = {
+
+		enable_equipments = {
+		medium_plane_airframe_0_ita
+		}
+		enable_equipment_modules = {
+			engine_1_2x
+			small_tactical_bombs
+			Large_Reduced_Materials
+			lmg_defense_turret
+			lmg_defense_turret_2x
+			Long_Range_Naval_Bomb
+			flying_boat_medium
+		}
+
+		path = {
+			leads_to_tech = Fiat_BR.20_Cicogna
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Savoia-Marchetti_SM.79_Sparviero
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = itaair_folder
+			position = { x = 5 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Fiat_BR.20_Cicogna = {
+
+		enable_equipments = {
+			large_plane_airframe_1_ita
+		}
+		enable_equipment_modules = {
+			strategic_payload_light
+		}
+
+		path = {
+			leads_to_tech = Savoia-Marchetti_SM.82
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = itaair_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Savoia-Marchetti_SM.82 = {
+
+		enable_equipments = {
+			large_plane_airframe_2_ita
+		}
+		enable_equipment_modules = {
+			engine_2_4x	
+			radio_navigation_1	
+			Heavy_Armor_Plates
+			air_ground_radar_1
+			bomb_sights_1
+			strategic_payload_medium
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = itaair_folder
+			position = { x = 10 y = 12 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Savoia-Marchetti_SM.79_Sparviero = {
+
+		enable_equipments = {
+			medium_plane_airframe_1_ita
+		}
+		enable_equipment_modules = {
+			hmg_defense_turret
+		}
+
+		path = {
+			leads_to_tech = CANT_Z.1007_Alcione
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = itaair_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	CANT_Z.1007_Alcione = {
+
+		enable_equipments = {
+			medium_plane_airframe_2_ita
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			medium_tactical_bombs
+			bomb_sights_1
+		}
+
+		path = {
+			leads_to_tech = Savoia-Marchetti_SM.84
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = itaair_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Savoia-Marchetti_SM.84 = {
+
+		enable_equipments = {
+			medium_plane_airframe_3_ita
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+
+		path = {
+			leads_to_tech = Caproni_Ca.313
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = itaair_folder
+			position = { x = 5 y = 12 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Caproni_Ca.313 = {
+
+		enable_equipments = {
+			medium_plane_airframe_4_ita
+		}
+		enable_equipment_modules = {
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			air_air_radar_2
+			large_bomb_locks
+			Reflex_sight_1
+			medium_bomb_locks
+		}
+
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = itaair_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

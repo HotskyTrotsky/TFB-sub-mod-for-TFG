@@ -1,0 +1,1248 @@
+political_actions = {
+
+	RAJ_famine_descsion = {
+		priority = 100
+		allowed = { tag = RAJ }
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 150
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			has_completed_focus = RAJ_clamp_down_on_corruption
+		}
+
+		activation = {
+			has_idea = RAJ_risk_of_famine
+			NOT = { has_country_flag = indian_famine }
+			has_war = yes
+		}
+
+		visible = {
+			has_idea = RAJ_risk_of_famine
+			has_war = yes
+		}
+		
+		timeout_effect = {
+			country_event = { id = tfv_raj.21 }
+			effect_tooltip = {
+				add_ideas = RAJ_famine
+			}
+		}
+	}
+}
+operations = {
+	Operation_Dracula = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = RAJ
+		}
+		
+		available = {
+			tag = RAJ
+			AND = {
+			has_completed_focus =  Liberation_Awaits
+			439 = {
+				NOT = {
+				is_controlled_by = RAJ
+					}
+				}
+			}
+		}
+		visible = {
+			AND = {
+			RAJ = {
+				has_capitulated = yes
+			}
+			RAJ = {
+				has_completed_focus = Empower_William_Slim
+				has_completed_focus = Liberation_Awaits
+				}
+			}
+		}
+		cost = 25
+		
+		fire_only_once = yes
+
+		
+		#complete_effect = {
+		modifier = {
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+			breakthrough_factor = 0.2
+			}
+		#}
+		days_remove = 70
+	}
+	Operation_Longcloth = {
+
+		icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		available = {
+			tag = RAJ
+			AND = {
+			has_completed_focus = Reach_Out_To_Scatterd_Chindits
+			#439 = {
+			#	NOT = {
+			#	is_controlled_by = RAJ
+			#	}
+			#}
+			}
+		}
+		visible = {
+			AND = {
+			#RAJ = {
+			#	has_capitulated = yes
+			#}
+			RAJ = {
+				has_completed_focus = Send_Orde_Wingate
+				}
+			}
+		}
+		cost = 25
+		days_remove = 21
+		fire_only_once = yes
+		remove_effect = {
+		RAJ = {
+				division_template = {
+					name = "Chindits"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						pack_artillery_brigade = { x = 3 y = 0 }
+						pack_artillery_brigade = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 3 y = 2 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+					323 = {
+					create_unit = {prioritize_location = 4987 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 4987 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 5310 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 5310 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 12892 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 12892 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					444 = {
+					create_unit = {prioritize_location = 8066 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 8066 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					787 = {
+					create_unit = {prioritize_location = 1910 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 1910 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					445 = {
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					431 = {
+					create_unit = {prioritize_location = 12338 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 12338 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					324 = {
+					create_unit = {prioritize_location = 8010 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 8010 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+					442 = {
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Chindits\" start_experience_factor = 0.5" owner = RAJ }
+					}
+			}
+		}
+			add_timed_idea = {
+			idea = Chindits_Offensive
+			days = 50
+				}
+			}
+		}
+	}
+	Raj_Uprising = {
+#icon = GFX_decision_POL_looming_peasants_strike
+		
+		#### Steal Mils
+		
+		Syphon_Weapon_Production_Raj = {
+		icon = generic_industry
+		cost = 25
+		target_trigger = {
+		FROM = {
+		is_core_of = ROOT
+		#is_on_continent = europe
+		NOT = {
+		is_controlled_by = RAJ
+		}
+		arms_factory > 2
+		
+			}
+		}
+		fire_only_once = no
+		days_remove = 16
+		state_target = yes
+		
+		available = {
+		RAJ = { 
+		#has_capitulated = yes
+		has_completed_focus = Secure_Weapon_Workshops
+				#NOT = {
+		#controls_state = 132
+		#controls_state = 130
+		#controls_state = 219
+					#}
+				}
+			}
+			complete_effect = {
+			FROM = {
+			set_state_flag = {
+			flag = Factory_Capture_Raj
+					}
+				}
+			}
+			
+			remove_effect = {
+			FROM = {
+			if = {
+			limit = {
+			has_state_flag = Factory_Capture_Raj
+				}
+			clr_state_flag = Factory_Capture_Raj
+			}
+			remove_building = {
+			type = arms_factory
+			level = 2
+				}
+		RAJ = {
+		add_offsite_building = { type = arms_factory
+		level = 2 }
+		}
+				}
+			}
+		}
+		
+		
+		####Steal Civs
+		
+		Syphon_Factory_Construction_Raj = {
+		icon = generic_factory
+		cost = 25
+		target_trigger = {
+		FROM = {
+		is_core_of = ROOT
+		#is_on_continent = europe
+		NOT = {
+		is_controlled_by = RAJ
+		}
+		industrial_complex > 2
+		
+			}
+		}
+		fire_only_once = no
+		days_remove = 16
+		state_target = yes
+		
+		available = {
+		RAJ = { 
+		#has_capitulated = yes
+		has_completed_focus = Reach_Out_To_Labour_Workers
+				#NOT = {
+		#controls_state = 132
+		#controls_state = 130
+		#controls_state = 219
+					#}
+				}
+			}
+			complete_effect = {
+			FROM = {
+			set_state_flag = {
+			flag = Industryial_Factory_Capture_Raj
+					}
+				}
+			}
+			
+			remove_effect = {
+			FROM = {
+			if = {
+			limit = {
+			has_state_flag = Industryial_Factory_Capture_Raj
+				}
+			clr_state_flag = Industryial_Factory_Capture_Raj
+			}
+			remove_building = {
+			type = industrial_complex
+			level = 2
+				}
+		RAJ = {
+		add_offsite_building = { type = industrial_complex
+		level = 2 }
+		}
+				}
+			}
+		}
+		
+		
+		
+		##### form brigades
+	
+	Gather_Support_In_Northern_India= {
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		days_remove = 40
+		state_target = yes
+		targets = { 439 }
+		#highlight_states = {
+		#highlight_state_targets = { 
+		#state = 132 
+		#state = 131
+		#state = 130
+		#	}
+		#}
+		available = {
+		NOT = {
+		check_variable = { var = North_Millita_Brigades_Raj value = 3 compare = greater_than_or_equals }
+			}
+		FROM = {
+		RAJ = { 
+		has_completed_focus = Reach_Out_To_Local_Millitas
+					has_equipment = {
+					infantry_equipment > 1000
+					}
+					has_equipment = {
+					squad_equipment > 150
+					}
+					has_equipment = {
+					support_equipment > 75
+					}
+					has_manpower > 2000
+				}
+			}
+			
+		}
+		complete_effect = {
+			RAJ = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				}
+				add_equipment_to_stockpile = {
+				type = squad_equipment
+					amount = -150
+				}
+				add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -75
+				}
+				add_manpower = -2000
+			}
+			add_to_variable = { North_Millita_Brigades_Raj = 1 }
+			add_to_variable = { North_Raj_State = 1  }
+		}
+		remove_effect = {
+		RAJ_Uprising_Ui_Update = yes
+		}
+	}
+	
+	Gather_Support_In_Central_India = {
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		days_remove = 40
+		state_target = yes
+		targets = { 429}
+		#highlight_states = {
+		#highlight_state_targets = { 
+		#state = 132 
+		#state = 131
+		#state = 130
+		#	}
+		#}
+		available = {
+		NOT = {
+		check_variable = { var = Central_India_Millita_Brigades value = 3 compare = greater_than_or_equals }
+			}
+		FROM = {
+		RAJ = { 
+		has_completed_focus = Reach_Out_To_Local_Millitas
+					has_equipment = {
+					infantry_equipment > 1000
+					}
+					has_equipment = {
+					squad_equipment > 150
+					}
+					has_equipment = {
+					support_equipment > 75
+					}
+					has_manpower > 2000
+				}
+			}
+		}
+		complete_effect = {
+			RAJ = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				}
+				add_equipment_to_stockpile = {
+				type = squad_equipment
+					amount = -150
+				}
+				add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -75
+				}
+			}
+			add_to_variable = {Central_India_Millita_Brigades = 1 }
+			add_to_variable = { RAJ_Central_State = 1  }
+		}
+		remove_effect = {
+		RAJ_Uprising_Ui_Update = yes
+		}
+	}
+	
+	Gather_Support_In_South_India = {
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		days_remove = 40
+		state_target = yes
+		targets = { 423 }
+		#highlight_states = {
+		#highlight_state_targets = { 
+		#state = 132 
+		#state = 131
+		#state = 130
+		#	}
+		#}
+		available = {
+		NOT = {
+		check_variable = { var = South_India_Millita_Brigades value = 2 compare = greater_than_or_equals }
+			}
+		FROM = {
+		RAJ = { 
+		has_completed_focus = Reach_Out_To_Local_Millitas
+					has_equipment = {
+					infantry_equipment > 1000
+					}
+					has_equipment = {
+					squad_equipment > 150
+					}
+					has_equipment = {
+					support_equipment > 75
+					}
+					has_manpower > 2000
+				}
+			}
+		}
+		complete_effect = {
+			RAJ = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				}
+				add_equipment_to_stockpile = {
+				type = squad_equipment
+					amount = -150
+				}
+				add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -75
+				}
+				add_manpower = -2000
+			}
+			add_to_variable = { South_India_Millita_Brigades = 1 }
+			add_to_variable = { South_India_State = 1  }
+		}
+		remove_effect = {
+		RAJ_Uprising_Ui_Update = yes
+		}
+	}
+	
+	Gather_Support_In_Pakistan = {
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		days_remove = 40
+		state_target = yes
+		targets = { 440 }
+		#highlight_states = {
+		#highlight_state_targets = { 
+		#state = 132 
+		#state = 131
+		#state = 130
+		#	}
+		#}
+		available = {
+		NOT = {
+		check_variable = { var = Pakistan_Millita_Brigades value = 2 compare = greater_than_or_equals }
+			}
+		FROM = {
+		RAJ = { 
+		has_completed_focus = Reach_Out_To_Local_Leaders
+					has_equipment = {
+					infantry_equipment > 1000
+					}
+					has_equipment = {
+					squad_equipment > 150
+					}
+					has_equipment = {
+					support_equipment > 75
+					}
+					has_manpower > 2000
+				}
+			}
+		}
+		complete_effect = {
+			RAJ = {
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+				}
+				add_equipment_to_stockpile = {
+				type = squad_equipment
+					amount = -150
+				}
+				add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -75
+				}
+				add_manpower = -2000
+			}
+			add_to_variable = { Pakistan_Millita_Brigades = 1 }
+			add_to_variable = { Pakistan_State = 1  }
+		}
+		remove_effect = {
+		RAJ_Uprising_Ui_Update = yes
+		}
+	}
+
+	Uprising_Raj = {
+		icon = generic_independence
+		fire_only_once = yes
+		#days_mission_timeout = 20
+		#activation = {
+		#has_country_flag = Uprising_Prep_RAJ
+		#}
+		available = {
+			#always = no
+			check_variable = { var = North_Millita_Brigades_Raj value = 1 compare = greater_than_or_equals } 
+			RAJ = { 
+			has_completed_focus = Towards_Liberation
+				}
+			}
+		cancel_trigger = {
+		}
+		#cost = 25
+		days_remove = 21
+		remove_effect = {
+		FROM = {
+		hidden_effect = {
+		######Northern India
+		if = {
+		limit = { check_variable = { var = North_Millita_Brigades_Raj value = 1 compare = equals} }
+		division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					439 = {
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					438 = {
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					433 = {
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					435 = {
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					
+				}
+				else_if = {
+				limit = { check_variable = { var = North_Millita_Brigades_Raj value = 2 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					439 = {
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					438 = {
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					433 = {
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					435 = {
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+				}
+			else_if = {
+				limit = { check_variable = { var = North_Millita_Brigades_Raj value = 3 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					439 = {
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 11955 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2032 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12868 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10794 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					438 = {
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12137 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5040 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 9973 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5086 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 5055 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					433 = {
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 2054 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4915 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 7905 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					435 = {
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 4516 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 12307 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 1569 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					create_unit = {prioritize_location = 10751 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ}
+					
+					}
+					#transfer_state = 439
+					#transfer_state = 438
+				}
+				if = {
+				######Central India
+		limit = { check_variable = { var = Central_India_Millita_Brigades value = 1 compare = equals} }
+		division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					429 = {
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					428 = {
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					436 = {
+					create_unit = {prioritize_location = 10030 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10401 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					426 = {
+					create_unit = {prioritize_location = 10060 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10001 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+				}
+				else_if = {
+				limit = { check_variable = { var = Central_India_Millita_Brigades value = 2 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					429 = {
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					
+					}
+					428 = {
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					436 = {
+					create_unit = {prioritize_location = 10030 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10401 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10030 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10401 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					426 = {
+					create_unit = {prioritize_location = 10060 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10001 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10060 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10001 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+				}
+				}
+			else_if = {
+				limit = { check_variable = { var = Central_India_Millita_Brigades value = 3 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					429 = {
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					
+					create_unit = {prioritize_location = 7013 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 7119 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10270 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12269 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1349 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					428 = {
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 9975 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					
+					create_unit = {prioritize_location = 11952 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 7165 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12092 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 1103 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					436 = {
+					create_unit = {prioritize_location = 10030 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10401 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10030 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10401 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					426 = {
+					create_unit = {prioritize_location = 10060 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10001 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10060 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10001 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+				
+					
+				}
+				}
+				
+				######Pakistan
+				if = {
+		limit = { check_variable = { var = Pakistan_Millita_Brigades value = 1 compare = equals} }
+		division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					440 = {
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					443 = {
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					442 = {
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					445 = {
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					
+				}
+				else_if = {
+				limit = { check_variable = { var = Pakistan_Millita_Brigades value = 2 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					440 = {
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10887 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					443 = {
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 3456 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					442 = {
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 12763 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					445 = {
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 5105 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+						}
+					}
+					####South India
+				if = {
+		limit = { check_variable = { var = South_India_Millita_Brigades value = 1 compare = equals} }
+		division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+					423 = {
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					427 = {
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					425 = {
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					424 = {
+					create_unit = {prioritize_location = 10756 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 7340 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+				}
+				else_if = {
+				limit = { check_variable = { var = South_India_Millita_Brigades value = 2 compare = equals} }
+				division_template = {
+					name = "Millita"
+					division_names_group = RAJ_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }  
+						}
+					}
+				423 = {
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10278 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					427 = {
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8087 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					425 = {
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 8011 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					424 = {
+					create_unit = {prioritize_location = 10756 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 7340 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 10756 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					create_unit = {prioritize_location = 7340 allow_spawning_on_enemy_provs = yes division = "division_template = \"Millita\" start_experience_factor = 0" owner = RAJ }
+					}
+					}
+				}
+			}
+			
+			RAJ = {
+			add_timed_idea = {idea = War_Of_Liberation days = 70}
+			#clr_country_flag = Uprising_Prep_RAJ
+					}
+				}
+			}
+		}
+	}

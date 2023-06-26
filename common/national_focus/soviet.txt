@@ -6563,7 +6563,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SOV_transpolar_flights
 
@@ -7045,7 +7045,7 @@ focus = {
 				bonus = 0.50
 				uses = 2
 				category = cat_heavy_fighter
-				category = tactical_bomber
+				category = medium_air
 				category = cat_strategic_bomber
 			}
 		}
@@ -8262,7 +8262,7 @@ focus = {
 				bonus = 1
 				uses = 2
 				category = cv_tech
-				category = naval_air
+				category = light_air
 			}
 
 			###########

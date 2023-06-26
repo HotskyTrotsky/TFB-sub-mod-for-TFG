@@ -38,7 +38,6 @@ war_measures = {
 	}
 }
 USA_aid_britain = {
-
 	USA_establish_personal_communication_with_former_naval_person = {
 
 		icon = generic_political_discourse
@@ -502,6 +501,7 @@ Lend_Lease_Guns = {
 			476 = { set_compliance = 60 }
 			475 = { set_compliance = 60 }
 			474 = { set_compliance = 60 }
+			USA_Check_Flag = yes
 		}
 	}
 	USA_annex_Phillipines = {
@@ -581,6 +581,7 @@ Lend_Lease_Guns = {
 			502 = { set_compliance = 60 }
 			280 = { set_compliance = 60 }
 			496 = { set_compliance = 60 }
+			USA_Check_Flag = yes
 		}
 	}
 }

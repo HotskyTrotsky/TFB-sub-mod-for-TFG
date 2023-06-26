@@ -612,7 +612,10 @@
   Syphon_Factory_Construction:0 "Secure civilian factories"
   Start_Uprising:0 "Set in motion the uprising"
   Launch_Uprising_early:0 "Launch the uprising early"
+  Invest_Into_B_E_F:0 "Invest Into British Expeditionary Force (BEF)"
   #### TOOLTIP ####
+  Invest_Into_B_E_F_Focus_tt:0 "Unlocks the decison to invest into the BEF"
+  Invest_Into_B_E_F_tt:0 "The first wave of investment will spawn 6 infantry and 2 tank divisions for france on the outbreak of war, This will double to 13 infantry and 4 tank divsison upon the 2nd investment."
   ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y26 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
   ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
   ENG_special_tech_unlock:0 "§YUnlocks decisions to fund special research projects.§!"

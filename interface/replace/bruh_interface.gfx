@@ -10,6 +10,20 @@ spriteTypes = {
     	looping = no
     	play_on_show = yes
 	}
+	######ideas minor
+	SpriteType = {
+		name = "GFX_idea_HUN_wehrmacht"
+		textureFile = "gfx/interface/ideas/HUN_wehrmacht.dds"
+	}
+	####raj
+	SpriteType = {
+		name = "GFX_idea_peoples_army_anarch"
+		textureFile = "gfx/interface/ideas/peoples_army_anarch.dds"
+	}
+	spriteType = {
+    name = GFX_trait_brilliant_strategist_1
+    texturefile = gfx/interface/traits/personal/trait_brilliant_strategist.dds
+	}
 	###########Icons asked to be added
 	spriteType = { 
         name = "GFX_div_templ_065_large"
@@ -227,7 +241,7 @@ spriteTypes = {
 		name = "GFX_FRA_propaganda_bg"
 		texturefile = "gfx/interface/propaganda/FRA_propaganda_bg.dds"
 	}
-	
+	###UK Uprirising
 	spriteType = {
 		name = "GFX_UK_Map"
 		texturefile = "gfx/interface/Uprising/UK_Map.dds"
@@ -288,8 +302,68 @@ spriteTypes = {
 		name = "GFX_ENG_Wales_Contested_3"
 		texturefile = "gfx/interface/Uprising/ENG_Wales_Contested_3.dds"
 	}
-
-	
+###RAJ Uprirising
+	spriteType = {
+		name = "GFX_RAJ_Map"
+		texturefile = "gfx/interface/Uprising/RAJ_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_Pakistan_0"
+		texturefile = "gfx/interface/Uprising/Pakistan_0.dds"
+	}
+	spriteType = {
+		name = "GFX_Pakistan_1"
+		texturefile = "gfx/interface/Uprising/Pakistan_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Pakistan_2"
+		texturefile = "gfx/interface/Uprising/Pakistan_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Northern_India_0"
+		texturefile = "gfx/interface/Uprising/Northern_India_0.dds"
+	}
+	spriteType = {
+		name = "GFX_Northern_India_1"
+		texturefile = "gfx/interface/Uprising/Northern_India_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Northern_India_2"
+		texturefile = "gfx/interface/Uprising/Northern_India_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Northern_India_3"
+		texturefile = "gfx/interface/Uprising/Northern_India_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Central_India_0"
+		texturefile = "gfx/interface/Uprising/Central_India_0.dds"
+	}
+	spriteType = {
+		name = "GFX_Central_India_1"
+		texturefile = "gfx/interface/Uprising/Central_India_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Central_India_2"
+		texturefile = "gfx/interface/Uprising/Central_India_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Central_India_3"
+		texturefile = "gfx/interface/Uprising/Central_India_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Southern_India_0"
+		texturefile = "gfx/interface/Uprising/Southern_India_0.dds"
+	}
+	spriteType = {
+		name = "GFX_Southern_India_1"
+		texturefile = "gfx/interface/Uprising/Southern_India_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Southern_India_2"
+		texturefile = "gfx/interface/Uprising/Southern_India_2.dds"
+	}
+	#####
 	spriteType = {
 		name = "GFX_USA_election_bg"
 		texturefile = "gfx/interface/election/USA_election_bg.dds"
@@ -677,7 +751,10 @@ spriteTypes = {
 		name = "GFX_idea_genghis_ghost"
 		texturefile = "gfx/interface/ideas/idea_genghis_ghost.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_Mongolia_Throat_Singer"
+		texturefile = "gfx/leaders/MON/Mongolia_Gen.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_portrait_kublai"
 		texturefile ="gfx/leaders/MON/portrait_kublai.dds"

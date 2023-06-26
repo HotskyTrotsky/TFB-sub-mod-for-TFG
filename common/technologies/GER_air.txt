@@ -1,0 +1,1135 @@
+technologies = {
+	
+	German_Inter_War_Fighters = {
+
+		enable_equipments = {
+			small_plane_airframe_0_ger
+
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			early_torp
+			small_bomb_locks
+			early_naval_bomb
+			recon_camera
+			Reduced_Materials
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_Series
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = JU_87_B
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = BF110
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	###########################################################BF109
+	BF109_Series = {
+
+		enable_equipments = {
+			small_plane_airframe_1_ger
+
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_E
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF109_E = {
+
+		enable_equipments = {
+			#small_plane_airframe_0_ger
+
+		}
+		enable_equipment_modules = {
+			heavy_mg_2x
+			heavy_mg_4x
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_E_Upgrade
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF109_E_Upgrade = {
+
+		enable_equipments = {
+			#small_plane_airframe_0_ger
+
+		}
+		enable_equipment_modules = {
+			aircraft_cannon_1_2x
+			Light_Armor_Plates
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_F
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF109_F = {
+
+		enable_equipments = {
+			#small_plane_airframe_0_ger
+
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			fuel_injection2
+			radio_navigation_1
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_G
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Fw_190_A
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF109_G = {
+
+		enable_equipments = {
+
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			aircraft_cannon_1_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = BF109_K
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF109_K = {
+
+		enable_equipments = {
+			#small_plane_airframe_0_ger
+
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+		}
+		
+	
+		path = {
+			leads_to_tech = Me_262
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	###########################################################End of BF109
+	###########################################################Focke-Wulf Fw 190
+	Fw_190_A = {
+
+		enable_equipments = {
+			small_plane_airframe_2_ger
+
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+
+		}
+		
+	
+		path = {
+			leads_to_tech = Fw_190_D
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Fw_190_G_F
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = germanair_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Fw_190_D = {
+
+		enable_equipments = {
+			small_plane_airframe_3_ger
+
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+
+		}
+		
+	
+		path = {
+			leads_to_tech = Me_262
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = germanair_folder
+			position = { x = -4 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+		Fw_190_G_F = {
+
+		enable_equipments = {
+			#small_plane_airframe_2_ger
+
+		}
+		enable_equipment_modules = {
+			rocket_rails_1
+			Reflex_sight_1
+		}
+		
+	
+		
+		
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = germanair_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	##########################################################Fw_190 End
+	##################Jets Messerschmitt Me 262
+	Me_262 = {
+		dependencies = {
+			jet_engines = 1
+		}
+		enable_equipments = {
+			small_plane_airframe_4_ger
+
+		}
+		enable_equipment_modules = {
+			jet_engine_2x
+			aircraft_cannon_2_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+
+		}
+		
+	
+		path = {
+			#leads_to_tech = BF109_E
+			#research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 21 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	#################################################JU-87
+	JU_87_B = {
+
+		enable_equipments = {
+			small_plane_airframe_5_ger
+
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			Dive_Brakes
+		}
+		
+	
+		path = {
+			leads_to_tech = JU_87_B_1
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = germanair_folder
+			position = { x = -6 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	JU_87_B_1 = {
+
+		enable_equipments = {
+
+		}
+		enable_equipment_modules = {
+			medium_bomb_locks
+			Light_Armor_Plates
+			tank_buster_1
+		}
+		
+	
+		path = {
+			leads_to_tech = JU_87_G/D
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = germanair_folder
+			position = { x = -6 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	JU_87_G/D = {
+
+		enable_equipments = {
+			small_plane_airframe_6_ger
+
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			Medium_Armor_Plates
+			tank_buster_2
+			large_bomb_locks
+		}
+		
+	
+		path = {
+			leads_to_tech = JU_87_G/D
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = germanair_folder
+			position = { x = -6 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	########################JU 87 End
+	#########################################BF110
+	BF110 = {
+
+		enable_equipments = {
+			ger_heavy_fighter_1
+
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = BF110_Upgrade
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	BF110_Upgrade = {
+
+		enable_equipments = {
+
+		}
+		enable_equipment_modules = {
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			air_air_radar_1
+			radio_navigation_1
+		}
+		
+	
+		path = {
+			leads_to_tech = ME210
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	ME210 = {
+
+		enable_equipments = {
+			ger_heavy_fighter_2
+
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			air_air_radar_2
+			tank_buster_3
+			medium_bomb_locks
+			large_bomb_locks
+		}
+		
+	
+		#path = {
+		#	#leads_to_tech = JU_87_G/D
+		#	#research_cost_coeff = 1
+		#}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	German_Inter_War_Bombers = {
+
+		enable_equipments = {
+			medium_plane_airframe_0_ger
+		}
+		enable_equipment_modules = {
+			engine_1_2x
+			small_tactical_bombs
+			Large_Reduced_Materials
+			lmg_defense_turret
+			lmg_defense_turret_2x
+			Long_Range_Naval_Bomb
+			flying_boat_medium
+		}
+
+		path = {
+			leads_to_tech = He_111_series
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = JU_88
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = DO_17
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = germanair_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	He_111_series = {
+
+		enable_equipments = {
+			medium_plane_airframe_1_ger
+		}
+		enable_equipment_modules = {
+			hmg_defense_turret
+		}
+
+		path = {
+			leads_to_tech = He_111_E_P
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	He_111_E_P = {
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			hmg_defense_turret_2x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+
+		path = {
+			leads_to_tech = He_111_H
+			research_cost_coeff = 1
+		}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	He_111_H = {
+
+		enable_equipments = {
+			medium_plane_airframe_2_ger
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			medium_tactical_bombs
+			bomb_sights_1
+			
+		}
+
+		path = {
+			leads_to_tech = JU_188
+			research_cost_coeff = 1
+		}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = germanair_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#He_111_H11 = {
+#
+	#	enable_equipments = {
+	#	#	medium_plane_airframe_2_ger
+	#	#	medium_plane_fighter_airframe_0
+	#	#	medium_plane_scout_plane_airframe_0
+	#	}
+	#	enable_equipment_modules = {
+	#		#engine_3_2x
+	#	}
+#
+	#	path = {
+	#		leads_to_tech = JU_188
+	#		research_cost_coeff = 1
+	#	}
+	##	path = {
+	##		leads_to_tech = Blenheim
+	##		research_cost_coeff = 1
+	##	}
+	#	research_cost = 2
+	#	start_year = 1942
+	#	folder = {
+	#		name = germanair_folder
+	#		position = { x = 4 y = 16 }
+	#	}
+	#	
+	#	categories = {
+	#		medium_air
+	#		air_equipment
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	
+	JU_88 = {
+
+		enable_equipments = {
+			Ger_Fighter_Bomber_1
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			medium_bomb_locks
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+
+		path = {
+			leads_to_tech = JU_188
+			research_cost_coeff = 1
+		}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	JU_188 = {
+
+		enable_equipments = {
+			Ger_Fighter_Bomber_2
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			air_air_radar_2
+			large_bomb_locks
+			medium_tactical_bombs
+		}
+
+		path = {
+			leads_to_tech = Ar_234
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Ar_234 = {
+
+		enable_equipments = {
+			medium_plane_airframe_3_ger
+		
+		}
+		enable_equipment_modules = {
+			jet_engine_2x
+			large_tactical_bombs
+		}
+
+	
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = germanair_folder
+			position = { x = 0 y = 21 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+#######################Strat Bombers
+DO_17 = {
+
+		enable_equipments = {
+			large_plane_airframe_1_ger
+		#	medium_plane_fighter_airframe_0
+		#	medium_plane_scout_plane_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			strategic_payload_light
+			Self_Sealing_Tanks
+		}
+
+		path = {
+			leads_to_tech = DO_217
+			research_cost_coeff = 1
+		}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = germanair_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DO_217 = {
+
+		enable_equipments = {
+			large_plane_airframe_2_ger
+
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			bomb_sights_1
+			strategic_payload_medium
+			Heavy_Armor_Plates
+			air_ground_radar_1
+		}
+
+		path = {
+			leads_to_tech = He_177
+			research_cost_coeff = 1
+		}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = germanair_folder
+			position = { x = 8 y = 14 }
+		}
+		
+		categories = {
+		cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	He_177 = {
+
+		enable_equipments = {
+			large_plane_airframe_3_ger
+		}
+		enable_equipment_modules = {
+				engine_2_4x
+			strategic_payload_heavy
+			radio_navigation_2
+		}
+
+		#path = {
+		#	leads_to_tech = DO_217
+		#	research_cost_coeff = 1
+		#}
+	#	path = {
+	#		leads_to_tech = Blenheim
+	#		research_cost_coeff = 1
+	#	}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = germanair_folder
+			position = { x = 8 y = 16 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

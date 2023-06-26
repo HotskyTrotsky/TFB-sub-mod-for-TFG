@@ -10,8 +10,10 @@
  EQ_MOD_CAT_quad_large_plane_jet_engine_type_TITLE:0 "4 Jet Engines"
  EQ_MOD_CAT_large_plane_jet_engine_type_TITLE:1 "6 Jet Engines"
  EQ_MOD_CAT_plane_rocket_engine_type_TITLE:0 "Rocket Engine"
- EQ_MOD_CAT_fighter_weapon_TITLE:0 "Fighter Weapons"
- EQ_MOD_CAT_cas_weapon_TITLE:0 "CAS Weapons"
+ EQ_MOD_CAT_Fighter_weapon1_TITLE:0 "Light Fighter Weapons"
+ EQ_MOD_CAT_Fighter_weapon2_TITLE:0 "Heavy Fighter Weapons"
+ EQ_MOD_CAT_Fighter_weapon3_TITLE:0 "Fighter Cannon Weapons"
+ EQ_MOD_CAT_Fighter_weapon4_TITLE:0 "Fighter Heavy Cannon Weapons"
  EQ_MOD_CAT_nav_bomber_weapon_TITLE:0 "Small Naval Bomber Weapons"
  EQ_MOD_CAT_kamikaze_bomber_weapon_TITLE:0 "Kamikaze Bomber Weapons"
  EQ_MOD_CAT_plane_special_module_small_TITLE:0 "Special Modules (Small)"
@@ -29,6 +31,9 @@
  EQ_MOD_CAT_plane_special_module_air_ground_radar_TITLE:0 "Air-Ground Radar"
  EQ_MOD_CAT_plane_special_module_air_air_radar_TITLE:0 "Air-Air Radar"
  EQ_MOD_CAT_plane_ammunition_TITLE:0 "Fighter ammunition"
+ EQ_MOD_CAT_Engine_Upgrade_TITLE:0 "Engine Improvements"
+ 
+ 
 
  EQ_MOD_SLOT_fixed_main_weapon_slot_TITLE:0 "Main Armament"
  EQ_MOD_SLOT_fixed_auxiliary_weapon_slot_1_TITLE:0 "Secondary Weapons"
@@ -160,8 +165,8 @@
  cannon_defense_turret_desc:0 "A modern cannon in a traversable turret significantly alters the balance of power between the defender and the attacker in air combat. Few fighters can withstand a direct hit from a modern cannon and continue to fight."
  cannon_defense_turret_2x:0 "Cannon Defense Turret 2x"
  cannon_defense_turret_2x_desc:0 "Two turrets armed with automatic cannons give the plane a fearsome defensive punch that would make any fighter attack on it a very dangerous prospect indeed."
- rocket_rails:0 "Rocket Rails"
- rocket_rails_desc:0 "Unguided projectiles hung under the wings. Since they are fired ahead of the attacking plane, it is a lot easier for the pilot to aim them at the target compared to bombs."
+ rocket_rails_1:0 "Rocket Rails"
+ rocket_rails_1_desc:0 "Unguided projectiles hung under the wings. Since they are fired ahead of the attacking plane, it is a lot easier for the pilot to aim them at the target compared to bombs."
  bomb_sights_1:0 "Bomb Sights I"
  bomb_sights_1_desc:0 "A complex mechanical computer that takes into account wind drift, terminal velocity and altitude allows the bombadier to drop bombs with a high degree of accuracy."
  bomb_sights_2:0 "Bomb Sights II"

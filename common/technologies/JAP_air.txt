@@ -1,0 +1,1073 @@
+technologies = {
+	
+	jap_Inter_War_Fighters = {
+
+		enable_equipments = {
+			small_plane_airframe_0_jap
+		
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			early_torp
+			small_bomb_locks
+			early_naval_bomb
+			recon_camera
+			Reduced_Materials
+			floats
+		}
+		
+	
+		path = {
+			leads_to_tech = Mitsubishi_A5M
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Yokosuka_B4Y
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = Nakajima_Ki-27
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Mitsubishi_Ki-15
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = japair_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Mitsubishi_Ki-15 = {
+
+		enable_equipments = {
+		small_plane_airframe_8_jap
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = Tachikawa_Ki-36
+			research_cost_coeff = 1
+		}
+		
+		
+	
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = japair_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Tachikawa_Ki-36 = {
+
+		enable_equipments = {
+		small_plane_airframe_9_jap
+		}
+		enable_equipment_modules = {
+			medium_bomb_locks
+			Light_Armor_Plates
+		}
+		
+	
+		path = {
+			leads_to_tech = Mitsubishi_Ki-51
+			research_cost_coeff = 1
+		}
+		
+		
+	
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = japair_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Mitsubishi_Ki-51 = {
+
+		enable_equipments = {
+		small_plane_airframe_10_jap
+		}
+		enable_equipment_modules = {
+			large_bomb_locks
+		}
+		
+		
+		
+	
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = japair_folder
+			position = { x = 8 y = 10 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Nakajima_Ki-27 = {
+
+		enable_equipments = {
+			small_plane_airframe_1_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			#engine_3_1x
+			fuel_injection
+			#radio_navigation_1
+			heavy_mg_2x
+		}
+		
+	
+		path = {
+			leads_to_tech = Nakajima_Ki-43_Hayabusa
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Kawasaki_Ki-45
+			research_cost_coeff = 1
+		}
+		
+	
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = japair_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Nakajima_Ki-43_Hayabusa = {
+
+		enable_equipments = {
+			small_plane_airframe_2_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = Kawasaki_Ki-61
+			research_cost_coeff = 1
+		}
+		
+	
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = japair_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	
+	Kawasaki_Ki-61 = {
+
+		enable_equipments = {
+			small_plane_airframe_3_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = Kawasaki_Ki-102
+			research_cost_coeff = 1
+		}
+		
+	
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = japair_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Kawasaki_Ki-102 = {
+
+		enable_equipments = {
+			small_plane_airframe_4_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			radio_navigation_2
+		}
+		
+	
+		
+	
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = japair_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Kawasaki_Ki-45 = {
+
+		enable_equipments = {
+			jap_heavy_fighter_2
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			air_air_radar_1
+			radio_navigation_1
+		}
+		
+	
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = japair_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			IJA_Air
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+Yokosuka_B4Y = {
+
+		enable_equipments = {
+			small_plane_airframe_NAV_1_jap
+		}
+		enable_equipment_modules = {
+			light_mg_4x
+		}
+		
+	
+		path = {
+			leads_to_tech = Mitsubishi_B5M
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = japair_folder
+			position = { x = -6 y = 4 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Mitsubishi_B5M = {
+
+		enable_equipments = {
+			small_plane_airframe_NAV_2_jap
+
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			engine_2_1x
+			Dive_Brakes
+		}
+		
+	
+		path = {
+			leads_to_tech = Aichi_D3A_Nakajima_B6N
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = japair_folder
+			position = { x = -6 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Aichi_D3A_Nakajima_B6N = {
+
+		enable_equipments = {
+			small_plane_airframe_NAV_3_jap
+			small_plane_airframe_NAV_4_jap
+		}
+		enable_equipment_modules = {
+			mid_torp
+			mid_naval_bomb
+			engine_3_1x
+			Drop_Tank
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			heavy_mg_4x
+			radio_navigation_1
+			fuel_injection
+		}
+		
+	
+		path = {
+			leads_to_tech = Yokosuka_D4Y
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = japair_folder
+			position = { x = -6 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Yokosuka_D4Y = {
+
+		enable_equipments = {
+			small_plane_airframe_NAV_5_jap
+
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			late_naval_bomb
+			late_torp
+			fuel_injection2
+		}
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = japair_folder
+			position = { x = -6 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Mitsubishi_A5M = {
+
+		enable_equipments = {
+			small_plane_airframe_5_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			#engine_3_1x
+			fuel_injection
+			#radio_navigation_1
+			heavy_mg_2x
+		}
+		
+	
+		path = {
+			leads_to_tech = Mitsubishi_A6M_Zero
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = japair_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Mitsubishi_A6M_Zero = {
+
+		enable_equipments = {
+			small_plane_airframe_6_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = Kawanishi_N1K
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Nakajima_J1N
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = japair_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Nakajima_J1N = {
+
+		enable_equipments = {
+			jap_heavy_fighter_1
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			fuel_injection
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			air_air_radar_1
+			radio_navigation_1
+		}
+		
+	
+		path = {
+			leads_to_tech = Hurricane
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = japair_folder
+			position = { x = -4 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Kawanishi_N1K = {
+
+		enable_equipments = {
+			small_plane_airframe_7_jap
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+		}
+		
+	
+		path = {
+			leads_to_tech = Hurricane
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = japair_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			naval_bomber
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	jap_Inter_War_Bombers = {
+
+		enable_equipments = {
+		medium_plane_airframe_0_jap
+		}
+		enable_equipment_modules = {
+			engine_1_2x
+			small_tactical_bombs
+			Large_Reduced_Materials
+			lmg_defense_turret
+			lmg_defense_turret_2x
+			Long_Range_Naval_Bomb
+			flying_boat_medium
+		}
+
+		path = {
+			leads_to_tech = Mitsubishi_G4M
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Kawasaki_Ki-30_series
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = japair_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Kawasaki_Ki-30_series = {
+
+		enable_equipments = {
+		JAP_Fighter_Bomber_1
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			medium_bomb_locks
+		}
+
+		path = {
+			leads_to_tech = Kawasaki_Ki-48
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Mitsubishi_Ki-21
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1937
+		folder = {
+			name = japair_folder
+			position = { x = 9 y = 6 }
+		}
+		
+		categories = {
+			IJA_Air
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Kawasaki_Ki-48 = {
+
+		enable_equipments = {
+		medium_plane_airframe_1_jap
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			medium_tactical_bombs
+			hmg_defense_turret
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+
+		path = {
+			leads_to_tech = Nakajima_Ki-49
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = japair_folder
+			position = { x = 9 y = 12 }
+		}
+		
+		categories = {
+			IJA_Air
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Nakajima_Ki-49 = {
+
+		enable_equipments = {
+		medium_plane_airframe_2_jap
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			bomb_sights_1
+		}
+
+		path = {
+			leads_to_tech = Nakajima_Ki-49
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = japair_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		categories = {
+			IJA_Air
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Mitsubishi_Ki-21 = {
+
+		enable_equipments = {
+		large_plane_airframe_1_jap
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			strategic_payload_light
+			hmg_defense_turret
+			hmg_defense_turret_2x
+			Self_Sealing_Tanks
+		}
+
+		path = {
+			leads_to_tech = Mitsubishi_Ki-67
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = japair_folder
+			position = { x = 11 y = 8 }
+		}
+		
+		categories = {
+			IJA_Air
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Mitsubishi_Ki-67 = {
+
+		enable_equipments = {
+	large_plane_airframe_2_jap
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			bomb_sights_1
+			strategic_payload_medium
+			Heavy_Armor_Plates
+			air_ground_radar_1
+		}
+
+		path = {
+			leads_to_tech = Mitsubishi_Ki-67
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = japair_folder
+			position = { x = 11 y = 20 }
+		}
+		
+		categories = {
+			IJA_Air
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Mitsubishi_G4M = {
+
+		enable_equipments = {
+		medium_plane_airframe_3_jap
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			engine_2_2x
+			medium_tactical_bombs
+			hmg_defense_turret
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			bomb_sights_1
+		}
+
+		path = {
+			leads_to_tech = Yokosuka_P1Y
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = japair_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+			naval_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Yokosuka_P1Y = {
+
+		enable_equipments = {
+		medium_plane_airframe_4_jap
+		}
+		enable_equipment_modules = {
+			large_tactical_bombs
+			engine_4_2x
+		}
+
+		
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = japair_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+			naval_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
