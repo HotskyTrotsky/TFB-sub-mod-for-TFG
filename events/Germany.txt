@@ -5843,7 +5843,7 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = germany.2004
 	title = germany.2004.t
 	desc = germany.2004.d
@@ -5875,6 +5875,74 @@ country_event = {
 		}
 	}
 	option = {
-		name = germany.2003.a
+		name = germany.2004.a
+	}
+}
+country_event = {
+	id = germany.2005
+	title = germany.2005.t
+	desc = germany.2005.d
+	picture = GFX_report_event_001
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = germany.2005.a
+		trigger = {
+		GER = {
+			has_equipment = {
+			transport_plane_equipment_1 > 25
+				}
+			}
+		}
+		GER = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1300
+				}
+				add_equipment_to_stockpile = {
+				type = transport_plane_equipment_1
+				amount = -10
+				}
+			}
+		hidden_effect = {
+		division_template = {
+					name = "Fallschirmjägers"
+					division_names_group = GER_PAR_01
+						regiments = {
+						paratrooper = { x = 0 y = 0 }
+						paratrooper = { x = 0 y = 1 }
+						paratrooper = { x = 0 y = 2 }
+						paratrooper = { x = 0 y = 3 }
+						paratrooper = { x = 1 y = 0 }
+						paratrooper = { x = 1 y = 1 }
+						paratrooper = { x = 1 y = 2 }
+						paratrooper = { x = 1 y = 3 }
+						pack_artillery_brigade = { x = 2 y = 0 }
+						pack_artillery_brigade = { x = 2 y = 1 }
+						pack_artillery_brigade = { x = 2 y = 2 }	
+						pack_artillery_brigade = { x = 2 y = 3 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+						signal_company = { x = 0 y = 3 }
+						}
+				}
+				182 = {
+					create_unit = {prioritize_location = 12058 allow_spawning_on_enemy_provs = yes division = "division_template = \"Fallschirmjägers\" start_experience_factor = 0.8" owner = GER }
+					create_unit = {prioritize_location = 1164 allow_spawning_on_enemy_provs = yes division = "division_template = \"Fallschirmjägers\" start_experience_factor = 0.8" owner = GER }
+					create_unit = {prioritize_location = 9940 allow_spawning_on_enemy_provs = yes division = "division_template = \"Fallschirmjägers\" start_experience_factor = 0.8" owner = GER }
+					create_unit = {prioritize_location = 4170 allow_spawning_on_enemy_provs = yes division = "division_template = \"Fallschirmjägers\" start_experience_factor = 0.8" owner = GER }
+					}
+		}
+		
+		
+	}
+	option = {
+		name = germany.2005.b
 	}
 }

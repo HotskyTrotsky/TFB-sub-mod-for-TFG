@@ -2288,8 +2288,8 @@ country_event = {
 						type = train_equipment_1
 						amount = 20
 						producer = SPD
+						}
 					}
-				}
 				}
 				# SPA = {
 				# 	add_equipment_to_stockpile = {

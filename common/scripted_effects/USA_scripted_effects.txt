@@ -485,31 +485,31 @@ USA_foreign_support_training_effect = {
 	}
 }
 
-USA_foreign_support_pilots_effect = {
-	every_country = {
-		limit = {
-			has_country_flag = us_pilot_training_approved
-		}
-		if = {
-			limit = {
-				has_equipment = { small_plane_airframe > 24 }
-			}
-			send_equipment = {
-				equipment = small_plane_airframe
-    			amount = 25
-    			target = ROOT
-			}
-		}
-		else = {
-			ROOT = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_0
-					amount = 25
-				}
-			}
-		}
-	}
-}
+#USA_foreign_support_pilots_effect = {
+#	every_country = {
+#		limit = {
+#			has_country_flag = us_pilot_training_approved
+#		}
+#		if = {
+#			limit = {
+#				has_equipment = { small_plane_airframe > 24 }
+#			}
+#			send_equipment = {
+#				equipment = small_plane_airframe
+#    			amount = 25
+#    			target = ROOT
+#			}
+#		}
+#		else = {
+#			ROOT = {
+#				add_equipment_to_stockpile = {
+#					type = small_plane_airframe_0
+#					amount = 25
+#				}
+#			}
+#		}
+#	}
+#}
 USA_spawn_citizen_militia = {
 	division_template = {
 		name = "Citizen Militia"

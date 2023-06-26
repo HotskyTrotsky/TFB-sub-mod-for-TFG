@@ -5,73 +5,73 @@ air_wings = {
 	### RAF Fighter Command ###
 	126 = { 
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
 	}
 	126 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
 	}	
 	126 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
 	}	
 	
 	### RAF Bomber Command ###
 	126 = { 
 		### No. 1 Bomber Command, East Anglia area -- Fairey Gordons, Battles
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}
 	}
 	126 = { 
 		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
-		medium_plane_airframe_1 = {
+		medium_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Wellington"
+			version_name = "Handley Page Heyford Bomber"
 		}
 	}
 	126 = { 
 		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
-		medium_plane_airframe_1 = {
+		medium_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Wellington"
+			version_name = "Handley Page Heyford Bomber"
 		}
 	}	
 	### RAF Coastal Command
 	126 = { 
 		### No. 16 Coastal Command -- Vickers Vildebeests
-		small_plane_naval_bomber_airframe_1 = {
+		small_plane_naval_bomber_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
 			version_name = "Swordfish"
@@ -81,79 +81,79 @@ air_wings = {
 	### RAF Middle East and Africa
 	126 = { 
 		### AHQ Egypt
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}	
 		### RAF Palestine & Iraq
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}
 	}
 	
 	### RAF Far East
 	126 = { 
 		### RAF Far East
-		small_plane_naval_bomber_airframe_1 = {
+		small_plane_naval_bomber_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
 			version_name = "Swordfish"
 		}
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}
 	}
 
 	### ALLIED PLANES 
 	126 = { 
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}
 	}
 	126 = { 
-		small_plane_cas_airframe_1 = {
+		small_plane_cas_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 100
-			version_name = "Hector"
+			version_name = "Fairey Gordon"
 		}
 	}
 	126 = { 
-		small_plane_airframe_1 = {
+		small_plane_airframe_0_eng = {
 			owner = "ENG" 
 			amount = 60
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
 	}
 
 	"HMS Furious"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 9 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 2 version_name = "Swordfish" }
+		small_plane_airframe_0_eng =  { owner = "ENG" amount = 9 version_name = "Gloster Gladiator Fighter" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 2 version_name = "Swordfish" }
 	}
 	"HMS Courageous"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 9 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 4 version_name = "Swordfish" }
+		small_plane_airframe_0_eng =  { owner = "ENG" amount = 9 version_name = "Gloster Gladiator Fighter" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 4 version_name = "Swordfish" }
 	}
 	"HMS Glorious"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 6 version_name = "Hurricane" } #historical 9
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 4 version_name = "Swordfish" } #historical 36
+		small_plane_airframe_0_eng =  { owner = "ENG" amount = 6 version_name = "Gloster Gladiator Fighter" } #historical 9
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 4 version_name = "Swordfish" } #historical 36
 	}
 	"HMS Eagle"  = {
-		small_plane_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Hurricane" }
-		small_plane_airframe_1 =  { owner = "ENG" amount = 8 version_name = "Hurricane" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
-		small_plane_naval_bomber_airframe_1 =  { owner = "ENG" amount = 8 version_name = "Swordfish" }
+		small_plane_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Gloster Gladiator Fighter" }
+		small_plane_airframe_0_eng =  { owner = "ENG" amount = 8 version_name = "Gloster Gladiator Fighter" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 10 version_name = "Swordfish" }
+		small_plane_naval_bomber_airframe_0_eng =  { owner = "ENG" amount = 8 version_name = "Swordfish" }
 	}
 }
 
@@ -164,9 +164,9 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_airframe_1
+			type = small_plane_airframe_0_eng
 			creator = "ENG" 
-			version_name = "Hurricane"
+			version_name = "Gloster Gladiator Fighter"
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -175,9 +175,9 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = medium_plane_airframe_1
+			type = medium_plane_airframe_0_eng
 			creator = "ENG" 
-			version_name = "Wellington"
+			version_name = "Handley Page Heyford"
 		}
 		requested_factories = 1
 		progress = 0.1

@@ -57,7 +57,29 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_airframe_4_ita"
+			spriteType = "GFX_TC_small_plane_airframe_3_ita"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_5_ita"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3_ita"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_6_ita"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3_ita"
 			position = { x=0 y=0 }
 		}
 	}
@@ -127,13 +149,24 @@ guiTypes = {
 	# small_plane_cas_airframe
 
 	containerWindowType = {
-		name = "equipment_designer_small_plane_cas_airframe_0_ita"
+		name = "equipment_designer_small_plane_airframe_7_ita"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_cas_airframe_0_ita"
+			spriteType = "GFX_TC_small_plane_airframe_7_ita"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_7_ita"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_7_ita"
 			position = { x=0 y=0 }
 		}
 	}
@@ -189,13 +222,13 @@ guiTypes = {
 	# cv_small_plane_cas_airframe
 
 	containerWindowType = {
-		name = "equipment_designer_cv_small_plane_cas_airframe_0_ita"
+		name = "equipment_designer_cv_small_plane_airframe_7_ita"
 		position = { x=0 y=0 }
 		size = { width=508 height=248 }
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_cas_airframe_0_ita"
+			spriteType = "GFX_TC_small_plane_airframe_7_ita"
 			position = { x=0 y=0 }
 		}
 	}

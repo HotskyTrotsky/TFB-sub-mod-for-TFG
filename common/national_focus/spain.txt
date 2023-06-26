@@ -2653,13 +2653,13 @@ focus_tree = {
 
 	focus = {
 		id = SPA_an_armored_corps
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
+		#available = {
+		#	any_country = {
+		#		is_in_faction_with = ROOT
+		#		has_government = fascism
+		#		is_major = yes
+		#	}
+		#}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_motorization }

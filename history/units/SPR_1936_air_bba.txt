@@ -1,0 +1,176 @@
+﻿
+
+### Air Wings
+#air_wings = {
+#	# Arma de Aviación -- Madrid (Getafe)
+#	171 = { 
+#		# Grupo n.1 de Caza FARE 'Alas Rojas'
+#		small_plane_airframe_0 = {
+#			owner = "SPR" 
+#			amount = 60
+#			creator = "FRA"
+#			version_name = "NiD 62"
+#		}
+#	}
+#	# # Arma de Aviación -- Sevilla (and Barcelona)
+#	# 169 = {
+#	# 	# Grupo n.3 de Caza FARE 'Malraux'
+#	# 	small_plane_airframe_0 = {
+#	# 		owner = "SPR" 
+#	# 		amount = 24
+#	# 		creator = "FRA"
+#	# 		version_name = "NiD 62"
+#	# 	}
+#	# }
+#	# Aeronáutica Naval -- Murcia
+#	171 = {
+#		small_plane_naval_bomber_airframe_0 = {
+#			owner = "SPR" 
+#			amount = 27
+#			creator = "ENG"
+#			version_name = "Vickers Vildebeest"
+#		}
+#	}
+#}#### Air Wings
+#air_wings = {
+#	# LVO Aviatsya Komandovaniya -- Leningrad
+#	219 = { 
+#		# 15ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_0 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		# 18ya Bombardirovochnye Aviabrigada
+#		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#	}
+#
+#	# MVO Aviatsya Komandovaniya
+#	219 = {
+#		# 2ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_0 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_0 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#	}
+#
+#	# BOVO Aviatsya Komandovaniya -- Minsk
+#	219 = {
+#		# 14ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		# 16ya Bombardirovochnye Aviabrigada
+#		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#	}
+#
+#	# KOVO Aviatsya Komandovaniya -- Kiev
+#	219 = {
+#		# 17ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#	}
+#
+#	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
+#	219 = {
+#		# 12ya Istrebitel'nye Aviabrigada
+#		# 20ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#		fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 100
+#		}
+#	}
+#
+#}

@@ -45,6 +45,8 @@ set_variable = { JAP_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { JAP_poster_left_icon_frame = JAP_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { JAP_poster_center_icon_frame = JAP_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = {JAP.IJN_LEVEL = 0}
+set_variable = {JAP.IJA_LEVEL = 0}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -124,17 +126,19 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
-			aa_lmg = 1
-			nav_1 = 1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			basic_small_airframe = 1
-			iw_medium_airframe = 1
-			basic_medium_airframe = 1
-			iw_large_airframe = 1
+			#aa_lmg = 1
+			#nav_1 = 1
+			#engines_1 = 1
+			#engines_2 = 1
+			#early_bombs = 1
+			#aircraft_construction = 1
+			#iw_small_airframe = 1
+			#basic_small_airframe = 1
+			#iw_medium_airframe = 1
+			#basic_medium_airframe = 1
+			#iw_large_airframe = 1
+			jap_Inter_War_Fighters = 1
+			jap_Inter_War_Bombers = 1
 	}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
@@ -928,53 +932,53 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Ki-27"
-		type = small_plane_airframe_1
+		type = small_plane_airframe_0_jap
 		modules = {
-			fixed_main_weapon_slot = light_mg_4x
+			fixed_main_weapon_slot = light_mg_2x
 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			special_type_slot_1 = radio_navigation_1
-			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Reduced_Materials
+			special_type_slot_2 = empty
+			engine_type_slot = engine_1_1x
 		}
-		icon = "GFX_JAP_fighter1_medium"
+		icon = "GFX_JAP_early_fighter_medium"
 	}
 	create_equipment_variant = {
 		name = "Ki-32"
-		type = small_plane_cas_airframe_1
+		type = small_plane_cas_airframe_0_jap
 		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-			engine_type_slot = engine_2_1x				
-			special_type_slot_1 = radio_navigation_1
-			special_type_slot_2 = dive_brakes_small
+			fixed_main_weapon_slot = small_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = small_bomb_locks
+			engine_type_slot = engine_1_1x				
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Reduced_Materials
 			
 		}
-		icon = "GFX_JAP_CAS1_medium"
+		icon = "GFX_jap_Inter_War_Fighters_medium"
 	}
 	create_equipment_variant = {
 		name = "G3M1"
-		type = small_plane_naval_bomber_airframe_1
+		type = small_plane_naval_bomber_airframe_0_jap
 		modules = {
-			fixed_main_weapon_slot = torpedo_mounting_small
-			fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-			engine_type_slot = engine_2_1x
-			special_type_slot_2 = dive_brakes_small
+			fixed_main_weapon_slot = early_torp
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Reduced_Materials
 			
 		}
-		icon = "GFX_JAP_naval_bomber1_medium"
+		icon = "GFX_Inter_war_Naval_Bomber_medium"
 	}
 	create_equipment_variant = {
 		name = "Ki-21"
-		type = medium_plane_airframe_1
+		type = medium_plane_airframe_0_jap
 		modules = {
-			fixed_main_weapon_slot = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
-			fixed_auxiliary_weapon_slot_3 = lmg_defense_turret_2x
-			engine_type_slot = engine_2_3x
-			special_type_slot_1 = radio_navigation_1
-			special_type_slot_2 = dive_brakes_medium
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = empty
 		}
-		icon = "GFX_JAP_tactical_bomber1_medium"
+		icon = "GFX_jap_Inter_War_Bombers_medium"
 	}
 }
 	# 1939 Start #			

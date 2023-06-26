@@ -1,0 +1,914 @@
+technologies = {
+	
+	fra_Inter_War_Fighters = {
+
+		enable_equipments = {
+			small_plane_airframe_0_fra
+		}
+		enable_equipment_modules = {
+			engine_1_1x
+			light_mg_2x
+			early_torp
+			small_bomb_locks
+			early_naval_bomb
+			recon_camera
+			Reduced_Materials
+			floats
+		}
+		
+	
+		path = {
+			leads_to_tech = Morane-Saulnier_M.S.406
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Potez_630
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = fraair_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Potez_630 = {
+
+		enable_equipments = {
+			medium_plane_airframe_3_fra
+		}
+		enable_equipment_modules = {
+			heavy_mg_4x
+			heavy_mg_2x
+			Light_Armor_Plates
+		}
+		
+	
+		
+		path = {
+			leads_to_tech = Potez_630
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = fraair_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			cat_heavy_fighter
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Morane-Saulnier_M.S.406 = {
+
+		enable_equipments = {
+			small_plane_airframe_1_fra
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+		}
+		
+	
+		path = {
+			leads_to_tech = Bloch_MB.150
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = fraair_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Bloch_MB.150 = {
+
+		enable_equipments = {
+			small_plane_airframe_2_fra
+		}
+		enable_equipment_modules = {
+			fuel_injection
+			heavy_mg_2x
+		}
+		
+	
+		path = {
+			leads_to_tech = Dewoitine_D.520
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = fraair_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	Dewoitine_D.520 = {
+
+		enable_equipments = {
+			small_plane_airframe_3_fra
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+		}
+		
+	
+		path = {
+			leads_to_tech = Dewoitine_D.520
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = fraair_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	fra_Inter_War_Bombers = {
+
+		enable_equipments = {
+			medium_plane_airframe_0_fra
+		}
+		enable_equipment_modules = {
+			engine_1_2x
+			small_tactical_bombs
+			Large_Reduced_Materials
+			lmg_defense_turret
+			lmg_defense_turret_2x
+			Long_Range_Naval_Bomb
+			flying_boat_medium
+		}
+
+		path = {
+			leads_to_tech = Bloch_MB.210
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Liore_et_Olivier_LeO_45
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = fraair_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Bloch_MB.210 = {
+
+		enable_equipments = {
+			large_plane_airframe_1_fra
+		}
+		enable_equipment_modules = {
+			strategic_payload_light
+		}
+
+		path = {
+			leads_to_tech = Bloch_MB.210
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = fraair_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			cat_strategic_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Liore_et_Olivier_LeO_45 = {
+
+		enable_equipments = {
+			medium_plane_airframe_1_fra
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			air_air_radar_1
+			Medium_Armor_Plates
+			Self_Sealing_Tanks
+			hmg_defense_turret_2x
+			medium_tactical_bombs
+		}
+
+	
+		path = {
+			leads_to_tech = Breguet_693
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = fraair_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Breguet_693 = {
+
+		enable_equipments = {
+			medium_plane_airframe_2_fra
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+		}
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = fraair_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##################################################Foreign Airframes
+		eng_light_Airframes = {
+		allow = {
+			AND = {
+			ENG = {
+			AND = {
+			has_tech = Hurricane
+			has_tech = Spitfire
+					}
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+			small_plane_airframe_1_eng
+			small_plane_airframe_2_eng
+		}
+		enable_equipment_modules = {
+			Self_Sealing_Tanks
+			heavy_mg_4x
+			heavy_mg_2x
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+			tank_buster_1
+			rocket_rails
+			Light_Armor_Plates
+			medium_bomb_locks
+			rocket_rails_2
+			medium_Armor_Plates
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Hawker Hurricane"
+			type = small_plane_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_Hurricane_medium"
+			}
+			create_equipment_variant = {
+			name = "Spitfire MK5"
+			type = small_plane_airframe_2_eng
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+			special_type_slot_3 = fuel_injection2
+		}
+		icon = "GFX_Spitfire_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1_eng
+				amount = 60
+				variant_name = "Hawker Hurricane"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_2_eng
+				amount = 40
+				variant_name = "Spitfire MK5"
+			}
+		}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = fraair_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eng_heavy_Airframes = {
+		allow = {
+			AND = {
+			ENG = {
+			has_tech = Blenheim
+				}
+				date > 1941.1.1
+			}
+		}
+		
+		enable_equipments = {
+			medium_plane_airframe_1_eng
+		}
+		enable_equipment_modules = {
+			engine_2_2x
+			medium_tactical_bombs
+			hmg_defense_turret
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Blenheim"
+			type = medium_plane_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = hmg_defense_turret
+		}
+		icon = "GFX_Blenheim_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1_eng
+				amount = 25
+				variant_name = "Blenheim"
+			}
+		}
+	
+		path = {
+			leads_to_tech = fra_Halifax
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = fraair_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fra_Halifax = {
+		allow = {
+			AND = {
+			ENG = {
+			has_tech = Halifax
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+			large_plane_airframe_2_eng
+		}
+		enable_equipment_modules = {
+			engine_2_4x	
+			radio_navigation_1	
+			Heavy_Armor_Plates
+			air_ground_radar_1
+			bomb_sights_1
+			strategic_payload_medium
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Halifax"
+			type = large_plane_airframe_2_eng
+			modules = {
+			fixed_main_weapon_slot = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_light
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = bomb_sights_1
+			special_type_slot_2 = hmg_defense_turret_2x
+		}
+		icon = "GFX_Halifax_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = large_plane_airframe_2_eng
+				amount = 15
+				variant_name = "Halifax"
+			}
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = fraair_folder
+			position = { x = 9 y = 16 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	usa_light_Airframes= {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = Curtiss_P-40_Warhawk
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+		small_plane_airframe_2_usa
+		}
+		enable_equipment_modules = {
+			engine_2_1x
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
+			fuel_injection
+			heavy_mg_2x
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Curtiss P-40 Warhawk"
+			type = small_plane_airframe_2_usa
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_Curtiss_P-40_Warhawk_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_2_usa
+				amount = 50
+				variant_name = "Curtiss P-40 Warhawk"
+			}
+		}
+	
+		path = {
+			leads_to_tech = fra_Bell_P-39_Airacobra
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fra_The_P-51_Mustang
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fra_Republic_P-47_Thunderbolt
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = fraair_folder
+			position = { x = 3 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fra_The_P-51_Mustang = {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = The_P-51_Mustang
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+		small_plane_airframe_4_usa
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			heavy_mg_4x
+			radio_navigation_1
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "P-51 Mustang"
+			type = small_plane_airframe_4_usa
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = radio_navigation_1
+			special_type_slot_3 = fuel_injection2
+		}
+		icon = "GFX_The_P-51_Mustang_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_4_usa
+				amount = 50
+				variant_name = "P-51 Mustang"
+			}
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = fraair_folder
+			position = { x = 5 y = 18 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fra_Republic_P-47_Thunderbolt = {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = Republic_P-47_Thunderbolt
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+		small_plane_airframe_5_usa
+		}
+		enable_equipment_modules = {
+			engine_4_1x
+			heavy_mg_4x
+			radio_navigation_1
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+			large_bomb_locks
+			medium_bomb_locks
+			Reflex_sight_1
+			rocket_rails_1
+			rocket_rails_2
+			tank_buster_2
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Republic P-47 Thunderbolt"
+			type = small_plane_cas_airframe_5_usa
+			modules = {
+			fixed_main_weapon_slot = large_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = medium_bomb_locks
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Reflex_sight_1
+			special_type_slot_3 = Drop_Tank
+		}
+		icon = "GFX_Republic_P-47_Thunderbolt_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe_5_usa
+				amount = 50
+				variant_name = "Republic P-47 Thunderbolt"
+			}
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = fraair_folder
+			position = { x = 1 y = 18 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fra_Bell_P-39_Airacobra = {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = Bell_P-39_Airacobra
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+		small_plane_airframe_3_usa
+		}
+		enable_equipment_modules = {
+			engine_3_1x
+			heavy_mg_4x
+			radio_navigation_1
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			fuel_injection2
+			Drop_Tank
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Bell P-39 Airacobra"
+			type = small_plane_airframe_3_usa
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = radio_navigation_1
+			special_type_slot_3 = fuel_injection2
+		}
+		icon = "GFX_Bell_P-39_Airacobra_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_3_usa
+				amount = 50
+				variant_name = "Bell P-39 Airacobra"
+			}
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = fraair_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	usa_heavy_Airframes = {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = B-25_B26_Medium_Bombers
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+			medium_plane_airframe_1_usa
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			air_air_radar_1
+			Medium_Armor_Plates
+			Self_Sealing_Tanks
+			hmg_defense_turret_2x
+			medium_bomb_locks
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "B-25"
+			type = medium_plane_airframe_1_usa
+			modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = air_air_radar_1
+			special_type_slot_2 = hmg_defense_turret_2x
+		}
+		icon = "GFX_B-25_B26_Medium_Bombers_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1_usa
+				amount = 25
+				variant_name = "B-25"
+			}
+		}
+		path = {
+			leads_to_tech = fra_Douglas_A-20_Havoc
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = fraair_folder
+			position = { x = 13 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fra_Douglas_A-20_Havoc = {
+		allow = {
+			AND = {
+			USA = {
+			has_tech = Douglas_A-20_Havoc
+				}
+				date > 1941.1.1
+			}
+		}
+		enable_equipments = {
+			USA_Fighter_Bomber_1
+		}
+		enable_equipment_modules = {
+			engine_3_2x
+			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
+			air_air_radar_2
+			large_bomb_locks
+			Reflex_sight_1
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Douglas A-20 Havoc"
+			type = USA_Fighter_Bomber_1
+			modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = medium_bomb_locks
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = air_air_radar_2
+			special_type_slot_2 = hmg_defense_turret_2x
+			special_type_slot_3 = Reflex_sight_1
+		}
+		icon = "GFX_Douglas_A-20_Havoc_medium"
+			}
+			add_equipment_to_stockpile = {
+				type = USA_Fighter_Bomber_1
+				amount = 25
+				variant_name = "Douglas A-20 Havoc"
+			}
+		}
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = fraair_folder
+			position = { x = 13 y = 16 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -375,40 +375,6 @@ political_actions = {
 		}
 	}
 	
-	ENG_Annex_AST = {
-	icon = generic_political_discourse
-	available = {
-			tag = ENG
-			AST = {
-			is_ai = yes
-			}
-		}
-		cost = 5
-		visible = {
-			tag = ENG
-			AST = {
-			is_ai = yes
-			}
-		}
-		complete_effect = {
-		annex_country = { target = AST transfer_troops = yes }
-		AST = {
-			every_unit_leader = {
-				set_nationality = ENG
-			}
-		}
-		518 = {set_compliance = 60}
-		517 = {set_compliance = 60}
-		285 = {set_compliance = 60}
-		519 = {set_compliance = 60}
-		522 = {set_compliance = 60}	
-		520 = {set_compliance = 60}	
-		521 = {set_compliance = 60}	
-		523 = {set_compliance = 60}
-		737 = {set_compliance = 60}	
-		634 = {set_compliance = 60}	
-		}	
-	}
 	
 	promises_of_peace = {
 

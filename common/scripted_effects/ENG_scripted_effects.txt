@@ -409,3 +409,71 @@ ENG_Uprising_Ui_Update = {
 		set_variable = { var = ENG_Wales_State value = 0 }
 		}
 }
+RAJ_Uprising_Ui_Update = {
+
+		if = {
+		limit = { check_variable = { var = North_Millita_Brigades_Raj value = 1 compare = equals} }
+		set_variable = { var = North_Raj_State value = 1 }
+		}
+		else_if = {
+		limit = { check_variable = { var = North_Millita_Brigades_Raj value = 2 compare = equals} }
+		set_variable = { var = North_Raj_State value = 2 }
+		}
+		
+		else_if = {
+		limit = { check_variable = { var = North_Millita_Brigades_Raj value = 3 compare = equals} }
+		set_variable = { var = North_Raj_State value = 3 }
+		}
+		else = {
+		set_variable = { var = North_Raj_State value = 0 }
+		}
+		
+		if = {
+		limit = { check_variable = { var = South_India_Millita_Brigades value = 1 compare = equals} }
+		set_variable = { var = South_India_State value = 1 }
+		}
+		else_if = {
+		limit = { check_variable = { var = South_India_Millita_Brigades value = 2 compare = equals} }
+		set_variable = { var = South_India_State value = 2 }
+		}
+		else_if = {
+		limit = { check_variable = { var = South_India_Millita_Brigades value = 3 compare = equals} }
+		set_variable = { var = South_India_State value = 3 }
+		}
+		else = {
+		set_variable = { var = South_India_State value = 0 }
+		}
+		
+		if = {
+		limit = { check_variable = { var = Pakistan_Millita_Brigades value = 1 compare = equals} }
+		set_variable = { var = Pakistan_State value = 1 }
+		}
+		else_if = {
+		limit = { check_variable = { var = Pakistan_Millita_Brigades value = 2 compare = equals} }
+		set_variable = { var = Pakistan_State value = 2 }
+		}
+		else_if = {
+		limit = { check_variable = { var = Pakistan_Millita_Brigades value = 3 compare = equals} }
+		set_variable = { var = Pakistan_State value = 3 }
+		}
+		else = {
+		set_variable = { var = Pakistan_State value = 0 }
+		}
+		
+		if = {
+		limit = { check_variable = { var = Central_India_Millita_Brigades value = 1 compare = equals} }
+		set_variable = { var = RAJ_Central_State value = 1 }
+		}
+		else_if = {
+		limit = { check_variable = { var = Central_India_Millita_Brigades value = 2 compare = equals} }
+		set_variable = { var = RAJ_Central_State value = 2 }
+		}
+		
+		else_if = {
+		limit = { check_variable = { var = Central_India_Millita_Brigades value = 3 compare = equals} }
+		set_variable = { var = RAJ_Central_State value = 3 }
+		}
+		else = {
+		set_variable = { var = RAJ_Central_State value = 0 }
+		}
+}

@@ -3319,9 +3319,36 @@
  germany.1050.a:0 "$GER_karl_donitz$ was the Führer’s preferred successor."
  germany.1050.b:0 "$GER_albert_speer$ will fulfill the Führer’s ambitions."
  germany.1050.c:0 "$GER_heinz_guderian$ will get us out of this mess."
+Rommel_Desert_Fox:0 "The Desert Fox"
+
 germany.2004.t:0 "The Desert Fox"
 germany.2004.d:0 "What had started as wishful thinking on behalf of the upstart general is somthing of a dizzy success. Erwin Rommel has seen to be quite adapted to the flat harsh enviroment of the North African territories and with further investment may be able to become a thorn in the side of the Commonwealth forces."
 germany.2004.a:0 "We will see."
+
+germany.2005.t:0 "Operation Mercury"
+germany.2005.d:0 "With the conquest of mainland Greece the island of Crete has remain stubbon and refused to surrender, However with the British naval dominance over the seas a land invasion seems to be out of the question. However elements of the Fallschirmjägers beleive that a airborne assualt on the island is possible given we can provide air supuriority and a garrision not too strong. The island would be a critical base of operation for further incursions into the Mediterranean although a this would be a risky move maybe one worth taking?"
+germany.2005.a:0 "Launch The Operation"
+germany.2005.b:0 "Our Resources Are Better Use Else Where."
+
+hungary.7.t:0 "Operation Konrad"
+hungary.7.d:0 "The Germans are putting together a relief force for Budapest by assembling a handful of Infantry and Tank division so long as we remain commited to the German war effort, Although not ideal the beleif is that a counter attack now could throw back the oncoming Soviet forces and save Budapest from capture. The German High command has entrusted the operation in the hands of Hungarian commanders."
+hungary.7.a:0 "Tough Times Require Tough Compromises"
+hungary.7.b:0 "Are German Allies Have Not Yet Abandoned Us"
+hungary.7.c:0 "Anything To Throw Back The Communists"
+hungary.7.e:0 "Desperate Measures are needed"
+Siege_Of_Budapest:0 "Siege Of Budapest"
+Germans_Closing_In_On_Moscow:0 "Germans Closing In On Moscow"
+Operation_Mercury:0 "Operation Mercury"
+###idea for budapest defense
+German_Reinforcements:0 "German Reinforcements Compromise"
+
+####Soviet far east reserves
+Invest_Into_Far_East_Regiments:0 "Invest Into Far East Regiments"
+Invest_Into_Far_East_Regiments_tt:0 "If The time comes we will may need to call on these regiments its better then be trained and well equipped.§!\n§YFirst wave investment grants 3 tank divisions and 8 infantry\nSecond investment grants a further 3 and 8 Infantry&!\n§GThese will own spawn if the Germans close in on Moscow"
+soviet.3009.t:0 "Far Eastern Divisions Arrive"
+soviet.3009.d:0 "Stalin had finally push all his chips in to defending moscow and the last hand he had was to pull the far eastern divisions which were kept there in case of the Japanese attack on the far east. However top level spies within the Japanese innner cricle have came to the conclusion that not attack is forth coming and therefore Stalin has called for the reserves to the defense of Mosocw."
+soviet.3009.a:0 "At Last."
+soviet.3009.b:0 "At Last."
 ###########No Asia
 generic.1170.t:0 "Yellow River Flood"
 generic.1170.d:0 "In a desperate attempt to halt the oncoming Japanese offensive the Chinese military have flooded the yellow river valley. The death toll is unknown however it has appeared to have the intended effect of slowing down the IJA's offensive although this is a telling sign of the increasing intensity and ferocity of the ongoing conflict."

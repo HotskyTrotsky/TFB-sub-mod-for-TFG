@@ -1455,7 +1455,13 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.75
 				uses = 1
-				technology = improved_small_airframe
+				technology = BF109_Series
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = BF109_E
 			}
 		}
 	}
@@ -1491,7 +1497,13 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.75
 				uses = 1
-				category = cat_heavy_fighter
+				technology = BF110
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = BF110_Upgrade
 			}
 		}
 	}
@@ -2630,6 +2642,9 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
+			FRA = {
+			country_event = {id = france.602}
+				}	
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
 				limit = {

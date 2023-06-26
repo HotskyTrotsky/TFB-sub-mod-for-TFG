@@ -1,0 +1,136 @@
+division_template = {
+		name = "6th/8th Army"
+		is_locked = yes
+	division_names_group = GER_Inf_01
+	regiments = {
+	infantry = { x = 0 y = 0 }
+	infantry = { x = 0 y = 1 }
+	infantry = { x = 0 y = 2 }
+	infantry = { x = 0 y = 3 }
+	infantry = { x = 1 y = 0 }
+	infantry = { x = 1 y = 1 }
+	infantry = { x = 1 y = 2 }
+	infantry = { x = 1 y = 3 }
+	infantry = { x = 2 y = 0 }
+	infantry = { x = 2 y = 1 }
+	infantry = { x = 2 y = 2 }
+	infantry = { x = 2 y = 3 }
+	artillery_brigade = { x = 3 y = 0 }
+	artillery_brigade = { x = 3 y = 1 }
+	artillery_brigade = { x = 3 y = 2 }
+	anti_tank_brigade = { x = 4 y = 0 }
+	anti_tank_brigade = { x = 4 y = 1 }
+	anti_tank_brigade = { x = 4 y = 2 }
+	}
+	support = {
+	hq_company = { x = 0 y = 0 } 
+	engineer = { x = 0 y = 1 }   
+	recon = { x = 0 y = 2 }
+	logistics_company  = { x = 0 y = 3 }
+	anti_air = { x = 1 y = 0 }
+	}
+	override_model = GER_infantry_weapon_mg_right_entity
+	template_counter = 109
+}
+units = {
+
+    division = {
+		location = 11663  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 11663  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	 division = {
+		location = 11663  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	 division = {
+		location = 11663  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 6703  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 6703  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		location = 6703  
+		division_template = "6th/8th Army"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_air_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { anti_tank_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { horse_equipment_0 = { owner = "GER" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "GER" } }
+		force_equipment_variants = { radio_equipment_0 = { owner = "GER" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+}
+		

@@ -264,7 +264,7 @@ focus_tree = {
 				name = bomb_bonus
 				bonus = 0.50
 				uses = 2
-				category = tactical_bomber
+				category = medium_air
 				
 			}
 		}
@@ -303,7 +303,13 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
-				technology = improved_small_airframe
+				technology = Hurricane
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = Spitfire
 			}
 		}
 	}
@@ -324,7 +330,7 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.75
 				uses = 1
-				technology = advanced_small_airframe
+				technology = Spitfire_Upgrade1
 			}
 		}
 	}
@@ -484,7 +490,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.75
 				uses = 2
-				category = tactical_bomber
+				category = medium_air
 				category = cat_strategic_bomber
 			}
 		}
@@ -504,10 +510,17 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.75
+				bonus = 0.5
 				ahead_reduction = 0.5
 				uses = 1
-				technology = modern_small_airframe
+				technology = Spitfire_Upgrade2
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				ahead_reduction = 0.5
+				uses = 1
+				technology = Spitfire_Upgrade3
 			}
 		}
 	}
@@ -545,6 +558,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			custom_effect_tooltip = Invest_Into_B_E_F_Focus_tt
 			army_experience = 25
 		}
 	}
@@ -1463,7 +1477,7 @@ focus_tree = {
 				name = shp_bonus
 				bonus = 0.50
 				uses = 1
-				category = naval_air
+				category = medium_air
 			}
 		}
 	}
@@ -3597,7 +3611,7 @@ focus_tree = {
 		id = ENG_operation_countenance
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = ENG_soviet_lend_lease }
-		allow_branch = {always = no}
+		
 		available = {
 			765 = {
 				CONTROLLER = {
@@ -3702,7 +3716,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_soviet_lend_lease }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ENG_soviet_lend_lease
 		cost = 5

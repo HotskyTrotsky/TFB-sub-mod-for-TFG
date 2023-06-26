@@ -2,6 +2,160 @@ guiTypes = {
 
 	# small_plane_airframe
 
+containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_8_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_9_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_10_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_8_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_9_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_10_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+containerWindowType = {
+		name = "equipment_designer_JAP_Fighter_Bomber_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_1_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_2_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_3_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_4_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_3_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_5_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_4_jap"
+			position = { x=0 y=0 }
+		}
+	}
+containerWindowType = {
+		name = "equipment_designer_jap_heavy_fighter_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_jap_heavy_fighter_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
 	containerWindowType = {
 		name = "equipment_designer_small_plane_airframe_0_jap"
 		position = { x=0 y=0 }
@@ -57,11 +211,44 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_small_plane_airframe_4_jap"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_3_jap"
 			position = { x=0 y=0 }
 		}
 	}
+containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_5_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
 
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_6_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_7_jap"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3_jap"
+			position = { x=0 y=0 }
+		}
+	}
+	
 	# cv_small_plane_airframe
 
 	containerWindowType = {
@@ -429,7 +616,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_medium_plane_airframe_4_jap"
+			spriteType = "GFX_TC_medium_plane_airframe_3_jap"
 			position = { x=0 y=0 }
 		}
 	}

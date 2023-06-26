@@ -248,6 +248,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_4.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_TC_small_plane_cas_airframe_5_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_small_plane_cas_airframe_6_eng"
+		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_cas_4.dds"
+		legacy_lazy_load = no
+	}
 
 	# eng small_plane_naval_bomber_airframe
 
@@ -304,7 +314,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/eng/eng_tac_bomber_4.dds"
 		legacy_lazy_load = no
 	}
-
+	
 	# eng medium_plane_fighter_airframe
 
 	spriteType = {
@@ -842,7 +852,7 @@ spriteTypes = {
 	# ita small_plane_cas_airframe
 
 	spriteType = {
-		name = "GFX_TC_small_plane_cas_airframe_0_ita"
+		name = "GFX_TC_small_plane_airframe_7_ita"
 		textureFile = "gfx/interface/equipmentdesigner/planes/ita/ita_cas_0.dds"
 		legacy_lazy_load = no
 	}

@@ -100,7 +100,19 @@ duplicate_archetypes = {
 		air_map_icon_frame = 8
 		interface_overview_category_index = 3
 	}
-
+	medium_plane_naval_bomber_airframe = {
+		archetype = medium_plane_airframe
+		type = naval_bomber
+		#ai_type = heavy_fighter
+		sprite = light_plane
+		variant_name = {
+			medium_plane_naval_bomber_airframe_1 = nav_bomber_equipment_1
+			medium_plane_naval_bomber_airframe_2 = nav_bomber_equipment_2
+			medium_plane_naval_bomber_airframe_3 = nav_bomber_equipment_3
+		}
+		air_map_icon_frame = 8
+		interface_overview_category_index = 3
+	}
 	medium_plane_scout_plane_airframe = {
 		archetype = medium_plane_airframe
 		type = scout_plane

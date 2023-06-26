@@ -366,7 +366,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 2.5
-				experience_gain_factor = -0.30
+				#experience_gain_factor = -0.30
 				planning_speed = -0.25
 				max_planning = 0.10
 				cat_mobile_warfare_cost_factor = 0.25
@@ -388,7 +388,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 5
-				experience_gain_factor = -0.25
+				#experience_gain_factor = -0.25
 				planning_speed = -0.25
 				max_planning = 0.20
 				cat_mobile_warfare_cost_factor = 0.25
@@ -411,7 +411,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 2.5
-				experience_gain_factor = -0.20
+			#	experience_gain_factor = -0.20
 				planning_speed = -0.20
 				cat_mobile_warfare_cost_factor = 0.25
 				cat_superior_firepower_cost_factor = -0.1
@@ -432,7 +432,7 @@ ideas = {
 			
 			modifier = {
 				max_dig_in = 1
-				experience_gain_factor = -0.10
+			#	experience_gain_factor = -0.10
 				planning_speed = -0.10
 				max_planning = 0.15
 				fascism_drift = 0.10
@@ -454,7 +454,7 @@ ideas = {
 			picture = italian_general_staff
 			
 			modifier = {
-				experience_gain_factor = -0.10
+			#	experience_gain_factor = -0.10
 				planning_speed = -0.10
 				cat_mobile_warfare_cost_factor = -0.05
 				cat_superior_firepower_cost_factor = 0.25
@@ -474,7 +474,7 @@ ideas = {
 			picture = italian_general_staff
 			
 			modifier = {
-				experience_gain_factor = 0.15
+			#	experience_gain_factor = 0.15
 				planning_speed = 0.1
 				cat_mobile_warfare_cost_factor = -0.05
 				cat_superior_firepower_cost_factor = 0.25

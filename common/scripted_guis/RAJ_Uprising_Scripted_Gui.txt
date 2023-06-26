@@ -1,0 +1,65 @@
+
+scripted_gui = {
+
+	RAJ_Uprising_Ui = {
+		context_type = decision_category
+		window_name = "RAJ_Uprising_Ui_Window"
+		#context_type = player_context
+		
+		visible = {
+		has_completed_focus = V
+			}
+		
+		triggers = {
+		
+		Southern_India_0_visible = {
+		check_variable = { South_India_State = 0 }
+		}
+		Southern_India_1_visible = {
+		 check_variable = { South_India_State = 1 }
+		}
+		Southern_India_2_visible = {
+		check_variable = { South_India_State = 2}
+		}
+		
+		
+		Northern_India_0_visible = {
+		check_variable = { North_Raj_State = 0 }
+		}
+		Northern_India_1_visible = {
+		 check_variable = { North_Raj_State = 1 }
+		}
+		Northern_India_2_visible = {
+		check_variable = { North_Raj_State = 2}
+		}
+		Northern_India_3_visible = {
+		check_variable = { North_Raj_State = 3 }
+		}
+		
+		Pakistan_0_visible = {
+		check_variable = { Pakistan_State = 0 }
+		}
+		Pakistan_1_visible = {
+		 check_variable = { Pakistan_State = 1 }
+		}
+		Pakistan_2_visible = {
+		check_variable = { Pakistan_State = 2}
+		}
+		
+		
+		Central_India_0_visible = {
+		check_variable = { RAJ_Central_State = 0 }
+		}
+		Central_India_1_visible = {
+		check_variable = { RAJ_Central_State = 1 }
+		}
+		Central_India_2_visible = {
+		 check_variable = { RAJ_Central_State = 2 }
+		}
+		Central_India_3_visible = {
+		check_variable = { RAJ_Central_State = 3}
+		}
+		
+			}
+		}
+	}

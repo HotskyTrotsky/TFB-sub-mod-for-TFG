@@ -2,9 +2,21 @@ FAC_ENG = {
 	color = rgb { 120 1 1 }
 	color_ui = rgb { 116 195 200 }
 }
+RAJ_Exile_MIL = {
+	color = rgb { 13 125 18 }
+	color_ui = rgb { 116 195 200 }
+}
+RAJ_Exile_INC = {
+	color = rgb { 100 1 1 }
+	color_ui = rgb { 116 195 200 }
+}
 FRA_VICHY = {
 color = rgb { 200 100 31 }
 	color_ui = rgb { 116 195 200 }
+}
+FRA_Exiled_Forces = {
+color = rgb { 0 51 153 }
+	color_ui = rgb { 0 51 153 }
 }
 ETH_ITA = {
 	color = rgb { 116 195 120 }

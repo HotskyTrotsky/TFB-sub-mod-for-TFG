@@ -109,7 +109,7 @@
 		}
 		
 		available = {
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		bypass = {
@@ -119,6 +119,9 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			FRA = {
+				set_cosmetic_tag = FRA_Exiled_Forces
+			}
 			add_ideas = Head_Of_Exiled_Nations
 			}
 		}
@@ -342,6 +345,57 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			annex_country = { target = HOL transfer_troops = yes }
+			672 = {
+				transfer_state_to = AST
+			}
+			672 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+
+			334 = {
+				transfer_state_to = AST
+			}
+			334 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+
+			335 = {
+				transfer_state_to = AST
+			}
+			335 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+			667 = {
+				transfer_state_to = AST
+			}
+			667 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+			
+			673 = {
+				transfer_state_to = AST
+			}
+			673 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+			668 = {
+				transfer_state_to = AST
+			}
+			668 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+			669 = {
+				transfer_state_to = AST
+			}
+			669 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+			}
+			738 = {
+				transfer_state_to = AST
+			}
+			738 = {
+				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
+				}
 			}
 		}
 		focus = {

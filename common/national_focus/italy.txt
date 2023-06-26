@@ -4957,7 +4957,7 @@
 				name = doc_bonus
 				bonus = 0.5
 				uses = 2
-				category = tactical_bomber
+				technology = CANT_Z.1007_Alcione
 			}
 		}
 	}
@@ -5006,8 +5006,14 @@
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 0.75
-				uses = 2
-				category = naval_air
+				uses = 1
+				technology = Macchi_C.2001_Saetta
+			}
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 0.75
+				uses = 1
+				technology = Savoia-Marchetti_SM.84
 			}
 		}
 	}
@@ -5033,7 +5039,13 @@
 				name = doc_bonus
 				bonus = 0.75
 				uses = 1
-				technology = improved_small_airframe
+				technology = Fiat_G.50_Freccia
+			}
+			add_tech_bonus = {
+				name = doc_bonus
+				bonus = 0.75
+				uses = 1
+				technology = Macchi_C.200_Saetta
 			}
 		}
 	}
@@ -5059,7 +5071,7 @@
 				name = doc_bonus
 				bonus = 0.5
 				uses = 1
-				technology = advanced_small_airframe
+				technology = Macchi_C.202_Folgore
 			}
 		}
 	}

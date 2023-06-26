@@ -294,7 +294,7 @@ ENG_imperial_conference_decision = {
 	}
 
 }
-Eng_Uprising = {
+	Eng_Uprising = {
 #icon = GFX_decision_POL_looming_peasants_strike
 		
 		#### Steal Mils
@@ -2347,6 +2347,60 @@ political_actions = {
 }
 
 operations = {
+Invest_Into_B_E_F = {
+
+		icon = generic_construction
+		allowed = {
+			has_dlc = "Waking the Tiger"
+			tag = ENG
+		}
+		available = {
+			ENG = {
+			has_completed_focus = ENG_army_rearmament
+			}
+			NOT = {
+			ENG = {
+			has_war_with = GER
+				}
+			}
+			NOT = {
+			check_variable = { var = ENG.B_E_F_Investment value = 2 compare = greater_than_or_equals }
+			}
+		}
+		#custom_effect_tooltip = Invest_Into_B_E_F_tt
+		visible = {
+			tag = ENG
+			ENG = {
+			has_completed_focus = ENG_army_rearmament
+			}
+			NOT = {
+			ENG = {
+			has_war_with = GER
+				}
+			}
+			NOT = {
+			check_variable = { var = ENG.B_E_F_Investment value = 2 compare = greater_than_or_equals }
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 120
+	
+		cost = 25
+	
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		complete_effect = {
+		custom_effect_tooltip = Invest_Into_B_E_F_tt
+		add_to_variable= { ENG.B_E_F_Investment = 1 }
+		}
+	
+		remove_effect = {
+			}
+	}
 	Develop_Africa_Railways = {
 
 		icon = generic_construction
@@ -2531,7 +2585,40 @@ operations = {
 			annex_country = { target = ICE }
 		}
 	}
-
+	ENG_Annex_AST = {
+	icon = generic_political_discourse
+	available = {
+			tag = ENG
+			AST = {
+			is_ai = yes
+			}
+		}
+		cost = 5
+		visible = {
+			tag = ENG
+			AST = {
+			is_ai = yes
+			}
+		}
+		complete_effect = {
+		annex_country = { target = AST transfer_troops = yes }
+		AST = {
+			every_unit_leader = {
+				set_nationality = ENG
+			}
+		}
+		518 = {set_compliance = 60}
+		517 = {set_compliance = 60}
+		285 = {set_compliance = 60}
+		519 = {set_compliance = 60}
+		522 = {set_compliance = 60}	
+		520 = {set_compliance = 60}	
+		521 = {set_compliance = 60}	
+		523 = {set_compliance = 60}
+		737 = {set_compliance = 60}	
+		634 = {set_compliance = 60}	
+		}	
+	}
 	ENG_annex_ire = {
 
 		allowed = {
@@ -2661,7 +2748,12 @@ operations = {
 			
 			has_completed_focus = Commence_Operation_Overlord
 		}
-
+		visible = {
+			ENG = {
+			has_capitulated = yes
+			}
+			
+		}
 		cost = 25
 		
 		fire_only_once = yes
@@ -2691,7 +2783,12 @@ operations = {
 		allowed = {
 			tag = ENG
 		}
-		
+		visible = {
+			439 = {
+			is_controlled_by = WST
+			}
+			
+		}
 		available = {
 			tag = ENG
 			date > 1939.1.1
@@ -3197,18 +3294,6 @@ ENG_develop_the_empire = {
 			factor = 1
 		}
 		remove_effect = {
-			add_to_variable= { ENG.shadow_civs1 = 2 }
-			random_owned_controlled_state= {
-				limit= {
-					is_core_of = ENG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
 			AST = {
 				random_owned_controlled_state = {
 					limit = {
@@ -3286,18 +3371,6 @@ ENG_develop_the_empire = {
 			factor = 1
 		}
 		remove_effect = { 
-			add_to_variable= { ENG.shadow_civs1 = 2 }
-			random_owned_controlled_state= {
-				limit= {
-					is_core_of = ENG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			} 
 			NZL = {
 				random_owned_controlled_state = {
 					limit = {
@@ -3375,18 +3448,6 @@ ENG_develop_the_empire = {
 			factor = 1
 		}
 		remove_effect = { 
-			add_to_variable= { ENG.shadow_civs1 = 2 }
-			random_owned_controlled_state= {
-				limit= {
-					is_core_of = ENG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
 			CAN = {
 				random_owned_controlled_state = {
 					limit = {
@@ -3464,18 +3525,6 @@ ENG_develop_the_empire = {
 			factor = 1
 		}
 		remove_effect = { 
-			add_to_variable= { ENG.shadow_civs1 = 2 }
-			random_owned_controlled_state= {
-				limit= {
-					is_core_of = ENG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
 			SAF = {
 				random_owned_controlled_state = {
 					limit = {
@@ -3553,18 +3602,6 @@ ENG_develop_the_empire = {
 			factor = 1
 		}
 		remove_effect = { 
-			add_to_variable= { ENG.shadow_civs1 = 2 }
-			random_owned_controlled_state= {
-				limit= {
-					is_core_of = ENG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}	
-			}
 			RAJ = {
 				random_owned_controlled_state = {
 					limit = {
@@ -4399,7 +4436,7 @@ ENG_propaganda_campaigns = {
 			air_home_defence_factor = 0.25
 			army_core_attack_factor = 0.2
 			army_core_defence_factor = 0.2
-			minimum_training_level = -0.1
+			minimum_training_level = -0.2
 		}
 
 		complete_effect = {

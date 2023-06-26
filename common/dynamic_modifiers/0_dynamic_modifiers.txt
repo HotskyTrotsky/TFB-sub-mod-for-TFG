@@ -36,7 +36,13 @@ Alan_Turing_Intel = {
 	
 	local_intel_to_enemies = 10
 }
+Australian_Jurisdiction = {
+	enable = { always = yes }
 
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	recruitable_population_factor = -0.95
+}
 sabotaged_resources = {
 	remove_trigger = { 
 		has_resistance = no

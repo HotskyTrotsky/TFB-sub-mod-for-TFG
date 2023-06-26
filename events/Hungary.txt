@@ -114,3 +114,568 @@ country_event = {
 		HUN = { transfer_state = 45 }
 	}
 }
+country_event = {
+	id = hungary.7
+	title = hungary.7.t
+	desc = hungary.7.d
+	picture = GFX_report_event_bul_ff_troops_panzer
+	is_triggered_only = yes
+	#trigger = {
+	#AND = {
+	#	GER = {
+	#	has_capitulated = no
+	#		}
+	#	HUN = {
+	#	has_capitulated = no
+	#	has_war_with = SOV
+	#		}
+	#	SOV = {
+	#	OR = {
+	#	controls_province = 3731
+	#	controls_province = 9690
+	#	controls_province = 3731
+	#	controls_province = 716
+	#	controls_province = 684
+	#	controls_province = 3731
+	#	controls_province = 11625
+	#	controls_province = 6700
+	#	controls_province = 6716
+	#	controls_province = 6561
+	#	controls_province = 6670
+	#		}
+	#	}
+	#	HUN = {
+	#	controls_province = 11663
+	#	controls_province = 6703
+	#	controls_province = 9660
+	#		}
+	#	}
+	#}
+	#mean_time_to_happen = {
+	#days = 2
+	#}
+	option = {
+		name = hungary.7.a
+		trigger = {
+		AND = {
+		HUN = {
+		has_war_with = SOV
+		}
+		date > 1942.1.1
+		date < 1942.12.29
+			}
+		}
+		HUN = {
+			add_timed_idea = {
+				idea = German_Reinforcements
+				days = 120
+			}
+		}
+		if = {
+		limit = {
+		GER = {
+		has_tech = artillery_research2
+		has_tech = mot_radio1
+			}
+		}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_1
+		turret_type_slot = tank_medium_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_1
+				}
+			}
+		}
+		else = {
+		hidden_effect = {
+				HUN = {
+		load_oob = HUN_Budapest_0
+					}
+				}
+			}
+		}
+	option = {
+		name = hungary.7.b
+		trigger = {
+		AND = {
+		HUN = {
+		has_war_with = SOV
+		}
+		date > 1943.1.1
+		date < 1943.12.29
+			}
+		}
+		HUN = {
+			add_timed_idea = {
+				idea = German_Reinforcements
+				days = 160
+			}
+		}
+		if = {
+		limit = {
+		GER = {
+		AND = {
+		has_tech = artillery_research3
+		has_tech = mechanised_infantry
+		has_tech = mot_radio2
+				}
+			}
+		}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_2
+		turret_type_slot = tank_medium_turret_2
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_2
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_2
+				}
+			}
+		}
+		else_if = {
+		limit = {
+		GER = {
+		has_tech = artillery_research2
+		has_tech = mot_radio1
+					}
+				}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_1
+		turret_type_slot = tank_medium_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_1
+					}
+				}
+			}
+		else = {
+			hidden_effect = {
+				HUN = {
+				load_oob = HUN_Budapest_0
+					}
+				}
+			}
+		}
+	option = {
+		name = hungary.7.c
+		trigger = {
+		AND = {
+		HUN = {
+		has_war_with = SOV
+		}
+		date > 1944.1.1
+			}
+		}
+		HUN = {
+			add_timed_idea = {
+				idea = German_Reinforcements
+				days = 200
+			}
+		}
+		if = {
+		limit = {
+		GER = {
+		AND = {
+			OR = {
+		has_tech = artillery4
+		has_tech = antitank4
+			}
+		has_tech = mechanised_infantry
+		has_tech = mot_radio2
+		has_tech = ger_p5_tank_1
+				}
+			}
+		}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		if = {
+			limit = {
+				GER = {
+					AND = {
+					has_tech = artillery4
+					NOT = {
+						has_tech = antitank4
+						}
+					}
+				}
+			}
+		create_equipment_variant = {
+		name = "Panther Ausf. A"
+		type = ger_medium_tank_chassis_p5
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_gun_3
+		turret_type_slot = tank_medium_turret_3
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_3
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p5_tank_1.dds"
+		obsolete = yes
+					}
+				}
+			else_if = {
+					limit = {
+				GER = {
+					AND = {
+					has_tech = antitank4
+					NOT = {
+						has_tech = artillery4
+						}
+					}
+				}
+			}
+			create_equipment_variant = {
+		name = "Panther Ausf. A"
+		type = ger_medium_tank_chassis_p5
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_3
+		turret_type_slot = tank_medium_turret_3
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_2
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p5_tank_1.dds"
+		obsolete = yes
+					}
+				}
+			else_if = {
+				limit = {
+				GER = {
+					AND = {
+					has_tech = antitank4
+					has_tech = artillery4
+						}
+					}
+				}
+		create_equipment_variant = {
+		name = "Panther Ausf. A"
+		type = ger_medium_tank_chassis_p5
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_3
+		turret_type_slot = tank_medium_turret_3
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_3
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p5_tank_1.dds"
+		obsolete = yes
+						}
+					}
+				}
+		HUN = {
+		load_oob = HUN_Budapest_3
+					}
+				}
+			}
+		else_if = {
+		limit = {
+		GER = {
+		AND = {
+		has_tech = artillery_research3
+		has_tech = mechanised_infantry
+		has_tech = mot_radio2
+				}
+			}
+		}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_2
+		turret_type_slot = tank_medium_turret_2
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_2
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_2
+				}
+			}
+		}
+		else_if = {
+		limit = {
+		GER = {
+		has_tech = artillery_research2
+		has_tech = mot_radio1
+					}
+				}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_1
+		turret_type_slot = tank_medium_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_1
+					}
+				}
+			}
+		else = {
+			hidden_effect = {
+				HUN = {
+				load_oob = HUN_Budapest_0
+					}
+				}
+			}
+		}
+	option = {
+		name = hungary.7.e
+		trigger = {
+		AND = {
+		HUN = {
+		has_war_with = SOV
+		}
+		date < 1941.12.29
+			}
+		}
+		HUN = {
+			add_timed_idea = {
+				idea = German_Reinforcements
+				days = 120
+			}
+		}
+		if = {
+		limit = {
+		GER = {
+		has_tech = artillery_research2
+		has_tech = mot_radio1
+			}
+		}
+		hidden_effect = {
+		GER = {
+		create_equipment_variant = {
+		name = "Panzer II"
+		type = ger_light_tank_chassis_p2
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		#special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+		obsolete = yes
+		}
+		create_equipment_variant = {
+		name = "Panzer IV G"
+		type = ger_medium_tank_chassis_p4
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_hv_gun_1
+		turret_type_slot = tank_medium_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+		obsolete = yes
+				}
+			}
+		HUN = {
+		load_oob = HUN_Budapest_1
+
+	
+					}
+				}
+			}
+		else = {
+			hidden_effect = {
+				HUN = {
+				load_oob = HUN_Budapest_0
+					}
+				}
+			}
+		}
+}

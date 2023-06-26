@@ -273,6 +273,16 @@
  ENG_fighter_equipment_2_short:0 "Spitfire"
  ENG_fighter_equipment_3:0 "Supermarine Spiteful"
  ENG_fighter_equipment_3_short:0 "Spiteful"
+ 
+ ENG_small_plane_airframe_0_eng:0 "Gloster Gladiator"
+ ENG_small_plane_airframe_1_eng:0 "Hawker Hurricane"
+ ENG_small_plane_airframe_2_eng:0 "Supermarine Spitfire"
+ ENG_small_plane_airframe_3_eng:0 "Supermarine Spiteful"
+ ENG_small_plane_airframe_5_eng:0 "Typhoon"
+ ENG_small_plane_airframe_6_eng:0 "Tempest"
+ 
+ 
+ 
  ENG_heavy_fighter_equipment_1:0 "Bristol Blenheim"
  ENG_heavy_fighter_equipment_1_short:0 "Blenheim"
  ENG_heavy_fighter_equipment_2:0 "Bristol Beaufighter"
@@ -990,7 +1000,7 @@
  FRA_tac_bomber_equipment_0_short:0 "MB.200"
  FRA_tac_bomber_equipment_1:0 "Amiot 143"
  FRA_tac_bomber_equipment_1_short:0 "Amiot 143"
- FRA_tac_bomber_equipment_2:0 "Lioré-et-Olivier LeO 451"
+ FRA_tac_bomber_equipment_2:0 "Liore-et-Olivier LeO 451"
  FRA_tac_bomber_equipment_2_short:0 "LeO 451"
  FRA_tac_bomber_equipment_3:0 "Bloch MB.174"
  FRA_tac_bomber_equipment_3_short:0 "MB.174"
@@ -1543,7 +1553,7 @@
  GRE_nav_bomber_equipment_3:0 "Avro 652A Anson"
  GRE_nav_bomber_equipment_3_short:0 "KEA Mk XIII"
 
- GRE_tac_bomber_equipment_0:0 "Bréguet 19"
+ GRE_tac_bomber_equipment_0:0 "Breguet 19"
  GRE_tac_bomber_equipment_0_short:0 "Bre.19"
  GRE_tac_bomber_equipment_1:0 "Avion Grecque"
  GRE_tac_bomber_equipment_1_short:0 "A2"
