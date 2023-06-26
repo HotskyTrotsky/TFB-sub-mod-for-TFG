@@ -136,12 +136,49 @@ focus = {
 		y = 1
 		relative_position_id = MAN_crush_the_bandits
 
-		cost = 5
+		cost = 1
 
 		available = {
 			MAN = { is_ai = yes }
 			
 			}
+		
+
+		
+	
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				JAP = {
+				set_autonomy = {
+					target = MAN
+					autonomy_state = autonomy_wtt_imperial_associate 
+				}
+				
+			}
+		}
+	}
+
+
+focus = {
+		id = MAN_AI_planning2
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = MAN_AI_planning }
+		x = 2
+		y = 1
+		relative_position_id = MAN_AI_planning
+
+		cost = 1
+
+		available = {
+			MAN = { is_ai = yes }
+			
+			}
+
 		
 
 		
@@ -162,16 +199,17 @@ focus = {
 			else = {
 				add_ideas = war_economy
 				add_ideas = free_trade	
-				add_stability = 1
-				JAP = {
-				set_autonomy = {
-					target = MAN
-					autonomy_state = autonomy_wtt_imperial_associate 
+				add_stability = 0.8
+				add_war_support = 10000
+				remove_ideas = MAN_banditry
+				remove_ideas = MAN_low_legitimacy_5
+				remove_ideas = 
 			}
 		}
 	}
-}
-}
+
+
+
 
 	focus = {
 		id = MAN_alliance_with_kwantung

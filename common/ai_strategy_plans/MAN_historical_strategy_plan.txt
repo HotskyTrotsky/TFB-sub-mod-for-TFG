@@ -12,6 +12,7 @@ Manchuko_Historical = {
 		MAN_expand_the_mines
 		MAN_rare_metals_expansion
 		MAN_AI_planning
+		MAN_AI_planning2	
 
 	}
 
