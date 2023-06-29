@@ -57,7 +57,30 @@ sabotaged_resources = {
 	temporary_state_resource_steel = sabotaged_steel
 	temporary_state_resource_chromium = sabotaged_chromium
 }
+ROM_LIBYA_OIL_0_MODIFIER = {
+	enable = { always = yes }
 
+	icon = GFX_modifiers_sabotaged_resource
+	state_resources_factor = -1
+}
+ROM_LIBYA_OIL_1_MODIFIER = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	state_resources_factor = -0.66
+}
+ROM_LIBYA_OIL_2_MODIFIER = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	state_resources_factor = -0.33
+}
+ROM_LIBYA_OIL_3_MODIFIER = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	state_resources_factor = 0
+}
 Annexed_nation_0 = {
 	enable = { always = yes }
 

@@ -1,0 +1,88 @@
+﻿###########################
+# Australia Events
+###########################
+
+add_namespace = AST
+
+ country_event = {
+ 	id = AST.1
+ 	title = AST.1.t
+ 	desc = AST.1.d
+ 	picture = GFX_report_event_ast_troops_landing
+	
+ 	trigger = {
+		AND = {
+		AST = {
+			has_capitulated = yes
+			}
+		OR = {
+		AST = {
+			has_war_with = JAP
+				}
+		AST = {
+			has_war_with = GER
+		}
+			}
+		}
+	}
+	mean_time_to_happen = {
+	days = 1
+	}
+	
+ 	fire_only_once = yes
+	
+  	immediate = {		
+  	}
+
+ 	option = {
+ 		name = AST.1.a
+ 		AST = {
+		load_focus_tree = AST_Exile
+		remove_ideas = {AST_standard_gauge_railway}
+		remove_ideas = {AST_rats_of_tobruk_idea}
+		remove_ideas = {AST_great_depression_1}
+		remove_ideas = {AST_great_depression_2}
+		remove_ideas = {AST_all_in}
+		remove_ideas = {AST_invest_in_victory}
+		remove_ideas = {AST_invest_in_victory_2}
+		remove_ideas = {AST_australian_womens_army_service}
+		remove_ideas = {AST_naval_auxiliary_patrol}
+		remove_ideas = {AST_australian_arms_production}
+		remove_ideas = {AST_volunteer_defence_corps}
+		remove_ideas = {AST_citizen_military_forces}
+		remove_ideas = {AST_classify_aliens}
+		remove_ideas = {AST_empire_air_training_scheme}
+		remove_ideas = {AST_z_special_unit_idea}
+		remove_ideas = {AST_tank_conversion_spirit}
+		remove_ideas = {ASN_ALLIES_the_sun_never_sets_idea_1}
+		remove_ideas = {ASN_ALLIES_the_sun_never_sets_idea_2}
+		remove_ideas = {ASN_ALLIES_the_sun_never_sets_idea_3}
+		remove_ideas = {ASN_ALLIES_the_sun_never_sets_idea_4}
+		remove_ideas = {ASN_ALLIES_the_sun_never_sets_idea_5}
+		complete_national_focus = A_Nation_Lost
+
+			}
+ 	}
+ }
+
+ country_event = {
+ 	id = AST.2
+ 	title = AST.2.t
+ 	desc = AST.2.d
+ 	picture = GFX_report_event_british_inspect_troops
+	is_triggered_only = yes
+ 	option = {
+		name = AST.2.a
+		
+		hidden_effect = {
+			complete_national_focus = Stick_With_Britain
+		}
+	}
+	option = {
+		name = AST.2.b
+		
+		hidden_effect = {
+			complete_national_focus = Side_With_United_States
+		}
+	}
+ }

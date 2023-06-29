@@ -1,0 +1,1834 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+focus_tree = {
+	id = AST_Exile
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AST
+			has_dlc = "Together for Victory"
+		}
+	}
+	continuous_focus_position = { x = 50 y = 50 }
+	default = no
+
+	#shared_focus = COM_commonwealth_command
+
+######Exiled AST Focus tree
+
+	focus = {
+		id = A_Nation_Lost
+		icon = GFX_Generic_Great_War_Memories
+		x = 16
+		y = 0
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+			AST = {
+			has_capitulated = yes
+			}
+		}
+
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = Nation_Defeated
+			add_ideas = Scatterd_Army
+			add_ideas = Industry_Serves_The_Army
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 16
+				}
+			add_state_core = 707
+			set_capital =  { state = 707 }
+			transfer_state = 707
+			transfer_state = 712
+			transfer_state = 711
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 400
+			}
+			707 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 13018
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 13018
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker 
+					level = 4
+					province = 13018
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+					division_template = {
+					name = "Exilied Australian Army"
+					division_names_group = AST_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						artillery_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+					707 = {
+					create_unit = {prioritize_location = 13018 allow_spawning_on_enemy_provs = yes division = "division_template = \"Exilied Australian Army\" start_experience_factor = 0.5" owner = AST }
+					create_unit = {prioritize_location = 13018 allow_spawning_on_enemy_provs = yes division = "division_template = \"Exilied Australian Army\" start_experience_factor = 0.5" owner = AST }
+					create_unit = {prioritize_location = 13018 allow_spawning_on_enemy_provs = yes division = "division_template = \"Exilied Australian Army\" start_experience_factor = 0.5" owner = AST }
+					}
+				}
+		}
+	}
+
+
+	focus = {
+	id = A_Future_Without_A_Home_Is_No_Future_AST 
+		icon = GFX_Generic_Memories_of_the_War
+		relative_position_id = A_Nation_Lost
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = A_Nation_Lost }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_ideas = Lost_At_Sea
+		}
+	}
+
+	focus = {
+	id = Meeting_Of_The_Soliders_Of_Gallipoli
+		icon = GFX_focus_AST_never_gallipoli
+		relative_position_id = A_Future_Without_A_Home_Is_No_Future_AST 
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = A_Future_Without_A_Home_Is_No_Future_AST }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		country_event = {id = AST.2}
+		}
+	}
+focus = {
+	id = Stick_With_Britain
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = Meeting_Of_The_Soliders_Of_Gallipoli
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Meeting_Of_The_Soliders_Of_Gallipoli }
+		mutually_exclusive = {focus = Side_With_United_States}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = Scatterd_Army
+			add_idea = Scatterd_Army_1
+			}
+		swap_ideas = {
+			remove_idea = Lost_At_Sea
+			add_idea = Lost_At_Sea_2
+			}
+		add_ideas = Learn_from_loss
+		
+		set_politics = {
+				ruling_party = neutrality
+				}
+		retire_country_leader = yes
+			create_country_leader = {
+			name = "Thomas Blamey"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "GFX_AST_thomas_blamey"
+			expire = "1965.1.1"
+			ideology = moderatism
+			set_politics = {
+				ruling_party = neutrality
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.60
+			}
+			set_cosmetic_tag = AST_democratic
+		}
+	}
+	focus = {
+	id = Reaffirm_Commitment_To_Commonwealth
+		icon = GFX_focus_eng_imperial_federation
+		relative_position_id = Stick_With_Britain
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Stick_With_Britain }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = Scatterd_Army_1
+			add_idea = Scatterd_Army_2
+			}
+			remove_ideas = Lost_At_Sea_2
+
+		add_ideas = Learn_from_loss
+		
+		
+		}
+	}
+	focus = {
+	id = Appeal_To_Commonwealth_For_Support
+		icon = GFX_goal_ENG_home_defense
+		relative_position_id = Reaffirm_Commitment_To_Commonwealth
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Reaffirm_Commitment_To_Commonwealth }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 75000
+		}
+	}
+	focus = {
+	id = Purchase_Equipment_From_Commonwealth
+		icon = GFX_NOR_purchase_guns
+		relative_position_id = Appeal_To_Commonwealth_For_Support
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Appeal_To_Commonwealth_For_Support }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1200
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+			}
+		}
+	}
+	focus = {
+	id = Request_Loan_From_UK
+		icon = GFX_focus_generic_concessions
+		relative_position_id = Stick_With_Britain
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Stick_With_Britain }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = Industry_Serves_The_Army
+			add_idea = Industry_In_Development
+			}
+		}
+	}
+	focus = {
+	id = Acquire_Factory_Blueprints
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = Request_Loan_From_UK
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_Loan_From_UK }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = Industry_In_Development
+			add_idea = Industry_Fixed
+			}
+		swap_ideas = {
+			remove_idea = Lost_At_Sea
+			add_idea = Lost_At_Sea_2
+			}
+		add_ideas = Learn_from_loss
+		
+		
+		}
+	}
+	focus = {
+	id = A_War_Machine
+		icon = GFX_goal_total_war
+		relative_position_id = Acquire_Factory_Blueprints
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Acquire_Factory_Blueprints }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = Industry_Fixed
+			add_idea = War_Time_Economy
+			}
+		
+		add_ideas = The_Basics_Arms_Workshops
+		
+		
+		}
+	}
+	focus = {
+	id = Keep_In_Place_British_Military_Standards
+		icon = GFX_Generic_British_Officers
+		relative_position_id = Stick_With_Britain
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Stick_With_Britain }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		add_ideas = Expanded_Army_Command
+		
+		
+		}
+	}
+	focus = {
+	id = Invest_Into_Commando_Force
+		icon = GFX_focus_eng_special_air_service
+		relative_position_id = Keep_In_Place_British_Military_Standards
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Keep_In_Place_British_Military_Standards }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		add_ideas = Special_Forces_Detatchments
+		
+		
+		}
+	}
+	focus = {
+	id = Purchase_Ships_And_Landing_Craft
+		icon = GFX_convoy_protection
+		relative_position_id = Invest_Into_Commando_Force
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Invest_Into_Commando_Force }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+	custom_effect_tooltip = ENG_New_Ships_tt
+	add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			hidden_effect = {
+			ENG = {
+	create_equipment_variant = {
+		name = "Converted_Fishing_Tawler"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Cruise_Liner"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_depth_charge_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cruise_Liner_Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+			}
+			AST = {
+	create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+						}
+					}
+				}
+		
+		}
+	}
+	focus = {
+	id = Planning_Of_Operation_Oboe
+		icon = GFX_focus_generic_national_security
+		relative_position_id = A_War_Machine
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = A_War_Machine }
+		prerequisite = {focus =Purchase_Ships_And_Landing_Craft}
+		prerequisite = {focus =Purchase_Equipment_From_Commonwealth}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 75000
+		add_ideas = Preparing_For_The_Final_Hurdle
+		
+		
+		}
+	}
+	focus = {
+	id = Request_Commando_Units
+		icon = GFX_Generic_ENG_SAS
+		relative_position_id = Planning_Of_Operation_Oboe
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Planning_Of_Operation_Oboe }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		division_template = {
+					is_locked = yes
+					force_allow_recruiting = yes
+					name = "British Commandos"
+					division_names_group = ENG_INF_01
+						regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						marine = { x = 2 y = 3 }
+						pack_artillery_brigade = { x = 3 y = 0 }
+						pack_artillery_brigade = { x = 3 y = 1 }
+						pack_artillery_brigade = { x = 3 y = 2 }
+						pack_artillery_brigade = { x = 4 y = 0 }
+						pack_artillery_brigade = { x = 4 y = 1 }
+						pack_artillery_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						Royal_Commandos_hq_company = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					707 = {
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = AST }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = AST }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = AST }
+					create_unit = { division = "division_template = \"British Commandos\" start_experience_factor = 0.8" owner = AST }
+					}
+		}
+	}
+	focus = {
+	id = Request_Further_Craft
+		icon = GFX_dday
+		relative_position_id = Planning_Of_Operation_Oboe
+		x = -2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Planning_Of_Operation_Oboe }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		custom_effect_tooltip = ENG_New_Ships_tt
+		add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			hidden_effect = {
+			ENG = {
+	create_equipment_variant = {
+		name = "Converted_Fishing_Tawler"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Cruise_Liner"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_depth_charge_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cruise_Liner_Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+			}
+			AST = {
+	create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = ENG
+						}
+					}
+				}
+		}
+	}
+	focus = {
+	id = Request_Additional_Manpower
+		icon = GFX_focus_generic_manpower
+		relative_position_id = Planning_Of_Operation_Oboe
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Planning_Of_Operation_Oboe }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 75000
+		
+		}
+	}
+	focus = {
+	id = Request_Additional_Equipment
+		icon = GFX_Focus_Rifle_Bullets
+		relative_position_id = Request_Additional_Manpower
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_Additional_Manpower }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1200
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+			}
+		
+		}
+	}
+	focus = {
+	id = Luanch_Operation_Oboe
+		icon = GFX_focus_attack_australia
+		relative_position_id = Request_Additional_Equipment
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_Additional_Equipment }
+		prerequisite = { focus = Request_Commando_Units focus = Request_Further_Craft}
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		}
+	}
+	focus = {
+	id = Side_With_United_States
+		icon = GFX_focus_chi_mission_to_the_us
+		relative_position_id = Meeting_Of_The_Soliders_Of_Gallipoli
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Meeting_Of_The_Soliders_Of_Gallipoli }
+		mutually_exclusive = {focus = Stick_With_Britain}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_ideas = Learn_from_loss
+		swap_ideas = {
+			remove_idea = Scatterd_Army
+			add_idea = Scatterd_Army_2
+			}
+		swap_ideas = {
+			remove_idea = Lost_At_Sea
+			add_idea = Lost_At_Sea_1
+			}
+		set_politics = {
+				ruling_party = neutrality
+				}
+		retire_country_leader = yes
+			create_country_leader = {
+			name = "Henry Wynter"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "GFX_AST_henry_wynter"
+			expire = "1965.1.1"
+			ideology = moderatism
+			set_politics = {
+				ruling_party = neutrality
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.60
+			}
+			set_cosmetic_tag = AST_democratic
+			
+		}
+	}
+	focus = {
+	id = Industry_Support
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = Side_With_United_States
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Side_With_United_States }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		swap_ideas = {
+			remove_idea = Industry_Serves_The_Army
+			add_idea = Industry_Fixed
+			}
+		}
+	}
+	focus = {
+	id = Improve_Industrial_Machinary
+		icon = GFX_goal_generic_production2
+		relative_position_id = Industry_Support
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Industry_Support }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		swap_ideas = {
+			remove_idea = Industry_Fixed
+			add_idea = Industry_Up_And_Running
+			}
+		}
+	}
+	focus = {
+	id = Invite_American_Engineers
+		icon = GFX_goal_generic_production
+		relative_position_id = Improve_Industrial_Machinary
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Improve_Industrial_Machinary }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		swap_ideas = {
+			remove_idea = Industry_Up_And_Running
+			add_idea = Industry_Up_And_Running_3
+			}
+		}
+	}
+	focus = {
+	id = Request_Manpower_Support
+		icon = GFX_focus_generic_manpower
+		relative_position_id = Side_With_United_States
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Side_With_United_States }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 50000
+		swap_ideas = {
+			remove_idea = Scatterd_Army_2
+			add_idea = Scatterd_Army_3
+			}
+		}
+	}
+	focus = {
+	id = Request_Material
+		icon = GFX_USA_Begin_the_Marshall_Plan
+		relative_position_id = Request_Manpower_Support
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_Manpower_Support }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+	id = Request_American_Construction_Equipment
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = Request_Material
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_Material }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_ideas = AST_naval_auxiliary_patrol
+		}
+	}
+	focus = {
+	id = Introducing_American_Advisors
+		icon = GFX_focus_generic_military_academy
+		relative_position_id = Side_With_United_States
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Side_With_United_States }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_ideas = USA_supreme_command_1
+		}
+	}
+	focus = {
+	id = Improved_Coordination
+		icon = GFX_focus_generic_provoke_border_clashes
+		relative_position_id = Introducing_American_Advisors
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Introducing_American_Advisors }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_ideas = No_Funds_For_Military_4
+		}
+	}
+	focus = {
+	id = Clear_Direction
+		icon = GFX_focus_attack_japan
+		relative_position_id = Improved_Coordination
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Improved_Coordination }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+			swap_ideas = {
+			remove_idea = Lost_At_Sea_1
+			add_idea = Lost_At_Sea_2
+			}
+		}
+	}
+	focus = {
+	id = Lease_Ships
+		icon = GFX_BEL_Battleship_Investements
+		relative_position_id = Request_American_Construction_Equipment
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_American_Construction_Equipment }
+		prerequisite = { focus = Invite_American_Engineers }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		custom_effect_tooltip = ENG_New_Ships_tt
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			hidden_effect = {
+			USA = {
+		create_equipment_variant = {
+		name = "Converted_Fishing_Tawler"
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Converted_Cruise_Liner"
+		type = ship_hull_cruiser_1
+		name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_depth_charge_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cruise_Liner_Class"
+		type = ship_hull_cruiser_1
+		name_group = USA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+			}
+			AST = {
+	create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Converted_Cruise_Liner"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_cruiser_1
+			equipment_variant = "Cruise_Liner_Class"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+				}
+				create_ship = {
+			type = ship_hull_light_1
+			equipment_variant = "Converted_Fishing_Tawler"
+			creator = USA
+						}
+					}
+				}
+		
+		}
+	}
+	focus = {
+	id = Bring_Back_Z_special_Unit
+		icon = GFX_goal_generic_amphibious_assault
+		relative_position_id = Request_American_Construction_Equipment
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_American_Construction_Equipment }
+		prerequisite = { focus = Clear_Direction }
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+			
+			add_ideas = AST_z_special_unit_idea
+		
+		}
+	}
+	focus = {
+	id = Planning_Of_Operation_Cartwheel
+		icon = GFX_generic_army_high_command
+		relative_position_id = Bring_Back_Z_special_Unit
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Bring_Back_Z_special_Unit }
+		prerequisite = {focus =Lease_Ships}
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 75000
+		add_ideas = Preparing_For_The_Final_Hurdle
+		}
+	}
+	focus = {
+	id = Request_American_Divisions
+		icon = GFX_goal_USA_the_265_division_plan
+		relative_position_id = Planning_Of_Operation_Cartwheel
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Planning_Of_Operation_Cartwheel }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 25000
+		division_template = {
+					name = "Allied supporting division"
+					division_names_group = ENG_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						artillery_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					random_owned_controlled_state = {
+					707 = {
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = AST }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = AST }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = AST }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = AST }
+					create_unit = { division = "division_template = \"Allied supporting division\" start_experience_factor = 0.3" owner = AST }
+					}
+				}
+		}
+	}
+	focus = {
+	id = Request_American_Marines
+		icon = GFX_Generic_British_Soldiers02
+		relative_position_id = Planning_Of_Operation_Cartwheel
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Planning_Of_Operation_Cartwheel }
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		add_manpower = 75000
+		add_ideas = Preparing_For_The_Final_Hurdle
+		division_template = {
+		name = "Marine Corps" 		
+		division_names_group = USA_MAR_01
+		is_locked = yes
+		force_allow_recruiting = yes
+		regiments = {
+			marine = { x = 0 y = 0 }
+			marine = { x = 0 y = 1 }
+			marine = { x = 0 y = 2 }
+			marine = { x = 0 y = 3 }
+
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+			marine = { x = 1 y = 3 }
+
+			marine = { x = 2 y = 0 }
+			marine = { x = 2 y = 1 }
+			marine = { x = 2 y = 2 }
+
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+			artillery_brigade = { x = 3 y = 2 }
+			artillery_brigade = { x = 3 y = 3 }
+
+			artillery_brigade = { x = 4 y = 0 }
+			artillery_brigade = { x = 4 y = 1 }
+			artillery_brigade = { x = 4 y = 2 }
+			artillery_brigade = { x = 4 y = 3 }
+		}
+	support = {
+		assault_engineer = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
+		Marine_Corps_hq_company = { x = 1 y = 0 }
+			}
+		}
+	707 = {
+	create_unit = { division = "division_template = \"Marine Corps\" start_experience_factor = 0.8" owner = AST }
+	create_unit = { division = "division_template = \"Marine Corps\" start_experience_factor = 0.8" owner = AST }
+	create_unit = { division = "division_template = \"Marine Corps\" start_experience_factor = 0.8" owner = AST }
+	create_unit = { division = "division_template = \"Marine Corps\" start_experience_factor = 0.8" owner = AST }
+			}
+		
+		}
+	}
+	focus = {
+	id = Luanch_Operation_Cartwheel
+		icon = GFX_focus_attack_australia
+		relative_position_id = Request_American_Marines
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = Request_American_Divisions focus = Request_American_Marines}
+		
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = yes
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = Home_At_Last_AST
+		icon = GFX_goal_tripartite_pact
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = Luanch_Operation_Oboe
+			focus = Luanch_Operation_Cartwheel
+		}
+		relative_position_id = Luanch_Operation_Cartwheel
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			285 = {
+				is_controlled_by = ROOT
+			}
+			521 = {
+				is_controlled_by = ROOT
+			}
+			517 = {
+				is_controlled_by = ROOT
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			load_focus_tree = australian_focus
+			#TODO_GABRIEL: Make scripted effect to give correct focuses depending on left/right
+		remove_ideas = Lost_At_Sea_2
+		remove_ideas = Preparing_For_The_Final_Hurdle
+		remove_ideas = Lost_At_Sea_2
+		remove_ideas = Scatterd_Army_3
+		remove_ideas = Scatterd_Army_2
+		}
+	}
+}		

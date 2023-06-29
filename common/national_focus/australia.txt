@@ -17,7 +17,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = AST
 			has_dlc = "Together for Victory"
 		}
@@ -2589,7 +2589,8 @@ focus_tree = {
 		}
 
 		available = {
-
+			amount_research_slots < 7
+			amount_research_slots > 4
 		}
 		
 		bypass = {
@@ -2962,6 +2963,8 @@ focus_tree = {
 
 		available = {
 			is_subject = yes
+			amount_research_slots < 7
+			amount_research_slots > 4
 		}
 		
 		bypass = {

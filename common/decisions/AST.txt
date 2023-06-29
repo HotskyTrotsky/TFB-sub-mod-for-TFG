@@ -1,0 +1,193 @@
+political_actions = {
+
+	AST_annex_nz = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		available = {
+			date > 1939.1.1
+			NZL = {is_ai = yes}
+			NOT = { 523 = {is_core_of = AST} }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = NZL transfer_troops = yes }
+			add_state_core = 723 
+			add_state_core = 284
+			add_state_core = 726
+		}
+	}
+
+	AST_core_papau = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		available = {
+			date > 1939.1.1
+			country_exists = NZL
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			523 = { add_core_of = AST }
+			845 = { add_core_of = AST }
+			add_ideas = AST_no_nzl_annex
+		}
+	}
+	Purchase_American_Equipment = {
+
+		allowed = {
+			original_tag = AST
+		}
+
+		available = {
+			AST = {
+				has_capitulated = yes
+				has_completed_focus = Request_Material
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			AST = {
+				has_capitulated = yes
+				has_completed_focus = Request_Material
+			}
+		}
+		fire_only_once = no
+		days_remove = 120
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1200
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 500
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 10
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+			}
+		
+	}
+}
+Operations = {
+	Operation_Oboe = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			AST = {
+				has_capitulated = yes
+				has_completed_focus = Luanch_Operation_Oboe
+			}
+		}
+		visible = {
+			AST = {
+			has_capitulated = yes
+			has_completed_focus = Luanch_Operation_Oboe
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = yes
+
+	
+	
+		modifier = {
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+			breakthrough_factor = 0.2
+			}
+	
+		days_remove = 70
+		}
+		
+		Operation_Cartwheel = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			AST = {
+				has_capitulated = yes
+				has_completed_focus = Luanch_Operation_Cartwheel
+			}
+		}
+		visible = {
+			AST = {
+			has_capitulated = yes
+			has_completed_focus = Luanch_Operation_Cartwheel
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = yes
+
+	
+	
+		modifier = {
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+			breakthrough_factor = 0.2
+			}
+	
+		days_remove = 70
+		}
+	}

@@ -203,7 +203,6 @@ focus = {
 				add_war_support = 10000
 				remove_ideas = MAN_banditry
 				remove_ideas = MAN_low_legitimacy_5
-				remove_ideas = 
 			}
 		}
 	}

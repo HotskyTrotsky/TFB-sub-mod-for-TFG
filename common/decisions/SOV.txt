@@ -10287,7 +10287,7 @@ operations = {
 
 		#Fail trigger
 		available = {
-			NOT = { controls_state = 43 }
+			NOT = { controls_state = 219 }
 		}
 
 		days_mission_timeout = 16
