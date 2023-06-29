@@ -1,0 +1,77 @@
+﻿l_english:
+
+  #### FOCUSES ####
+  AST_cruiser_tanks:0 "Improved Cruiser Tanks"
+  AST_cruiser_tanks_desc:0 "Advanced tanks will allow us to gain a decisive edge over the enemy!"
+  AST_tank_pounder:0 "Tank Pounder Program"
+  AST_tank_pounder_desc:0 "We need sufficient weapons to destroy enemy armour."
+  AST_jungle_blitz:0 "Jungle Blitz"
+  AST_jungle_blitz_desc:0 "We need to make tanks be useful in jungle terrain."
+  AST_tank_refit:0 "Streamlined Tank Factories"
+  AST_tank_refit_desc:0 "We need large tank factories to produce the tanks we need!"
+  AST_improve_dockyard_facilities:0 "Improve Dockyard Facilities"
+  AST_improve_dockyard_facilities_desc:0 "We need to build up our naval production facilities to be able to compete with our rivals."
+
+  ###Exiled Focuses
+  A_Nation_Lost:0 "A Nation Lost"
+  A_Future_Without_A_Home_Is_No_Future_AST:0 "A Future Without A Home Is No Future AST"
+  Stick_With_Britain:0 "Stick With Britain"
+  Reaffirm_Commitment_To_Commonwealth:0 "Reaffirm Commitment To Commonwealth"
+  Appeal_To_Commonwealth_For_Support:0 "Appeal To Commonwealth For Support"
+  Purchase_Equipment_From_Commonwealth:0 "Purchase Equipment From Commonwealth"
+  Planning_Of_Operation_Oboe:0 "Planning Of Operation Oboe"
+  Request_Additional_Manpower:0 "Request Additional Manpower"
+  Request_Additional_Equipment:0 "Request Additional Equipment"
+  Request_Further_Craft:0 "Request Further Craft"
+  Request_Commando_Units:0 "Request Commando Units"
+  Luanch_Operation_Oboe:0 "Luanch Operation Oboe"
+  Luanch_Operation_Oboe_desc:0 "Allows launching Operation Oboe for a one time 70 day bonus to fighting on core territory and increased breakthrough."
+  Home_At_Last_AST:0 "Home At Last"
+  Request_Loan_From_UK:0 "Request A Loan From UK"
+  Acquire_Factory_Blueprints:0 "Acquire Factory Blueprints"
+  A_War_Machine:0 "A War Machine"
+  Keep_In_Place_British_Military_Standards:0 "Keep In Place British Military Standards"
+  Invest_Into_Commando_Force:0 "Invest Into Commando Force"
+  Purchase_Ships_And_Landing_Craft:0 "Purchase Ships And Landing Craft"
+
+  Side_With_United_States:0 "Side With United States"
+  Introducing_American_Advisors:0 "Introducing American Advisors"
+  Improved_Coordination:0 "Improved Coordination"
+  Clear_Direction:0 "Clear Direction"
+  Bring_Back_Z_special_Unit:0 "Bring Back Z special Unit"
+  Planning_Of_Operation_Cartwheel:0 "Planning Of Operation Cartwheel"
+  Request_American_Marines:0 "Request American Marines"
+  Luanch_Operation_Cartwheel:0 "Luanch Operation Cartwheel"
+  Luanch_Operation_Cartwheel_desc:0 "Allows launching Operation Cartwheel for a one time 70 day bonus to fighting on core territory and increased breakthrough."
+  Request_American_Divisions:0 "Request American Divisions"
+  Lease_Ships:0 "Lease Ships"
+  Request_Manpower_Support:0 "Request Manpower Support"
+  Request_Material:0 "Request Material"
+  Request_Material_desc:0 "Allows us to purchase equipment at the cost of civs for 120 days."
+  Request_American_Construction_Equipment:0 "Request American Construction Equipment"
+  Industry_Support:0 "Industry Support"
+  Improve_Industrial_Machinary:0 "Improve Industrial Machinary"
+  Invite_American_Engineers:0 "Invite American Engineers"
+
+  ###Exiled events
+  AST.1.t:0 "Cast Away On The Sea"
+  AST.1.d:0 "For as much fight there is in an Austrailian, there is no more fight in Austrailia. For as much lives have been lost in battle, the battle has been lost. For once we had a home, We now have no home."
+  AST.1.a:0 "It Is No Longer A Gday."
+
+  AST.2.t:0 "Meeting of the war heros of Gallipoli."
+  AST.2.d:0 "In Exile the remaining Leaders of the Australian Army have met and have now set in motion the liberation of Australia. However it cannot be done alone, and there is a split in the mood. While one side under Thomas Blamey favours gaining the support from the British and Commonwealth Allies, the other under Henry Wynter beleives that the Americans will bemore of use in the pacific."
+  AST.2.a:0 "Thomas Blamey And Sticking with Britain."
+  AST.2.b:0 "We Need A New Direction Follow The Americans."
+
+  ##Decisions
+  Purchase_American_Equipment:0 "Purchase American Equipment"
+  Operation_Oboe:0 "Operation Oboe"
+  Operation_Cartwheel:0 "Operation Cartwheel"
+  #### IDEAS ####
+  AST_tank_conversion_spirit:0 "Streamlined Tank Factories"
+  AST_z_special_unit_idea:0 "Z Special Unit"
+  AST_m_special_unit_idea:0 "M Special Unit"
+  AST_rats_of_tobruk_idea:0 "Rats of Tobruk"
+
+  #### TOOLTIP ####
+  AST_jungle_adaptable_armor_designs:0 "Enables §HAdaptable Jungle Armor Designs§!\n§HAll Tanks and Variants:\n    Jungle§!\n     Attack: §G+5%§!\n      Defense: §G+5%§!\n      Movement: §G+10%§!"

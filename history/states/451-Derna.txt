@@ -4,7 +4,7 @@ state={
 	name="STATE_451"
 	manpower = 45628
 	resources={
-		oil=250
+		#oil=250
 	}
 	state_category = wasteland
 

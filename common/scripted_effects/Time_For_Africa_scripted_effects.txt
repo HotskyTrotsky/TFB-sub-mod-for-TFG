@@ -67,7 +67,14 @@ Vichy_Spawn = {
 		#######For some reason hotjoins cause this to reset so i have added a means to check the romanian oil on monthly basis
 Check_ROM_OIL = {
 	ROM = {
-	if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 0 }} 
+	if = { 
+		limit = {
+		79 = {
+		has_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_0_MODIFIER
+				}
+			} 
+		}
 	swap_ideas = {
 	remove_idea = ROM_LIBYA_OIL_1
 	remove_idea = ROM_LIBYA_OIL_2
@@ -75,7 +82,14 @@ Check_ROM_OIL = {
 	add_idea = ROM_LIBYA_OIL_0
 		}
 	}
-	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 1 }} 
+	else_if = { 
+		limit = {
+		79 = {
+		has_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_1_MODIFIER
+					}
+				} 
+			} 
 	swap_ideas = {
 	remove_idea = ROM_LIBYA_OIL_0
 	remove_idea = ROM_LIBYA_OIL_2
@@ -83,7 +97,14 @@ Check_ROM_OIL = {
 	add_idea = ROM_LIBYA_OIL_1
 		}
 	}
-	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 2 }} 
+	else_if = { 
+		limit = {
+		79 = {
+		has_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_2_MODIFIER
+					}
+				} 
+			}  
 	swap_ideas = {
 	remove_idea = ROM_LIBYA_OIL_0
 	remove_idea = ROM_LIBYA_OIL_1
@@ -91,7 +112,14 @@ Check_ROM_OIL = {
 	add_idea = ROM_LIBYA_OIL_2
 		}
 	}
-	else_if = { limit = {check_variable = {ROM.ROM_LIBYA_OIL = 3 }} 
+	else_if = {
+	limit = {
+		79 = {
+		has_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_3_MODIFIER
+					}
+				} 
+			} 
 	swap_ideas = {
 	remove_idea = ROM_LIBYA_OIL_0
 	remove_idea = ROM_LIBYA_OIL_1
@@ -109,10 +137,12 @@ ROM_LIBYA_OIL_UP = {
 			add_idea = ROM_LIBYA_OIL_3
 		}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = 250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_2_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_3_MODIFIER
+		}
 		}
 	}
 	else_if = {
@@ -122,10 +152,12 @@ ROM_LIBYA_OIL_UP = {
 			add_idea = ROM_LIBYA_OIL_2
 		}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = 250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_1_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_2_MODIFIER
+		}
 		}
 	}
 else_if = {
@@ -135,10 +167,12 @@ else_if = {
 			add_idea = ROM_LIBYA_OIL_1
 			}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = 250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_0_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_1_MODIFIER
+		}
 		}
 	}
 	}
@@ -150,10 +184,12 @@ else_if = {
 			add_idea = ROM_LIBYA_OIL_0
 		}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = -250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_1_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_0_MODIFIER
+		}
 		}
 	}
 	else_if = {
@@ -163,10 +199,12 @@ else_if = {
 			add_idea = ROM_LIBYA_OIL_1
 		}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = -250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_2_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_1_MODIFIER
+		}
 		}
 	}
 	else_if = {
@@ -176,10 +214,12 @@ else_if = {
 			add_idea = ROM_LIBYA_OIL_2
 		}
 		79 = {
-		add_resource = {
-		type = oil
-		amount = -250
-			}
+		remove_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_3_MODIFIER
+		}
+		add_dynamic_modifier = {
+			modifier = ROM_LIBYA_OIL_2_MODIFIER
+		}
 		}
 	}
 }

@@ -4,7 +4,7 @@ state={
 	name="STATE_450"
 	manpower = 82535
 	resources={
-		oil=250
+		#oil=250
 	}
 	state_category = enclave
 

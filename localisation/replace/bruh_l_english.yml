@@ -245,6 +245,12 @@ ROM_LIBYA_OIL_2:0 "Romanian Oil From Libya"
 ROM_LIBYA_OIL_2_desc:0 "§G+500 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
 ROM_LIBYA_OIL_3:0 "Romanian Oil From Libya"
 ROM_LIBYA_OIL_3_desc:0 "§G+750 Oil§!\nThe amount of oil present in Moldova is dependant how much of the axis control Libya. \n§YThe states that matter are§!\nTripoli\nBenghazi\nTobruk"
+ 
+ROM_LIBYA_OIL_0_MODIFIER:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_1_MODIFIER:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_2_MODIFIER:0 "Romanian Oil From Libya"
+ROM_LIBYA_OIL_3_MODIFIER:0 "Romanian Oil From Libya"
+
  #### BUILDINGS ####
  synthetic_rubber_refinery:0 "Synthetic Rubber Refinery"
  synthetic_rubber_refinery_desc:0 "This building provides the state with"
