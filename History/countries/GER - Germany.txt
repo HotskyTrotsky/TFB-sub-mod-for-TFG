@@ -127,7 +127,7 @@ if = {
 		}
 	}
 }
-
+set_variable = { var = BARB_CAPTURED_LAND value = 0 }
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 add_timed_idea = { idea = GER_mefo_air days = 1340 }
 set_variable = { var = wehrmacht_anger value = 0 }
@@ -140,6 +140,7 @@ set_variable = { GER_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLO
 set_variable = { GER_poster_left_icon_frame = GER_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
 #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+set_variable = { GER_tank_manufacturer_cost_factor = -0.34 }
 set_research_slots = 6
 set_convoys = 200
 set_stability = 0.75 

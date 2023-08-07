@@ -25,6 +25,82 @@
 #
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
+BARB_ECONOMIC_BONUS = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_military
+
+	#INITIAL
+	industrial_capacity_factory = BARB_CAPTURED_LAND 
+	
+}
+
+AST_Defense_Set_Up = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	army_defence_factor = 0.05
+	cas_damage_reduction = 0.25
+	dig_in_speed_factor = 0.5
+	max_dig_in_factor = 0.075
+	local_supplies_for_controller = 1
+}
+Fortress_Island_Of_Malta = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.30
+	army_attack_factor = 0.1
+	cas_damage_reduction = 0.25
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.2
+	local_supplies_for_controller = 0.75
+}
+Fortress_Island_Of_Malta_Under_Developed = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.1
+	army_attack_factor = 0.05
+	cas_damage_reduction = 0.1
+	dig_in_speed_factor = 0.15
+	max_dig_in_factor = 0.1
+	local_supplies_for_controller = 0.25
+}
+The_Fronzen_Front = {
+	icon = GFX_modifiers_SOV_invaders_must_die
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.25
+	army_speed_factor = -0.1
+	ground_attack_factor = -0.75
+	local_org_regain = -0.1
+}
+
+Tough_Terrain = {
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.25
+	army_speed_factor = -0.1
+	ground_attack_factor = -0.75
+	local_org_regain = -0.1
+}
+Tough_Terrain_Adapted = {
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.5
+	army_attack_factor = -0.1
+	army_speed_factor = -0.05
+	ground_attack_factor = -0.5
+	local_org_regain = -0.05
+}
 Alan_Turing_Intel = {
 	remove_trigger = { 
 		ENG = { 
@@ -650,6 +726,17 @@ SOV_krasnaya_gorka_battery = { #STATE MODIFIER
 	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
 }
+SOV_krasnaya_gorka_battery_Disabled = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	#army_defence_factor = 0.1
+	cas_damage_reduction = 0.1
+	dig_in_speed_factor = 0.25
+	#max_dig_in_factor = 0.1
+	pocket_penalty = -0.15
+}
 
 SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	enable = { always = yes }
@@ -663,7 +750,18 @@ SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	pocket_penalty = -0.15
 	supply_factor = 1
 }
+SOV_armored_battery_35_Disabled = { #STATE MODIFIER #German designation Maksim Gorky
+	enable = { always = yes }
 
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	#army_defence_factor = 0.1
+	cas_damage_reduction = 0.025
+	dig_in_speed_factor = 0.25
+	#max_dig_in_factor = 0.1
+	pocket_penalty = -0.15
+	supply_factor = 1
+}
 SOV_factory_worker_militias_raised = { #STATE MODIFIER
 	enable = { always = yes }
 

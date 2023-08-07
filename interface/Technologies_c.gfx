@@ -1359,7 +1359,31 @@ spriteTypes = {
 		name = "GFX_ENG_fighter3_medium"
 		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
 	}
-
+	
+	SpriteType = {
+		name = "GFX_Fairey_Albacore_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_Fairey_Barracuda_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_small_plane_airframe_NAV_0_eng_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_small_plane_airframe_NAV_1_eng_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_NAV_0_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_NAV_1_medium"
+		texturefile = "gfx/interface/technologies/air/eng/eng_nav_4.dds"
+	}
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter1_medium"
 		texturefile = "gfx/interface/technologies/ENG_heavy_fighter1.dds"
@@ -1984,6 +2008,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air/ger/ger_tac_4.dds"
 	}
 	SpriteType = {
+		name = "GFX_Fw_200_Condor_medium"
+		texturefile = "gfx/interface/technologies/air/ger/ger_nav_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_DO_17_medium"
 		texturefile = "gfx/interface/technologies/air/ger/ger_tac_2.dds"
 	}
@@ -2073,6 +2101,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_large_plane_airframe_3_ger_medium"
 		texturefile = "gfx/interface/technologies/air/ger/ger_strat_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_4_ger_medium"
+		texturefile = "gfx/interface/technologies/air/ger/ger_nav_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_medium_plane_airframe_3_ger_medium"

@@ -6875,7 +6875,7 @@ SOV_promote_to_country_leader_bukharin = {
 		character = "SOV_nikolay_bukharin"
 		country_leader = {
 			ideology = marxism
-			traits = { defender_of_the_peasantry }
+			traits = { hero_of_the_peasantry }
 			expire = "1965.1.1.1"
 		}
 		promote_leader = yes

@@ -12950,9 +12950,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+		icon = "GFX_sov_medium_tank_equipment_4_medium"
 					}
 				load_oob = SOV_Far_East_Reserves_0
 				}
+			
 			}
 			else_if = {
 				limit = {
@@ -12979,6 +12981,7 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+		icon = "GFX_sov_medium_tank_equipment_4_medium"
 					}
 					load_oob = SOV_Far_East_Reserves_1
 				}
@@ -13006,6 +13009,7 @@ country_event = {
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 					}
+		icon = "GFX_sov_medium_tank_equipment_3_medium"
 		obsolete = yes
 					}
 					load_oob = SOV_Far_East_Reserves_2
@@ -13016,6 +13020,10 @@ country_event = {
 					load_oob = SOV_Far_East_Reserves_7
 				}
 			}
+				add_to_variable = {
+						var = SOV.SOVIET_RESERVE_LEVEL
+						value = 3
+						}
 	}
 	option = {
 		name = soviet.3009.b
@@ -13049,6 +13057,7 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+		icon = "GFX_sov_medium_tank_equipment_3_medium"
 					}
 				load_oob = SOV_Far_East_Reserves_3
 				}
@@ -13078,6 +13087,7 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+		icon = "GFX_sov_medium_tank_equipment_4_medium"
 					}
 					load_oob = SOV_Far_East_Reserves_4
 				}
@@ -13106,6 +13116,7 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+		icon = "GFX_sov_medium_tank_equipment_3_medium"
 					}
 					load_oob = SOV_Far_East_Reserves_5
 				}
@@ -13115,5 +13126,239 @@ country_event = {
 					load_oob = SOV_Far_East_Reserves_6
 				}
 			}	
+			add_to_variable = {
+						var = SOV.SOVIET_RESERVE_LEVEL
+						value = 2
+						}
+	}
+	option = {
+		name = soviet.3009.c
+		trigger = {
+			check_variable = { var = SOV.Investment_Into_Far_East_Regiments value = 0 compare = equals }
+			}
+			add_to_variable = {
+						var = SOV.SOVIET_RESERVE_LEVEL
+						value = 1
+						}
+	}
+}
+country_event = {
+	id = soviet.3010
+	title = soviet.3010.t
+	desc = soviet.3010.d
+	picture = GFX_report_event_tank_factory
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = soviet.3010.a
+		complete_national_focus = SOV_tankograd
+		set_country_flag = Quantity_Over_Quality
+	}
+	option = {
+		name = soviet.3010.b
+		complete_national_focus = SOV_tankograd
+		set_country_flag = Quality_Over_Quantity
+	}
+}
+#####Stalin dead pick a new leader
+country_event = {
+	id = soviet.3011
+	title = soviet.3011.t
+	desc = soviet.3011.d
+	picture = GFX_report_event_SOV_demands
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		######Zhukov
+		name = soviet.3011.a
+		SOV = {
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Georgy Zhukov"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			set_politics = {
+				ruling_party = communism
+				}
+				traits = {
+					ZHUKOV
+				}
+			}
+			
+		}
+	}
+	option = {
+		###### Stavkha High command
+		name = soviet.3011.b
+		SOV = {
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Stavka High Command"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/SOV/Soviet_Stavka.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			set_politics = {
+				ruling_party = communism
+				}
+				traits = {
+					Stavka
+				}
+			}
+			
+		}
+	}
+	option = {
+		###### Supreme soviet council
+		name = soviet.3011.c
+		SOV = {
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Supreme Soviet Council"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/SOV/portrait_SOV_supreme_soviet.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			set_politics = {
+				ruling_party = communism
+				}
+				traits = {
+					THE_SUPREME_SOVIET
+				}
+			}
+			
+		}
+	}
+}
+#####Stalin missing do you find him?
+country_event = {
+	id = soviet.3012
+	title = soviet.3012.t
+	desc = soviet.3012.d
+	picture = GFX_report_event_SOV_demands
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	####Stalin found
+	option = {
+		name = soviet.3012.a
+		trigger = {
+			AND = {
+			SOV = {
+				controls_state = 217
+				surrender_progress < 0.75
+			}
+			}
+		}
+			hidden_effect = {
+			news_event = { id = news.407 days = 1}
+			}
+	}
+	####Stalin Still missing presume dead
+	option = {
+		name = soviet.3012.b
+		trigger = {
+			
+			SOV = {
+				surrender_progress > 0.75
+			}
+			SOV = {
+				}
+		
+		}
+		hidden_effect = {
+		SOV = {
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Leaderless"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/SOV/Soviet_Empty_Chamber.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			set_politics = {
+				ruling_party = communism
+				}
+			}
+			SOV = {
+			country_event = { id = soviet.3011 days = 4}
+			}
+			SOV = {
+			set_country_flag = Stalin_Presumed_Dead
+			}
+			every_country = {
+				news_event = { id = news.408 days = 2}
+			}
+		}
+		}
+	}
+}
+####Give up and join Germans or Fight
+country_event = {
+	id = soviet.3013
+	title = soviet.3013.t
+	desc = soviet.3013.d
+	picture = GFX_report_event_SOV_demands
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = no
+	####Never surrender
+	option = {
+		name = soviet.3013.a
+		
+			hidden_effect = {
+			activate_mission = The_long_war
+			}
+	}
+	####Surrender and become ROA
+	option = {
+		name = soviet.3013.b
+		
+		hidden_effect = {
+			
+		SOV = {
+			dismantle_faction = yes
+			annex_country = {
+				target = ROA
+				#transfer_troops = yes
+				}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+						name = "Andrey Vlasov"
+						#desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+						picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						set_politics = {
+						ruling_party = fascism
+					}
+						traits = {
+
+						}
+					}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.70
+			}
+			set_cosmetic_tag = FAC_SOV
+			set_capital = { state = 249 }
+			add_ideas = German_Payments_1
+			load_focus_tree = Facist_Russia_focus
+			set_rule = { 
+						can_join_factions = yes 
+						can_create_factions = no
+						can_not_declare_war = no
+					}
+			}
+		}
 	}
 }

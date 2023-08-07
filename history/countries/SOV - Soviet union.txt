@@ -153,14 +153,18 @@ if = {
 	# recruit_character = SOV_andrey_shkuro
 	# recruit_character = SOV_anton_denikin
 }
-
+set_variable = { SOVIET_TANK_RESERVE = 0 }
+set_variable = { SOVIET_TANKOGRAD_LEVEL = 0 }
+set_variable = { SOVIET_WAR_EXHAUSTION_LEVEL = 0 }
+set_variable = { SOVIET_RESERVE_LEVEL = 3}
+set_variable = { SOVIET_LEND_LEASE_LANE = 3}
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
 set_variable = { SOV_RG_cap_decrease = -2 }
 set_variable = { SOV_RG_cap_increase_medium_double = 4 }
 set_variable = { SOV_RG_cap_increase_light_double = 6 }
 set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
-
+set_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag

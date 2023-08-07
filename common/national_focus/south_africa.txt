@@ -1398,7 +1398,12 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			set_country_flag = SAF_HF_armored_division_medium
+			custom_effect_tooltip = HOBART_TOOL_TT
 		}
+		
+	
+		
 	}
 
 	# focus = {

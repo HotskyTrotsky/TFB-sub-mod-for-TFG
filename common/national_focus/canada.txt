@@ -2192,6 +2192,8 @@ focus_tree = {
 				category = marine_tech
 				category = mountaineers_tech
 			}
+			set_country_flag = CAN_HF_armored_division_medium
+			custom_effect_tooltip = HOBART_TOOL_TT
 		}
 	}
 
@@ -2569,7 +2571,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2610,7 +2612,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2661,7 +2663,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

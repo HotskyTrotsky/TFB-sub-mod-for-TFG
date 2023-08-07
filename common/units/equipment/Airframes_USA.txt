@@ -16,7 +16,7 @@ small_plane_airframe_0_usa = { #P-26
 	air_defence = 8
 	weight = 3
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 48
 	resources = {
 			aluminium = 25
@@ -131,7 +131,7 @@ small_plane_airframe_NAV_0_usa = { #F3F
 	air_defence = 4
 	weight = 3
 	naval_strike_attack = 2
-	naval_strike_targetting = 9
+	naval_strike_targetting = 4
 	build_cost_ic = 42
 	resources = {
 			aluminium = 20
@@ -261,7 +261,7 @@ small_plane_airframe_1_usa = { #P-36 Warhawk
 	air_defence = 12
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 50
 	resources = {
 			aluminium = 30
@@ -377,7 +377,7 @@ small_plane_airframe_2_usa = { #P-40 Warhawk
 	air_defence = 17
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 54
 	resources = {
 			aluminium = 30
@@ -389,6 +389,8 @@ small_plane_airframe_2_usa = { #P-40 Warhawk
 			allowed_module_categories = {
 				Fighter_weapon_2
 				Fighter_weapon_1
+				cas_weapon2
+				cas_weapon1
 			}
 		}
 
@@ -397,6 +399,7 @@ small_plane_airframe_2_usa = { #P-40 Warhawk
 			allowed_module_categories = {
 				Fighter_weapon_2
 				Fighter_weapon_1
+				cas_weapon1
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -404,6 +407,8 @@ small_plane_airframe_2_usa = { #P-40 Warhawk
 			allowed_module_categories = {
 				recon_camera
 				Fighter_weapon_1
+				Fighter_weapon_2
+				cas_weapon1
 		}
 	}
 		engine_type_slot = {
@@ -489,7 +494,7 @@ small_plane_airframe_3_usa = { #Bell P-39 Airacobra
 	air_defence = 17
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 55
 	resources = {
 			aluminium = 30
@@ -557,10 +562,7 @@ small_plane_airframe_3_usa = { #Bell P-39 Airacobra
 			}
 		}
 	}
-	module_count_limit = {
-		module = engine_4_1x
-		count < 0
-	}
+	
 	module_count_limit = {
 		module = aircraft_cannon_1_1x
 		count < 2
@@ -608,7 +610,7 @@ small_plane_airframe_4_usa = { #P-51 Mustang
 	air_defence = 19
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 60
 	resources = {
 			aluminium = 30
@@ -678,14 +680,7 @@ small_plane_airframe_4_usa = { #P-51 Mustang
 			}
 		}
 	}
-	module_count_limit = {
-		module = aircraft_cannon_1_1x
-		count < 3
-	}
-	module_count_limit = {
-		module = aircraft_cannon_1_2x
-		count < 2
-	}
+	
 	module_count_limit = {
 		module = aircraft_cannon_2_1x
 		count < 2
@@ -726,7 +721,7 @@ small_plane_airframe_5_usa = { #Thunderbolt
 	air_defence = 15
 	weight = 4
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting =3
 	build_cost_ic = 52
 	resources = {
 			aluminium = 30
@@ -864,7 +859,7 @@ small_plane_airframe_6_usa = { #Lockheed P-80 Shooting Star
 	air_defence = 10
 	weight = 7
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 60
 	resources = {
 			aluminium = 30
@@ -987,8 +982,8 @@ small_plane_airframe_NAV_1_usa = { #Vought SB2U Vindicator
 	air_agility = 65
 	air_defence = 12
 	weight = 5
-	naval_strike_attack = 4
-	naval_strike_targetting = 12
+	naval_strike_attack = 2
+	naval_strike_targetting = 4
 	build_cost_ic = 45
 	resources = {
 			aluminium = 25
@@ -1036,10 +1031,14 @@ small_plane_airframe_NAV_1_usa = { #Vought SB2U Vindicator
 				Plane_Armor
 				Special_Module
 				Plane_Radio
-				Dive_Brakes
+				Dive_Bomber
 				Gun_Defense
 			}
 		}
+	}
+	module_count_limit = {
+		module = Dive_Brakes
+		count < 2
 	}
 	module_count_limit = {
 		module = engine_3_1x
@@ -1048,10 +1047,6 @@ small_plane_airframe_NAV_1_usa = { #Vought SB2U Vindicator
 	module_count_limit = {
 		module = engine_4_1x
 		count < 0
-	}
-	module_count_limit = {
-		module = Dive_Bomber
-		count < 2
 	}
 	module_count_limit = {
 		module = early_torp
@@ -1136,8 +1131,8 @@ small_plane_airframe_NAV_2_usa = { #Douglas TBD Devastator
 	air_agility = 55
 	air_defence = 10
 	weight = 5
-	naval_strike_attack = 5
-	naval_strike_targetting = 10
+	naval_strike_attack = 3
+	naval_strike_targetting = 3
 	build_cost_ic = 49
 	resources = {
 			aluminium = 30
@@ -1150,14 +1145,6 @@ small_plane_airframe_NAV_2_usa = { #Douglas TBD Devastator
 				Fighter_weapon_1
 				nav_bomber_weapon_1
 				recon_camera
-			}
-		}
-
-		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
-			allowed_module_categories = {
-				recon_camera
-				Fighter_weapon_1
 			}
 		}
 		engine_type_slot = {
@@ -1269,8 +1256,8 @@ small_plane_airframe_NAV_3_usa = { #Douglas SBD Dauntless
 	air_agility = 65
 	air_defence = 16
 	weight = 5
-	naval_strike_attack = 5
-	naval_strike_targetting = 14
+	naval_strike_attack = 3
+	naval_strike_targetting = 5
 	build_cost_ic = 52
 	resources = {
 			aluminium = 30
@@ -1291,15 +1278,7 @@ small_plane_airframe_NAV_3_usa = { #Douglas SBD Dauntless
 			allowed_module_categories = {
 				recon_camera
 				Fighter_weapon_1
-				nav_bomber_weapon_1
-			}
-		}
-		fixed_auxiliary_weapon_slot_2 = { 
-			required = no
-			allowed_module_categories = {
-				recon_camera
-				Fighter_weapon_1
-				nav_bomber_weapon_1
+				nav_bomber_weapon_2
 			}
 		}
 		engine_type_slot = {
@@ -1336,7 +1315,7 @@ small_plane_airframe_NAV_3_usa = { #Douglas SBD Dauntless
 		count < 0
 	}
 	module_count_limit = {
-		module = Dive_Bomber
+		module = Dive_Brakes
 		count < 2
 	}
 	module_count_limit = {
@@ -1419,7 +1398,7 @@ small_plane_airframe_NAV_4_usa = { #Grumman F4F Wildcat
 	air_defence = 16
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 54
 	resources = {
 			aluminium = 30
@@ -1478,10 +1457,6 @@ small_plane_airframe_NAV_4_usa = { #Grumman F4F Wildcat
 
 	}
 	module_count_limit = {
-		module = engine_3_1x
-		count < 0
-	}
-	module_count_limit = {
 		module = engine_4_1x
 		count < 0
 	}
@@ -1528,8 +1503,8 @@ small_plane_airframe_NAV_5_usa = { #Grumman TBF Avenger
 	air_agility = 60
 	air_defence = 14
 	weight = 5
-	naval_strike_attack = 7
-	naval_strike_targetting = 16
+	naval_strike_attack = 4
+	naval_strike_targetting = 5
 	build_cost_ic = 54
 	resources = {
 			aluminium = 35
@@ -1541,21 +1516,7 @@ small_plane_airframe_NAV_5_usa = { #Grumman TBF Avenger
 			allowed_module_categories = {
 				Fighter_weapon_1
 				nav_bomber_weapon_2
-			}
-		}
-
-		fixed_auxiliary_weapon_slot_1 = { 
-			required = no
-			allowed_module_categories = {
-				recon_camera
-				Fighter_weapon_1
-			}
-		}
-		fixed_auxiliary_weapon_slot_2 = { 
-			required = no
-			allowed_module_categories = {
-				recon_camera
-				Fighter_weapon_1
+				nav_bomber_weapon_3
 			}
 		}
 		engine_type_slot = {
@@ -1572,6 +1533,7 @@ small_plane_airframe_NAV_5_usa = { #Grumman TBF Avenger
 				Special_Module
 				Plane_Radio
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 
@@ -1582,6 +1544,7 @@ small_plane_airframe_NAV_5_usa = { #Grumman TBF Avenger
 				Special_Module
 				Plane_Radio
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 	}
@@ -1665,8 +1628,8 @@ small_plane_airframe_NAV_6_usa = { #Vought F4U Corsair
 	air_agility = 80
 	air_defence = 18
 	weight = 5
-	naval_strike_attack = 8
-	naval_strike_targetting = 18
+	naval_strike_attack = 4
+	naval_strike_targetting = 6
 	build_cost_ic = 60
 	resources = {
 			aluminium = 40
@@ -1690,17 +1653,10 @@ small_plane_airframe_NAV_6_usa = { #Vought F4U Corsair
 				Fighter_weapon_1
 				nav_bomber_weapon_1
 				nav_bomber_weapon_2
+				nav_bomber_weapon_3
 			}
 		}
-		fixed_auxiliary_weapon_slot_2 = { 
-			required = no
-			allowed_module_categories = {
-				recon_camera
-				Fighter_weapon_1
-				nav_bomber_weapon_1
-				nav_bomber_weapon_2
-			}
-		}
+
 		engine_type_slot = {
 			required = yes
 			allowed_module_categories = {
@@ -1716,6 +1672,7 @@ small_plane_airframe_NAV_6_usa = { #Vought F4U Corsair
 				Plane_Radio
 				Dive_Bomber
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 
@@ -1727,15 +1684,13 @@ small_plane_airframe_NAV_6_usa = { #Vought F4U Corsair
 				Plane_Radio
 				Dive_Bomber
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 	}
+
 	module_count_limit = {
-		module = engine_4_1x
-		count < 0
-	}
-	module_count_limit = {
-		module = Dive_Bomber
+		module = Dive_Brakes
 		count < 2
 	}
 	module_count_limit = {
@@ -1818,7 +1773,7 @@ small_plane_airframe_NAV_7_usa = { #Grumman F6F Hellcat
 	air_defence = 19
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 60
 	resources = {
 			aluminium = 30
@@ -2120,6 +2075,7 @@ USA_Fighter_Bomber_1 = { #Douglas_A-20_Havoc
 				recon_camera
 				cas_weapon1
 				cas_weapon2
+				cas_weapon3
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -2132,7 +2088,13 @@ USA_Fighter_Bomber_1 = { #Douglas_A-20_Havoc
 				cas_weapon2
 			}
 		}
-
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+				cas_weapon1
+				cas_weapon2
+			}
+		}
 		engine_type_slot = {
 			required = yes
 			allowed_module_categories = {
@@ -2148,6 +2110,7 @@ USA_Fighter_Bomber_1 = { #Douglas_A-20_Havoc
 				Gun_Defense
 				Plane_Radio_Ground
 				Plane_Radio
+				CAS_Module
 			}
 		}
 
@@ -2159,6 +2122,7 @@ USA_Fighter_Bomber_1 = { #Douglas_A-20_Havoc
 				Gun_Defense
 				Plane_Radio_Ground
 				Plane_Radio
+				CAS_Module
 				}
 			}
 		special_type_slot_3 = {
@@ -2169,6 +2133,7 @@ USA_Fighter_Bomber_1 = { #Douglas_A-20_Havoc
 				Gun_Defense
 				Plane_Radio_Ground
 				Plane_Radio
+				CAS_Module
 				}
 			}
 		}
@@ -2227,7 +2192,14 @@ USA_Fighter_Bomber_2 = { #Douglas_A-26_Invader
 				cas_weapon3
 			}
 		}
-
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+				cas_weapon1
+				cas_weapon2
+				cas_weapon3
+			}
+		}
 		engine_type_slot = {
 			required = yes
 			allowed_module_categories = {
@@ -2290,7 +2262,7 @@ usa_heavy_fighter_1 = { #Lockheed_P-38_Lightning
 	air_defence = 20
 	weight = 10
 	naval_strike_attack = 1
-	naval_strike_targetting = 6
+	naval_strike_targetting = 4
 	build_cost_ic = 72
 	resources = {
 			aluminium = 40
@@ -2342,6 +2314,7 @@ usa_heavy_fighter_1 = { #Lockheed_P-38_Lightning
 				Plane_Armor
 				Special_Module
 				Plane_Radio
+				Engine_Upgrade
 			}
 		}
 
@@ -2351,6 +2324,7 @@ usa_heavy_fighter_1 = { #Lockheed_P-38_Lightning
 				Plane_Armor
 				Special_Module
 				Plane_Radio
+				Engine_Upgrade
 			}
 		}
 		special_type_slot_3 = {
@@ -2359,17 +2333,11 @@ usa_heavy_fighter_1 = { #Lockheed_P-38_Lightning
 				Plane_Armor
 				Special_Module
 				Plane_Radio
+				Engine_Upgrade
 			}
 		}
 	}
-	module_count_limit = {
-		module = aircraft_cannon_1_1x
-		count < 4
-	}
-	module_count_limit = {
-		module = aircraft_cannon_1_2x
-		count < 4
-	}
+	
 	module_count_limit = {
 		module = aircraft_cannon_2_1x
 		count < 0
@@ -2413,7 +2381,7 @@ usa_heavy_fighter_2 = { #Northrop_P-61_Black_Widow
 	air_defence = 24
 	weight = 10
 	naval_strike_attack = 1
-	naval_strike_targetting = 6
+	naval_strike_targetting = 4
 	build_cost_ic = 82
 	resources = {
 			aluminium = 40
@@ -2468,6 +2436,7 @@ usa_heavy_fighter_2 = { #Northrop_P-61_Black_Widow
 				Special_Module
 				Plane_Radio
 				CAS_Module
+				Engine_Upgrade
 			}
 		}
 
@@ -2478,6 +2447,7 @@ usa_heavy_fighter_2 = { #Northrop_P-61_Black_Widow
 				Special_Module
 				Plane_Radio
 				CAS_Module
+				Engine_Upgrade
 			}
 		}
 		special_type_slot_3 = {
@@ -2487,6 +2457,7 @@ usa_heavy_fighter_2 = { #Northrop_P-61_Black_Widow
 				Special_Module
 				Plane_Radio
 				CAS_Module
+				Engine_Upgrade
 			}
 		}
 	}
@@ -2502,14 +2473,7 @@ usa_heavy_fighter_2 = { #Northrop_P-61_Black_Widow
 		module = cas_weapon2
 		count < 3
 	}
-	module_count_limit = {
-		module = aircraft_cannon_1_1x
-		count < 3
-	}
-	module_count_limit = {
-		module = aircraft_cannon_1_2x
-		count < 3
-	}
+	
 	module_count_limit = {
 		module = aircraft_cannon_2_1x
 		count < 2

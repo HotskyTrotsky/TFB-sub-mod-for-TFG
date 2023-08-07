@@ -988,6 +988,7 @@ country_event = {
 			tag = HOL
 		}
 	}
+	timeout_days = 7
 	picture = GFX_report_event_german_politician_speech
 
 	is_triggered_only = yes
@@ -1038,7 +1039,7 @@ country_event = {
 			limit = {
 				tag = ENG
 			}
-			FRA = { country_event = germany.41 }
+			FRA = { country_event = {id = germany.41 days = 1}}
 		}
 		CZE = {
 			add_opinion_modifier = { target = ROOT modifier = western_betrayal }
@@ -1143,6 +1144,7 @@ country_event = {
 		}
 		add_political_power = -200
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
+		set_global_flag = DENIED_CZE
 		effect_tooltip = {
 			GER = {
 				create_wargoal = {
@@ -1201,7 +1203,7 @@ country_event = {
 	title = germany.40.t
 	desc = germany.41.d
 	picture = GFX_report_event_chamberlain_announce
-
+	timeout_days = 7
 	is_triggered_only = yes
 
 	option = { # Follow Britain's lead
@@ -1287,6 +1289,7 @@ country_event = {
 			}
 		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
+		set_global_flag = DENIED_CZE
 		CZE = {
 			country_event = germany.45
 			add_opinion_modifier = { target = FRA modifier = offered_support }
@@ -5843,21 +5846,13 @@ country_event = {
 	}
 }
 
-news_event = {
+country_event = {
 	id = germany.2004
 	title = germany.2004.t
 	desc = germany.2004.d
-	picture = GFX_news_event_042
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
 	
-	trigger = {
-	num_divisions_in_states = {
-	count > 5
-	states = {451 663 450 449 662 661 448}
-		}
-	}
-	mean_time_to_happen = {
-	days = 2
-	}
 	
 	fire_only_once = yes
 	
@@ -5865,6 +5860,7 @@ news_event = {
 	#GER_erwin_rommel = {
 	#add_max_trait = 1
 	#}
+	GER = {
 	add_trait = {
 		character = GER_erwin_rommel
 		trait = panzer_leader
@@ -5872,6 +5868,7 @@ news_event = {
 		add_trait = {
 		character = GER_erwin_rommel
 		trait = desert_fox
+			}
 		}
 	}
 	option = {
@@ -5944,5 +5941,49 @@ country_event = {
 	}
 	option = {
 		name = germany.2005.b
+	}
+}
+country_event = {
+	id = germany.2006
+	title = germany.2006.t
+	desc = germany.2006.d
+	picture = GFX_news_event_HE111
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+	option = {
+		name = germany.2006.a
+		hidden_effect = {
+			GER = {
+			create_equipment_variant = {
+		name = "He 111" 
+		type = medium_plane_airframe_1_ger
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_1_ger_medium"
+		obsolete = yes
+			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_1_ger
+				amount = 120
+				variant_name = "He 111"
+				}	
+			}
+		}
+		custom_effect_tooltip = HE111_PURCHASE
+		add_timed_idea = {
+			idea = HE111_Conversion
+			days = 70
+		}
+	}
+	option = {
+		name = germany.2006.b
 	}
 }

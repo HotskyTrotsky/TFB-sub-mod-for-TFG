@@ -1564,7 +1564,6 @@ focus_tree = {
 			num_of_factories > 99
 			
 			amount_research_slots < 7
-			amount_research_slots > 4
 		}
 
 		bypass = {
@@ -2177,7 +2176,7 @@ focus_tree = {
 
 		available = {
 			amount_research_slots < 7
-			amount_research_slots > 4
+
 		}
 
 		bypass = {

@@ -16,7 +16,7 @@ small_plane_airframe_0_fra = { #Dewoitine D.500
 	air_defence = 5
 	weight = 4
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 42
 	resources = {
 			aluminium = 20
@@ -115,7 +115,7 @@ small_plane_airframe_1_fra = { #Morane-Saulnier M.S.406
 	air_defence = 12
 	weight = 6
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 52
 	resources = {
 			aluminium = 30
@@ -220,7 +220,7 @@ small_plane_airframe_2_fra = { #Bloch MB.150
 	air_defence = 15
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 56
 	resources = {
 			aluminium = 30
@@ -334,7 +334,7 @@ small_plane_airframe_3_fra = { #Dewoitine D.520
 	air_defence = 17
 	weight = 6
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 58
 	resources = {
 			aluminium = 35
@@ -383,6 +383,15 @@ small_plane_airframe_3_fra = { #Dewoitine D.520
 		}
 
 		special_type_slot_2 = {
+			required = no
+			allowed_module_categories = {
+				Plane_Armor
+				Special_Module
+				Plane_Radio
+				Engine_Upgrade
+				}
+			}
+			special_type_slot_3 = {
 			required = no
 			allowed_module_categories = {
 				Plane_Armor
@@ -446,7 +455,7 @@ medium_plane_airframe_0_fra = { #Bloch MB.200
 	air_defence = 15
 	weight = 10
 	naval_strike_attack = 1
-	naval_strike_targetting = 4
+	naval_strike_targetting = 3
 	build_cost_ic = 75
 	module_slots = {
 		fixed_main_weapon_slot = {
@@ -522,6 +531,7 @@ medium_plane_airframe_1_fra = { #Liore et Olivier LeO 45
 			required = yes
 			allowed_module_categories = {
 				tac_weapon_1
+				tac_weapon_2
 				recon_camera
 			}
 		}
@@ -608,6 +618,7 @@ medium_plane_airframe_2_fra = { #Breguet 693
 			required = no
 			allowed_module_categories = {
 				tac_weapon_1
+				tac_weapon_2
 				recon_camera
 				cas_weapon1
 				cas_weapon2
@@ -617,6 +628,7 @@ medium_plane_airframe_2_fra = { #Breguet 693
 			required = no
 			allowed_module_categories = {
 				tac_weapon_1
+				tac_weapon_2
 				recon_camera
 				cas_weapon1
 				cas_weapon2
@@ -682,7 +694,7 @@ medium_plane_airframe_3_fra = { #Potez 630
 	air_defence = 24
 	weight = 10
 	naval_strike_attack = 1
-	naval_strike_targetting = 6
+	naval_strike_targetting = 3
 	build_cost_ic = 82
 	resources = {
 			aluminium = 40
@@ -840,7 +852,8 @@ large_plane_airframe_1_fra = { #Bloch MB.210
 		engine_type_slot = {
 			required = yes
 			allowed_module_categories = {
-				twin_plane_engine_type
+				
+				quad_large_plane_engine_type
 			}
 		}
 

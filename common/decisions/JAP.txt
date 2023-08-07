@@ -1004,7 +1004,7 @@ JAP_southern_expansion = {
 						}
 					}
 				}
-				FRA = { country_event = { id = france.1 } }
+				FRA = { country_event = { id = france.1 days = 2} }
 			}
 			else_if = {
 				limit = {
@@ -1019,7 +1019,7 @@ JAP_southern_expansion = {
 						}
 					}
 				}
-				VIC = { country_event = { id = france.1 } }
+				VIC = { country_event = { id = france.1 days = 2} }
 			}
 		}
 

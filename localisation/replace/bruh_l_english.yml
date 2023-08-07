@@ -23,7 +23,13 @@
  startingevent.1001.t:0 "TFB Mods"
  startingevent.1001.d:0 "TFB recently removed it's Air Designer, but if you wish to continue using it you may search on the workshop for 'TFB Plane Designer' and download the sub mod.\nIf you wish to play on NSB then search for 'TFB No Step Back'.\nTo play on BTFB patch pre tank designer, search for 'TFB Battle for the Bosporus'."
  startingevent.1001.a:0 "Ok"
- #### LEVELS ####
+explain_Air_Tree:0 "Explain Air Tree"
+ newPlayer.16.t:0 "Air designer and tech tree"
+ newPlayer.16.d:0 "The Air tech tree for UK, Soviet, Germany, USA, France, Japan, Italy has been reworked to add more historical flavour but also add a balancing act between the air. The general idea is to add an air designer which is very hands off since when you research new aircraft you will get an appropriate air design which you can put into production. It may not be the optimal design, or the design you want but for most people it should be fine if not the best design. All the tech trees are different and have been labelled so that you know what each root will provide, however the general idea is that there are a couple of designs. \n1) Fighters \n2) Heavy fighters \n3)CAS \n4)Tactical bombers \n5)Strat Bombers \n6)Fighter bombers (these are aircraft that can act as tactical but also have ability to have fighter weapons and cas modules) \n7) Torpedo bombers (high damage high cost, low targeting) \n8) Dive naval bombers (Lower naval damage compares to torpedo, good naval targeting, can also strat bomb) \n9)Long range naval bombers (these come in two forms one being tactical bomber and the other being a maritime patrol aircraft made from a strat bomber airframe.)\n§CTLDR If you don't want to design aircraft you don't need to just research the desired plane and put it into production you should be grand.§!"
+ explain_Japan_Air_Tree:0 "Explain Japan’s Air Tree."
+ newPlayer.17.t:0 "Japan Air Tree"
+ newPlayer.17.d:0 "You may have seen that the air tree seems to be split into 2, this is to represent the split in the air research happening in Japanese Army and the Japanese Navy. This is reflected by the navy having good fighters sooner, and naval bombers, The army has better tactical bombers and CAS. However you will not likely be able to research both paths as decisions to favour one side over the other will incur a research cost for researching the opposite faction (Check your ideas to see which side you are favouring.)\n§CTLDR If you favour Navy or Army in the decisions it will increase research time for opposing faction.§!"
+#### LEVELS ####
  UNIT_LEVEL_0:0 "Fresh"
  UNIT_LEVEL_1:0 "Green"
  UNIT_LEVEL_2:0 "Trained I"
@@ -86,6 +92,8 @@ NO_ASIA_attache:0 "Attache to the Sino-Japanese War"
  POL_allied_industry:0 "Allied Industrial Support"
  POL_allied_factories:0 "Allied Factory Support"
  POL_buy_equipment:0 "Puchase Allied Equipment"
+ POL_no_agency:0 "Underfunded Espionage"
+ POL_no_agency_desc:0 "We won't be able to build a Spy Agency while our government remains in Warsaw"
  
  POL_learn_from_defeat:0 "Learn From Our Defeat"
  POL_new_tank:0 "New Tank Strategy"
@@ -161,13 +169,18 @@ NO_ASIA_attache:0 "Attache to the Sino-Japanese War"
  AST_core_papau:0 "Core Papau"
  AST_no_nzl_annex:0 "No New Zeeland Annex Compensation"
  ITA_ISR_fascism:0 "Italian Social Republic"
-
+ FAC_SOV:0 "Russian Liberation Army"
  RAJ_Exile_MIL:0 "British Far East Command"
  RAJ_Exile_INC:0 "Free Indian National Congress"
  #### AUTONOMY ####
  autonomy_protectorate:0 "Colonial Protectorate"
 
  #### IDEAS ####
+ no_grinding_0:0 "No Grinding, Will Be Reduced To -75% in June 1940"
+ no_grinding_0_desc:0 "The reason behind this is to not give the axis too much of a head start, However generals that could be grinded will get traits through focuses."
+ no_grinding_1:0 "No Grinding, Will Be Reduced To -50% in June 1941"
+ no_grinding_2:0 "No Grinding, Will Be Reduced To -25% in June 1942"
+ no_grinding_3:0 "No Grinding, Will Be Removed By June 1943"
  air_factory_1:0 "Small Aircraft Factories"
  air_factory_2:0 "Medium Aircraft Factories"
  air_factory_3:0 "Large Aircraft Factories"
@@ -324,11 +337,19 @@ ROM_LIBYA_OIL_3_MODIFIER:0 "Romanian Oil From Libya"
  GetCommandLimit_under_def:0 "£command_power_texticon §GCommand Limit: [?THIS.command_limit_used]/150§!"
  GetCommandLimit_equal_def:0 "£command_power_texticon §HCommand Limit: [?THIS.command_limit_used]/150§!"
  GetCommandLimit_over_def:0 "£command_power_texticon §RCommand Limit: [?THIS.command_limit_used]/150§!"
+ GetScreens_under_def:0 "§G[?THIS.screen_count]§!"
+ GetScreens_equal_def:0 "§H[?THIS.screen_count]§!"
+ GetScreens_over_def:0 "§R[?THIS.screen_count]§!"
+ GetScreensNeeded_under_def:0 "§GScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_equal_def:0 "§HScreens Needed: [?THIS.needed_screen_count]§!"
+ GetScreensNeeded_over_def:0 "§RScreens Needed: [?THIS.needed_screen_count]§!"
  GetCommandLimit_disabled:0 "£command_power_texticon §RCmd Limit: §0(DISABLED)§!"
  GetAdmiralPortrait_tt:0 "[GetAdmiralPortrait]"
 
  startingevent.29.t:0 "Naval Fleet Size §0(Important)§!"
- startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet that contains capitals or light cruisers will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\nFor each Command Limit you are over the cap, your country will deal 1% less naval damage. Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
+ startingevent.29.desc:0 "1) You should have multiple fleets, with no fleet exceeding a Command Limit of 150.\n2) Fleets should have high screening values for capitals and carriers\n3) You need 1 destroyer for every 2 convoys in a battle, and one for every 40 convoys in a space for escort efficiency.\n4)Your host should require an admiral on all fleets\n\n§BFleet Command Limit§!\n\nEvery ship class has a 'command limit' value. A fleet (all taskforces underneath one admiral) can support at most 150 'command limit'. As long as you are at or below your command limit value for every fleet with an admiral leading it, then you will not have special debuffs applied to your admiral and country. Any admiral which is leading a fleet will appear in a list just right of the admiral portraits. This list contains useful information about your fleets so that you can easily adhere to this system.\n\nDestroyers/Submarines - 1 command limit\nLight Cruisers/Heavy Cruisers - 2 command limit\nBattleships and Battlecruisers - 6 command limit\nCarriers/Super Heavy Battleships - 8 command limit.\n\n§RIf you are over the cap you will deal 5% less damage, and for each Command Limit you are over the cap, your country will deal an additional 1% less naval damage.§! Command Limit is recalculated every week when there is no war, so you may need to wait to see the changes update. Once at war it will update the calculation daily."
+ modifier_experience_gain_sh_battleship_training_factor:0 "Super Heavy Battleship Training Factor"
+ modifier_experience_gain_sh_battleship_combat_factor:0 "Super Heavy Battleship Combat Factor"
 
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
@@ -352,6 +373,7 @@ off_mobile_tt:0 "A random §YSkill 3§! or lower General with the trait §Y"Armo
 off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Engineer"§!"
 
  #### UNITS ####
+ Strelki:0 "Strelki"
  mountaineers:0 "Light Infantry"
  infantry_mot:0 "Infantry (Mot.)"
  militia:0 "Militia"
@@ -1180,6 +1202,8 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  news.120.t:0 "The Fall of Los Santos"
  ## HOL battlecruiser ##
  HOL_the_battlecruiser_plan_tt:0 "§RGermany will accept this no matter what"
+ HOL_move_capital_java:0 "Move Capital to Java"
+ HOL_move_capital_amsterdam:0 "Move Capital to Holland"
 
  army_organizational_1:1 "Army Organization\n(Specialist)"
  army_organizational_2:1 "Army Organization\n(Expert)"

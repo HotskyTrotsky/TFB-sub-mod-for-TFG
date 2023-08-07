@@ -822,7 +822,8 @@ ideas = {
 		modifier = { 
 			refit_ic_cost = -0.1
 			refit_speed = 0.2
-			naval_speed_factor = 0.1	}
+				naval_speed_factor = 0.05	
+			}
 		}	
 	
 	}
@@ -1080,24 +1081,24 @@ ideas = {
 		}
 
 		
-		#ITA_cantiere_oto = { #NORTH
-		#	picture	= ITA_oto
+		ITA_cantiere_oto = { #NORTH
+			picture	= ITA_oto
 
-		#	allowed = {
-		#		original_tag = ITA
-		#	}
+			allowed = {
+				original_tag = ITA
+			}
 
 
-		#	available = {
-		#		has_completed_focus = ITA_green_water_navy
-		#	}
+			available = {
+				has_completed_focus = ITA_green_water_navy
+			}
 						
-		#	research_bonus = {
-		#		naval_equipment = 0.15
-		#	}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
 			
-		#	traits = { mediterranean_naval_manufacturer }
-		#}
+			traits = { mediterranean_naval_manufacturer }
+		}
 
 		ITA_navalmeccanica = { #SOUTH
 			picture	= ITA_navalmeccanica

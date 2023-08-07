@@ -1,7 +1,28 @@
 guiTypes = {
 
 	# small_plane_airframe
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_1_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
 
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2_eng"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_NAV_0_eng"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_4_eng"
+			position = { x=0 y=0 }
+		}
+	}
 	containerWindowType = {
 		name = "equipment_designer_small_plane_airframe_0_eng"
 		position = { x=0 y=0 }

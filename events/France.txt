@@ -33,7 +33,7 @@ country_event = {
 			}
 		} 
 		JAP = {
-			country_event = { days = 5 id = japan.6 }
+			country_event = { days = 3 id = japan.6 }
 		}
 	}
 }

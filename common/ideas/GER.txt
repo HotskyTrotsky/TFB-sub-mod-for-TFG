@@ -1,7 +1,15 @@
 ideas = {
 
 	country = {
-		
+		#BARB_ECONOMIC_BONUS = {
+		#	allowed = {
+		#	original_tag = GER
+		#	}
+		#	modifier = {
+		#		industrial_capacity_factory = GER.BARB_CAPTURED_LAND
+		#	}
+		#}
+
 		GER_good_weather_army = {
 		allowed = {
 			original_tag = GER

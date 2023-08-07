@@ -1,0 +1,81 @@
+operations = {
+
+	SAF_Hobarts_Funnies = {
+		allowed = {
+			original_tag = SAF
+		}
+		fire_only_once = no
+		available = {
+            SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            }
+            date > 1941.1.1
+		}
+
+		visible = {
+			 SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            }
+		}
+		
+		complete_effect = {
+			SAF_increase_HF_cap_medium_double = yes
+			SAF_increase_HF_cap_heavy_double = yes
+		}
+        
+       days_remove  = 240
+	}
+	SAF_Hobarts_Funnies_Switch_To_Heavies = {
+		allowed = {
+			original_tag = SAF
+		}
+		fire_only_once = no
+		available = {
+            SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            }
+            date > 1941.1.1
+		}
+
+		visible = {
+			 SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            has_country_flag = SAF_HF_armored_division_medium
+            }
+		}
+		
+		complete_effect = {
+			SAF_Hobarts_Funnies_armored_division_heavy = yes
+			SAF_swap_HF_medium_heavy = yes
+            set_country_flag = SAF_HF_armored_division_heavy
+            clr_country_flag = SAF_HF_armored_division_medium
+		}
+	}
+    SAF_Hobarts_Funnies_Switch_To_Medium = {
+		allowed = {
+			original_tag = SAF
+		}
+		fire_only_once = no
+		available = {
+            SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            }
+           date > 1941.1.1
+		}
+
+		visible = {
+			 SAF = {
+			has_completed_focus = SAF__south_african_military_college
+            has_country_flag = SAF_HF_armored_division_heavy
+            }
+		}
+		
+		complete_effect = {
+			SAF_Hobarts_Funnies_armored_division_medium = yes
+			SAF_swap_HF_heavy_medium = yes
+            clr_country_flag = SAF_HF_armored_division_heavy
+            set_country_flag = SAF_HF_armored_division_medium
+		}
+		
+	}
+}

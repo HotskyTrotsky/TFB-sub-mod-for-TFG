@@ -1069,7 +1069,58 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = ""
 			}
-
+			instantTextBoxType = {
+				name = "Multi_Role_Medium_Frames"
+				position = { x = 900 y = 400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Multi Role Medium Frames"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 212 y = 330 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Naval_Bombers"
+				position = { x = 80 y = 330 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Naval Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1310 y = 200 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Strategic Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
 		#	instantTextBoxType = {
 		#		name = "airtech_subtitle_weapons"
 		#		position = { x = 1055 y = 110 }
@@ -1203,6 +1254,84 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 
+			}
+			instantTextBoxType = {
+				name = "Attack_Bombers"
+				position = { x = 830 y = 850 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Attack Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 90 y = 190 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Heavy_Fighters"
+				position = { x = 690 y = 190 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Heavy Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Tactical_Bombers"
+				position = { x = 1200 y = 850 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Tactical Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1440 y = 190 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Strategic Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Multi_Role_Fighter"
+				position = { x = 280 y = 890 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Multi Role Fighter"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
 			}
 			# instantTextBoxType = {
 			# 		name = "plane_subtitle_medium_research_lock"
@@ -1613,7 +1742,71 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+			instantTextBoxType = {
+				name = "Tactical_Bombers"
+				position = { x = 1080 y = 1400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Tactical Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Multi_Role_Medium_Frame"
+				position = { x = 820 y = 1400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Multi Role Medium Frame"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 100 y = 220 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Fighters"
+				position = { x = 520 y = 1550 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1320 y = 1250 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Strategic Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
@@ -2046,7 +2239,134 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
+			containerWindowType = {
+				name = "tiled_research_bg_3"
+				position = { x=310 y=1000 }
+				size = { width = 220 height = 375 }
+				clipping = no
 
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg_3"
+				}
+			}
+			instantTextBoxType = {
+				name = "Unlocks_CAS"
+				position = { x = 550 y = 720 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "<-- Unlocks Improved CAS Aswell"
+				maxWidth = 220
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Soviet_Lend_Lease"
+				position = { x = 270 y = 1380 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "These Will Be Sent To Soviets If Researched"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1550 y = 210 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Strategic Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Heavy_Fighters"
+				position = { x = 870 y = 750 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Heavy Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 690 y = 750 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Fighters"
+				position = { x = 420 y = 500 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Naval_Bombers_And_Fighters"
+				position = { x = 90 y = 170 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Naval Bombers And Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Tactical_Bombers"
+				position = { x = 1320 y = 1400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Tactical Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Attack_Bombers"
+				position = { x = 1070 y = 1250 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Attack Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
@@ -2374,7 +2694,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_light_airframe"
-				position = { x = 450 y = 110 }
+				position = { x = 330 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2426,7 +2746,7 @@ guiTypes = {
 		#		Orientation = "UPPER_LEFT"
 		#		pdx_tooltip = "nav_bomber_equipment_desc"
 		#	}
-
+			
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=700 y=1530 }
@@ -2845,7 +3165,97 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				pdx_tooltip = ""
 			}
-
+			instantTextBoxType = {
+				name = "CAS_ITA"
+				position = { x = 50 y = 470 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Fighters_ITA"
+				position = { x = 620 y = 610 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Fighters"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Multi_Role_Aircraft_ITA"
+				position = { x = 210 y = 780 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Multi Role Aircraft"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "NAV_CAS_FIGHTERS_ITA"
+				position = { x = 130 y = 860 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "NAV, CAS, Fighter"
+				maxWidth = 100
+				maxHeight = 100
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Just_Fighters_ITA"
+				position = { x = 130 y = 1170 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Fighter"
+				maxWidth = 100
+				maxHeight = 100
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "ADVANCED_NAV_CAS_FIGHTERS_ITA"
+				position = { x = 130 y = 1280 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "NAV, CAS, Fighter"
+				maxWidth = 100
+				maxHeight = 100
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Multi_Role_Medium_Airframes_ITA"
+				position = { x = 1050 y = 680 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Multi Role Medium Airframes"
+				maxWidth = 300
+				maxHeight = 100
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
 		#	instantTextBoxType = {
 		#		name = "airtech_subtitle_engines"
 		#		position = { x = 1520 y = 110 }
@@ -2925,7 +3335,7 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
+			
 			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
@@ -2959,7 +3369,8 @@ guiTypes = {
 			# 		maxHeight = 62
 			# 		format = center
 			# 		Orientation = "UPPER_LEFT"
-			# }	
+			# }
+			
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 190 }
@@ -3280,11 +3691,89 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "IJN1"
-				position = { x = 200 y = 220 }
+				position = { x = 200 y = 180 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
 				text = "Imperial Japanese Navy"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Naval_Bombers"
+				position = { x = 100 y = 220 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Naval Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "NFighters"
+				position = { x = 350 y = 320 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Navy Fighters"
+				maxWidth = 110
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "AFighters"
+				position = { x = 770 y = 320 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Army Fighters"
+				maxWidth = 110
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 930 y = 220 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1630 y = 390 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Strategic Bombers"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Tactical_Bombers"
+				position = { x = 1330 y = 390 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Tactical Bombers"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
@@ -3763,8 +4252,45 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				}
 			}
-
-
+			instantTextBoxType = {
+				name = "CAS"
+				position = { x = 510 y = 1400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "CAS"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Heavy_Fighter"
+				position = { x = 690 y = 700 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "Heavy Fighter"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
+			instantTextBoxType = {
+				name = "Strat_Bombers"
+				position = { x = 1310 y = 400 }
+				textureFile = ""
+				font = "hoi_33"
+				borderSize = {x = 0 y = 4}
+				text = "strategic bomber"
+				maxWidth = 300
+				maxHeight = 62
+				format = center
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = ""
+			}
 			instantTextBoxType = {
 				name = "airtech_subtitle_light_airframe"
 				position = { x = 450 y = 110 }

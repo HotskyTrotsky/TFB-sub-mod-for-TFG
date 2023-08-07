@@ -1593,4 +1593,74 @@ country_event = {
 	name = britain.601.b
 		}
 	}
+
+	Country_event = {
+	id = britain.602
+	title = britain.602.t
+	desc = britain.602.d
+	picture = GFX_report_event_british_inspect_troops
+	#fire_only_once = yes
+	is_triggered_only = yes
 	
+	option = {
+	name = britain.602.a
+		add_timed_idea = {
+		idea = Commitment_To_Reforming_African_Army
+		days = 120
+		}
+		add_to_variable= { ENG.African_Army_Investment = 1 }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+	name = britain.602.b
+		}
+	}
+
+	
+
+	Country_event = {
+	id = britain.603
+	title = britain.603.t
+	desc = britain.603.d
+	picture = GFX_report_event_generic_destroyed_vehicles
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = britain.603.a
+		#Africa is not yet lost rebuild and prepare to take it back
+		hidden_effect = {
+			SAF = {
+			country_event = {id = britain.602 days = 1}
+			}
+			ENG = {
+			country_event = {id = britain.602 days = 1}
+			}
+			AST = {
+			country_event = {id = britain.602 days = 1}
+			}
+			CAN = {
+			country_event = {id = britain.602 days = 1}
+			}
+			RAJ = {
+			country_event = {id = britain.602 days = 1}
+			}
+		}
+		ENG = {
+			add_ideas = Africa_Lost
+			set_country_flag = African_Army_Rebuilding
+			activate_mission = Rebuild_African_Army
+		}
+	}
+	
+	option = {
+	name = britain.603.b
+	#It is lost m8
+		ENG = {
+			add_timed_idea = {
+				idea = Africa_Lost
+				days = 360
+				}
+			}
+		}
+	}

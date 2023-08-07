@@ -81,7 +81,20 @@ technologies = {
 			leads_to_tech = YAK_Series
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "I 153"
+			type = small_plane_airframe_2_sov
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Reduced_Materials
+			special_type_slot_2 = empty
+		}
+		icon = "GFX_small_plane_airframe_2_sov_medium"
+			}
+		}
 		
 		research_cost = 2
 		start_year = 1939
@@ -118,7 +131,25 @@ technologies = {
 			radio_navigation_1
 			heavy_mg_2x
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "YAK 1"
+			type = small_plane_airframe_3_sov
+			Upgrades = {
+				plane_YAK_armor_upgrade = 0
+				plane_YAK_engine_upgrade = 0
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+		}
+		icon = "GFX_small_plane_airframe_3_sov_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = YAK_7
@@ -165,7 +196,25 @@ technologies = {
 			fuel_injection2
 			Drop_Tank
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "YAK 7"
+			type = small_plane_airframe_3_sov
+			Upgrades = {
+				plane_YAK_armor_upgrade = 1
+				plane_YAK_engine_upgrade = 1
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+		}
+		icon = "GFX_ssov_fighter_4_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = YAK_9
@@ -210,7 +259,25 @@ technologies = {
 			leads_to_tech = YAK_3
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "YAK 7"
+			type = small_plane_airframe_3_sov
+			Upgrades = {
+				plane_YAK_armor_upgrade = 1
+				plane_YAK_engine_upgrade = 3
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+		}
+		icon = "GFX_sov_fighter_4_medium"
+			}
+		}
 		
 		research_cost = 2
 		start_year = 1942
@@ -249,10 +316,27 @@ technologies = {
 			leads_to_tech = YAK_15
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "YAK 3"
+			type = small_plane_airframe_5_sov
+			
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_small_plane_airframe_5_sov_medium"
+			}
+		}
 		
 		research_cost = 2
-		start_year = 1933
+		start_year = 1944
 		folder = {
 			name = sovietair_folder
 			position = { x = -1 y = 20 }
@@ -332,7 +416,26 @@ technologies = {
 			fuel_injection2
 			Drop_Tank
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "LaGG-3"
+			type = small_plane_airframe_4_sov
+			Upgrades = {
+				plane_LAGG_armor_upgrade = 0
+				plane_LAGG_engine_upgrade = 0
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_4_sov_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = LA_5
@@ -372,7 +475,26 @@ technologies = {
 		enable_equipment_modules = {
 			engine_4_1x
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "LA-5"
+			type = small_plane_airframe_4_sov
+			Upgrades = {
+				plane_LAGG_armor_upgrade = 1
+				plane_LAGG_engine_upgrade = 1
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_4_sov_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = LA_7
@@ -411,7 +533,26 @@ technologies = {
 		enable_equipment_modules = {
 			radio_navigation_2
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "LA-7"
+			type = small_plane_airframe_4_sov
+			Upgrades = {
+				plane_LAGG_armor_upgrade = 2
+				plane_LAGG_engine_upgrade = 2
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_small_plane_airframe_4_sov_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = YAK_15
@@ -453,8 +594,22 @@ technologies = {
 			medium_bomb_locks
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
+			lmg_defense_turret
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "SU 2"
+			type = small_plane_cas_airframe_7_sov
+			modules = {
+			fixed_main_weapon_slot = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_small_plane_airframe_7_sov_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = IL_2
@@ -501,7 +656,21 @@ technologies = {
 			medium_Armor_Plates
 			Drop_Tank
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "IL 2"
+			type = small_plane_cas_airframe_8_sov
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = tank_buster_2
+			fixed_auxiliary_weapon_slot_2 = tank_buster_2
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Reflex_sight_1
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_IL_2_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Il-10
@@ -542,7 +711,22 @@ technologies = {
 			Reflex_sight_2
 			tank_buster_3
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "IL-10"
+			type = small_plane_cas_airframe_9_sov
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = tank_buster_3
+			fixed_auxiliary_weapon_slot_2 = tank_buster_3
+			fixed_auxiliary_weapon_slot_3 = tank_buster_2
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = Reflex_sight_2
+			special_type_slot_2 = Light_Armor_Plates
+		}
+		icon = "GFX_IL-10_medium"
+			}
+		}
 	
 		#path = {
 		#	leads_to_tech = LA_9
@@ -595,7 +779,23 @@ technologies = {
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "PE-2"
+			type = SOV_Fighter_Bomber_1
+			modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_1
+			fixed_auxiliary_weapon_slot_2 = tank_buster_2
+			fixed_auxiliary_weapon_slot_3 = small_bomb_locks
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Reflex_sight_1
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_sov_heavy_fighter_3_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = PE_2_upgrade
@@ -637,7 +837,23 @@ technologies = {
 			tank_buster_3
 			engine_4_2x
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "PE-2 II"
+			type = SOV_Fighter_Bomber_1
+			modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_2
+			fixed_auxiliary_weapon_slot_2 = rocket_rails_1
+			fixed_auxiliary_weapon_slot_3 = tank_buster_1
+			engine_type_slot = engine_4_2x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Reflex_sight_2
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_sov_tac_3_medium"
+			}
+		}
 	
 		#path = {
 		#	leads_to_tech = LA_9
@@ -731,7 +947,22 @@ technologies = {
 			hmg_defense_turret_2x
 			Self_Sealing_Tanks
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Pe-8"
+			type = large_plane_airframe_1_sov
+			modules = {
+			fixed_main_weapon_slot = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_medium
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = bomb_sights_1
+			special_type_slot_2 = air_ground_radar_1
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_large_plane_airframe_1_sov_medium"
+			}
+		}
 		
 		path = {
 			leads_to_tech = Pe_8_Bombing_Upgrade
@@ -765,7 +996,22 @@ technologies = {
 			strategic_payload_heavy
 			radio_navigation_2
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Pe-8 II"
+			type = large_plane_airframe_1_sov
+			modules = {
+			fixed_main_weapon_slot = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_medium
+			engine_type_slot = engine_3_4x
+			special_type_slot_1 = bomb_sights_1
+			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_3 = air_ground_radar_1
+		}
+		icon = "GFX_large_plane_airframe_1_sov_medium"
+			}
+		}
 		
 		
 		research_cost = 2
@@ -793,7 +1039,21 @@ technologies = {
 		}
 		enable_equipment_modules = {
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "DB-3"
+			type = medium_plane_airframe_1_sov
+			modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_medium_plane_airframe_1_sov_medium"
+			}
+		}
 		path = {
 			leads_to_tech = IL_4
 			research_cost_coeff = 1
@@ -830,7 +1090,21 @@ technologies = {
 			Self_Sealing_Tanks
 			hmg_defense_turret_2x
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "IL-4"
+			type = medium_plane_airframe_2_sov
+			modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_medium_plane_airframe_2_sov_medium"
+			}
+		}
 		
 		path = {
 			leads_to_tech = IL_4_Upgrade
@@ -862,8 +1136,23 @@ technologies = {
 		enable_equipment_modules = {
 			engine_4_2x
 			large_tactical_bombs
+			air_ground_radar_1
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "IL-4 II"
+			type = medium_plane_airframe_2_sov
+			modules = {
+			fixed_main_weapon_slot = large_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = large_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			engine_type_slot = engine_4_2x
+			special_type_slot_1 = air_ground_radar_1
+			special_type_slot_2 = lmg_defense_turret
+		}
+		icon = "GFX_medium_plane_airframe_2_sov_medium"
+			}
+		}
 		research_cost = 2
 		start_year = 1943
 		folder = {

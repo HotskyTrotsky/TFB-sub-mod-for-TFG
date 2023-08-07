@@ -1,0 +1,106 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "SOVIET_LEND_LEASE_Ui_Window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 300 }
+				#BACKGROUND
+				
+				
+				iconType = {
+					name ="SOVIET_LEND_LEASE"
+					spriteType = "GFX_SOVIET_LEND_LEASE"
+					position = { x=0 y=0 }
+				}
+				
+				##MURMANSK OPEN
+				iconType = {
+					name = "MURMANSK_OPEN"
+					spriteType = "GFX_MURMANSK_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##MURMANSK CLOSED
+				iconType = {
+					name = "MURMANSK_CLOSED"
+					spriteType = "GFX_MURMANSK_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##ARKHANGLESK OPEN
+				iconType = {
+					name = "ARKHANGLESK_OPEN"
+					spriteType = "GFX_ARKHANGLESK_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##ARKHANGLESK CLOSED
+				iconType = {
+					name = "ARKHANGLESK_CLOSED"
+					spriteType = "GFX_ARKHANGLESK_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##NORTH SEA CONVOY OPEN
+				iconType = {
+					name = "NORTH_SEA_CONVOY_OPEN"
+					spriteType = "GFX_NORTH_SEA_CONVOY_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##NORTH SEA CONVOY CLOSED
+				iconType = {
+					name = "NORTH_SEA_CONVOY_CLOSED"
+					spriteType = "GFX_NORTH_SEA_CONVOY_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##BAKU OPEN
+				iconType = {
+					name = "BAKU_OPEN"
+					spriteType = "GFX_BAKU_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##BAKU CLOSED
+				iconType = {
+					name = "BAKU_CLOSED"
+					spriteType = "GFX_BAKU_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##IRAN OPEN
+				iconType = {
+					name = "IRAN_OPEN"
+					spriteType = "GFX_IRAN_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##IRAN CLOSED
+				iconType = {
+					name = "IRAN_CLOSED"
+					spriteType = "GFX_IRAN_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				##VLADIVOSTOK OPEN
+				iconType = {
+					name = "VLADIVOSTOK_OPEN"
+					spriteType = "GFX_VLADIVOSTOK_OPEN"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+				##VLADIVOSTOK CLOSED
+				iconType = {
+					name = "VLADIVOSTOK_CLOSED"
+					spriteType = "GFX_VLADIVOSTOK_CLOSED"
+					position = { x=0 y=0 }
+					Orientation = "UPPER_LEFT"
+				}
+	}
+}

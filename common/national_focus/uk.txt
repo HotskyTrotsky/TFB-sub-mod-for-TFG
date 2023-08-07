@@ -309,7 +309,25 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 0.5
 				uses = 1
+				technology = Hurricane_CAS
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = Hurricane_CAS2
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
 				technology = Spitfire
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = Spitfire_Upgrade1
 			}
 		}
 	}
@@ -331,6 +349,12 @@ focus_tree = {
 				bonus = 0.75
 				uses = 1
 				technology = Spitfire_Upgrade1
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 1
+				technology = Spitfire_Upgrade2
 			}
 		}
 	}
@@ -2435,6 +2459,14 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				remove_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta_Under_Developed
+				scope = ENG
+				}
+				add_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta
+					scope = ENG
+				}
 			}
 		}
 	}
@@ -3577,7 +3609,7 @@ focus_tree = {
 		relative_position_id = ENG_war_cabinet
 		cost = 1
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}	
 		completion_reward = {
 			SOV = { country_event = { id = britain.500 hours = 6 } }
@@ -3598,7 +3630,7 @@ focus_tree = {
 		relative_position_id = ENG_anglo_soviet_agreement
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}	
 		completion_reward = {
 			SOV = { add_offsite_building = { type = arms_factory level = 15 } }
@@ -3695,7 +3727,7 @@ focus_tree = {
 		relative_position_id = ENG_soviet_lend_lease
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 120
 		}	
 		completion_reward = {
 			SOV =  {country_event = { id = britain.501 hours = 6 } }

@@ -64,7 +64,11 @@ add_ideas = {
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
+set_variable = { Hobarts_Funnies_SAF_division_cap = 0 }
+set_variable = { Hobarts_Funnies_SAF_increase = 1 }
+set_variable = { Hobarts_Funnies_SAF_increase_double = 2 }
 
+set_country_flag = Hobarts_Funnies_CAN_division_standard
 set_convoys = 100
 set_politics = {
 	ruling_party = democratic

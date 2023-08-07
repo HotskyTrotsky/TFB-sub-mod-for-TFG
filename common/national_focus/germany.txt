@@ -1856,7 +1856,7 @@ focus_tree = {
 		id = GER_auftragstaktik
 		icon = GFX_goal_infantry_man_primacy
 		prerequisite = { focus = GER_heer }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GER_heer
 		cost = 5
@@ -3049,6 +3049,7 @@ focus_tree = {
 				target = SOV
 				type = annex_everything
 			}
+			add_dynamic_modifier = { modifier = BARB_ECONOMIC_BONUS }
 			add_timed_idea = {
 				idea = GER_barbarossa
 				days = 150
@@ -3744,7 +3745,7 @@ focus_tree = {
 					CZE = { controls_state = 69 }
 				}
 				ENG = {
-					country_event = germany.40
+					country_event = {id = germany.40 days = 1}
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
@@ -3806,6 +3807,7 @@ focus_tree = {
 				HUN = { is_friend_or_potential_friend_of_GER = no }
 				CZE = { is_puppet_of = GER }
 				CZE = { is_in_faction_with = GER }
+				has_global_flag = DENIED_CZE
 			}
 		}
 		available = {
@@ -3855,6 +3857,7 @@ focus_tree = {
 						is_puppet_of = PREV
 					}
 				}
+				has_global_flag = DENIED_CZE
 			}
 		}
 
@@ -6287,16 +6290,16 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_u_boat_effort
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "Man the Guns"
+			# 	}
+			# 	set_technology = { cruiser_submarines = 1 }
+			# }
 				}
-				set_technology = { cruiser_submarines = 1 }
-			}
-		}
 	}
 
 	focus = {

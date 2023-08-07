@@ -168,7 +168,7 @@ if = {
 
 #Monroe Doctrine
 give_guarantee = CAN
-give_guarantee = MEX
+#give_guarantee = MEX
 give_guarantee = CUB
 give_guarantee = HAI
 give_guarantee = DOM
@@ -182,7 +182,7 @@ give_guarantee = VEN
 give_guarantee = COL
 give_guarantee = ECU
 give_guarantee = PRU
-give_guarantee = BRA
+#give_guarantee = BRA
 give_guarantee = BOL
 give_guarantee = CHL
 give_guarantee = PAR

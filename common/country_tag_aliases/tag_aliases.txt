@@ -79,7 +79,10 @@ BNP = {
 	original_tag = ENG
 	has_focus_tree = Facist_Britain_focus
 }
-
+ROA = {
+	original_tag = SOV
+	has_focus_tree = Facist_Russia_focus
+}
 BUZ = {
 	original_tag = BUL
 	has_country_flag = BUL_zveno_bulgaria_flag
