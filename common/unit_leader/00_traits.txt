@@ -1046,7 +1046,10 @@ leader_traits = {
 			always = no # not gainable
 		}
 		prerequisites = {
+			OR = {
 			has_trait = brilliant_strategist
+			has_trait = brilliant_strategist_1
+			}
 		}
 		cost = 1000
 		field_marshal_modifier = {
@@ -1894,8 +1897,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			special_forces_attack_factor = 0.05
-			special_forces_defence_factor = 0.05
+			special_forces_attack_factor = 0.025
+			special_forces_defence_factor = 0.025
 		}
 		
 		ai_will_do = {
@@ -2047,7 +2050,7 @@ leader_traits = {
 		}
 		cost = 700
 		modifier = {
-			navy_submarine_attack_factor = 0.2 # +X% stronger damage for submarines
+			navy_submarine_attack_factor = 0.1 # +X% stronger damage for submarines
 		}
 		custom_gain_xp_trigger_tooltip = SEAWOLF_TRIGGER_TT
 		
@@ -2264,7 +2267,7 @@ leader_traits = {
 	lancer = {
 		type = navy
 		modifier = {
-			naval_torpedo_screen_penetration_factor = 0.10
+			naval_torpedo_screen_penetration_factor = 0.1
 		}
 				
 		ai_will_do = {
@@ -2360,11 +2363,11 @@ leader_traits = {
 		sub_unit_modifiers = {
 			light_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
+				naval_speed_factor = 0.05
 			}
 			heavy_cruiser = {
 				naval_damage_factor = 0.1
-				naval_speed_factor = 0.1
+				naval_speed_factor = 0.05
 			}
 		}	
 		ai_will_do = {
@@ -2790,7 +2793,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			##experience_gain_factor = -0.25 
+			experience_gain_factor = -0.25 
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2953,7 +2956,7 @@ leader_traits = {
 	
 		modifier = { # WARNING! Changing the value of these modifiers requires changing them also in the tooltip ITA_flotta_d_evasione_admiral_traits_tt
 			naval_damage_factor = 0.05
-			naval_speed_factor = 0.1
+			naval_speed_factor = 0.05
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2979,7 +2982,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			##experience_gain_factor = 0.1	
+			experience_gain_factor = 0.1	
 		}
 		new_commander_weight = {
 			factor = 1  

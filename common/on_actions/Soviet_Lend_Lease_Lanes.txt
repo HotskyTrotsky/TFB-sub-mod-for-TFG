@@ -1,0 +1,346 @@
+on_actions = {
+#####Northern Convoy route
+	on_monthly_SOV = {
+	effect = {
+	Check_Convoy_Route = yes
+		}
+	}
+	
+#Soviet Lend lease lanes
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = SOVIET_LEND_LEASE_LANE_OPEN
+					}
+				}
+				FROM.FROM = {  
+						set_state_flag = SOVIET_LEND_LEASE_LANE_CLOSED
+						clr_state_flag = SOVIET_LEND_LEASE_LANE_OPEN
+				}
+				
+					subtract_from_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+					}
+				}
+
+			}
+		}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = SOVIET_LEND_LEASE_LANE_CLOSED
+					}
+				}
+				FROM.FROM = { 
+						set_state_flag = SOVIET_LEND_LEASE_LANE_OPEN
+						clr_state_flag = SOVIET_LEND_LEASE_LANE_CLOSED
+				}
+				
+					add_to_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+						}
+					}
+				}
+			}
+	
+on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						state = 215
+					}
+				}
+					subtract_from_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+					}
+					215 = {
+					remove_dynamic_modifier = {
+					modifier = Tough_Terrain	
+						}
+					add_dynamic_modifier = {
+						modifier = Tough_Terrain_Adapted
+					}
+					}
+				}
+
+			}
+		}
+		
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						state = 215
+					}
+				}
+					add_to_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+						}
+					}
+				}
+			}
+		
+	#####opening or closing persian corridor
+		on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						state = 413
+					}
+				}
+					subtract_from_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+					}
+					
+				}
+
+			}
+		}
+		
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						state = 413
+					}
+				}
+					add_to_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+						}
+					}
+				}
+			}
+
+		#####Removing state modifier to northern states
+		on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						state = 216
+					}
+				}
+					216 = {
+					remove_dynamic_modifier = {
+					modifier = Tough_Terrain	
+						}
+					add_dynamic_modifier = {
+						modifier = Tough_Terrain_Adapted
+					}
+					}
+				}
+
+			}
+		}
+	
+			on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = SOV 
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						state = 213
+					}
+				}
+				213 = {
+					remove_dynamic_modifier = {
+					modifier = Tough_Terrain	
+						}
+					add_dynamic_modifier = {
+						modifier = Tough_Terrain_Adapted
+					}
+					}
+				}
+
+			}
+		}
+		}

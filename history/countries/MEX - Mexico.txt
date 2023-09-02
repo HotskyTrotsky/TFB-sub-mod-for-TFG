@@ -20,6 +20,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
 if = {

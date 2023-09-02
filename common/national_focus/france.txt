@@ -1830,6 +1830,9 @@
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+			}
 			remove_ideas = FRA_victors_of_wwi
 			army_experience = 10
 			add_doctrine_cost_reduction = {

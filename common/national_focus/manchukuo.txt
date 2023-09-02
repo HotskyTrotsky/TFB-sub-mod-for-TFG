@@ -422,6 +422,10 @@ focus = {
         available_if_capitulated = yes
 
         completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
             hidden_effect = {
                 set_rule = {
                     can_use_kamikaze_pilots = yes
@@ -2684,6 +2688,10 @@ completion_reward = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			custom_effect_tooltip = MAN_expand_the_imperial_guards_tt
 			hidden_effect = {
 				division_template = {

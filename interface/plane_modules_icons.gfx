@@ -697,11 +697,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/bba_rocket_rails_2_icon.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_Naval_bomb_locks"
-		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_naval_bomb_lock_icon.dds"
-		legacy_lazy_load = no
-	}
+	#spriteType = {
+	#	name = "GFX_EMI_Naval_bomb_locks"
+	#	textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_naval_bomb_lock_icon.dds"
+	#	legacy_lazy_load = no
+	#}
 	
 	spriteType = {
 		name = "GFX_EMI_cas_reflex_gunsight_1"

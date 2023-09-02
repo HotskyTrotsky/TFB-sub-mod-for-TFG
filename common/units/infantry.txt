@@ -242,7 +242,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		
-		breakthrough = 0.25
+		breakthrough = 0.20
 		
 		transport =	infantry_equipment
 	
@@ -250,10 +250,11 @@ sub_units = {
 		supply_consumption_factor = 0.03
 	
 		need = {
-			infantry_equipment = 120
-			squad_equipment = 25
-			sf_equipment = 35
+			infantry_equipment = 160
+			squad_equipment = 40
+			Special_Forces_Marine_Equipment = 50
 			horse_equipment = 20
+			
 		}
 
 		marsh = {
@@ -321,9 +322,9 @@ sub_units = {
 		supply_consumption_factor = 0.03
 	
 		need = {
-			infantry_equipment = 120
-			squad_equipment = 25
-			sf_equipment = 15
+			infantry_equipment = 160
+			squad_equipment = 50
+			Special_Forces_Mountaineer_Equipment = 40
 			horse_equipment = 20
 		}
 
@@ -382,7 +383,7 @@ sub_units = {
 		manpower = 1000
 		
 		defense = -0.15
-		breakthrough = 0.15
+		breakthrough = 0.10
 
 		#Misc Abilities
 		training_time = 160
@@ -397,9 +398,9 @@ sub_units = {
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 125
-			sf_equipment = 40
-			squad_equipment = 25
+			infantry_equipment = 150
+			Special_Forces_Paratrooper_Equipment = 30
+			squad_equipment = 40
 		}
 		
 		fort = {
@@ -432,6 +433,53 @@ sub_units = {
 		
 	}
 
+	Elite_Infantry = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		priority = 600
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 28
+		max_organisation = 62
+		default_morale = 0.35
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 1
+		weight = 0.5
+		
+		maximum_speed = -0.25
+		
+		supply_consumption = 0.125
+		supply_consumption_factor = 0.03
+		
+		transport =	infantry_equipment
+	
+		need = {
+			infantry_equipment = 125
+			squad_equipment = 30
+			horse_equipment = 30
+			Special_Forces_Equipment = 30
+		}
+	}
 	motorized = {
 		sprite = motorized
 		map_icon_category = infantry
@@ -747,7 +795,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 150
 			squad_equipment = 10
-			sf_equipment = 20
+			Special_Forces_Equipment = 40
 			horse_equipment = 20
 		}
 
@@ -763,6 +811,54 @@ sub_units = {
 		
 	}
 	
+	Strelki = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 100
+		suppression = 1
+		weight = 0.5
+		
+		maximum_speed = -0.25
+		
+		supply_consumption = 0.125
+		supply_consumption_factor = 0.03
+		
+		transport =	infantry_equipment
+	
+		need = {
+			infantry_equipment = 50
+			squad_equipment = 10
+			horse_equipment = 15
+		}
+	}
+
 	paramarine = {
 		sprite = infantry
 		map_icon_category = infantry
@@ -813,7 +909,7 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 120
-			sf_equipment = 40
+			Special_Forces_Equipment = 50
 			squad_equipment = 30
 		}
 

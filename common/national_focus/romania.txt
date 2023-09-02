@@ -3547,6 +3547,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+			}
 			add_trait = {
 				character = ROM_gheorghe_avramescu
 				trait = infantry_leader
@@ -3653,6 +3656,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = ROM_reserve_divisions
+			set_technology = {
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 		}
 	}
 

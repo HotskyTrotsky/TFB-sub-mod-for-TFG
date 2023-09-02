@@ -478,6 +478,17 @@
   britain.513.t:0 "Faroe Island base"
   britain.513.d:0 "We have seized the island of Faroe which is close enough and large enough to host large air base and port facilities for an naval invasion of British Isles."
   britain.513.a:0 "Quickly Pour as many resources as we can into this island"
+
+  britain.602.t:0 "Equipping A New African Army"
+  britain.602.d:0 "With the loss of Egypt and the armies defending attention has now turned to the rebuilding of a new army in order to retake these territories, However the cost of an endeavour weighs heavy and will require commitment from across the commonwealth in order to rebuild such a force."
+  britain.602.a:0 "Aye! The Cord Of The Empire Must Be Retaken"
+  britain.602.b:0 "A Burden To Heavy For Us."
+
+  britain.603.t:0 "Africa Lost?"
+  britain.603.d:0 "Although Egypt has now fallen and the cord of the empire snapped there are some in high command who believe that it’s possible to retake these territories, The loss of Egypt is currently putting great strain on convoys and supply routes and a it could be that appealing to our commonwealth members that the cost of reforming such a forces could be made cheaper."
+  britain.603.a:0 "Africa Is The End Of The Beginning, And Beginning Of The End"
+  britain.603.b:0 "We Will Ride Out The Storm"
+
   ### IDEAS ###
   enfield:0 "Small Arms Experts"
   ENG_war_cabinet_idea:0 "War Cabinet"
@@ -556,6 +567,9 @@
   Round_Heads:0 "Roundheads"
   Repaying_Debt:0 "Payments To Obligations"
   Restored_Institutions:0 "Restored Institutions"
+
+  Africa_Lost:0 "Africa Lost"
+  Commitment_To_Reforming_African_Army:0 "Commitment To Reforming African Army"
   #### TRAITS ####
   nuffield_trait:0 "Cruiser Tank Manufacturer"
   vauxhall_trait:0 "Infantry Tank Manufacturer"
@@ -613,6 +627,8 @@
   Start_Uprising:0 "Set in motion the uprising"
   Launch_Uprising_early:0 "Launch the uprising early"
   Invest_Into_B_E_F:0 "Invest Into British Expeditionary Force (BEF)"
+  Africa_Lost:0 "Africa Lost?"
+  Rebuild_African_Army:0 "Rebuild African Army"
   #### TOOLTIP ####
   Invest_Into_B_E_F_Focus_tt:0 "Unlocks the decison to invest into the BEF"
   Invest_Into_B_E_F_tt:0 "The first wave of investment will spawn 6 infantry and 2 tank divisions for france on the outbreak of war, This will double to 13 infantry and 4 tank divsison upon the 2nd investment."
@@ -652,3 +668,7 @@ Portrait_England_Eric_Blair:0 "Eric Blair"
 news.400.t:0 "British Uprising"
 news.400.d:0 "Bells tolled and shots were fired in the late night into the morning as ordinary citizens within the British Isles took up arms along side under ground resistance. The British Resistance have manged to secure a few vital northern cities such as Liverpool, Manchester, Leeds, Sheffield, however fighting still continues. It would seem that this is now the 2nd battle of Britain is about to begin."
 news.400.a:0 "The Brits Are Back?"
+
+#####Dynamic state modifiers
+Fortress_Island_Of_Malta_Under_Developed:0 "Under Developed Defenses Island Of Malta"
+Fortress_Island_Of_Malta:0 "Fortress Island Of Malta"

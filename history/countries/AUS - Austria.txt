@@ -37,7 +37,20 @@ recruit_character = AUS_franz_bohme
 recruit_character = AUS_eugen_beyer
 recruit_character = AUS_julius_raab
 recruit_character = AUS_leopold_figl
-
+create_equipment_variant = {
+	name = "Special Forces Mountaineer Equipment"
+	type = Special_Forces_Mountaineer_Equipment_0
+	modules = {
+		Design_Slot = Mountaineer_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 
 set_politics = {
 	ruling_party = neutrality

@@ -627,7 +627,19 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				sf_equipment = {
+				Special_Forces_Marine_Equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				Special_Forces_Equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				Special_Forces_Paratrooper_Equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				Special_Forces_Mountaineer_Equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}

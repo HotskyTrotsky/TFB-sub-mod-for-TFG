@@ -1,0 +1,300 @@
+scripted_gui = {
+
+	Second_Year_Plan_UI = {
+		context_type = decision_category
+		window_name = "Second_Year_Plan_UI_Window"
+		#context_type = player_context
+		
+		visible = {
+		tag = SOV
+		}
+		
+		triggers = {
+		
+			
+			Moscow_6_0_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 0 compare = equals} 
+				}
+			}
+			Moscow_6_1_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 1 compare = equals} 
+				}
+			}
+			Moscow_6_2_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 2 compare = equals} 
+				}
+			}
+			Moscow_6_3_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 3 compare = equals} 
+				}
+			}
+			Moscow_6_4_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 4 compare = equals} 
+				}
+			}
+			Moscow_6_5_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 5 compare = equals} 
+				}
+			}
+			Moscow_6_6_visible = {
+				SOV = {
+					check_variable = { SOV.Mosocw_targets_index  = 6 compare = equals} 
+				}
+			}
+			Leningrad_4_0_visible = {
+				SOV = {
+					check_variable = { SOV.Leningrad_targets_index = 0 compare = equals} 
+				}
+			}
+			Leningrad_4_1_visible = {
+				SOV = {
+					check_variable = { SOV.Leningrad_targets_index = 1 compare = equals} 
+				}
+			}
+			Leningrad_4_2_visible = {
+				SOV = {
+					check_variable = { SOV.Leningrad_targets_index = 2 compare = equals} 
+				}
+			}
+			Leningrad_4_3_visible = {
+				SOV = {
+					check_variable = { SOV.Leningrad_targets_index = 3 compare = equals} 
+				}
+			}
+			Leningrad_4_4_visible = {
+				SOV = {
+					check_variable = { SOV.Leningrad_targets_index = 4 compare = equals} 
+				}
+			}
+
+			Belarus_3_0_visible = {
+				SOV = {
+					check_variable = { SOV.Belarus_targets_index = 0 compare = equals} 
+				}
+			}
+			Belarus_3_1_visible = {
+				SOV = {
+					check_variable = { SOV.Belarus_targets_index = 1 compare = equals} 
+				}
+			}
+			Belarus_3_2_visible = {
+				SOV = {
+					check_variable = { SOV.Belarus_targets_index = 2 compare = equals} 
+				}
+			}
+			Belarus_3_3_visible = {
+				SOV = {
+					check_variable = { SOV.Belarus_targets_index = 3 compare = equals} 
+				}
+			}
+
+			Ukraine_6_0_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 0 compare = equals} 
+				}
+			}
+			Ukraine_6_1_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 1 compare = equals} 
+				}
+			}
+			Ukraine_6_2_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 2 compare = equals} 
+				}
+			}
+			Ukraine_6_3_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 3 compare = equals} 
+				}
+			}
+			Ukraine_6_4_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 4 compare = equals} 
+				}
+			}
+			Ukraine_6_5_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 5 compare = equals} 
+				}
+			}
+			Ukraine_6_6_visible = {
+				SOV = {
+					check_variable = { SOV.Ukraine_targets_index = 6 compare = equals} 
+				}
+			}
+			Stalingrad_4_0_visible = {
+				SOV = {
+					check_variable = { SOV.Stalingrad_targets_index = 0 compare = equals} 
+				}
+			}
+			Stalingrad_4_1_visible = {
+				SOV = {
+					check_variable = { SOV.Stalingrad_targets_index = 1 compare = equals} 
+				}
+			}
+			Stalingrad_4_2_visible = {
+				SOV = {
+					check_variable = { SOV.Stalingrad_targets_index = 2 compare = equals} 
+				}
+			}
+			Stalingrad_4_3_visible = {
+				SOV = {
+					check_variable = { SOV.Stalingrad_targets_index = 3 compare = equals} 
+				}
+			}
+			Stalingrad_4_4_visible = {
+				SOV = {
+					check_variable = { SOV.Stalingrad_targets_index = 4 compare = equals} 
+				}
+			}
+			
+			East_Russia_5_0_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 0 compare = equals} 
+				}
+			}
+			East_Russia_5_1_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 1 compare = equals} 
+				}
+			}
+			East_Russia_5_2_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 2 compare = equals} 
+				}
+			}
+			East_Russia_5_3_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 3 compare = equals} 
+				}
+			}
+			East_Russia_5_4_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 4 compare = equals} 
+				}
+			}
+			East_Russia_5_5_visible = {
+				SOV = {
+					check_variable = { SOV.East_Russia_targets_index = 5 compare = equals} 
+				}
+			}
+			North_Russia_3_0_visible = {
+				SOV = {
+					check_variable = { SOV.North_Russia_targets_index = 0 compare = equals} 
+				}
+			}
+			North_Russia_3_1_visible = {
+				SOV = {
+					check_variable = { SOV.North_Russia_targets_index = 1 compare = equals} 
+				}
+			}
+			North_Russia_3_2_visible = {
+				SOV = {
+					check_variable = { SOV.North_Russia_targets_index = 2 compare = equals} 
+				}
+			}
+			North_Russia_3_3_visible = {
+				SOV = {
+					check_variable = { SOV.North_Russia_targets_index = 3 compare = equals} 
+				}
+			}
+			North_East_Russia_3_0_visible = {
+				SOV = {
+					check_variable = { SOV.North_East_Russia_targets_index = 0 compare = equals} 
+				}
+			}
+			North_East_Russia_3_1_visible = {
+				SOV = {
+					check_variable = { SOV.North_East_Russia_targets_index = 1 compare = equals} 
+				}
+			}
+			North_East_Russia_3_2_visible = {
+				SOV = {
+					check_variable = { SOV.North_East_Russia_targets_index = 2 compare = equals} 
+				}
+			}
+			North_East_Russia_3_3_visible = {
+				SOV = {
+					check_variable = { SOV.North_East_Russia_targets_index = 3 compare = equals} 
+				}
+			}
+			Caucuses_3_0_visible = {
+				SOV = {
+					check_variable = { SOV.Caucuses_targets_index = 0 compare = equals} 
+				}
+			}
+			Caucuses_3_1_visible = {
+				SOV = {
+					check_variable = { SOV.Caucuses_targets_index = 1 compare = equals} 
+				}
+			}
+			Caucuses_3_2_visible = {
+				SOV = {
+					check_variable = { SOV.Caucuses_targets_index = 2 compare = equals} 
+				}
+			}
+			Caucuses_3_3_visible = {
+				SOV = {
+					check_variable = { SOV.Caucuses_targets_index = 3 compare = equals} 
+				}
+			}
+			Kazakhstan_4_0_visible = {
+				SOV = {
+					check_variable = { SOV.Kazakhstan_targets_index = 0 compare = equals} 
+				}
+			}
+			Kazakhstan_4_1_visible = {
+				SOV = {
+					check_variable = { SOV.Kazakhstan_targets_index = 1 compare = equals} 
+				}
+			}
+			Kazakhstan_4_2_visible = {
+				SOV = {
+					check_variable = { SOV.Kazakhstan_targets_index = 2 compare = equals} 
+				}
+			}
+			Kazakhstan_4_3_visible = {
+				SOV = {
+					check_variable = { SOV.Kazakhstan_targets_index = 3 compare = equals} 
+				}
+			}
+			Kazakhstan_4_4_visible = {
+				SOV = {
+					check_variable = { SOV.Kazakhstan_targets_index = 4 compare = equals} 
+				}
+			}
+			Siberia_4_0_visible = {
+				SOV = {
+					check_variable = { SOV.Siberia_targets_index = 0 compare = equals} 
+				}
+			}
+			Siberia_4_1_visible = {
+				SOV = {
+					check_variable = { SOV.Siberia_targets_index = 1 compare = equals} 
+				}
+			}
+			Siberia_4_2_visible = {
+				SOV = {
+					check_variable = { SOV.Siberia_targets_index = 2 compare = equals} 
+				}
+			}
+			Siberia_4_3_visible = {
+				SOV = {
+					check_variable = { SOV.Siberia_targets_index = 3 compare = equals} 
+				}
+			}
+			Siberia_4_4_visible = {
+				SOV = {
+					check_variable = { SOV.Siberia_targets_index = 4 compare = equals} 
+				}
+			}
+		}
+	}
+}

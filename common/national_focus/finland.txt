@@ -1141,6 +1141,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			create_country_leader = {
 				name = "Carl Gustaf Emil Mannerheim"
 				picture = "GFX_portrait_fin_carl_mannerheim"

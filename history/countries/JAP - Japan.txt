@@ -70,6 +70,21 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
+	Special_Forces_Equipment_Technology = 1
+}
+create_equipment_variant = {
+	name = "Special Forces Marine Equipment"
+	type = Special_Forces_Marine_Equipment_0
+	modules = {
+		Design_Slot = Marine_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
 }
 if = {
 	limit = {
@@ -97,8 +112,8 @@ if = {
 		coastal_defense_ships = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
-		cruiser_submarines = 1
-		basic_light_battery = 1
+		# cruiser_submarines = 1
+		basic_dp_light_battery = 1
 		ship_hull_super_heavy = 1
 	}
 	set_naval_oob = "JAP_1936_naval"

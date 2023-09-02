@@ -45,7 +45,7 @@ focus_tree = {
 				add_idea = MON_collectivisation_2			
 			}
 			add_political_power = 150
-			330 = {
+			819 = {
 				add_extra_state_shared_building_slots = 8
 			}
 		}
@@ -1600,6 +1600,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+			}
 			MON_khorloogiin_choibalsan = {
 				add_attack = 1
 				add_defense = 1

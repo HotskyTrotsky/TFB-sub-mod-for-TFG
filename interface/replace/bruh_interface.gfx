@@ -10,10 +10,29 @@ spriteTypes = {
     	looping = no
     	play_on_show = yes
 	}
+	##event picture
+	
+
+SpriteType = {
+		name = "GFX_news_event_SOV_pullout"
+		textureFile = "gfx/event_pictures/SOV_pullout.dds"
+	}
+	SpriteType = {
+		name = "GFX_news_event_Stalin_Dead"
+		textureFile = "gfx/event_pictures/stalin_dead.dds"
+	}
+	SpriteType = {
+		name = "GFX_news_event_Japan_Air_Research"
+		textureFile = "gfx/event_pictures/Japan_Air_Research.dds"
+	}
 	######ideas minor
 	SpriteType = {
 		name = "GFX_idea_HUN_wehrmacht"
 		textureFile = "gfx/interface/ideas/HUN_wehrmacht.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Lend_Lease"
+		textureFile = "gfx/interface/ideas/Lend_Lease.dds"
 	}
 	####raj
 	SpriteType = {
@@ -362,6 +381,181 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Southern_India_2"
 		texturefile = "gfx/interface/Uprising/Southern_India_2.dds"
+	}
+	######SOVIET LEND LEASE
+	spriteType = {
+		name = "GFX_SOVIET_LEND_LEASE"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/SOVIET_LEND_LEASE.dds"
+	}
+	spriteType = {
+		name = "GFX_MURMANSK_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/MURMANSK_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_MURMANSK_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/MURMANSK_CLOSED.dds"
+	}
+	spriteType = {
+		name = "GFX_ARKHANGLESK_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/ARKHANGLESK_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_ARKHANGLESK_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/ARKHANGLESK_CLOSED.dds"
+	}
+	spriteType = {
+		name = "GFX_NORTH_SEA_CONVOY_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/NORTH_SEA_CONVOY_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_NORTH_SEA_CONVOY_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/NORTH_SEA_CONVOY_CLOSED.dds"
+	}
+	spriteType = {
+		name = "GFX_BAKU_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/BAKU_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_BAKU_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/BAKU_CLOSED.dds"
+	}
+	spriteType = {
+		name = "GFX_IRAN_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/IRAN_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_IRAN_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/IRAN_CLOSED.dds"
+	}
+	spriteType = {
+		name = "GFX_VLADIVOSTOK_OPEN"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/VLADIVOSTOK_OPEN.dds"
+	}
+	spriteType = {
+		name = "GFX_VLADIVOSTOK_CLOSED"
+		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/VLADIVOSTOK_CLOSED.dds"
+	}
+	######Soviet 2nd year plan gui
+	spriteType = {
+		name = "GFX_Base"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/Base.dds"
+	}
+	spriteType = {
+		name = "GFX_6_0"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_0.dds"
+	}
+	spriteType = {
+		name = "GFX_6_1"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_1.dds"
+	}
+	spriteType = {
+		name = "GFX_6_2"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_2.dds"
+	}
+	spriteType = {
+		name = "GFX_6_3"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_3.dds"
+	}
+	spriteType = {
+		name = "GFX_6_4"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_4.dds"
+	}
+	spriteType = {
+		name = "GFX_6_5"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_5.dds"
+	}
+	spriteType = {
+		name = "GFX_6_6"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/6_6.dds"
+	}
+	spriteType = {
+		name = "GFX_5_0"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_0.dds"
+	}
+	spriteType = {
+		name = "GFX_5_1"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_1.dds"
+	}
+	spriteType = {
+		name = "GFX_5_2"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_2.dds"
+	}
+	spriteType = {
+		name = "GFX_5_3"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_3.dds"
+	}
+	spriteType = {
+		name = "GFX_5_4"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_4.dds"
+	}
+	spriteType = {
+		name = "GFX_5_5"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/5_5.dds"
+	}
+	spriteType = {
+		name = "GFX_4_0"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/4_0.dds"
+	}
+	spriteType = {
+		name = "GFX_4_1"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/4_1.dds"
+	}
+	spriteType = {
+		name = "GFX_4_2"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/4_2.dds"
+	}
+	spriteType = {
+		name = "GFX_4_3"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/4_3.dds"
+	}
+	spriteType = {
+		name = "GFX_4_4"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/4_4.dds"
+	}
+	spriteType = {
+		name = "GFX_3_0"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/3_0.dds"
+	}
+	spriteType = {
+		name = "GFX_3_1"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/3_1.dds"
+	}
+	spriteType = {
+		name = "GFX_3_2"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/3_2.dds"
+	}
+	spriteType = {
+		name = "GFX_3_3"
+		texturefile = "gfx/interface/2nd_Year_Plan_GUI/3_3.dds"
+	}
+	#######German Barb occupied nations
+	spriteType = {
+		name = "GFX_GER_BARB_BASE"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BASE.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_BEL"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BEL.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_BES"
+		texturefile = "gfx/interface/BARB_GUI/BARB_BES.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_EST"
+		texturefile = "gfx/interface/BARB_GUI/BARB_EST.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_LAT"
+		texturefile = "gfx/interface/BARB_GUI/BARB_LAT.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_LIT"
+		texturefile = "gfx/interface/BARB_GUI/BARB_LIT.dds"
+	}
+	spriteType = {
+		name = "GFX_BARB_UKR"
+		texturefile = "gfx/interface/BARB_GUI/BARB_UKR.dds"
 	}
 	#####
 	spriteType = {
@@ -756,6 +950,18 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MON/Mongolia_Gen.dds"
 	}
 	spriteType = {
+		name = "GFX_Mongolia_Throat_Singer_small"
+		texturefile = "gfx/leaders/MON/Mongolia_Gen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Quak"
+		texturefile = "gfx/leaders/GER/Quak.dds"
+	}
+	spriteType = {
+		name = "GFX_Quak_Small"
+		texturefile = "gfx/leaders/GER/Quak_Small.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_portrait_kublai"
 		texturefile ="gfx/leaders/MON/portrait_kublai.dds"
 	}
@@ -776,23 +982,52 @@ spriteType = {
 		name = "GFX_idea_ROM_LIBYA_OIL"
 		textureFile = "gfx/interface/ideas/ROM_oil.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_CAS_Improvements"
+		textureFile = "gfx/interface/ideas/Soviet_CAS_Improvements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Aircraft_Improvements"
+		textureFile = "gfx/interface/ideas/Soviet_Aircraft_Improvements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Dog_Fighting_Schools"
+		textureFile = "gfx/interface/ideas/Soviet_Dog_Fighting_Schools.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SAF_Tank_Construction_effort"
+		textureFile = "gfx/interface/ideas/SAF_Tank_Investment.dds"
+	}
+	
 	### AUTONOMY ###
 	
 	SpriteType = {
 		name = "GFX_autonomy_protectorate_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_dominion_icon.dds"
 	}
-	###
+	###amphibious_tank
+	spriteType = {
+		name = "GFX_amphibious_tank_medium"
+		textureFile = "gfx/interface/technologies/Ampbious_Tank_Tech.dds"
+	}
 	spriteType = {
 		name = "GFX_div_subunit_item_bg_sup"
 		textureFile = "gfx/interface/div_subunit_item_bg_sup.dds"
 	}
 	
 	spriteType = { name = "GFX_group_artillery_icon"									textureFile = "gfx/interface/counters/divisions_large/unit_art_icon.dds" noOfFrames = 2 }
-
 	### Large images for DIVISIONS ###	
 	spriteType = { name = "GFX_unit_infantry_mot_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_infantry_mot_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_militia_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_Strelki_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_Strelki_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_Strelki_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Strelki_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_Elite_Infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_Elite_Infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_Elite_Infantry_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Elite_Infantry_icon.dds" noOfFrames = 2 }
+	
 	spriteType = { name = "GFX_unit_garrison_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_garrison_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_pack_artillery_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_pack_art_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_heavy_art_icon.dds" noOfFrames = 2 }
@@ -828,6 +1063,8 @@ spriteType = {
 	spriteType = { name = "GFX_unit_Marine_Corps_hq_company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_MC.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_US_Airborne_hq_company_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_AB.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_Royal_Commandos_hq_company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_RM.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_Hobarts_Funnies_Heavy_Suppot_Company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/Hobart_Funnies_Heavy_Support_Company.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_Hobarts_Funnies_Medium_Suppot_Company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/Hobart_Funnies_Medium_Support_Company.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_rg_hq_company_light_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_rg_hq_company_medium_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_rg_hq_company_heavy_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_rg.dds" noOfFrames = 2 }
@@ -1034,6 +1271,9 @@ spriteType = {
 	spriteType = { name = "GFX_div_templ_136_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_133.dds"}
 	spriteType = { name = "GFX_div_templ_137_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_134.dds"}
 	spriteType = { name = "GFX_div_templ_138_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_135.dds"}
+
+	spriteType = { name = "GFX_unit_sh_battleship_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/sh_battleship.dds"		noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_sh_battleship_1_icon_medium"		texturefile = "gfx/interface/navalcombat/ships/sh_battleship_I.dds"		noOfFrames = 2 }	
 
 	### MODULES ## 
 	

@@ -109,7 +109,7 @@ set_technology = {
 	tech_signal_company = 1
 	usa_light_tank_1 = 1
 	gw_artillery = 1
-	
+	Special_Forces_Equipment_Technology = 1
 	
 	superior_firepower = 1
 	base_strike = 1
@@ -168,7 +168,7 @@ if = {
 
 #Monroe Doctrine
 give_guarantee = CAN
-give_guarantee = MEX
+#give_guarantee = MEX
 give_guarantee = CUB
 give_guarantee = HAI
 give_guarantee = DOM
@@ -182,13 +182,26 @@ give_guarantee = VEN
 give_guarantee = COL
 give_guarantee = ECU
 give_guarantee = PRU
-give_guarantee = BRA
+#give_guarantee = BRA
 give_guarantee = BOL
 give_guarantee = CHL
 give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
-
+create_equipment_variant = {
+	name = "Special Forces Marine Equipment"
+	type = Special_Forces_Marine_Equipment_0
+	modules = {
+		Design_Slot = Marine_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 add_equipment_to_stockpile = {
 type = convoy
 amount = 500
@@ -723,7 +736,7 @@ if = {
 		type = small_plane_airframe_0_usa
 		modules = {
 			fixed_main_weapon_slot = light_mg_4x
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_1_1x
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
@@ -749,7 +762,7 @@ if = {
 			fixed_main_weapon_slot = small_bomb_locks
 			fixed_auxiliary_weapon_slot_1 = small_bomb_locks
 			engine_type_slot = engine_1_1x
-			special_type_slot_2 = Reduced_Materials
+			special_type_slot_2 = empty
 			special_type_slot_1 = lmg_defense_turret
 		}
 		icon = "GFX_USA_light_plane_3_medium"
@@ -1098,7 +1111,7 @@ set_technology = {
 	tech_signal_company = 1
 	usa_light_tank_1 = 1
 	gw_artillery = 1
-	
+	Special_Forces_Equipment_Technology = 1
 	
 	superior_firepower = 1
 	base_strike = 1

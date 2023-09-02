@@ -1358,7 +1358,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = BRA_mark_clark
-
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			custom_effect_tooltip = BRA_brazil_expedionary_forces_tt
 
 			hidden_effect = {

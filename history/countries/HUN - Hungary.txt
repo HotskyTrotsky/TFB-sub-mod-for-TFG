@@ -18,6 +18,7 @@ set_technology = {
 	gw_artillery = 1
 	fuel_silos = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
 add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original

@@ -1,0 +1,25 @@
+#duplicate_archetypes = {
+#    Special_Forces_Marine_Equipment = {
+#        archetype = Special_Forces_Equipment 
+#        type = {armor amphibious}
+#        for_each = {
+#			variant_name = { find_and_replace = { "chassis" "equipment" } }
+#		}
+#    }
+#
+#     Special_Forces_Mountaineer_Equipment = {
+#        archetype = Special_Forces_Equipment 
+#        type = {armor artillery}
+#        for_each = {
+#			variant_name = { find_and_replace = { "chassis" "equipment" } }
+#		}
+#    }
+#
+#     Special_Forces_Paratrooper_Equipment = {
+#        archetype = Special_Forces_Equipment 
+#        type = {armor flame}
+#        for_each = {
+#			variant_name = { find_and_replace = { "chassis" "equipment" } }
+#		}
+#    }
+#}

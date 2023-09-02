@@ -2354,6 +2354,9 @@ Invest_Into_B_E_F = {
 			has_dlc = "Waking the Tiger"
 			tag = ENG
 		}
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
 			ENG = {
 			has_completed_focus = ENG_army_rearmament
@@ -2550,6 +2553,1412 @@ Invest_Into_B_E_F = {
 	
 		remove_effect = {
 			}
+	}
+
+	Africa_Lost = {
+
+		icon = generic_scorched_earth
+		allowed = {
+			has_dlc = "Waking the Tiger"
+			tag = ENG
+		}
+		#Fail trigger
+		available = {
+			ENG = {
+				controls_state = 836
+				controls_state = 446
+				controls_state = 447
+				controls_state = 453
+				controls_state = 456
+				controls_state = 457
+			}
+		}
+
+		days_mission_timeout = 14
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+			
+			ENG = {
+				NOT = {
+				controls_state = 836
+				controls_state = 446
+				controls_state = 447
+				controls_state = 453
+				controls_state = 456
+				controls_state = 457
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			ENG = {
+			country_event = {id = britain.603}
+			}
+		}
+		#Fail
+		complete_effect = {
+			
+		}
+	}
+
+	Rebuild_African_Army = {
+
+		icon = generic_industry
+		allowed = {
+			has_dlc = "Waking the Tiger"
+			tag = ENG
+		}
+		
+		available = {
+			ENG = {
+					has_war = no
+			}
+		}
+		activation = {
+			ENG = {
+				AND = {
+				has_country_flag = African_Army_Rebuilding
+				has_idea = Africa_Lost
+				}
+			}
+		}
+		visible = {
+			ENG = {
+				AND = {
+				has_country_flag = African_Army_Rebuilding
+				has_idea = Africa_Lost
+				}
+			}
+		}
+	
+		fire_only_once = yes
+	
+		days_mission_timeout = 120
+	
+	
+		modifier = {
+			
+		}
+
+		complete_effect = {
+		
+		}
+	
+		remove_effect = {
+				if = {
+					###Maximum investment
+					limit = {
+						check_variable = { var = ENG.African_Army_Investment value = 5 compare = greater_than_or_equals }
+					}
+					###Templates, equipment, Research
+				ENG = {
+					set_technology = {
+    				eng_medium_tank_4 = 1
+					mechanised_infantry = 1
+						}
+						create_equipment_variant = {
+						name = "mk6"
+						type = eng_light_tank_chassis_mk6
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_small_gun_1
+						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						#special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+						obsolete = yes
+						}
+						create_equipment_variant = {
+						name = "Crusader"
+						type = eng_medium_tank_chassis_a15
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_med_gun_1
+						turret_type_slot = tank_medium_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+						obsolete = yes
+						}
+					division_template = {
+					name = "XXX Corps Infantry Division"
+					division_names_group = ENG_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					}
+					obsolete = yes
+					override_model = commonwealth_gfx_infantry_entity
+					template_counter = 107
+					}
+					division_template = {
+					name = "XXX Corps Tank Division"
+					
+					division_names_group = ENG_ARM_02
+						regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+						obsolete = yes
+					}
+					}
+				##Outside Egypt
+				if = {
+					limit = {
+						AND = {
+						551 = {
+							is_controlled_by = ENG
+							}
+						847 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					847 = {
+					add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 12725
+					}
+					add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2003 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2003 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+						}
+					551 = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 1
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+						}
+				}
+				#####Further down south
+				else_if = {
+						limit = {
+						AND = {
+						547 = {
+							is_controlled_by = ENG
+							}
+						549 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					547 = {
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5210
+					}
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+						}
+					549 = {
+					add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 10908 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 10908 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					}
+					build_railway = {
+					path = { 5210 5196 1939 10860 5160 12929 8223 7133 7996 10908 4033}
+					}
+				}
+			}
+			else_if = {
+					###4  investments
+					limit = {
+						check_variable = { var = ENG.African_Army_Investment value = 4 compare = equals }
+					}
+					###Templates, equipment, Research
+				ENG = {
+					set_technology = {
+    				eng_medium_tank_4 = 1
+					mechanised_infantry = 1
+						}
+						create_equipment_variant = {
+						name = "mk6"
+						type = eng_light_tank_chassis_mk6
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_small_gun_1
+						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						#special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+						obsolete = yes
+						}
+						create_equipment_variant = {
+						name = "Crusader"
+						type = eng_medium_tank_chassis_a15
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_med_gun_1
+						turret_type_slot = tank_medium_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+						obsolete = yes
+						}
+					division_template = {
+					name = "XXX Corps Infantry Division"
+					division_names_group = ENG_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					}
+					obsolete = yes
+					override_model = commonwealth_gfx_infantry_entity
+					template_counter = 107
+					}
+					division_template = {
+					name = "XXX Corps Tank Division"
+					
+					division_names_group = ENG_ARM_02
+						regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+						obsolete = yes
+					}
+					}
+				##Outside Egypt
+				if = {
+					limit = {
+						AND = {
+						551 = {
+							is_controlled_by = ENG
+							}
+						847 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					847 = {
+					add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 12725
+					}
+					add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2003 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					
+						}
+					551 = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 1
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+						}
+				}
+				#####Further down south
+				else_if = {
+						limit = {
+						AND = {
+						547 = {
+							is_controlled_by = ENG
+							}
+						549 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					547 = {
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5210
+					}
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+						}
+					549 = {
+					add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 10908 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					}
+					build_railway = {
+					path = { 5210 5196 1939 10860 5160 12929 8223 7133 7996 10908 4033}
+					}
+				}
+			}
+			else_if = {
+					###3  investments
+					limit = {
+						check_variable = { var = ENG.African_Army_Investment value = 3 compare = equals }
+					}
+					###Templates, equipment, Research
+				ENG = {
+					set_technology = {
+    				eng_medium_tank_4 = 1
+					mechanised_infantry = 1
+						}
+						create_equipment_variant = {
+						name = "mk6"
+						type = eng_light_tank_chassis_mk6
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_small_gun_1
+						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						#special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+						obsolete = yes
+						}
+						create_equipment_variant = {
+						name = "Crusader"
+						type = eng_medium_tank_chassis_a15
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_med_gun_1
+						turret_type_slot = tank_medium_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+						obsolete = yes
+						}
+					division_template = {
+					name = "XXX Corps Infantry Division"
+					division_names_group = ENG_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					}
+					obsolete = yes
+					override_model = commonwealth_gfx_infantry_entity
+					template_counter = 107
+					}
+					division_template = {
+					name = "XXX Corps Tank Division"
+					
+					division_names_group = ENG_ARM_02
+						regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+						obsolete = yes
+					}
+					}
+				##Outside Egypt
+				if = {
+					limit = {
+						AND = {
+						551 = {
+							is_controlled_by = ENG
+							}
+						847 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					847 = {
+					add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 12725
+					}
+					add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					
+					
+						}
+					551 = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 1
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+						}
+				}
+				#####Further down south
+				else_if = {
+						limit = {
+						AND = {
+						547 = {
+							is_controlled_by = ENG
+							}
+						549 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					547 = {
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5210
+					}
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+						}
+					549 = {
+					add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					}
+					build_railway = {
+					path = { 5210 5196 1939 10860 5160 12929 8223 7133 7996 10908 4033}
+					}
+				}
+			}
+			else_if = {
+					###2  investments
+					limit = {
+						check_variable = { var = ENG.African_Army_Investment value = 2 compare = equals }
+					}
+					###Templates, equipment, Research
+				ENG = {
+					set_technology = {
+    				eng_medium_tank_4 = 1
+					mechanised_infantry = 1
+						}
+						create_equipment_variant = {
+						name = "mk6"
+						type = eng_light_tank_chassis_mk6
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_small_gun_1
+						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						#special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+						obsolete = yes
+						}
+						create_equipment_variant = {
+						name = "Crusader"
+						type = eng_medium_tank_chassis_a15
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_med_gun_1
+						turret_type_slot = tank_medium_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+						obsolete = yes
+						}
+					division_template = {
+					name = "XXX Corps Infantry Division"
+					division_names_group = ENG_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					}
+					obsolete = yes
+					override_model = commonwealth_gfx_infantry_entity
+					template_counter = 107
+					}
+					division_template = {
+					name = "XXX Corps Tank Division"
+					
+					division_names_group = ENG_ARM_02
+						regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+						obsolete = yes
+					}
+					}
+				##Outside Egypt
+				if = {
+					limit = {
+						AND = {
+						551 = {
+							is_controlled_by = ENG
+							}
+						847 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					847 = {
+					add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 12725
+					}
+					add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					
+					
+						}
+					551 = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 1
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+						}
+				}
+				#####Further down south
+				else_if = {
+						limit = {
+						AND = {
+						547 = {
+							is_controlled_by = ENG
+							}
+						549 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					547 = {
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5210
+					}
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					
+						}
+					549 = {
+					add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					}
+					build_railway = {
+					path = { 5210 5196 1939 10860 5160 12929 8223 7133 7996 10908 4033}
+					}
+				}
+			}
+			else_if = {
+					###1  investments
+					limit = {
+						check_variable = { var = ENG.African_Army_Investment value = 1 compare = equals }
+					}
+					###Templates, equipment, Research
+				ENG = {
+					set_technology = {
+    				eng_medium_tank_4 = 1
+					mechanised_infantry = 1
+						}
+						create_equipment_variant = {
+						name = "mk6"
+						type = eng_light_tank_chassis_mk6
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_small_gun_1
+						turret_type_slot = tank_light_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						#special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+						obsolete = yes
+						}
+						create_equipment_variant = {
+						name = "Crusader"
+						type = eng_medium_tank_chassis_a15
+						parent_version = 0
+						modules = {
+						main_armament_slot = tank_med_gun_1
+						turret_type_slot = tank_medium_turret_1
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = empty
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = extra_ammo_storage
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_gasoline_engine
+						}
+						icon = "gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+						obsolete = yes
+						}
+					division_template = {
+					name = "XXX Corps Infantry Division"
+					division_names_group = ENG_INF_01
+					regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					}
+					obsolete = yes
+					override_model = commonwealth_gfx_infantry_entity
+					template_counter = 107
+					}
+					division_template = {
+					name = "XXX Corps Tank Division"
+					
+					division_names_group = ENG_ARM_02
+						regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+						obsolete = yes
+					}
+					}
+				##Outside Egypt
+				if = {
+					limit = {
+						AND = {
+						551 = {
+							is_controlled_by = ENG
+							}
+						847 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					847 = {
+					add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 12725
+					}
+					add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					
+					create_unit = {prioritize_location = 2046 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					
+					
+					
+						}
+					551 = {
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 1
+					instant_build = yes
+					}
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+						}
+				}
+				#####Further down south
+				else_if = {
+						limit = {
+						AND = {
+						547 = {
+							is_controlled_by = ENG
+							}
+						549 = {
+							is_controlled_by = ENG
+							}
+							}
+						}
+					547 = {
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 5210
+					}
+					add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+						}
+					549 = {
+					add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+					add_building_construction = {
+					type = Radar_station
+					level = 2
+					instant_build = yes
+					}
+					create_unit = {prioritize_location = 4033 allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Tank Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					create_unit = { allow_spawning_on_enemy_provs = yes division = "division_template = \"XXX Corps Infantry Division\" start_experience_factor = 0.5" owner = ENG }
+					
+					
+					}
+					build_railway = {
+					path = { 5210 5196 1939 10860 5160 12929 8223 7133 7996 10908 4033}
+					}
+				}
+			}
+	}
 	}
 	operation_fork = {
 
@@ -3033,8 +4442,12 @@ special_projects = {
 				
 			}
 			add_equipment_to_stockpile = {
-				type = sf_equipment
-				amount = 800
+				type = Special_Forces_Equipment
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = Special_Forces_Marine_Equipment
+				amount = 400
 			}
 			add_equipment_to_stockpile = {
 				type = radio_equipment_0

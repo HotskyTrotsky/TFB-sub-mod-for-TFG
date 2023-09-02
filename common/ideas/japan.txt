@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-	
+		
 		### HOPPING ###
 	    JAP_island_hopping1 = {
 			name = JAP_island_hopping
@@ -1492,11 +1492,11 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			
 			modifier = {
-				port_strike = 2
+				port_strike = 1
 				sortie_efficiency = 0.50
-				naval_strike_attack_factor = 0.25
-				naval_strike_targetting_factor = 0.25
-				naval_strike_agility_factor = 0.25
+				naval_strike_attack_factor = 0.1
+				naval_strike_targetting_factor = 0.1
+				naval_strike_agility_factor = 0.1
 				invasion_preparation = -0.5
 				amphibious_invasion = 0.50
 				naval_speed_factor = 0.2

@@ -62,13 +62,42 @@ technologies = {
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
 		}
-	
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Hawker Hurricane"
+			type = small_plane_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_Hurricane_medium"
+			}
+			create_equipment_variant = {
+			name = "Hawker Hurricane CAS"
+			type = small_plane_cas_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = small_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = small_bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_ENG_fighter1_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Spitfire
 			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = Hurricane_CAS
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Fairey_Albacore
 			research_cost_coeff = 1
 		}
 	
@@ -117,7 +146,95 @@ technologies = {
 			}
 		}
 	}
+	Fairey_Albacore = {
 
+		enable_equipments = {
+		small_plane_airframe_NAV_0_eng
+		}
+		enable_equipment_modules = {
+			mid_torp
+			#mid_naval_bomb
+			#engine_3_1x
+			#Drop_Tank
+			Light_Armor_Plates
+			Self_Sealing_Tanks
+			#heavy_mg_4x
+			#radio_navigation_1
+			#fuel_injection
+		}
+	
+		path = {
+			leads_to_tech = Fairey_Barracuda
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Fairey Albacore"
+			type = small_plane_naval_bomber_airframe_NAV_0_eng
+			modules = {
+			fixed_main_weapon_slot = mid_torp
+			#fixed_auxiliary_weapon_slot_1 = rocket_rails_1
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_ENG_NAV_0_medium"
+			}
+		}
+		research_cost = 2
+		start_year = 1940
+
+		folder = {
+			name = britishair_folder
+			position = { x = -6 y = 12 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+	}
+	Fairey_Barracuda = {
+
+		enable_equipments = {
+		small_plane_airframe_NAV_1_eng
+		}
+		enable_equipment_modules = {
+			late_torp
+			engine_3_1x
+		}
+	
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Fairey Barracuda"
+			type = small_plane_naval_bomber_airframe_NAV_1_eng
+			modules = {
+			fixed_main_weapon_slot = late_torp
+			#fixed_auxiliary_weapon_slot_1 = rocket_rails_1
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Extra_Fuel_Tank
+		}
+		icon = "GFX_ENG_NAV_1_medium"
+			}
+		}
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = britishair_folder
+			position = { x = -6 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+	}
 	Hurricane_CAS = {
 
 		enable_equipments = {
@@ -134,7 +251,20 @@ technologies = {
 			leads_to_tech = Hurricane_CAS2
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Hawker Hurricane CAS II"
+			type = small_plane_cas_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_1
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_1
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Empty
+		}
+		icon = "GFX_ENG_fighter1_medium"
+			}
+		}
 		research_cost = 2
 		start_year = 1938
 
@@ -190,7 +320,20 @@ technologies = {
 			rocket_rails_2
 			medium_Armor_Plates
 		}
-	
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Hawker Hurricane CAS III"
+			type = small_plane_cas_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = tank_buster_1
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Empty
+		}
+		icon = "GFX_ENG_fighter1_medium"
+			}
+		}
 	#	path = {
 	#		leads_to_tech = Spitfire
 	#		research_cost_coeff = 1
@@ -252,7 +395,22 @@ technologies = {
 			#radio_navigation_1
 			heavy_mg_2x
 		}
-	
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Supermarine Spitfire MK1"
+			type = small_plane_airframe_2_eng
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_Spitfire_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Spitfire_Upgrade1
 			research_cost_coeff = 1
@@ -322,7 +480,26 @@ technologies = {
 			heavy_mg_4x
 			radio_navigation_1
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Supermarine Spitfire MK5"
+			type = small_plane_airframe_2_eng
+			upgrades = {
+			plane_Spitfire_armor_upgrade = 1
+			plane_Spitfire_engine_upgrade = 2
+		}
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_Spitfire_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Spitfire_Upgrade2
 			research_cost_coeff = 1
@@ -388,7 +565,26 @@ technologies = {
 			fuel_injection2
 			Drop_Tank
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Supermarine Spitfire MK10"
+			type = small_plane_airframe_2_eng
+			upgrades = {
+			plane_Spitfire_armor_upgrade = 2
+			plane_Spitfire_engine_upgrade = 4
+		}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_Spitfire_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Spitfire_Upgrade3
 			research_cost_coeff = 1
@@ -449,6 +645,26 @@ technologies = {
 			leads_to_tech = Spiteful
 			research_cost_coeff = 1
 		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Supermarine Spitfire MK15"
+			type = small_plane_airframe_2_eng
+			upgrades = {
+			plane_Spitfire_armor_upgrade = 3
+			plane_Spitfire_engine_upgrade = 6
+		}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_Spitfire_medium"
+			}
+		}
 		research_cost = 2
 		start_year = 1942
 
@@ -502,7 +718,27 @@ technologies = {
 		enable_equipment_modules = {
 			radio_navigation_2
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Supermarine Spiteful"
+			type = small_plane_airframe_3_eng
+			upgrades = {
+			#plane_Spitfire_armor_upgrade = 3
+			#plane_Spitfire_engine_upgrade = 6
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_small_plane_airframe_3_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Meteor
 			research_cost_coeff = 1
@@ -560,13 +796,30 @@ technologies = {
 			large_bomb_locks
 			Reflex_sight_1
 			rocket_rails_1
-			rocket_rails_2
+			#rocket_rails_2
+			tank_buster_1
 			tank_buster_2
 			medium_Armor_Plates
 			Drop_Tank
 			engine_3_1x
+			fuel_injection2
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Typhoon"
+			type = small_plane_cas_airframe_5_eng
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_1
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_1
+			fixed_auxiliary_weapon_slot_2 = tank_buster_1
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Reflex_sight_1
+			special_type_slot_3 = fuel_injection2
+			}
+		icon = "GFX_Typhoon_medium"
+				}
+			}
 		path = {
 			leads_to_tech = Tempest
 			research_cost_coeff = 1
@@ -623,10 +876,26 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			Reflex_sight_2
+			rocket_rails_2
 			tank_buster_3
 			engine_4_1x
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Tempest"
+			type = small_plane_cas_airframe_6_eng
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_2
+			fixed_auxiliary_weapon_slot_2 = tank_buster_3
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Reflex_sight_2
+			special_type_slot_3 = fuel_injection2
+			}
+		icon = "GFX_Tempest_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Meteor
 			research_cost_coeff = 1
@@ -736,7 +1005,20 @@ technologies = {
 			Long_Range_Naval_Bomb
 			flying_boat_medium
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Handley Page Heyford Bomber" 
+		type = medium_plane_airframe_0_eng
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Large_Reduced_Materials
+			}
+		icon = "GFX_medium_plane_airframe_0_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Wellington
 			research_cost_coeff = 1
@@ -769,10 +1051,36 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			engine_2_2x
-			medium_tactical_bombs
 			hmg_defense_turret
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Blenheim Naval Bomber" 
+		type = medium_plane_airframe_1_eng
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = flying_boat_medium
+			#special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_eng_tac_1_medium"
+			}
+		create_equipment_variant = {
+		name = "Blenheim Bomber" 
+		type = medium_plane_airframe_1_eng
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Large_Reduced_Materials
+			}
+		icon = "GFX_medium_plane_airframe_1_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Beaufort
 			research_cost_coeff = 1
@@ -806,8 +1114,36 @@ technologies = {
 			Self_Sealing_Tanks
 			hmg_defense_turret_2x
 			medium_bomb_locks
+			medium_tactical_bombs
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Beaufort Naval Bomber" 
+		type = medium_plane_airframe_2_eng
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = flying_boat_medium
+			#special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_eng_heavy_fighter_2_medium"
+			}
+		create_equipment_variant = {
+		name = "Beaufort Bomber" 
+		type = medium_plane_airframe_2_eng
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Self_Sealing_Tanks
+			}
+		icon = "GFX_medium_plane_airframe_2_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Mosquito
 			research_cost_coeff = 1
@@ -841,7 +1177,21 @@ technologies = {
 			large_tactical_bombs
 			air_ground_radar_1
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Beaufort Bomber II" 
+		type = medium_plane_airframe_2_eng
+		modules = {
+			fixed_main_weapon_slot = large_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Self_Sealing_Tanks
+			}
+		icon = "GFX_medium_plane_airframe_2_eng_medium"
+			}
+		}
 	#	path = {
 	#		leads_to_tech = Mosquito
 	#		research_cost_coeff = 1
@@ -876,7 +1226,47 @@ technologies = {
 			large_bomb_locks
 			Reflex_sight_1
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Mosquito Naval Bomber" 
+		type = medium_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = flying_boat_medium
+			#special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ENG_heavy_fighter3_medium"
+			}
+		create_equipment_variant = {
+		name = "Mosquito Bomber" 
+		type = medium_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Self_Sealing_Tanks
+			}
+		icon = "GFX_medium_plane_airframe_3_eng_medium"
+			}
+			create_equipment_variant = {
+		name = "Mosquito Attack Bomber" 
+		type = medium_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = large_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = medium_bomb_locks
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Large_Reduced_Materials
+			}
+		icon = "GFX_ENG_tactical_bomber3_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Mosquito_upgrade
 			research_cost_coeff = 1
@@ -908,7 +1298,22 @@ technologies = {
 			aircraft_cannon_2_2x
 			large_tactical_bombs
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Mosquito Bomber II" 
+		type = medium_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = large_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = large_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			#special_type_slot_2 = Self_Sealing_Tanks
+			}
+		icon = "GFX_medium_plane_airframe_3_eng_medium"
+			}
+			
+		}
 		
 		research_cost = 2
 		start_year = 1942
@@ -939,7 +1344,34 @@ technologies = {
 			hmg_defense_turret_2x
 			Self_Sealing_Tanks
 		}
-	
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Wellington Naval Bomber" 
+		type = large_plane_maritime_patrol_plane_airframe_1_eng 
+		modules = {
+			fixed_main_weapon_slot = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = flying_boat_medium
+			#special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ENG_heavy_plane_1_medium"
+			}
+		create_equipment_variant = {
+		name = "Wellington Bomber" 
+		type = large_plane_airframe_1_eng
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_light
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_light
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Large_Reduced_Materials
+			}
+		icon = "GFX_large_plane_airframe_1_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Halifax
 			research_cost_coeff = 1
@@ -1000,7 +1432,34 @@ technologies = {
 			bomb_sights_1
 			strategic_payload_medium
 		}
-	
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Halifax Naval Bomber" 
+		type = large_plane_maritime_patrol_plane_airframe_2_eng
+		modules = {
+			fixed_main_weapon_slot = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ENG_strategic_bomber2_medium"
+			}
+		create_equipment_variant = {
+		name = "Halifax Bomber" 
+		type = large_plane_airframe_2_eng
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_medium
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = bomb_sights_1
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+			}
+		icon = "GFX_large_plane_airframe_2_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Lancaster
 			research_cost_coeff = 1
@@ -1056,7 +1515,36 @@ technologies = {
 			strategic_payload_heavy
 			radio_navigation_2
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Halifax Naval Bomber" 
+		type = large_plane_maritime_patrol_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_3_4x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ENG_strategic_bomber3_medium"
+			}
+		create_equipment_variant = {
+		name = "Halifax Bomber" 
+		type = large_plane_airframe_3_eng
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_3 = strategic_payload_medium
+			engine_type_slot = engine_3_4x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_3 = bomb_sights_1
+			}
+		icon = "GFX_large_plane_airframe_3_eng_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Lincoln
 			research_cost_coeff = 1
@@ -1106,9 +1594,35 @@ technologies = {
 			air_ground_radar_2
 		}
 		
-		path = {
-			leads_to_tech = ENG_modern_medium_airframe
-			research_cost_coeff = 1
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Halifax Naval Bomber" 
+		type = large_plane_maritime_patrol_plane_airframe_4_eng
+		modules = {
+			fixed_main_weapon_slot = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_4_4x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_heavy_plane_3_medium"
+			}
+		create_equipment_variant = {
+		name = "Halifax Bomber" 
+		type = large_plane_airframe_4_eng
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_heavy
+			fixed_auxiliary_weapon_slot_3 = strategic_payload_heavy
+			engine_type_slot = engine_4_4x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = air_ground_radar_2
+			special_type_slot_3 = bomb_sights_2
+			}
+		icon = "GFX_large_plane_airframe_4_eng_medium"
+			}
 		}
 		research_cost = 2
 		start_year = 1944

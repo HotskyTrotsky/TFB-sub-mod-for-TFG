@@ -25,6 +25,7 @@ set_technology = {
 	fuel_refining = 1
 	support_weapons = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 if = {	
 	limit = {	

@@ -270,6 +270,10 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			custom_effect_tooltip = AST_new_general_tt
 			hidden_effect = {
 				create_corps_commander = {
@@ -2590,7 +2594,6 @@ focus_tree = {
 
 		available = {
 			amount_research_slots < 7
-			amount_research_slots > 4
 		}
 		
 		bypass = {
@@ -2964,7 +2967,6 @@ focus_tree = {
 		available = {
 			is_subject = yes
 			amount_research_slots < 7
-			amount_research_slots > 4
 		}
 		
 		bypass = {
@@ -3313,6 +3315,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_to_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+					custom_effect_tooltip = AST_SWPA_TT
 		}
 	}
 

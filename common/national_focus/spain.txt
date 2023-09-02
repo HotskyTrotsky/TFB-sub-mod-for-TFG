@@ -2390,7 +2390,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			
+			set_technology = {
+				tech_special_forces = 1
+			}
 			remove_trait = {
 				character = SPA_emilio_mola
 				trait = thorough_planner

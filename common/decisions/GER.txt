@@ -1,5 +1,2405 @@
 #Category only allowed for GER
+GER_Eastern_Occupied_Nations = {
+	GER_Economic_Fatigue = {
 
+		icon = generic_operation
+
+		available = {
+			GER = {
+				has_war = no
+			}
+			check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = equals}
+		}
+		activation = {
+			check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = greater_than}
+		}
+		fire_only_once = no
+		days_mission_timeout = 120
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+				check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = greater_than}
+				}
+				subtract_from_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.0025
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = less_than}
+				}
+				add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.0025
+				}
+			}
+		}
+	}
+	
+	GER_recruit_cossacks_1 = {
+
+		icon = generic_operation
+
+		available = {
+			NOT = {
+				GER = {
+				has_war_with = SOV
+			}
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 120
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Ukrainian Cossack"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				203 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+					GER = {
+			#clr_country_flag = UKR_REC_1
+			set_country_flag = UKR_REC_2
+			activate_mission = GER_recruit_cossacks_2
+					}
+			}
+		}
+	}
+	GER_recruit_cossacks_2 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+						}
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 160
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			AND = {
+			GER = {
+				has_country_flag = UKR_REC_2
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+			}
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Ukrainian Cossack"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				203 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				202 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+			GER = {
+			clr_country_flag = UKR_REC_2
+			set_country_flag = UKR_REC_3
+			activate_mission = GER_recruit_cossacks_3
+					}
+			}
+		}
+	}
+	GER_recruit_cossacks_3 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 200
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = UKR_REC_3
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Ukrainian Cossack"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				203 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				202 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+					198 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+			GER = {
+			clr_country_flag = UKR_REC_3
+			set_country_flag = UKR_REC_4
+			activate_mission = GER_recruit_cossacks_4
+					}
+			}
+		}
+	}
+	GER_recruit_cossacks_4 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 240
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = UKR_REC_4
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Ukrainian Cossack"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				203 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				202 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				198 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+				}
+			GER = {
+			clr_country_flag = UKR_REC_4
+			set_country_flag = UKR_REC_5
+			activate_mission = GER_recruit_cossacks_5
+					}
+			}
+		}
+	}
+	GER_recruit_cossacks_5 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+			
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 280
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = UKR_REC_5
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Ukrainian Cossack"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				203 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				202 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					}
+				198 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+				}
+				201 = {
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
+				}
+			GER = {
+			clr_country_flag = UKR_REC_5
+					}
+			}
+		}
+	}
+	
+	GER_Ukraine_Industry = {
+
+		icon = generic_operation
+
+		available = {
+			NOT = {
+				GER = {
+				has_war_with = SOV
+			}
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			200 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			226 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			196 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			259 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+			197 = {
+				CONTROLLER = {
+					OR = {
+						tag = GER
+						is_subject_of = GER
+						is_in_faction_with = GER
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 120
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+				add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.005
+			}
+		}
+	}
+
+	GER_recruit_Belarus_1 = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+					}
+				}
+			}
+		fire_only_once = yes
+		days_mission_timeout = 120
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Belarussian Conscripts"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				206 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					GER = {
+			#clr_country_flag = UKR_REC_1
+			set_country_flag = BEL_REC_2
+			activate_mission = GER_recruit_Belarus_2
+					}
+			}
+		}
+	}
+	GER_recruit_Belarus_2 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+			}
+		}
+		activation = {
+			
+			}
+		fire_only_once = yes
+		days_mission_timeout = 160
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = BEL_REC_2
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Belarussian Conscripts"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				206 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+				204 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					GER = {
+			clr_country_flag = BEL_REC_2
+			set_country_flag = BEL_REC_3
+			activate_mission = GER_recruit_Belarus_3
+					}
+			}
+		}
+	}
+	GER_recruit_Belarus_3 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+			}
+		}
+		activation = {
+			
+			}
+		fire_only_once = yes
+		days_mission_timeout = 200
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = BEL_REC_3
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Belarussian Conscripts"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				206 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+				204 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					97 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					GER = {
+			clr_country_flag = BEL_REC_3
+			set_country_flag = BEL_REC_4
+			activate_mission = GER_recruit_Belarus_4
+					}
+			}
+		}
+	}
+	GER_recruit_Belarus_4 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+			}
+		}
+		activation = {
+			
+			}
+		fire_only_once = yes
+		days_mission_timeout = 240
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = BEL_REC_4
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Belarussian Conscripts"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				206 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+				204 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					97 = {
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
+					}
+					GER = {
+			clr_country_flag = BEL_REC_4
+			#set_country_flag = BEL_REC_4
+			#activate_mission = GER_recruit_Belarus_4
+					}
+			}
+		}
+	}
+
+	GER_Belarus_Industry = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 207
+				controls_state = 241
+					}
+				}
+			}
+		fire_only_once = yes
+		days_mission_timeout = 120
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.005
+			}
+		}
+	}
+	GER_Estonia_Industry = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.005
+			}
+		}
+	}
+	GER_recruit_Estonia_1 = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+				GER = {
+					create_corps_commander = {
+					name = "Quak"
+					gfx = "GFX_Quak"
+					traits = { old_guard politically_connected }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+			}
+				}
+						division_template = {
+						name = "Estonian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				13 = {
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			#clr_country_flag = UKR_REC_1
+			set_country_flag = EST_REC_2
+			activate_mission = GER_recruit_Estonia_2
+					}
+			}
+		}
+	}
+	GER_recruit_Estonia_2 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = EST_REC_2
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Estonian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				13 = {
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+				812 = {
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = EST_REC_2
+			set_country_flag = EST_REC_3
+			activate_mission = GER_recruit_Estonia_3
+					}
+			}
+		}
+	}
+	GER_recruit_Estonia_3 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 813
+				controls_state = 191
+				controls_state = 812
+				controls_state = 13
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 200
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = EST_REC_3
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Estonian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				13 = {
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+				812 = {
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = EST_REC_3
+			#set_country_flag = EST_REC_3
+			#activate_mission = GER_recruit_Estonia_3
+					}
+			}
+		}
+	}
+
+	GER_Latvia_Industry = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.005
+			}
+		}
+	}
+	GER_recruit_Latvia_1 = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Latvian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				12 = {
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			#clr_country_flag = UKR_REC_1
+			set_country_flag = LAT_REC_2
+			activate_mission = GER_recruit_Latvia_2
+					}
+			}
+		}
+	}
+	GER_recruit_Latvia_2 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = LAT_REC_2
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Latvian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				12 = {
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					808 = {
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = LAT_REC_2
+			set_country_flag = LAT_REC_3
+			activate_mission = GER_recruit_Latvia_3
+					}
+			}
+		}
+	}
+	GER_recruit_Latvia_3 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 810
+				controls_state = 809
+				controls_state = 808
+				controls_state = 190
+				controls_state = 12
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 200
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = LAT_REC_3
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Latvian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				12 = {
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					808 = {
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = LAT_REC_3
+			#set_country_flag = LAT_REC_3
+			#activate_mission = GER_recruit_Latvia_3
+					}
+			}
+		}
+	}
+	
+	GER_Lithuania_Industry = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.005
+			}
+		}
+	}
+	GER_recruit_Lithuania_1 = {
+
+		icon = generic_operation
+		
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+			}
+		}
+		activation = {
+			GER = {
+				has_war_with = SOV
+			}
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Lithuanian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				11 = {
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			#clr_country_flag = UKR_REC_1
+			set_country_flag = LIT_REC_2
+			activate_mission = GER_recruit_Lithuania_2
+					}
+			}
+		}
+	}
+	GER_recruit_Lithuania_2 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = LIT_REC_2
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Lithuanian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				11 = {
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					815 = {
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = LIT_REC_2
+			set_country_flag = LIT_REC_3
+			activate_mission = GER_recruit_Lithuania_3
+					}
+			}
+		}
+	}
+	GER_recruit_Lithuania_3 = {
+
+		icon = generic_operation
+		allowed = {
+			always = no
+		}
+		available = {
+			NOT = {
+				
+			GER = {
+				AND = {
+				controls_state = 11
+				controls_state = 815
+				controls_state = 814
+				controls_state = 189
+				controls_state = 815
+				}
+			}
+			}
+		}
+		activation = {
+			
+		}
+		fire_only_once = yes
+		days_mission_timeout = 200
+		#cost = 50
+
+		ai_will_do = {
+		}
+		
+		visible = {
+			GER = {
+				has_country_flag = LIT_REC_3
+			}
+			original_tag = GER
+			has_war_with = SOV
+			has_government = fascism
+		}
+		
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			hidden_effect = {
+						division_template = {
+						name = "Lithuanian Recruits"
+						division_names_group = GER_Inf_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+						obsolete = yes
+				}
+				11 = {
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					815 = {
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
+					}
+					GER = {
+			clr_country_flag = LIT_REC_3
+			#set_country_flag = LIT_REC_3
+			#activate_mission = GER_recruit_Lithuania_3
+					}
+			}
+		}
+	}
+}
 operations = {
 	
 	Rommel_Desert_Fox = {
@@ -11,6 +2411,7 @@ operations = {
 		}
 
 		available = {
+			AND = {
 			GER = {
 		num_divisions_in_states = {
 		count > 5
@@ -19,6 +2420,7 @@ operations = {
 		}
 			FRA = {
 				has_capitulated = yes
+			}
 			}
 		}
 
@@ -34,16 +2436,19 @@ operations = {
 		is_good = no
 
 		complete_effect = {
-			news_event = {id = germany.2004}
+			GER = {
+			country_event = {id = germany.2004}
+			}
 		}
 
 		timeout_effect = {
+		GER = {
 		add_trait = {
 		character = GER_erwin_rommel
 		trait = panzer_leader
 			}
 		}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -74,9 +2479,13 @@ operations = {
 		activation = {
 			has_war = yes
 			has_war_with = GRE
+			GRE = {
+			has_capitulated = yes
+			}
 			182 = {
 			is_controlled_by = GRE
 			}
+			
 		}
 
 		#Success
@@ -304,6 +2713,10 @@ operations = {
 		is_good = no
 
 		complete_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.025
+			}
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -336,6 +2749,10 @@ operations = {
 		is_good = no
 
 		complete_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.025
+			}
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -364,6 +2781,10 @@ operations = {
 		is_good = no
 
 		complete_effect = {
+			add_to_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.025
+			}
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -373,81 +2794,7 @@ operations = {
 			add_stability = -0.1
 		}
 	}
-	
-	GER_recruit_cossacks = {
 
-		icon = generic_operation
-
-		available = {
-			has_war = yes
-			has_government = fascism
-			200 = {
-				CONTROLLER = {
-					OR = {
-						tag = GER
-						is_subject_of = GER
-						is_in_faction_with = GER
-					}
-				}
-			}
-			226 = {
-				CONTROLLER = {
-					OR = {
-						tag = GER
-						is_subject_of = GER
-						is_in_faction_with = GER
-					}
-				}
-			}
-			196 = {
-				CONTROLLER = {
-					OR = {
-						tag = GER
-						is_subject_of = GER
-						is_in_faction_with = GER
-					}
-				}
-			}
-			259 = {
-				CONTROLLER = {
-					OR = {
-						tag = GER
-						is_subject_of = GER
-						is_in_faction_with = GER
-					}
-				}
-			}
-			197 = {
-				CONTROLLER = {
-					OR = {
-						tag = GER
-						is_subject_of = GER
-						is_in_faction_with = GER
-					}
-				}
-			}
-		}
-		
-		fire_only_once = yes
-
-		cost = 50
-
-		ai_will_do = {
-		}
-
-		visible = {
-			original_tag = GER
-			has_war_with = SOV
-			has_government = fascism
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = GER_cossacks_tt
-			hidden_effect = {
-				load_oob = GER_cossacks
-			}
-		}
-	}
 }
 
 GER_case_anton_category = {
@@ -647,7 +2994,7 @@ GER_reichskommissariats = {
 	}
 }
 political_actions = {
-
+	
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
 
@@ -1329,7 +3676,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1358,7 +3705,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1436,7 +3783,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1465,7 +3812,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1494,7 +3841,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1565,7 +3912,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1594,7 +3941,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1679,7 +4026,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1708,7 +4055,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1737,7 +4084,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1766,7 +4113,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1851,7 +4198,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1880,7 +4227,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1909,7 +4256,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}
@@ -1938,7 +4285,7 @@ special_projects = {
 						all_provinces = yes
 						limit_to_coastal = yes
 					}
-					level = 2
+					level = 1
             	    instant_build = yes
             	}
 			}

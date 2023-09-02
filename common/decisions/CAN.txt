@@ -1,0 +1,81 @@
+operations = {
+
+	CAN_Hobarts_Funnies = {
+		allowed = {
+			original_tag = CAN
+		}
+		fire_only_once = no
+		available = {
+            CAN = {
+			has_completed_focus = CAN_the_black_devils
+            }
+            date > 1941.1.1
+		}
+
+		visible = {
+			 CAN = {
+			has_completed_focus = CAN_the_black_devils
+            }
+		}
+		
+		complete_effect = {
+			CAN_increase_HF_cap_medium_double = yes
+			CAN_increase_HF_cap_heavy_double = yes
+		}
+        
+       days_remove  = 240
+	}
+	CAN_Hobarts_Funnies_Switch_To_Heavies = {
+		allowed = {
+			original_tag = CAN
+		}
+		fire_only_once = no
+		available = {
+            CAN = {
+			has_completed_focus = CAN_the_black_devils
+            }
+            date > 1941.1.1
+		}
+
+		visible = {
+			 CAN = {
+			has_completed_focus = CAN_the_black_devils
+            has_country_flag = CAN_HF_armored_division_medium
+            }
+		}
+		
+		complete_effect = {
+			CAN_Hobarts_Funnies_armored_division_heavy = yes
+			CAN_swap_HF_medium_heavy = yes
+            set_country_flag = CAN_HF_armored_division_heavy
+            clr_country_flag = CAN_HF_armored_division_medium
+		}
+	}
+    CAN_Hobarts_Funnies_Switch_To_Medium = {
+		allowed = {
+			original_tag = CAN
+		}
+		fire_only_once = no
+		available = {
+            CAN = {
+			has_completed_focus = CAN_the_black_devils
+            }
+           date > 1941.1.1
+		}
+
+		visible = {
+			 CAN = {
+			has_completed_focus = CAN_the_black_devils
+            has_country_flag = CAN_HF_armored_division_heavy
+            }
+		}
+		
+		complete_effect = {
+			CAN_Hobarts_Funnies_armored_division_medium = yes
+			CAN_swap_HF_heavy_medium = yes
+            clr_country_flag = CAN_HF_armored_division_heavy
+            set_country_flag = CAN_HF_armored_division_medium
+		}
+		
+	}
+}

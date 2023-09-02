@@ -59,9 +59,26 @@ technologies = {
 			heavy_mg_4x
 			heavy_mg_2x
 			Light_Armor_Plates
+			light_mg_4x
+			Self_Sealing_Tanks
+			Extra_Fuel_Tank
 		}
-		
-	
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Potez 630"
+			type = medium_plane_airframe_3_fra
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Light_Armor_Plates
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_medium_plane_airframe_3_fra_medium"
+			}
+		}
 		
 		path = {
 			leads_to_tech = Potez_630
@@ -101,7 +118,22 @@ technologies = {
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
 		}
-		
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Morane-Saulnier M.S.406"
+			type = small_plane_airframe_1_fra
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_small_plane_airframe_1_fra_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Bloch_MB.150
@@ -141,8 +173,22 @@ technologies = {
 			fuel_injection
 			heavy_mg_2x
 		}
-		
-	
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Bloch MB.150"
+			type = small_plane_airframe_2_fra
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_small_plane_airframe_2_fra_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Dewoitine_D.520
 			research_cost_coeff = 1
@@ -182,8 +228,22 @@ technologies = {
 			heavy_mg_4x
 			radio_navigation_1
 		}
-		
-	
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Bloch MB.150"
+			type = small_plane_airframe_3_fra
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_3_fra_fra_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Dewoitine_D.520
 			research_cost_coeff = 1
@@ -227,7 +287,7 @@ technologies = {
 			Long_Range_Naval_Bomb
 			flying_boat_medium
 		}
-
+		
 		path = {
 			leads_to_tech = Bloch_MB.210
 			research_cost_coeff = 1
@@ -258,12 +318,24 @@ technologies = {
 			large_plane_airframe_1_fra
 		}
 		enable_equipment_modules = {
-			strategic_payload_light
+			strategic_payload_light#
+			engine_1_4x
 		}
-
-		path = {
-			leads_to_tech = Bloch_MB.210
-			research_cost_coeff = 1
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Bloch MB.210"
+			type = large_plane_airframe_1_fra
+			modules = {
+			fixed_main_weapon_slot = strategic_payload_light
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_light
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_light
+			engine_type_slot = engine_1_4x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_large_plane_airframe_1_fra_medium"
+			}
 		}
 		research_cost = 2
 		start_year = 1936
@@ -294,7 +366,22 @@ technologies = {
 			hmg_defense_turret_2x
 			medium_tactical_bombs
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Liore et Olivier LeO 45"
+			type = medium_plane_airframe_1_fra
+			modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_medium_plane_airframe_1_fra_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Breguet_693
@@ -324,7 +411,22 @@ technologies = {
 		enable_equipment_modules = {
 			engine_3_2x
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+			name = "Breguet 693"
+			type = medium_plane_airframe_2_fra
+			modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			special_type_slot_3 = empty
+		}
+		icon = "GFX_medium_plane_airframe_2_fra_medium"
+			}
+		}
 		research_cost = 2
 		start_year = 1939
 		folder = {

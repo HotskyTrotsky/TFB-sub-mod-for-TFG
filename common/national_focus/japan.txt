@@ -1021,6 +1021,12 @@
 				MAN = { add_ideas = MAN_intervene_in_china_5 }
 			}
 			unlock_decision_tooltip = { decision = MAN_china_step_up_war_effort show_effect_tooltip = yes }
+			SOV = {
+				add_timed_idea = {
+					idea = SOV_Volunteers_China_0
+					days = 730
+				}
+			}
 		}
 	}
 	
@@ -1076,6 +1082,9 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+			}
 			add_tech_bonus = {
 				name = JAP_lessons
 				bonus = 0.75
@@ -1322,6 +1331,7 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
+			add_ideas = peace_training
 			set_country_flag = JAP_early_war
 			add_timed_idea = { idea = JAP_early_war_industry_bonus days = 365 }
 			add_ideas =  JAP_early_war_industry_debuff
@@ -1372,6 +1382,7 @@
 			set_country_flag = JAP_mid_war
 			add_ideas = JAP_mid_war_industry_bonus
 			custom_effect_tooltip = JAP_mid_war_start_tt
+			add_ideas = peace_training
 		}
 	}
 
@@ -1398,6 +1409,7 @@
 			set_country_flag = JAP_late_war
 			add_ideas = JAP_late_war_industry_bonus
 			custom_effect_tooltip = JAP_late_war_start_tt
+			add_ideas = peace_training
 		}
 	}
 
@@ -2138,7 +2150,20 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			OR = {
 			has_country_flag = JAP_siam1
+			AND = {
+				SIA = {
+					is_ai = yes
+				}
+				OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+					}
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2157,9 +2182,24 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			OR = {
 			has_country_flag = JAP_siam2
+			AND = {
+				SIA = {
+						is_ai = no
+				}
+				OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+					}
+				}	
+			}
 		}
-
+		bypass = {
+			SIA = {is_in_faction_with = JAP}
+		}
 		completion_reward = {
 			SIA = { country_event = generic.5 }
 			add_ai_strategy = {
@@ -2181,7 +2221,15 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			OR = {
 			has_country_flag = JAP_army1
+				OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+					}
+			}
 		}
 
 		completion_reward = {
@@ -2206,7 +2254,16 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			OR = {
 			has_country_flag = JAP_army2
+
+				OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2232,7 +2289,16 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+
+			OR = {
 			has_country_flag = JAP_buildup1
+			OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+					}
+			}
 		}
 
 		completion_reward = {
@@ -2280,7 +2346,15 @@
 		relative_position_id = JAP_strike_south_doctrine
 
 		available = {
+			OR = {
 			has_country_flag = JAP_buildup2
+			OR = {
+				CHI = {
+					has_capitulated = yes
+						}
+				date > 1940.1.1
+					}
+			}
 		}
 
 		completion_reward = {
@@ -2406,7 +2480,7 @@
 				target = RAJ
 				type = annex_everything
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = CAN
 				type = annex_everything
 			}
@@ -2436,7 +2510,7 @@
 					}
 				}	
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = FRA
 				type = annex_everything
 			}
@@ -2516,8 +2590,12 @@
 						target = RAJ
 						type = annex_everything
 					}
-					create_wargoal = {
+					declare_war_on = {
 						target = CAN
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = FRA
 						type = annex_everything
 					}
 					declare_war_on = {

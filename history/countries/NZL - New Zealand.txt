@@ -17,6 +17,7 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
 if = {

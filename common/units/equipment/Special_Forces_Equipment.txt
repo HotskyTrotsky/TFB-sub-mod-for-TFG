@@ -1,0 +1,607 @@
+equipments = {
+	Special_Forces_Equipment = {
+			year = 1922
+			is_archetype = yes
+			is_buildable = no
+
+			
+			type = armor
+			group_by = archetype
+			interface_category = interface_category_land
+			priority = 2000
+
+			module_slots = {
+				Design_Slot = {
+					required = yes
+					allowed_module_categories = {
+						Special_Forces_Only
+					}
+				}
+
+				Main_Equipment_Slot = {
+					required = no
+					allowed_module_categories = {
+						Main_Equipment
+					}
+				}
+
+				Radio_slot = {
+					required = no
+					allowed_module_categories = {
+						Radio_Comms
+					}
+				}
+
+				Supporting_Weapons_slot = {
+					required = no
+					allowed_module_categories = {
+						Supporting_Weapons
+					}
+				}
+
+				Special_slot_1 = {          
+					required = no
+					allowed_module_categories = {
+						Special_Equipment
+					}
+				}
+
+				Special_slot_2 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}
+				Special_slot_3 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}			
+			}
+			module_count_limit = {
+			module = Defense_Unit
+			count < 2
+			}
+			module_count_limit = {
+			module = Assualt
+			count < 2
+			}
+			module_count_limit = {
+			module = flame_support
+			count < 2
+			}
+			module_count_limit = {
+			module = Mortars
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Weapons
+			count < 2
+			}
+			module_count_limit = {
+			module = Basic_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Improved_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Advanced_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Rifles
+			count < 2
+			}
+			module_count_limit = {
+			module = Larger_Explosives
+			count < 2
+			}
+			module_count_limit = {
+			module = Molotovs
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Grenades
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Ammuntion
+			count < 2
+			}
+			module_count_limit = {
+			module = Machine_Gun_Squad
+			count < 2
+			}
+			module_count_limit = {
+			module = Sniper_Teams
+			count < 2
+			}
+			module_count_limit = {
+			module = Sapper_Teams
+			count < 2
+			}
+			
+    	    lend_lease_cost = 1
+    	    reliability = 0.8
+    	    build_cost_ic = 6
+			maximum_speed = 4
+			resources = {
+				aluminium = 1
+				steel = 1
+			}
+		}
+	Special_Forces_Equipment_0 = {
+		year = 1936
+		archetype = Special_Forces_Equipment
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 6
+		
+		
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			Design_Slot = Special_Forces_Equipment
+			
+		}
+	}
+	Special_Forces_Marine_Equipment = {
+			year = 1922
+			is_archetype = yes
+			is_buildable = no
+
+			
+			type = armor
+			group_by = archetype
+			interface_category = interface_category_land
+			priority = 2000
+
+			module_slots = {
+				Design_Slot = {
+					required = yes
+					allowed_module_categories = {
+						Marine_Only
+					}
+				}
+
+				Main_Equipment_Slot = {
+					required = no
+					allowed_module_categories = {
+						Main_Equipment
+					}
+				}
+
+				Radio_slot = {
+					required = no
+					allowed_module_categories = {
+						Radio_Comms
+					}
+				}
+
+				Supporting_Weapons_slot = {
+					required = no
+					allowed_module_categories = {
+						Supporting_Weapons
+					}
+				}
+
+				Special_slot_1 = {          
+					required = no
+					allowed_module_categories = {
+						Special_Equipment
+					}
+				}
+
+				Special_slot_2 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}
+				Special_slot_3 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}			
+			}
+			module_count_limit = {
+			module = Defense_Unit
+			count < 2
+			}
+			module_count_limit = {
+			module = Assualt
+			count < 2
+			}
+			module_count_limit = {
+			module = flame_support
+			count < 2
+			}
+			module_count_limit = {
+			module = Mortars
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Weapons
+			count < 2
+			}
+			module_count_limit = {
+			module = Basic_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Improved_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Advanced_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Rifles
+			count < 2
+			}
+			module_count_limit = {
+			module = Larger_Explosives
+			count < 2
+			}
+			module_count_limit = {
+			module = Molotovs
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Grenades
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Ammuntion
+			count < 2
+			}
+			module_count_limit = {
+			module = Machine_Gun_Squad
+			count < 2
+			}
+			module_count_limit = {
+			module = Sniper_Teams
+			count < 2
+			}
+			module_count_limit = {
+			module = Sapper_Teams
+			count < 2
+			}
+			
+    	    lend_lease_cost = 1
+    	    reliability = 0.8
+    	    build_cost_ic = 6
+			maximum_speed = 4
+			resources = {
+				aluminium = 1
+				steel = 1
+			}
+		}
+	
+	Special_Forces_Marine_Equipment_0 = {
+		year = 1936
+	
+		archetype = Special_Forces_Marine_Equipment
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 6
+		
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			Design_Slot = Marine_Equipment
+			
+		}
+	}
+	Special_Forces_Mountaineer_Equipment = {
+			year = 1922
+			is_archetype = yes
+			is_buildable = no
+
+			
+			type = armor
+			group_by = archetype
+			interface_category = interface_category_land
+			priority = 2000
+
+			module_slots = {
+				Design_Slot = {
+					required = yes
+					allowed_module_categories = {
+						Mountaineer_Only
+					}
+				}
+
+				Main_Equipment_Slot = {
+					required = no
+					allowed_module_categories = {
+						Main_Equipment
+					}
+				}
+
+				Radio_slot = {
+					required = no
+					allowed_module_categories = {
+						Radio_Comms
+					}
+				}
+
+				Supporting_Weapons_slot = {
+					required = no
+					allowed_module_categories = {
+						Supporting_Weapons
+					}
+				}
+
+				Special_slot_1 = {          
+					required = no
+					allowed_module_categories = {
+						Special_Equipment
+					}
+				}
+
+				Special_slot_2 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}
+				Special_slot_3 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}			
+			}
+			module_count_limit = {
+			module = Defense_Unit
+			count < 2
+			}
+			module_count_limit = {
+			module = Assualt
+			count < 2
+			}
+			module_count_limit = {
+			module = flame_support
+			count < 2
+			}
+			module_count_limit = {
+			module = Mortars
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Weapons
+			count < 2
+			}
+			module_count_limit = {
+			module = Basic_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Improved_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Advanced_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Rifles
+			count < 2
+			}
+			module_count_limit = {
+			module = Larger_Explosives
+			count < 2
+			}
+			module_count_limit = {
+			module = Molotovs
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Grenades
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Ammuntion
+			count < 2
+			}
+			module_count_limit = {
+			module = Machine_Gun_Squad
+			count < 2
+			}
+			module_count_limit = {
+			module = Sniper_Teams
+			count < 2
+			}
+			module_count_limit = {
+			module = Sapper_Teams
+			count < 2
+			}
+			
+    	    lend_lease_cost = 1
+    	    reliability = 0.8
+    	    build_cost_ic = 6
+			maximum_speed = 4
+			resources = {
+				aluminium = 1
+				steel = 1
+			}
+		}
+	
+	Special_Forces_Mountaineer_Equipment_0 = {
+		year = 1936
+		
+		archetype = Special_Forces_Mountaineer_Equipment
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 6
+		
+		
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			Design_Slot = Mountaineer_Equipment
+			
+		}
+	}
+	Special_Forces_Paratrooper_Equipment = {
+			year = 1922
+			is_archetype = yes
+			is_buildable = no
+
+			
+			type = armor
+			group_by = archetype
+			interface_category = interface_category_land
+			priority = 2000
+
+			module_slots = {
+				Design_Slot = {
+					required = yes
+					allowed_module_categories = {
+						Paratrooper_Only
+					}
+				}
+
+				Main_Equipment_Slot = {
+					required = no
+					allowed_module_categories = {
+						Main_Equipment
+					}
+				}
+
+				Radio_slot = {
+					required = no
+					allowed_module_categories = {
+						Radio_Comms
+					}
+				}
+
+				Supporting_Weapons_slot = {
+					required = no
+					allowed_module_categories = {
+						Supporting_Weapons
+					}
+				}
+
+				Special_slot_1 = {          
+					required = no
+					allowed_module_categories = {
+						Special_Equipment
+					}
+				}
+
+				Special_slot_2 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}
+				Special_slot_3 = {
+					required = no 								
+					allowed_module_categories = {			
+						Special_Equipment
+					}
+				}			
+			}
+			module_count_limit = {
+			module = Defense_Unit
+			count < 2
+			}
+			module_count_limit = {
+			module = Assualt
+			count < 2
+			}
+			module_count_limit = {
+			module = flame_support
+			count < 2
+			}
+			module_count_limit = {
+			module = Mortars
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Weapons
+			count < 2
+			}
+			module_count_limit = {
+			module = Basic_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Improved_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Advanced_Coms
+			count < 2
+			}
+			module_count_limit = {
+			module = Anti_Tank_Rifles
+			count < 2
+			}
+			module_count_limit = {
+			module = Larger_Explosives
+			count < 2
+			}
+			module_count_limit = {
+			module = Molotovs
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Grenades
+			count < 2
+			}
+			module_count_limit = {
+			module = Additional_Ammuntion
+			count < 2
+			}
+			module_count_limit = {
+			module = Machine_Gun_Squad
+			count < 2
+			}
+			module_count_limit = {
+			module = Sniper_Teams
+			count < 2
+			}
+			module_count_limit = {
+			module = Sapper_Teams
+			count < 2
+			}
+			
+    	    lend_lease_cost = 1
+    	    reliability = 0.8
+    	    build_cost_ic = 6
+			maximum_speed = 4
+			resources = {
+				aluminium = 1
+				steel = 1
+			}
+		}
+	
+	Special_Forces_Paratrooper_Equipment_0 = {
+		year = 1936
+		picture = Special_Forces_Equipment
+		archetype = Special_Forces_Paratrooper_Equipment
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 6
+		
+		
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			Design_Slot = Paratrooper_Equipment
+			
+		}
+	}
+}

@@ -965,6 +965,63 @@ ideas = {
 				production_speed_infrastructure_factor = 0.5
 			}
 		}
+		###########
+		##Lend lease
+		Idea_USA_Lend_Lease_1 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 20
+			}
+		}
+		Idea_USA_Lend_Lease_2 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 25
+			}
+		}
+		Idea_USA_Lend_Lease_3 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 30
+			}
+		}
+		##########
 		USA_tackling_waste_idea = {
 
 			picture = generic_disjointed_gov			

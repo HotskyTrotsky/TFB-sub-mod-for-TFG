@@ -1,0 +1,146 @@
+
+		#######
+Check_Convoy_Route = {
+	if = {
+		limit = {
+			OR = {
+			ENG = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			USA = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			SOV = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			}
+			SOV = {
+			has_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+				}
+			}
+			subtract_from_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 2
+					}
+			SOV = {
+				clr_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+				set_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+			}
+		}
+	else_if = {
+		limit = {
+			OR = {
+			ENG = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			USA = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			SOV = {
+				has_equipment = {
+						convoy < 300
+					}
+			}
+			}
+			SOV = {
+			has_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+				}
+			}
+		}
+	else_if = {
+		limit = {
+			OR = {
+			ENG = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			USA = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			SOV = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			}
+			SOV = {
+				has_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+				}
+			}
+			add_to_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 2
+						}
+			SOV = {
+				clr_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+				set_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+			}
+		}
+		else_if = {
+		limit = {
+			OR = {
+			ENG = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			USA = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			SOV = {
+				has_equipment = {
+						convoy > 300
+					}
+			}
+			}
+			SOV = {
+				has_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+				}
+			}
+
+		}
+	}
+
+Persian_corridor = {
+			if = {
+				limit = {
+					229 = {
+						AND = {
+					has_state_flag = SOVIET_LEND_LEASE_LANE_ClOSED
+					is_controlled_by = SOV
+							}
+						}
+					}
+				clr_state_flag = SOVIET_LEND_LEASE_LANE_ClOSED
+				set_state_flag = SOVIET_LEND_LEASE_LANE_OPEN
+			}
+			if = {
+				limit = {
+					413 = {
+						is_controlled_by = PER
+						}
+					PER = {
+						is_puppet = yes
+						}
+					}
+				add_to_variable = {
+						var = SOV.SOVIET_LEND_LEASE_LANE
+						value = 1
+						}
+			}
+		}

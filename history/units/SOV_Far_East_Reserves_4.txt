@@ -64,6 +64,7 @@ division_template = {
 						maintenance_company = { x = 1 y = 2 }
 						}
 						template_counter = 128
+						obsolete = yes
 					}
 		
 units = {

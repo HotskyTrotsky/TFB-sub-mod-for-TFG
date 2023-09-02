@@ -1,0 +1,186 @@
+spriteTypes = {	
+
+	####Icons
+	SpriteType = {
+		name = "GFX_Special_Forces_Marine_Equipment"
+		texturefile = "gfx/interface/equipmentdesigner/Special_Forces/role_icon_marine.dds"
+	}
+    SpriteType = {
+		name = "GFX_Special_Forces_Paratrooper_Equipment"
+		texturefile = "gfx/interface/equipmentdesigner/Special_Forces/role_icon_paratrooper.dds"
+	}
+	SpriteType = {
+		name = "GFX_Special_Forces_Mountaineer_Equipment"
+		texturefile = "gfx/interface/equipmentdesigner/Special_Forces/role_icon_mountaineer.dds"
+	}
+	spriteType = {
+		name = "GFX_Special_Forces_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/role_icon_special.dds"
+		legacy_lazy_load = no
+	}
+	##Tech gfxs
+	spriteType = {
+		name = "GFX_Special_Forces_Equipment_0_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Equipment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Special_Forces_Equipment_Technology_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Equipment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Special_Forces_Paratrooper_Equipment_0_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Paratrooper_Equipment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Special_Forces_Marine_Equipment_0_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Marine_Equipment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Special_Forces_Mountaineer_Equipment_0_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Mountaineer_Equipment.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Special_Forces_Mountaineer_Equipment_0_medium"
+		textureFile = "gfx/interface/technologies/Special_Forces_Mountaineer_Equipment.dds"
+		legacy_lazy_load = no
+	}
+	####blueprints
+	spriteType = {
+		name = "GFX_TC_Special_Forces_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/generic_infantry_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_TM_Main_Equipment_Slot"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/generic_infantry_blueprint_small_arms.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_Supporting_Weapons_Slot"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/generic_infantry_blueprint_fire_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TM_special_slot"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/generic_infantry_blueprint_presonal.dds"
+		legacy_lazy_load = no
+	}
+	###modules
+	#Which unit type
+	spriteType = {
+		name = "GFX_EMI_Special_Forces_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/Special_Forces_Design.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Mountaineer_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/Mountaineer_Design.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Marine_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/Marine_Design.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Paratrooper_Equipment"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/Paratrooper_Design.dds"
+		legacy_lazy_load = no
+	}
+	#Main equipment
+	spriteType = {
+		name = "GFX_EMI_Defense_Unit"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/regular_weapon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Assualt"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/improved_weapon.dds"
+		legacy_lazy_load = no
+	}
+
+	#Supporting weapons
+	spriteType = {
+		name = "GFX_EMI_Mortars"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/prewar_attack_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Anti_Tank_Weapons"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/Advanced_Anti_Tank.dds"
+		legacy_lazy_load = no
+	}
+	#Radio
+	spriteType = {
+		name = "GFX_EMI_Basic_Coms"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/binoculars.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Improved_Coms"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/Portable_Radios.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Advanced_Coms"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/infantry_special_modules.dds"
+		legacy_lazy_load = no
+	}
+
+	#Special modules
+	spriteType = {
+		name = "GFX_EMI_Additional_Ammuntion"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/additional_ammo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_flame_support"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/flame_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Anti_Tank_Rifles"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/improved_anti_tank.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Larger_Explosives"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/Larger_Explosives.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Nightvision"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/night_vision_device.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Additional_Grenades"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/prewar_anti_tank.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Machine_Gun_Squad"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/prewar_defence_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Sniper_Teams"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/sniper_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Sapper_Teams"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/sapper_shovels.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_Molotovs"
+		textureFile = "gfx/interface/equipmentdesigner/Special_Forces/modules/molotov_cocktail.dds"
+		legacy_lazy_load = no
+	}
+}

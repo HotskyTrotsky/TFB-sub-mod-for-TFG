@@ -213,9 +213,196 @@ on_actions = {
 				}
 			}
 		}
+######Egypt 
+on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						state = 446
+					}
+				}
+				ENG = {
+					remove_ideas = Africa_Lost
+					}
+				} 
+				}
+			}
+			on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						state = 446
+					}
+					ENG = {
+						NOT = {
+							has_idea = Africa_Lost
+						}
+						has_country_flag = African_Army_Rebuilding
+					}
+				}
+				ENG = {
+					add_ideas = Africa_Lost
+				}
+					}
+				}
+			}
+#####################Malata
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+							tag = VIC
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = FRA
+							tag = USA
+							tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						state = 116
+					}
+				}
+				116 = {
+				add_dynamic_modifier = { modifier = Fortress_Island_Of_Malta_Under_Developed scope = ENG}
+					}
+				} 
+				}
+			}
 
-	
-	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_dynamic_modifier = {
+						modifier = Fortress_Island_Of_Malta
+						scope = ENG
+						}
+					}
+				}
+				FROM.FROM = {  
+						remove_dynamic_modifier = { modifier = Fortress_Island_Of_Malta scope = ENG}
+				}
+					}
+				}
+			}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = PHI
+							tag = INS
+							tag = FRA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = VIC
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_dynamic_modifier = {
+						modifier = Fortress_Island_Of_Malta_Under_Developed
+						scope = ENG
+						}
+					}
+				}
+				FROM.FROM = {  
+						remove_dynamic_modifier = { modifier = Fortress_Island_Of_Malta_Under_Developed scope = ENG}
+				}
+					}
+				}
+			}
 	#####OIL ROMANIA
 	on_monthly_ROM = {
 	effect = {

@@ -275,7 +275,7 @@
   JAP_rivalry_cooldown_desc:0 "Cooldown before next Service Decision is available"
   JAP_factory_conversion_early_war:0 "Industry Canalization"
   JAP_factory_conversion_early_war_desc:0 "Due to our rapid attempts to join the war, we need to cannibalize our Civilian Industry for the war effort"
-
+  JAP_go_to_war_with_China:0 "Going to war with China by Jan 1st 1938. Declare before this point."
   #### FLAGS ####
   JAP_early_war:0 "Early War Japan"
   JAP_mid_war:0 "Mid War Japan"

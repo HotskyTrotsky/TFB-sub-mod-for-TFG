@@ -374,7 +374,8 @@
   Develop_Africa_Railways_ITA:0 "Prepare supply for El-Alamein push"
   ITA_east_africa_supply:0 "East African Local Supply Draining"
   ITA_ea_supply:0 "§RAll local supply state modifiers will be removed§! Any troops in the area will have to be supplied normally"
-
+  Operation_Herkules:0 "Operation Herkules §RCan Only Be Done Once§!"
+  Operation_Herkules_desc:0 "Will give a breif window (46 days) to take Malta given the axis has airforce. It will remove the state modifier that gives UK defense bonuses."
   #### TOOLTIP ####
   ITA_oil_extraction_tt:0 "§GProvides Oil in Libya increasing with each completed search for oil§!"
   ITA_blackshirts_tt:0 "Spawns in §Y10 Blackshirt divisions§! in Rome"

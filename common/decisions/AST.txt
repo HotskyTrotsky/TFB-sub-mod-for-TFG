@@ -118,13 +118,481 @@ political_actions = {
 		
 	}
 }
+AST_operations = {
+	Set_Up_Singapore_Defense = {
+
+		icon = generic_mountain_fortification
+	
+		allowed = {
+			tag = AST
+		}
+		
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			336 = {
+				NOT = {
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+					}
+				is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			AND = {
+			AST = {
+			has_completed_focus = AST_swpa_protector
+			}
+			NOT = {
+			country_exists = CHI
+			}
+			}
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 160
+		modifier = {
+			civilian_factory_use = 10
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 336
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		complete_effect = {
+			336 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				subtract_from_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+
+	Remove_Singapore_Defense = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = AST
+		}
+		
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			#check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			336 = {
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+				is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			AND = {
+			AST = {
+			has_completed_focus = AST_swpa_protector
+			}
+			NOT = {
+			country_exists = CHI
+			}
+			}
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 30
+		modifier = {
+			#civilian_factory_use = 10
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 336
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		remove_effect = {
+			336 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				add_to_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+	Set_Up_Sumatra_Defense = {
+
+		icon = generic_mountain_fortification
+	
+		allowed = {
+			tag = AST
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 672
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			672 = {
+				NOT = {
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+					}
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 160
+		modifier = {
+			civilian_factory_use = 10
+		}
+		complete_effect = {
+			672 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				subtract_from_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+
+	Remove_Sumatra_Defense = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = AST
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 672
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			#check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			672 = {
+				
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+		
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 30
+		modifier = {
+			#civilian_factory_use = 10
+		}
+		remove_effect = {
+			672 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				add_to_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+
+	Remove_Java_Defense = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = AST
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 335
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			#check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			335 = {
+				
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 30
+		modifier = {
+			#civilian_factory_use = 10
+		}
+		remove_effect = {
+				335 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				667 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				add_to_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+
+	Set_Up_Java_Defense = {
+
+		icon = generic_mountain_fortification
+	
+		allowed = {
+			tag = AST
+		}
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 335
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			335 = {
+				NOT = {
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+					}
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		
+		fire_only_once = no
+		days_remove = 160
+		modifier = {
+			civilian_factory_use = 10
+		}
+		complete_effect = {
+				335 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				667 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				subtract_from_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+
+	Remove_Papua_Defense = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = AST
+		}
+		
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			523 = {
+				
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+		
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 523
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		fire_only_once = no
+		days_remove = 30
+		modifier = {
+			#civilian_factory_use = 10
+		}
+		remove_effect = {
+				523 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				669 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				737 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				634 = { 
+					remove_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				add_to_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+	Set_Up_Papua_Defense = {
+
+		icon = generic_mountain_fortification
+	
+		allowed = {
+			tag = AST
+		}
+		
+		available = {
+			AND = {
+			NOT = {
+			country_exists = CHI
+			}
+			check_variable =  {var = AST.AST_DEFENSE_SET_UP value = 1 compare = greater_than_or_equals}
+			523 = {
+				NOT = {
+				has_dynamic_modifier = {
+						modifier = AST_Defense_Set_Up
+						scope = AST
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			NOT = {
+			country_exists = CHI
+			}
+			
+		}
+		cost = 25
+		highlight_states = {
+    	highlight_state_targets = {
+        state = 523
+    	}
+    	highlight_color_while_active = 3
+    	highlight_color_before_active = 2
+		}
+		fire_only_once = no
+		days_remove = 160
+		modifier = {
+			civilian_factory_use = 10
+		}
+		complete_effect = {
+				523 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				669 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				737 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				634 = { 
+					add_dynamic_modifier = {modifier = AST_Defense_Set_Up scope = AST}
+				}
+				subtract_from_variable = {
+						var = AST.AST_DEFENSE_SET_UP
+						value = 1
+					}
+			}
+		}
+}
 Operations = {
 	Operation_Oboe = {
 
 		icon = generic_operation
 	
 		allowed = {
-			tag = ENG
+			tag = AST
 		}
 		
 		available = {
@@ -160,7 +628,7 @@ Operations = {
 		icon = generic_operation
 	
 		allowed = {
-			tag = ENG
+			tag = AST
 		}
 		
 		available = {

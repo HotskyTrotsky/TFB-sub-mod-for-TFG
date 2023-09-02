@@ -345,57 +345,16 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			annex_country = { target = HOL transfer_troops = yes }
-			672 = {
-				transfer_state_to = AST
+			AST = {
+			set_state_owner = 672
+			set_state_owner = 334
+			set_state_owner = 335
+			set_state_owner = 667
+			set_state_owner = 673
+			set_state_owner = 668
+			set_state_owner = 738
+			annex_country = {target = INS transfer_troops = no}
 			}
-			672 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-
-			334 = {
-				transfer_state_to = AST
-			}
-			334 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-
-			335 = {
-				transfer_state_to = AST
-			}
-			335 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-			667 = {
-				transfer_state_to = AST
-			}
-			667 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-			
-			673 = {
-				transfer_state_to = AST
-			}
-			673 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-			668 = {
-				transfer_state_to = AST
-			}
-			668 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-			669 = {
-				transfer_state_to = AST
-			}
-			669 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-			}
-			738 = {
-				transfer_state_to = AST
-			}
-			738 = {
-				add_dynamic_modifier = { modifier = Australian_Jurisdiction }
-				}
 			}
 		}
 		focus = {
@@ -1097,12 +1056,92 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 100
+			if = {
+				limit = {
+					ENG = {
+						has_tech = Hurricane
+					}
+				}
+				ENG = {
+				create_equipment_variant = {
+			name = "Hawker Hurricane USSR"
+			type = small_plane_airframe_1_eng
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+			}
+			icon = "GFX_Hurricane_medium"
+			obsolete = yes
+			}
+			}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_tech = Spitfire
+						has_tech = Spitfire_Upgrade1
+						has_tech = Spitfire_Upgrade2
+					}
+				}
+				ENG = {
+				create_equipment_variant = {
+			name = "Spitfire MK5 USSR"
+			type = small_plane_airframe_2_eng
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+			special_type_slot_3 = fuel_injection2
+			}
+			icon = "GFX_Spitfire_medium"
+			obsolete = yes
+				}
+			}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						has_tech = Spitfire
+						has_tech = Spitfire_Upgrade1
+					}
+				}
+				ENG = {
+				create_equipment_variant = {
+			name = "Spitfire MK5 USSR"
+			type = small_plane_airframe_2_eng
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = Extra_Fuel_Tank
+			special_type_slot_3 = fuel_injection
+			}
+			icon = "GFX_Spitfire_medium"
+			obsolete = yes
+				}
+			}
+			}
 			SOV = {
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 200
-					producer = ENG
-				}
+				type = small_plane_airframe_2_eng
+				amount = 100
+				producer = ENG
+				variant_name = "Spitfire MK5 USSR"
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1_eng
+				amount = 100
+				producer = ENG
+				variant_name = "Hawker Hurricane USSR"
+			}
 			}
 		}
 	}
@@ -1206,6 +1245,9 @@
 
 		completion_reward = {
 			add_ideas = { FRA_special_forces_spirit }
+			set_technology = {
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 		}
 	}
 	focus = {

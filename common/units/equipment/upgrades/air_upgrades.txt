@@ -45,7 +45,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.02
 		weight = 0.05
 		air_agility = -0.02
@@ -74,7 +74,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.03
 		weight = 0.05
 		air_agility = -0.05
@@ -162,7 +162,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.03
 		weight = 0.05
 		air_agility = -0.01
@@ -328,7 +328,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.03
 		weight = 0.05
 		air_agility = -0.01
@@ -351,7 +351,7 @@ upgrades = {
 				GER = {
 				has_tech = BF109_G
 				}
-				has_tech = BF109_E
+				has_tech = BF109_G
 				}
 			}
 		}
@@ -434,7 +434,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.02
 		weight = 0.05
 		air_agility = -0.02
@@ -479,7 +479,7 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.05
+		air_defence = 0.1
 		air_range = -0.02
 		weight = 0.05
 		air_agility = -0.02

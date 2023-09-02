@@ -15,8 +15,8 @@ small_plane_airframe_0_sov = { #I 15
 	air_agility = 60
 	air_defence = 5
 	weight = 3
-	naval_strike_attack = 3
-	naval_strike_targetting = 10
+	naval_strike_attack = 2
+	naval_strike_targetting = 3
 	build_cost_ic = 42
 	resources = {
 			aluminium = 20
@@ -140,7 +140,7 @@ small_plane_airframe_1_sov = { #I 16
 	air_defence = 8
 	weight = 4
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 46
 	resources = {
 			aluminium = 30
@@ -259,7 +259,7 @@ small_plane_airframe_2_sov = { #I 153
 	air_defence = 9
 	weight = 4
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 49
 	resources = {
 			aluminium = 30
@@ -379,10 +379,10 @@ small_plane_airframe_3_sov = { #YAK
 	air_defence = 11
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 50
 	resources = {
-			aluminium = 30
+			aluminium = 25
 			rubber = 5
 		}
 	module_slots = {
@@ -489,7 +489,7 @@ small_plane_airframe_4_sov = { #LAGG-3
 	air_defence = 16
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 56
 	resources = {
 			aluminium = 35
@@ -609,7 +609,7 @@ small_plane_airframe_5_sov = { #YAK-3
 	air_defence = 16
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 57
 	resources = {
 			aluminium = 30
@@ -720,7 +720,7 @@ small_plane_airframe_6_sov = { #Yakovlev Yak-15
 	air_defence = 18
 	weight = 7
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 62
 	resources = {
 			aluminium = 30
@@ -784,6 +784,7 @@ small_plane_airframe_6_sov = { #Yakovlev Yak-15
 				Plane_Armor
 				Special_Module
 				Plane_Radio
+				Engine_Upgrade
 			}
 		}
 
@@ -868,7 +869,7 @@ small_plane_airframe_7_sov = { #Sukhoi Su-2
 	air_ground_attack = 2
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 48
 	resources = {
 			aluminium = 30
@@ -997,7 +998,7 @@ small_plane_airframe_8_sov = { #Ilyushin Il-2
 	air_ground_attack = 6
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 55
 	resources = {
 			aluminium = 40
@@ -1012,7 +1013,7 @@ small_plane_airframe_8_sov = { #Ilyushin Il-2
 				Fighter_weapon_2
 				cas_weapon1
 				cas_weapon2
-				cas_weapon3
+				
 			}
 		}
 
@@ -1023,7 +1024,7 @@ small_plane_airframe_8_sov = { #Ilyushin Il-2
 				Fighter_weapon_2
 				cas_weapon1
 				cas_weapon2
-				cas_weapon3
+		
 			}
 		}
 		fixed_auxiliary_weapon_slot_2 = { 
@@ -1033,7 +1034,7 @@ small_plane_airframe_8_sov = { #Ilyushin Il-2
 				Fighter_weapon_2
 				cas_weapon1
 				cas_weapon2
-				cas_weapon3
+
 			}
 		}
 		engine_type_slot = {
@@ -1076,12 +1077,24 @@ small_plane_airframe_8_sov = { #Ilyushin Il-2
 		}
 	}
 	module_count_limit = {
-		module = cas_weapon1
+		category = cas_weapon1
 		count < 4
 	}
 	module_count_limit = {
-		module = cas_weapon2
+		category = cas_weapon2
 		count < 4
+	}
+	module_count_limit = {
+		module = rocket_rails_1
+		count < 2
+	}
+	module_count_limit = {
+		module = tank_buster_2
+		count < 2
+	}
+	module_count_limit = {
+		module = medium_bomb_locks
+		count < 2
 	}
 	module_count_limit = {
 		module = heavy_mg_4x
@@ -1140,7 +1153,7 @@ small_plane_airframe_9_sov = { #Ilyushin Il-10
 	air_ground_attack = 10
 	weight = 5
 	naval_strike_attack = 1
-	naval_strike_targetting = 8
+	naval_strike_targetting = 3
 	build_cost_ic = 60
 	resources = {
 			aluminium = 45
@@ -1548,6 +1561,7 @@ SOV_Fighter_Bomber_1 = { #PE-2
 				Fighter_weapon_2
 				Fighter_weapon_3
 				tac_weapon_1
+				tac_weapon_2
 			}
 		}
 
@@ -1572,7 +1586,17 @@ SOV_Fighter_Bomber_1 = { #PE-2
 				Fighter_weapon_2
 				cas_weapon1
 				cas_weapon2
-				tac_weapon_1
+
+			}
+		}
+		fixed_auxiliary_weapon_slot_3 = { 
+			required = no
+			allowed_module_categories = {
+				recon_camera
+				Fighter_weapon_1
+				Fighter_weapon_2
+				cas_weapon1
+
 			}
 		}
 		engine_type_slot = {
@@ -1590,6 +1614,7 @@ SOV_Fighter_Bomber_1 = { #PE-2
 				Plane_Radio
 				CAS_Module
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 
@@ -1601,6 +1626,7 @@ SOV_Fighter_Bomber_1 = { #PE-2
 				Plane_Radio
 				CAS_Module
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 		special_type_slot_3 = {
@@ -1611,13 +1637,11 @@ SOV_Fighter_Bomber_1 = { #PE-2
 				Plane_Radio
 				CAS_Module
 				Gun_Defense
+				Engine_Upgrade
 			}
 		}
 	}
-	module_count_limit = {
-		module = engine_4_2x
-		count < 0
-	}
+	
 	module_count_limit = {
 		module = CAS_Module
 		count < 2
@@ -1763,6 +1787,7 @@ large_plane_airframe_1_sov = { #Petlyakov Pe-8
 				recon_camera
 				strat_weapon_1
 				strat_weapon_2
+				strat_weapon_3
 			}
 		}
 
