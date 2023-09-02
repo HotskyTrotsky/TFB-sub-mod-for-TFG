@@ -1242,9 +1242,15 @@ ideas = {
 				special_forces_training_time_factor = -0.20
 			}
 			equipment_bonus = {
-				sf_equipment = {
+				Special_Forces_Marine_Equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				Special_Forces_Mountaineer_Equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				Special_Forces_Equipment = {
+					build_cost_ic = -0.1 instant = yes
+					}
 			}
 		}
 
@@ -1604,7 +1610,8 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 5
+				#send_volunteer_divisions_required = -0.5
 				send_volunteers_tension = -0.5
 			}
 		}

@@ -2,6 +2,10 @@ FAC_ENG = {
 	color = rgb { 120 1 1 }
 	color_ui = rgb { 116 195 200 }
 }
+FAC_SOV = {
+	color = rgb { 95 95 95 }
+	color_ui = rgb { 95 95 95 }
+}
 RAJ_Exile_MIL = {
 	color = rgb { 13 125 18 }
 	color_ui = rgb { 116 195 200 }

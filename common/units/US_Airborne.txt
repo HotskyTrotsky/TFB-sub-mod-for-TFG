@@ -57,7 +57,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 50
 			radio_equipment = 25
-			sf_equipment = 90
+			Special_Forces_Paratrooper_Equipment = 90
 		}
 		
 		fort = {

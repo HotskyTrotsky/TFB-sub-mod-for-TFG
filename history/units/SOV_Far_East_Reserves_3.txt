@@ -20,7 +20,7 @@ division_template = {
 	anti_tank_brigade = { x = 4 y = 0 }
 	anti_tank_brigade = { x = 4 y = 1 }
 	anti_tank_brigade = { x = 4 y = 2 }
-	artillery_brigade = { x = 4 y = 3 }
+	anti_tank_brigade = { x = 4 y = 3 }
 	}
 	support = {
 	hq_company = { x = 0 y = 0 } 
@@ -29,6 +29,7 @@ division_template = {
 	logistics_company  = { x = 0 y = 3 }
 	anti_air = { x = 1 y = 0 }
 	}
+	obsolete = yes
 }
 division_template = {
 					name = "Far East Tank Division"
@@ -64,6 +65,7 @@ division_template = {
 						maintenance_company = { x = 1 y = 2 }
 						}
 						template_counter = 128
+						obsolete = yes
 					}
 		
 units = {

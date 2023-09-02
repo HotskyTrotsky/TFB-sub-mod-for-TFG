@@ -1,0 +1,1018 @@
+﻿focus_tree = {
+	id = Facist_Russia_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			original_tag = SOV
+		}
+		
+	}
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+	id = New_Dawn_SOV
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		x = 8
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = German_Payments_1 
+			add_idea = German_Payments_2
+				}
+				add_ideas = war_economy
+		}
+	}
+	
+	focus = {
+	id = Expand_ROA
+		icon = GFX_focus_SOV_penal_battalions
+		relative_position_id = New_Dawn_SOV
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = New_Dawn_SOV}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	division_template = {
+					name = "ROA Infantry Brigade"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery_brigade = { x = 3 y = 0 }
+						anti_tank_brigade = { x = 3 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					249 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}                                                                                                                      
+					251 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}  
+					252 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}  
+				}
+			}
+	focus = {
+	id = Commit_To_German_War_Effort_ROA
+		icon = GFX_goal_economic_friendship
+		relative_position_id = Expand_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Expand_ROA}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			swap_ideas = { 
+			remove_idea = German_Payments_2 
+			add_idea = German_Payments_3
+				}
+		}
+	}
+	focus = {
+		id = Further_Recruitment
+		icon = GFX_focus_SOV_mobilization_plan
+		relative_position_id = Commit_To_German_War_Effort_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Commit_To_German_War_Effort_ROA}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			division_template = {
+					name = "ROA Infantry Brigade"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery_brigade = { x = 3 y = 0 }
+						anti_tank_brigade = { x = 3 y = 1 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						anti_air = { x = 1 y = 0 }
+						}
+					}
+					249 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}                                                                                                                      
+					251 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}  
+					252 = {
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Infantry Brigade\" start_experience_factor = 0.3" owner = ROOT }
+					}  
+		}
+	}
+	focus = {
+		id = Create_ROA_Tank_Brigade
+		icon = GFX_focus_generic_tank_production
+		relative_position_id = Further_Recruitment
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Further_Recruitment}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+	
+	set_technology = {
+    sov_medium_tank_1 = 1
+	artillery_research2 = 1
+	}
+		create_equipment_variant = {
+		name = "T34 1940"
+		type = sov_medium_tank_chassis_t34
+		parent_version = 0
+		modules = {
+		main_armament_slot = tank_med_gun_1
+		turret_type_slot = tank_medium_turret_1
+		suspension_type_slot = tank_bogie_suspension
+		special_type_slot_1 = empty
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = extra_ammo_storage
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		}
+		icon = "gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
+		}
+		division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+					}
+					249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+						}
+				
+			}
+		}
+		focus = {
+		id = Establish_Secret_Police_ROA
+		icon = GFX_focus_SOV_womens_fascist_movement
+		relative_position_id = Create_ROA_Tank_Brigade
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Create_ROA_Tank_Brigade}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.3
+			}
+		}
+		
+		
+		focus = {
+		id = Establish_First_Army_Corps_ROA
+		icon = GFX_focus_generic_manpower
+		relative_position_id = Establish_Secret_Police_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_Secret_Police_ROA}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+	
+		
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+	}
+	}
+		focus = {
+		id = The_Frozen_Front
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		relative_position_id = Establish_First_Army_Corps_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_First_Army_Corps_ROA}
+		mutually_exclusive = { }
+		
+		cost = 12
+		ai_will_do = {
+			factor = 1
+		}
+	
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+		
+	
+			}
+		}
+	focus = {
+		id = Establish_Second_Army_Corps_ROA
+		icon = GFX_Generic_German_Soldiers2
+		relative_position_id = The_Frozen_Front
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = The_Frozen_Front}
+		mutually_exclusive = { }
+		
+		cost = 14
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+		
+	
+			}
+		}
+		focus = {
+		id = Establish_Third_Army_Corps_ROA
+		icon = GFX_focus_generic_fascist_troops
+		relative_position_id = Establish_Second_Army_Corps_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_Second_Army_Corps_ROA}
+		mutually_exclusive = { }
+		
+		cost = 16
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+		
+	
+			}
+		}
+		focus = {
+		id = Establish_Fourth_Army_Corps_ROA
+		icon = GFX_focus_ITA_blackshirts
+		relative_position_id = Establish_Third_Army_Corps_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_Third_Army_Corps_ROA}
+		mutually_exclusive = { }
+		
+		cost = 18
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}
+	
+			}
+		}
+		focus = {
+		id = Establish_Fifth_Army_Corps_ROA
+		icon = GFX_focus_ITA_banda_carita
+		relative_position_id = Establish_Fourth_Army_Corps_ROA
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = Establish_Fourth_Army_Corps_ROA}
+		mutually_exclusive = { }
+		
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+	available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+			division_template = {
+					name = "ROA Tank Division"
+					division_names_group = SOV_MEC_01
+						regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						mot_recon = { x = 0 y = 2 }
+						mot_anti_air_brigade = { x = 0 y = 3 }
+						logistics_company_mot = { x = 1 y = 0 }
+						signal_company = { x = 1 y = 1 }
+						maintenance_company = { x = 1 y = 2 }
+						}
+			}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+					create_unit = { division = "division_template = \"ROA Tank Division\" start_experience_factor = 0.5" owner = ROOT }
+			}
+			division_template = {
+					name = "Reformed ROA Battalion"
+					division_names_group = SOV_INF_01
+						regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+						anti_tank_brigade = { x = 4 y = 2 }
+					}
+					support = {
+						hq_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }   
+						recon = { x = 0 y = 2 }
+						logistics_company  = { x = 0 y = 3 }
+						anti_air = { x = 1 y = 0 }
+						}
+				}
+			249 = {                                                                                                                
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                   
+			251 = {                                                                                                             
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+			252 = {                                                                                                                 
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+					create_unit = { division = "division_template = \"Reformed ROA Battalion\" start_experience_factor = 0.75" owner = ROOT }
+				}                                                                                                                       
+		
+	
+			}
+		}
+	}

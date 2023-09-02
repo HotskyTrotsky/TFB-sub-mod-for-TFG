@@ -34,7 +34,7 @@ set_technology = {
 	fra_light_tank_1 = 1
 	fra_medium_tank_1 = 1
 	fra_heavy_tank_1 = 1
-	
+	Special_Forces_Equipment_Technology = 1
 
 	armor_tech_1 = 1
 	trench_warfare = 1
@@ -84,9 +84,22 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 		basic_dp_light_battery = 1
-		cruiser_submarines = 1
+		#cruiser_submarines = 1
 	}
-
+	create_equipment_variant = {
+		name = "Special Forces Mountaineer Equipment"
+		type = Special_Forces_Mountaineer_Equipment_0
+		modules = {
+			Design_Slot = Mountaineer_Equipment
+			Main_Equipment_Slot = Assualt
+			Special_slot_1 = Sniper_Teams
+			Special_slot_2 = Additional_Grenades
+			Special_slot_3 = Additional_Ammuntion
+			Radio_slot = Basic_Coms
+			Supporting_Weapons_slot = Mortars
+			
+		}
+	}
 	add_ideas = {
 	MTG_naval_treaty_adherent
 	peace_training

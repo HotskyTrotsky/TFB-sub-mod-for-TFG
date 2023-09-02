@@ -153,14 +153,18 @@ if = {
 	# recruit_character = SOV_andrey_shkuro
 	# recruit_character = SOV_anton_denikin
 }
-
+set_variable = { SOVIET_TANK_RESERVE = 0 }
+set_variable = { SOVIET_TANKOGRAD_LEVEL = 0 }
+set_variable = { SOVIET_WAR_EXHAUSTION_LEVEL = 0 }
+set_variable = { SOVIET_RESERVE_LEVEL = 3}
+set_variable = { SOVIET_LEND_LEASE_LANE = 3}
 set_variable = { SOV_RG_division_cap = 0 }
 set_variable = { SOV_RG_cap_increase = 2 }
 set_variable = { SOV_RG_cap_decrease = -2 }
 set_variable = { SOV_RG_cap_increase_medium_double = 4 }
 set_variable = { SOV_RG_cap_increase_light_double = 6 }
 set_variable = { SOV_RG_cap_increase_heavy_double = 2 }
-
+set_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag
@@ -688,6 +692,68 @@ set_variable = { SOV_planned_economy_industry_repair_factor = 0 } #Victory Over 
 set_variable = { SOV_planned_economy_consumer_goods_factor = 0 } #Victory Over Devastation
 
 
+set_variable = {Leningrad_targets_index = 0}
+set_variable = {Belarus_targets_index  = 0}
+set_variable = {Ukraine_targets_index = 0}
+set_variable = {Mosocw_targets_index  = 0}
+set_variable = {Stalingrad_targets_index = 0}
+set_variable = {East_Russia_targets_index  = 0}
+set_variable = {North_Russia_targets_index = 0}
+set_variable = {North_East_Russia_targets_index  = 0}
+set_variable = {Caucuses_targets_index = 0}
+set_variable = {Kazakhstan_targets_index  = 0}
+set_variable = {Siberia_targets_index = 0}
+
+clamp_variable = {
+	var = Leningrad_targets_index 
+	max = 4
+	min = 0
+}
+clamp_variable = {
+	var = Belarus_targets_index 
+	max = 3
+	min = 0
+}
+clamp_variable = {
+	var = Ukraine_targets_index 
+	max = 6
+	min = 0
+}
+clamp_variable = {
+	var = Mosocw_targets_index 
+	max = 6
+	min = 0
+}
+clamp_variable = {
+	var = Stalingrad_targets_index 
+	max = 4
+	min = 0
+}
+clamp_variable = {
+	var = East_Russia_targets_index 
+	max = 5
+	min = 0
+}
+clamp_variable = {
+	var = North_East_Russia_targets_index 
+	max = 3
+	min = 0
+}
+clamp_variable = {
+	var = Caucuses_targets_index 
+	max = 3
+	min = 0
+}
+clamp_variable = {
+	var = Kazakhstan_targets_index 
+	max = 4
+	min = 0
+}
+clamp_variable = {
+	var = Siberia_targets_index 
+	max = 4
+	min = 0
+}
 #Add synthetic refineries tech
 set_technology = {
 	synth_oil_experiments = 1
@@ -731,7 +797,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-
+	Special_Forces_Equipment_Technology = 1
 	sov_light_tank_1 = 1
 	sov_bt_tank_1 = 1
 	sov_bt_tank_2 = 1
@@ -815,7 +881,50 @@ if = {
 }
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
+create_equipment_variant = {
+	name = "Special Forces Marine Equipment"
+	type = Special_Forces_Marine_Equipment_0
+	modules = {
+		Design_Slot = Marine_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 
+create_equipment_variant = {
+	name = "Special Forces Paratrooper Equipment"
+	type = Special_Forces_Paratrooper_Equipment_0
+	modules = {
+		Design_Slot = Paratrooper_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
+
+create_equipment_variant = {
+	name = "Special Forces Mountaineer Equipment"
+	type = Special_Forces_Mountaineer_Equipment_0
+	modules = {
+		Design_Slot = Mountaineer_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 add_ideas = {	
 	home_of_revolution
 	trotskyite_plot_nsb

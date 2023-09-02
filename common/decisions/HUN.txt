@@ -33,7 +33,14 @@ operations = {
 
 		#Fail trigger
 		available = {
-			NOT = { controls_state = 43 }
+			HUN = {
+			NOT = { 
+				controls_province = 9690
+				controls_province = 716
+				controls_province = 684
+				controls_province = 11625
+				}
+			}
 		}
 
 		days_mission_timeout = 10
@@ -48,16 +55,13 @@ operations = {
 			SOV = {
 		OR = {
 		controls_province = 3731
-		controls_province = 9690
-		controls_province = 3731
-		controls_province = 716
-		controls_province = 684
-		controls_province = 3731
-		controls_province = 11625
-		controls_province = 6700
-		controls_province = 6716
-		controls_province = 6561
-		controls_province = 6670
+		controls_province = 3713
+		controls_province = 699
+		controls_province = 11646
+		controls_province = 679
+		controls_province = 6751
+		controls_province = 9537
+		controls_province = 555
 			}
 		}
 		}
@@ -68,6 +72,7 @@ operations = {
 		}
 		#Fail
 		complete_effect = {
+			country_event = {id = hungary.7}
 		}
 	}
 	
@@ -107,10 +112,23 @@ operations = {
 		fire_only_once = yes
 		
 		available = {
+			OR = {
 			has_license = {
 				from = GER
 				equipment = {
 					type = ger_light_tank_chassis_p35
+				}
+			}
+				AND = {
+					has_global_flag = DENIED_CZE
+					OR = {
+						HUN = { controls_state = 9 }
+						GER = { controls_state = 9 }
+					}
+					OR = {
+						HUN = { controls_state = 70 }
+						GER = { controls_state = 70 }
+					}
 				}
 			}
 		}

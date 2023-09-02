@@ -195,6 +195,31 @@ ideas = {
 				civilian_factory_use = 5
 			}
 	}
+	HE111_Conversion = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = P_36_Purchase
+			modifier = {
+				civilian_factory_use = 5
+			}
+	}
+	Commitment_To_Reforming_African_Army = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ENG_PB_New_Rifle
+			modifier = {
+				civilian_factory_use = 10
+				industrial_capacity_factory = -0.05
+			}
+	}
 		no_grinding_0 = {
 
 			allowed = {
@@ -272,7 +297,56 @@ ideas = {
 				experience_gain_army_unit_factor = 2.5
 			}
 		}
+		SOV_Volunteers_China_0 = {
 
+			picture = generic_manpower_bonus
+
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = GER
+					original_tag = SOV
+					original_tag = JAP
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 4
+				send_volunteer_divisions_required = -1
+				air_volunteer_cap = -500
+				lend_lease_tension = -0.30
+			}
+		}
+		SOV_Volunteers_China_1 = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				OR = {
+					original_tag = ITA
+					original_tag = GER
+					original_tag = SOV
+					original_tag = JAP
+					original_tag = FRA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 4
+				send_volunteer_divisions_required = -1
+				lend_lease_tension = -0.30
+			}
+		}
+		
 	#	minors_no_air = {
 	#
 	#		allowed = {
@@ -467,6 +541,10 @@ ideas = {
 					build_cost_ic = 2.00
 				}
 				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 2.00
+				}
+				CAS_equipment = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
@@ -1493,7 +1571,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_heavy = 9550
+				production_cost_max_ship_hull_super_heavy = 9550
 				production_cost_max_ship_hull_carrier = 9500
 				industrial_capacity_dockyard = -0.25
 			}
@@ -1513,7 +1592,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_heavy = 11550
+				production_cost_max_ship_hull_super_heavy = 11550
 				production_cost_max_ship_hull_carrier = 10500
 				industrial_capacity_dockyard = -0.15
 			}
@@ -1533,7 +1613,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 11500
+				production_cost_max_ship_hull_heavy = 11050
+				production_cost_max_ship_hull_super_heavy = 11050
 				production_cost_max_ship_hull_carrier = 10250
 				industrial_capacity_dockyard = -0.20
 			}
@@ -1553,7 +1634,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_heavy = 13550
+				production_cost_max_ship_hull_super_heavy = 13550
 				production_cost_max_ship_hull_carrier = 10750
 				industrial_capacity_dockyard = -0.10
 			}

@@ -21,6 +21,21 @@ technologies = {
 			Light_Armor_Plates
 			tank_buster_1
 		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "JU 87 B"
+			type = small_plane_cas_airframe_5_ger
+			modules = {
+			fixed_main_weapon_slot = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = tank_buster_1
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = Dive_Brakes
+		}
+		icon = "GFX_GER_CAS2_medium"
+			}
+		}
 		research_cost = 2
 		start_year = 1937
 		folder = {
@@ -55,6 +70,25 @@ technologies = {
 					}
 				}
 				date > 1940.1.1
+			}
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "BF109 E-1"
+			type = small_plane_airframe_1_ger
+			upgrades = {
+			BF109_plane_armor_upgrade = 1
+			BF109_plane_engine_upgrade = 2
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Self_Sealing_Tanks
+			special_type_slot_2 = fuel_injection
+		}
+		icon = "GFX_small_plane_airframe_1_ger_medium"
 			}
 		}
 		enable_equipments = {
@@ -155,7 +189,21 @@ technologies = {
 			Light_Armor_Plates
 			engine_2_1x
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Breda Ba.65"
+			type = small_plane_cas_airframe_7_ita
+			modules = {
+			fixed_main_weapon_slot = small_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = small_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = small_bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = Light_Armor_Plates
+			#special_type_slot_2 = fuel_injection
+		}
+		icon = "GFX_small_plane_airframe_7_ita_medium"
+			}
+		}
 	
 		
 		path = {
@@ -199,7 +247,21 @@ technologies = {
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Fiat G.50 Freccia"
+			type = small_plane_airframe_1_ita
+			modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+		}
+		icon = "GFX_small_plane_airframe_1_ita_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Macchi_C.200_Saetta
@@ -241,7 +303,21 @@ technologies = {
 			heavy_mg_4x
 			Light_Armor_Plates
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Macchi C.200 Saetta"
+			type = small_plane_airframe_2_ita
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+		}
+		icon = "GFX_small_plane_airframe_2_ita_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Macchi_C.2001_Saetta
@@ -286,8 +362,24 @@ technologies = {
 			fuel_injection2
 			radio_navigation_1
 			Drop_Tank
+			aircraft_cannon_1_1x
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Macchi C.202 Folgore"
+			type = small_plane_airframe_3_ita
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_3_ita_medium"
+			}
+		}
 	
 		
 		path = {
@@ -326,9 +418,28 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			engine_4_1x
-			aircraft_cannon_1_1x
+			aircraft_cannon_1_2x
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Macchi C.205 Veltro"
+			type = small_plane_airframe_3_ita
+			upgrades = {
+				MacchiC.202_Folgore_plane_engine_upgrade = 1
+				MacchiC.202_Folgore_plane_armor_upgrade = 1
+			}
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_3_ita_medium"
+			}
+		}
 	
 		
 		path = {
@@ -369,6 +480,8 @@ technologies = {
 			engine_3_1x
 			heavy_mg_4x
 			radio_navigation_1
+			mid_torp
+			medium_bomb_locks
 		}
 		
 	
@@ -376,7 +489,50 @@ technologies = {
 			leads_to_tech = Reggiane_Re.2002_Ariete
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Macchi C.2001 Saetta"
+			type = small_plane_airframe_4_ita
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_ita_fighter_2_medium"
+			}
+			create_equipment_variant = {
+			name = "Macchi C.2001 Saetta Torpedo Bomber"
+			type = small_plane_naval_bomber_airframe_4_ita
+			modules = {
+			fixed_main_weapon_slot = mid_torp
+			fixed_auxiliary_weapon_slot_1 = empty
+			fixed_auxiliary_weapon_slot_2 = empty
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_4_ita_medium"
+			}
+			create_equipment_variant = {
+			name = "Macchi C.2001 Saetta Bomber"
+			type = small_plane_cas_airframe_4_ita
+			modules = {
+			fixed_main_weapon_slot = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = small_bomb_locks
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_4_ita_medium"
+			}
+		}
 		
 		research_cost = 2
 		start_year = 1940
@@ -409,8 +565,24 @@ technologies = {
 		enable_equipment_modules = {
 			engine_4_1x
 			aircraft_cannon_1_1x
+			fuel_injection2
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Reggiane Re.2002 Ariete"
+			type = small_plane_airframe_5_ita
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_small_plane_airframe_5_ita_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Reggiane_Re.2005_Sagittario
@@ -449,8 +621,58 @@ technologies = {
 		enable_equipment_modules = {
 			radio_navigation_2
 			aircraft_cannon_1_2x
+			Reflex_sight_1
+			tank_buster_1
+			tank_buster_3
+			late_torp
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Reggiane Re.2005 Sagittario"
+			type = small_plane_airframe_6_ita
+			modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_ita_fighter_3_medium"
+			}
+			create_equipment_variant = {
+			name = "Reggiane Re.2005 Sagittario Torpedo Bomber"
+			type = small_plane_naval_bomber_airframe_6_ita
+			modules = {
+			fixed_main_weapon_slot = late_torp
+			fixed_auxiliary_weapon_slot_1 = empty
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Self_Sealing_Tanks
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_ita_nav_4_medium"
+			}
+			create_equipment_variant = {
+			name = "Reggiane Re.2005 Sagittario Attacker"
+			type = small_plane_cas_airframe_6_ita
+			modules = {
+			fixed_main_weapon_slot = tank_buster_3
+			fixed_auxiliary_weapon_slot_1 = tank_buster_3
+			fixed_auxiliary_weapon_slot_2 = tank_buster_1
+			fixed_auxiliary_weapon_slot_3 = tank_buster_1
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_injection2
+			special_type_slot_2 = Reflex_sight_1
+			special_type_slot_3 = radio_navigation_1
+		}
+		icon = "GFX_ita_fighter_4_medium"
+			}
+		}
 	
 		path = {
 			leads_to_tech = Reggiane_Re.2005_Sagittario
@@ -528,7 +750,22 @@ technologies = {
 		enable_equipment_modules = {
 			strategic_payload_light
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Fiat BR.20 Cicogna" 
+		type = large_plane_airframe_1_ita
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_light
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			}
+		icon = "GFX_large_plane_airframe_1_ita_medium"
+			}
+		
+		}
 		path = {
 			leads_to_tech = Savoia-Marchetti_SM.82
 			research_cost_coeff = 1
@@ -563,7 +800,23 @@ technologies = {
 			bomb_sights_1
 			strategic_payload_medium
 		}
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Savoia-Marchetti SM.82" 
+		type = large_plane_airframe_2_ita
+		modules = {
+			fixed_main_weapon_slot = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_1 = strategic_payload_medium
+			fixed_auxiliary_weapon_slot_2 = strategic_payload_light
+			engine_type_slot = engine_2_4x
+			special_type_slot_1 = bomb_sights_1
+			special_type_slot_2 = air_ground_radar_1
+			special_type_slot_3 = lmg_defense_turret
+			}
+		icon = "GFX_large_plane_airframe_2_ita_medium"
+			}
 		
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -588,7 +841,34 @@ technologies = {
 		enable_equipment_modules = {
 			hmg_defense_turret
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Savoia-Marchetti SM.79 Sparviero Naval Bomber" 
+		type = medium_plane_airframe_1_ita
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ita_nav_1_medium"
+			}
+		create_equipment_variant = {
+		name = "Savoia-Marchetti SM.79 Sparviero" 
+		type = medium_plane_airframe_1_ita
+		modules = {
+			fixed_main_weapon_slot = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = small_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_1_ita_medium"
+			}
+		}
 		path = {
 			leads_to_tech = CANT_Z.1007_Alcione
 			research_cost_coeff = 1
@@ -616,11 +896,39 @@ technologies = {
 			medium_plane_airframe_2_ita
 		}
 		enable_equipment_modules = {
-			engine_3_2x
+			engine_2_2x
 			medium_tactical_bombs
 			bomb_sights_1
+			medium_bomb_locks
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "CANT Z.1007 Alcione Naval Bomber" 
+		type = medium_plane_airframe_2_ita
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ita_boat_2_medium"
+			}
+		create_equipment_variant = {
+		name = "CANT Z.1007 Alcione" 
+		type = medium_plane_airframe_2_ita
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_2_ita_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Savoia-Marchetti_SM.84
 			research_cost_coeff = 1
@@ -651,8 +959,38 @@ technologies = {
 			engine_3_2x
 			Self_Sealing_Tanks
 			Extra_Fuel_Tank
+			large_bomb_locks
 		}
-
+		on_research_complete = {
+		create_equipment_variant = {
+		name = "Savoia-Marchetti SM.84 Naval Bomber" 
+		type = medium_plane_airframe_3_ita
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+			fixed_auxiliary_weapon_slot_3 = small_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = flying_boat_medium
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_ita_boat_3_medium"
+			}
+		create_equipment_variant = {
+		name = "Savoia-Marchett SM.84" 
+		type = medium_plane_airframe_3_ita
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_3 = small_tactical_bombs
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_3_ita_medium"
+			}
+		}
 		path = {
 			leads_to_tech = Caproni_Ca.313
 			research_cost_coeff = 1
@@ -683,11 +1021,27 @@ technologies = {
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 			air_air_radar_2
-			large_bomb_locks
+			
 			Reflex_sight_1
-			medium_bomb_locks
+			
 		}
-
+		on_research_complete = {
+		
+		create_equipment_variant = {
+		name = "Caproni Ca.313" 
+		type = medium_plane_airframe_4_ita
+		modules = {
+			fixed_main_weapon_slot = medium_tactical_bombs
+			fixed_auxiliary_weapon_slot_1 = large_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = large_bomb_locks
+			fixed_auxiliary_weapon_slot_3 = medium_bomb_locks
+			engine_type_slot = engine_3_2x
+			special_type_slot_1 = Reflex_sight_1
+			special_type_slot_2 = lmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_4_ita_medium"
+			}
+		}
 		
 		
 		research_cost = 2

@@ -375,7 +375,7 @@ focus = {
 		prerequisite = { focus = Stick_With_Britain }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -436,7 +436,7 @@ focus = {
 		prerequisite = { focus = Acquire_Factory_Blueprints }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -521,7 +521,7 @@ focus = {
 		prerequisite = { focus = Invest_Into_Commando_Force }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -712,7 +712,7 @@ focus = {
 		prerequisite = {focus =Purchase_Equipment_From_Commonwealth}
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -740,7 +740,7 @@ focus = {
 		
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -803,7 +803,7 @@ focus = {
 		
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -992,7 +992,7 @@ focus = {
 		
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1018,7 +1018,7 @@ focus = {
 		
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1156,7 +1156,7 @@ focus = {
 		prerequisite = { focus = Side_With_United_States }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1184,7 +1184,7 @@ focus = {
 		prerequisite = { focus = Industry_Support }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1212,7 +1212,7 @@ focus = {
 		prerequisite = { focus = Improve_Industrial_Machinary }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1240,7 +1240,7 @@ focus = {
 		prerequisite = { focus = Side_With_United_States }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1268,7 +1268,7 @@ focus = {
 		prerequisite = { focus = Request_Manpower_Support }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1276,7 +1276,7 @@ focus = {
 	cancel_if_invalid = no
 	continue_if_invalid = yes
 	completion_reward = {
-		
+		custom_effect_tooltip = AST_REQUEST_MATERIA_TT
 		}
 	}
 	
@@ -1293,7 +1293,7 @@ focus = {
 		prerequisite = { focus = Request_Material }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1341,7 +1341,7 @@ focus = {
 		prerequisite = { focus = Introducing_American_Advisors }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1365,7 +1365,7 @@ focus = {
 		prerequisite = { focus = Improved_Coordination }
 		mutually_exclusive = {}
 		
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1799,7 +1799,7 @@ focus = {
 		}
 		relative_position_id = Luanch_Operation_Cartwheel
 		
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}

@@ -2053,6 +2053,10 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			add_trait = {
 				character = MEX_heliodoro_charis
 				trait = commando

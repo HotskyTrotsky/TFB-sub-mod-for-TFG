@@ -47,6 +47,16 @@
   COM_nuffield:0 "Nuffield Mech and Aero"
   COM_rsaf_enfield:0 "RSAF Enfield"
 
+  #### Hobart Funnies decisions and focus tool tips
+  Hobarts_Funnies_Heavy_Suppot_Company:0 "Hobarts Heavy Tank Funnies Support Company"
+  Hobarts_Funnies_Medium_Suppot_Company:0 "Hobarts Medium Tank Funnies Support Company"
+  HOBART_TOOL_TT:0 "§CAllows Recruiting Hobarts Funnies Tank divisions§!"
+  SAF_Hobarts_Funnies:0 "Train Hobart Funnies Divisions (§CIncreases Hobarts Funnies Division Cap By 2§!)"
+  CAN_Hobarts_Funnies:0 "Train Hobart Funnies Divisions (§CIncreases Hobarts Funnies Division Cap By 2§!)"
+  SAF_Hobarts_Funnies_Switch_To_Heavies:0 "Switch To Heavy Tanks"
+  SAF_Hobarts_Funnies_Switch_To_Medium:0 "Switch To Medium Tanks"
+  CAN_Hobarts_Funnies_Switch_To_Heavies:0 "Switch To Heavy Tanks"
+  CAN_Hobarts_Funnies_Switch_To_Medium:0 "Switch To Medium Tanks"
   #### PROPAGANDA ####
   COM_propaganda_campaigns:0 "Ministry of Propaganda"
   COM_together_prop:0 "Together"

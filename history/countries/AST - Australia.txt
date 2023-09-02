@@ -12,7 +12,7 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	support_weapons = 1
-	
+	Special_Forces_Equipment_Technology = 1
 	trench_warfare = 1
 	fuel_silos = 1
 
@@ -63,7 +63,7 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
-
+set_variable = { var = AST_DEFENSE_SET_UP value = 2 }
 recruit_character = AST_john_curtin
 recruit_character = AST_eric_campbell
 recruit_character = AST_richard_dixon

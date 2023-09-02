@@ -4615,6 +4615,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+			}
 			add_ideas = USA_army_of_the_united_states
 			add_tech_bonus = {
 				name = USA_infantry
@@ -5609,16 +5612,16 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "Man the Guns"
+			# 	}
+			# 	set_technology = { cruiser_submarines = 1 }
+			# }
 				}
-				set_technology = { cruiser_submarines = 1 }
-			}
-		}
 	}
 
 	focus = {

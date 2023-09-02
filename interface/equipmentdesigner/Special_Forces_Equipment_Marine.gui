@@ -1,0 +1,193 @@
+guiTypes = {
+	containerWindowType = {
+		name = "equipment_designer_Special_Forces_Marine_Equipment"
+		# NOTE: to keep aligned with the window "equipment_modules" in tank_designer_view.gui
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_Special_Forces_Equipment"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+
+			################# MODULE SLOT: Design slot aka marine, paratrooper, Mountaineer #################
+			containerWindowType = {
+				name = "Design_Slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "Design_Slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				#containerWindowType = {
+				#	name = "Design_Slot@highlight"
+				#	position = { x=0 y=0 }
+				#	size = { width=100% height=100% }
+				#
+				#	iconType = {
+				#		name = "blueprint"
+				#		spriteType = "GFX_TM_mech_chassis_main_armament_slot"
+				#		position = { x=0 y=0 }
+				#	}
+				#}
+
+			}
+
+			################# MODULE SLOT: Main equipment, assualt, defense, mobile #################
+			containerWindowType = {
+				name = "Main_Equipment_Slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "Main_Equipment_Slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "Main_Equipment_Slot@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_TM_Main_Equipment_Slot"
+						position = { x=0 y=0 }
+					}
+				}
+
+			}
+
+			################# MODULE SLOT: Special #################
+			containerWindowType = {
+				name = "Special_slot_1"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+					containerWindowType = {
+						name = "Special_slot_1@highlight"
+						position = { x=0 y=0 }
+						size = { width=100% height=100% }
+	
+						iconType = {
+							name = "blueprint"
+							spriteType = "GFX_TM_special_slot"
+							position = { x=0 y=0 }
+						}
+					}
+
+				#### MODULE: Todo ####
+			}
+
+			containerWindowType = {
+				name = "Special_slot_2"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+						name = "Special_slot_2@highlight"
+						position = { x=0 y=0 }
+						size = { width=100% height=100% }
+	
+						iconType = {
+							name = "blueprint"
+							spriteType = "GFX_TM_special_slot"
+							position = { x=0 y=0 }
+						}
+					}
+
+				#### MODULE: Todo ####
+			}
+			containerWindowType = {
+				name = "Special_slot_3"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+						name = "Special_slot_3@highlight"
+						position = { x=0 y=0 }
+						size = { width=100% height=100% }
+	
+						iconType = {
+							name = "blueprint"
+							spriteType = "GFX_TM_special_slot"
+							position = { x=0 y=0 }
+						}
+					}
+
+				#### MODULE: Todo ####
+			}
+			
+
+			################# MODULE SLOT: Radio #################
+			containerWindowType = {
+				name = "Radio_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "Radio_slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+			#	containerWindowType = {
+			#		name = "Radio_slot@highlight"
+			#		position = { x=0 y=0 }
+			#		size = { width=100% height=100% }
+			#
+			#		iconType = {
+			#			name = "blueprint"
+			#			spriteType = "GFX_TM_mech_chassis_suspension_type_slot"
+			#			position = { x=0 y=0 }
+			#		}
+			#	}
+
+			}
+
+			################# MODULE SLOT: Supporting weapons #################
+			containerWindowType = {
+				name = "Supporting_Weapons_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "Supporting_Weapons_slot"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+				}
+
+				containerWindowType = {
+					name = "Supporting_Weapons_slot@highlight"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+
+					iconType = {
+						name = "blueprint_generic"
+						spriteType = "GFX_TM_tank_armor"
+						position = { x=0 y=0 }
+					}
+
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_TM_Supporting_Weapons_Slot"
+						position = { x=0 y=0 }
+					}
+				}
+
+			}
+
+
+		}
+	}
+}

@@ -1,0 +1,411 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "Second_Year_Plan_UI_Window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 500 }
+				#BACKGROUND
+				
+				
+				iconType = {
+					name ="BASE"
+					spriteType = "GFX_Base"
+					position = { x=0 y=0 }
+				}
+				
+			
+				##Moscow_6_0
+				iconType = {
+					name = "Moscow_6_0"
+					spriteType = "GFX_6_0"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_1
+				iconType = {
+					name = "Moscow_6_1"
+					spriteType = "GFX_6_1"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_2
+				iconType = {
+					name = "Moscow_6_2"
+					spriteType = "GFX_6_2"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_3
+				iconType = {
+					name = "Moscow_6_3"
+					spriteType = "GFX_6_3"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_4
+				iconType = {
+					name = "Moscow_6_4"
+					spriteType = "GFX_6_4"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_5
+				iconType = {
+					name = "Moscow_6_5"
+					spriteType = "GFX_6_5"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Moscow_6_6
+				iconType = {
+					name = "Moscow_6_6"
+					spriteType = "GFX_6_6"
+					position = { x=65 y=250 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Leningrad_4_0
+				iconType = {
+					name = "Leningrad_4_0"
+					spriteType = "GFX_4_0"
+					position = { x=65 y=200 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Leningrad_4_1
+				iconType = {
+					name = "Leningrad_4_1"
+					spriteType = "GFX_4_1"
+					position = {x=35 y=200 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Leningrad_4_2
+				iconType = {
+					name = "Leningrad_4_2"
+					spriteType = "GFX_4_2"
+					position = { x=35 y=200 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Leningrad_4_3
+				iconType = {
+					name = "Leningrad_4_3"
+					spriteType = "GFX_4_3"
+					position = { x=35 y=200 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Leningrad_4_4
+				iconType = {
+					name = "Leningrad_4_4"
+					spriteType = "GFX_4_4"
+					position = { x=35 y=200  }
+					Orientation = "UPPER_LEFT"
+				}
+				####Belarus_3_0
+				iconType = {
+					name = "Belarus_3_0"
+					spriteType = "GFX_3_0"
+					position = { x=17 y=285 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Belarus_3_1
+				iconType = {
+					name = "Belarus_3_1"
+					spriteType = "GFX_3_1"
+					position = { x=17 y=285 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Belarus_3_2
+				iconType = {
+					name = "Belarus_3_2"
+					spriteType = "GFX_3_2"
+					position = { x=17 y=285 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Belarus_3_3
+				iconType = {
+					name = "Belarus_3_3"
+					spriteType = "GFX_3_3"
+					position = { x=17 y=285 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_0
+				iconType = {
+					name = "Ukraine_6_0"
+					spriteType = "GFX_6_0"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_1
+				iconType = {
+					name = "Ukraine_6_1"
+					spriteType = "GFX_6_1"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_2
+				iconType = {
+					name = "Ukraine_6_2"
+					spriteType = "GFX_6_2"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_3
+				iconType = {
+					name = "Ukraine_6_3"
+					spriteType = "GFX_6_3"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_4
+				iconType = {
+					name = "Ukraine_6_4"
+					spriteType = "GFX_6_4"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_5
+				iconType = {
+					name = "Ukraine_6_5"
+					spriteType = "GFX_6_5"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Ukraine_6_6
+				iconType = {
+					name = "Ukraine_6_6"
+					spriteType = "GFX_6_6"
+					position = { x=25 y=350 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Stalingrad_4_0
+				iconType = {
+					name = "Stalingrad_4_0"
+					spriteType = "GFX_4_0"
+					position = { x=170 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Stalingrad_4_1
+				iconType = {
+					name = "Stalingrad_4_1"
+					spriteType = "GFX_4_1"
+					position = { x=170 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Stalingrad_4_2
+				iconType = {
+					name = "Stalingrad_4_2"
+					spriteType = "GFX_4_2"
+					position = { x=170 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Stalingrad_4_3
+				iconType = {
+					name = "Stalingrad_4_3"
+					spriteType = "GFX_4_3"
+					position = { x=170 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Stalingrad_4_4
+				iconType = {
+					name = "Stalingrad_4_4"
+					spriteType = "GFX_4_4"
+					position = { x=170 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_0
+				iconType = {
+					name = "East_Russia_5_0"
+					spriteType = "GFX_5_0"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_1
+				iconType = {
+					name = "East_Russia_5_1"
+					spriteType = "GFX_5_1"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_2
+				iconType = {
+					name = "East_Russia_5_2"
+					spriteType = "GFX_5_2"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_3
+				iconType = {
+					name = "East_Russia_5_3"
+					spriteType = "GFX_5_3"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_4
+				iconType = {
+					name = "East_Russia_5_4"
+					spriteType = "GFX_5_4"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##East_Russia_5_5
+				iconType = {
+					name = "East_Russia_5_5"
+					spriteType = "GFX_5_5"
+					position = { x=200 y=270 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_Russia_3_0
+				iconType = {
+					name = "North_Russia_3_0"
+					spriteType = "GFX_3_0"
+					position = { x=130 y=140 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_Russia_3_1
+				iconType = {
+					name = "North_Russia_3_1"
+					spriteType = "GFX_3_1"
+					position = { x=130 y=140 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_Russia_3_2
+				iconType = {
+					name = "North_Russia_3_2"
+					spriteType = "GFX_3_2"
+					position = { x=130 y=140 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_Russia_3_3
+				iconType = {
+					name = "North_Russia_3_3"
+					spriteType = "GFX_3_3"
+					position = { x=130 y=140 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_East_Russia_3_0
+				iconType = {
+					name = "North_East_Russia_3_0"
+					spriteType = "GFX_3_0"
+					position = { x=260 y=170 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_East_Russia_3_1
+				iconType = {
+					name = "North_East_Russia_3_1"
+					spriteType = "GFX_3_1"
+					position = { x=260 y=170 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_East_Russia_3_2
+				iconType = {
+					name = "North_East_Russia_3_2"
+					spriteType = "GFX_3_2"
+					position = { x=260 y=170 }
+					Orientation = "UPPER_LEFT"
+				}
+				##North_East_Russia_3_3
+				iconType = {
+					name = "North_East_Russia_3_3"
+					spriteType = "GFX_3_3"
+					position = { x=260 y=170 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Caucuses_3_0
+				iconType = {
+					name = "Caucuses_3_0"
+					spriteType = "GFX_3_0"
+					position = { x=170 y=430 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Caucuses_3_1
+				iconType = {
+					name = "Caucuses_3_1"
+					spriteType = "GFX_3_1"
+					position = { x=170 y=430 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Caucuses_3_2
+				iconType = {
+					name = "Caucuses_3_2"
+					spriteType = "GFX_3_2"
+					position = { x=170 y=430 }
+					Orientation = "UPPER_LEFT"
+				}
+				##Caucuses_3_3
+				iconType = {
+					name = "Caucuses_3_3"
+					spriteType = "GFX_3_3"
+					position = { x=170 y=430 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Kazakhstan_4_0
+				iconType = {
+					name = "Kazakhstan_4_0"
+					spriteType = "GFX_4_0"
+					position = { x=340 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Kazakhstan_4_1
+				iconType = {
+					name = "Kazakhstan_4_1"
+					spriteType = "GFX_4_1"
+					position = { x=340 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Kazakhstan_4_2
+				iconType = {
+					name = "Kazakhstan_4_2"
+					spriteType = "GFX_4_2"
+					position = { x=340 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Kazakhstan_4_3
+				iconType = {
+					name = "Kazakhstan_4_3"
+					spriteType = "GFX_4_3"
+					position = { x=340 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Kazakhstan_4_4
+				iconType = {
+					name = "Kazakhstan_4_4"
+					spriteType = "GFX_4_4"
+					position = { x=340 y=370 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Siberia_4_0
+				iconType = {
+					name = "Siberia_4_0"
+					spriteType = "GFX_4_0"
+					position = { x=380 y=240 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Siberia_4_1
+				iconType = {
+					name = "Siberia_4_1"
+					spriteType = "GFX_4_1"
+					position = { x=380 y=240 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Siberia_4_2
+				iconType = {
+					name = "Siberia_4_2"
+					spriteType = "GFX_4_2"
+					position = { x=380 y=240 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Siberia_4_3
+				iconType = {
+					name = "Siberia_4_3"
+					spriteType = "GFX_4_3"
+					position = { x=380 y=240 }
+					Orientation = "UPPER_LEFT"
+				}
+				####Siberia_4_4
+				iconType = {
+					name = "Siberia_4_4"
+					spriteType = "GFX_4_4"
+					position = { x=380 y=240 }
+					Orientation = "UPPER_LEFT"
+				}
+
+	}
+}

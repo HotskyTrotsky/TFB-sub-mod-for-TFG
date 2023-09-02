@@ -1113,12 +1113,17 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = sf_equipment_0
+			type = Special_Forces_Mountaineer_Equipment_0
 			creator = "FRA" 
 		}
 		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
+	}
+	add_equipment_to_stockpile = {
+		type = Special_Forces_Mountaineer_Equipment_0
+		amount = 500
+		producer = FRA
 	}
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0

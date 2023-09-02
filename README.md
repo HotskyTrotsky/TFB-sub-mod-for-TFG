@@ -461,3 +461,314 @@ Air designs can be roughly broken up in to 8(ish) types:
 Japanese Aircraft is more interesting in which favouring the army or navy will mean the research time for the aircraft in the opposing section will be longer.
 France can gain access (after capitulation) to British fighters and bombers as well American fighters and bombers only if they have been researched by them.
 Italy can also gain access to BF109 and JU 87 as well upgrades for the BF109 can be selected if Germany has researched them.This is early Alpha version of this and alot of balancing and editing to airframes is needed, there may also be a rework on modules and how they work. Therefore please go to Suggest Mod changes if you spot somthing broken or too strong or too weak.
+
+Patch 17.1
+-Added changes to Manchu Ai
+-fixed event for Soviet union far east divisions not spawning
+Patch 17.2
+-Fixed Bug with Manchu focus tree
+-Finally fixed the Romanian Libya Oil breaking when there is a hotjoin.
+-Fixed bug with Italy starting CAS
+Patch 17.3
+-Added Exiled Australia Focus tree
+-Fixed Raj and Australia Focus trees that would give an extra 2 research slots after getting the exiled focus tree.
+Patch 17.4
+-Fixed JU 87 having the agility of a God
+-Reduced Torp damage and other naval modules, and increased cost
+-Gave Rocket rails a 10-15% cas increase when put on airframe.
+
+Patch 18
+-Fixed Australia and Raj not being able to get thier research slot.
+-Fixed Mongolia Throat singer bugging out in Minister window.
+-Added a means for Japan to do focuses leading up to Strike the west without having the event firing. (I am not certain at all why this bugged out and its highly unlikely it will happen again however for safety measure i have put this in.)
+-When you research a new airframe it will automatically create a design for the airframe that you might want (it upgrades your plane as well when you get new tech so all you need to do is change production).Therefore is now possible to play the game without having to look at the air designer, however would be ideal for you to decomission old models. You can still go into the air designer if you want to maximise a particular stat or change somthing for refit, or you think the design it gives you is not to your liking.
+-Added decisions to explain the Air tree and designer. (One specific for Japan)
+-Uk Air focuses now give broader range of research buffs to later fighter techs and Cas techs.
+-Increased the range of early airframes for Germany, UK, Japan.
+-Increased CAS damage of JU-87 aswell increased overal cas damage of all modules and decreased weight.
+-Increased thrust of single engine 2
+-Fuel injection 1 and 2 increase thrust.
+-Radio Navigation module should increase air superiority by 5% and 10%
+-Inceased Air supply conversion scale 0.15 > 0.2 (Help Japans push china)
+-Fixed Siege of Budapest Event not firing.
+-Reduced focus time of Canada Supply the Empire and its subsquete resource focuses.
+-Increased Focus time for a few of Australias Exiled focuses.
+-Added Itallian Naval designer which gives:
+-25% naval range (Capitals and Screens)
++5% speed (Capitals and Screens)
++10% Heavy attack for capitals
+-5% armor (Capitals)
+-Put a list of all naval changes from TFB on the steam workshop page (its the last picture).
+
+-Mereged a bunch of TFB Naval changes bar a few execeptions. The Overall difference compared to TFB:
+(Defines)
+Convoy hit profile 90>140
+Gun Hit profiles
+Torps 145 > 175
+Small Guns 55 > 60
+HIT_PROFILE_SPEED_FACTOR = 1.0 > 0.25
+
+(Ship Modules)
+Removed Dual Purpose light batteries
+Dual Purpose Secondaries changed as follows:
+dp_ship_secondaries_1
+AA 1.5 > 0.5
+Naval Speed -0.02 > -0.01
+Lg Armor Piercing 4 > 3
+
+dp_ship_secondaries_2
+AA 3 > 1.5
+build_cost_ic  220 > 210
+Naval Speed -0.03 > -0.02
+Lg Armor Piercing 5 > 4
+
+dp_ship_secondaries_3
+AA 4.5 > 2.5
+build_cost_ic = 260 > 240
+Naval Speed -0.04 > -0.03
+
+Removed Dp ship secondaries 4
+
+Ship Anti Air_1
+AA 3 > 2
+
+Ship Anti Air_1
+AA 4 > 3
+
+Ship Anti Air_1
+AA 5 > 4
+
+Ship Anti Air_1
+AA 6 > 5
+
+ship_fire_control_system_0
+naval_light_gun_hit_chance_factor = 0.025 > 0.05
+naval_heavy_gun_hit_chance_factor = 0.025 > 0.05
+
+ship_fire_control_system_1
+naval_light_gun_hit_chance_factor = 0.05 > 0.1
+naval_heavy_gun_hit_chance_factor = 0.05 > 0.1
+anti_air_attack = 0.03 > 0.1
+
+ship_fire_control_system_2
+naval_light_gun_hit_chance_factor = 0.075 > 0.15
+naval_heavy_gun_hit_chance_factor = 0.075 > 0.15
+anti_air_attack = 0.06 > 0.15
+
+ship_fire_control_system_3
+naval_light_gun_hit_chance_factor = 0.1 > 0.2
+naval_heavy_gun_hit_chance_factor = 0.1 > 0.2
+anti_air_attack = 0.09 > 0.2
+
+ship_torpedo_1
+torpedo_attack = 15 > 12
+naval_speed = -0.01 > -0.03
+steel = 0 > 1
+
+ship_torpedo_2
+torpedo_attack = 20 > 16
+naval_speed = -0.02 > -0.05
+steel = 0 > 1
+
+ship_torpedo_3
+torpedo_attack = 25 > 20
+naval_speed = -0.03 > -0.07
+steel = 0 > 1
+
+ship_torpedo_4
+torpedo_attack = 30 > 24
+naval_speed = -0.04 > -0.09
+steel = 0 > 1
+
+Light hulls
+Destroyer 1
+surface_visibility = 12.5 > 12
+max_strength = 20 > 25
+
+Destroyer 2
+naval_range = 1750 > 1800
+max_strength = 30 > 40
+steel = 0 > 20
+
+Destroyer 3
+naval_range = 2250 > 2000
+max_strength = 40 > 50
+steel = 0 > 20
+*************
+surface_detection = 0 > 20
+surface_visibility = 0 > 12
+*************
+
+Destroyer 4
+naval_range = 2250 > 2000
+max_strength = 50 > 60
+steel = 0 > 20
+*************
+surface_detection = 0 > 20
+*************
+(Not certain this is an issue since the hull should get the stats from the archetype therefore there is no change to ********)
+
+Patch 19
+-Reduced Rubber cost for mech from 20 > 10
+-Redcued CAS damage of modules by 1 (total effect is cas has roughly 3-5 less cas damage for some aircraft in total.)
+-Fixed Some researched air wings not being buildable due to mismatch of modules
+-Merged all TFB changes Therefore there is no differences between TFB and Boogie relating to Navy.
+-Possible change that spies don't get captured but instead just injured when doing a operation, spies will be killed if captured on intel gathering (when picked suicide pills).
+-Soviet Barb changes which include:
+New Reserve system. Removed some focuses that spawned divisions on frontline states and reduced number of spawn ins from focuses. This has been replaced by a ticking reserve system, over time reserves will be built up. Reserves can be spent on spawn in infantry or later on tank divisions (see changes to factory relocation later on). However Reserves will automatically be spent depending on what territory is lost, they will be spawned on defensible frontlines there is no way to avoid spending the reserves so its good idea to keep a good stockpile of them. Reserves can also be provided from focuses.
+New Lend lease system. UK and USA will automatically send equipment at the cost of Civs which changes over time and the amount of equipment being sent which is based on how many lend lease routes are open. There are 4 routes: Murmansk, and Arkhangelsk, Persian Corridor, Pacific route. Each route can be closed by the Axis. 1) Murmansk and Arkhangelsk can be closed by either taking the railway up to Murmansk or taking the ports/states. They can also be closed if the UK, USA or Soviets have less than 300 convoys. 2) Persian gulf can only be opened once UK has done operation counternance which in turn can only be done if Allies own africa. But taking Baku or southern Iranian states will also close this route. 3)Pacific Route is only closed if Japan is at war with Soviets. The equipment that the Soviets recieve is dependant on what the UK and USA has researched. If the UK has heavy tanks up to churchill then over time Soviet will get heavy tanks. If UK has Hurricane fighters and Spitfires then soviet will get these. If USA has researched M3 Lee tank and M4 Sherman tank then soviets will also recive these. If USA has researched the P40 Warhawk and the P 39 airacobra then Soviets recive these. NOTE the amount of equipment is dependant on 2 factors, Number of routes open. How long the lend leases has been in effect (I.e Won't start till barb has) Furthermore lend lease will take longer as it goes on so next shipment will take longer than the previous however will contain more equipment dependant on the first factor (number of routes open).
+Reworked Industry relocation. When Barb starts any industry in european area of USSR will be relocated over time automatically. The more industry you relocate the quicker you will be able to do Tankograd Focus tree section. Therefore there is a bonus to holding territory closer to the german border.
+New Barb missions for Finland, Romania, Germany:
+Finland can launch offensives on the Murmansk railway or Leningrad at the cost of equipment. (Murmansk state and the state below it have a state modifier which makes it harder to attack when Finland does a operation in this area it will reduced the debuff)
+Romania can damage the forts on Sevastapol and reduced the state modifier for 70 days at the cost of equipment.
+Germany now gains factory output for taking its 3 main objectives within a time frame (Kiev, Moscow, Leningrad) for each one will give 2.5% factory output. Other cities such as Smolensk, Bryansk, Kursk, Kharkov, Stalino will give 0.5% factory output. Furthermore taking each baltic state nation will over time give factory output and infantry increasing over time. The same goes for Belarus and Ukraine. However over time the factory output bonus will go down until it reaches 0.
+New events for Soviets in which losing Moscow after losing Stalingrad and Leningrad would result in Stalin being killed. If Stalingrad is still owned and surrender progress is not low then Stalin will go missing but dependant on the surrender progress he can be found again or is just presumed dead and a new leader can be picked for USSR
+Upon reaching 99% surrender soviets will be peaced out with germany giving up all territory west of urals and Germany creates a puppet like state which takes territory between moscow and the urals. 
+Soviets will get the choice to become the ROA or maintain to fight the axis.
+
+Patch 20
+-German Atlantic Wall decisions only give 1 coastal fortress instead of 2 per tile.
+-German economic fatigue will now keep Barb economic conquest factory output at 0 instead of going into minus.
+-Increased the air defence gain from Armor upgrades on planes from 5% per level to 10%
+-Decreased resource requirements for Plane modules: Light, Medium, by 2 and 1 steel and aluminium, Self Sealing tanks has had the resource requirements reduced from 4 rubber and 4 aluminium to 2 rubber and 2 aluminium also its range reduction is reduced from -15% to -7.5%.
+-Churchill tank can now have early heavy tank turret.
+-Decreased the time for Indochina event to fire (should happen in a few days)
+-Added some ai for Soviet reserve system (not really important but it helps test it in the future)
+-Added Small footnote in USA Air tree which highlights the aircraft that will be sent to USSR in the Lend lease system when researched.
+-Fixed The design that the UK sends of the Hawker Hurricane having no guns
+-Fixed Soviet reserve system activating during Winter war.
+-USA P-40 Warhawk can now be CAS and it creates a CAS Design when researched.
+-Soviets, Finland, Mongolia, Japan, Italy will gain Peace training again after their respective wars.
+-Changed values of some dynamic modifiers such as Frozen front, Tough Terrain and tough terrain adapted (these are all linked with Soviet changes and all reduced the debuffs they give by around 50%)
+-Fixed some Localisation on Australian exiled tree and added a tool tip for right side purchase equipment from USA Focus.
+-Fixed bug when Free France annex Netherlands it gave Indonesia to Australia even if it was owned by Japan.
+-Fixed some error log issues (nothing critical just ai not knowing what focus order to do, Gfx bugs ect.)
+-Amphibious tanks now get benefits from arty tech the same as tanks
+-Added New decisions for Australia to set up defences in South West Asia and Papua, they can only invest into 2 regions unless they do SWPA Protector which will enable them to do another region including Singapore. The bonus provides states with extra local supply and a small defence bonus.
+-Removed Core from Malta and added a State modifier which gives supply and defense. It can be improved if UK completes focus defend Malta. Italy also gains a decision to launch operation herkules which will remove the state modifier if Italy has enough Tactical bombers and Germany has enough fighters deployed. It will only be removed for 46 days.
+
+Patch 21
+-Pulled changes from TFB:
+DEPTH_CHARGES_HIT_PROFILE 100 -> 80
+- If the allies deny the Sudetenland Hungary can now access their Turan if the Cezchs have capped
+- If the allies deny the Sudetenland Germany can now still do Molotov and Second Vienna award
+- Removed the 5% increased bomb vulnerability from each concentrated industry
+- Added 5% dockyard output to each dispersed industry tech
+- If France is a player but Germany and Italy are AI (AKA in singleplayer) France can now access 2 decisions that will show the Free France or spawn Vichy for testing and experimentation purposes
+- Added 1 suppression to all tanks to fix France getting tanks selected for garrisons. Move garrisons up in the queue as well for nations with them that might take a lot of territory to hopefully make the garrisons get picked automatically
+- Moved the 8 buildings slots from Mongolian Collectivization to Dornod since they were over cap in the original state anyway
+- NAVALBASE_REPAIR_MULT = 0.05 -> 0.07 -- Each level of navalbase building repairs X strength and can repair as many ships as its level
+- Depth charges now grant 3/4/5/6% torpedo damage reduction to help dedicated ASW's survive a torpedo hit, without buffing destroyer health to cause problems elsewhere
+- Removed Crusier subs
+- AIR_WING_MAX_STATS_ATTACK from 300 to 500
+- BIGGEST_AGILITY_FACTOR_DIFF from 4 to 5
+COMBAT_DAMAGE_SCALE from 0.15 to 0.1
+Reduced Naval treaties heavy hull to be inline with TFB
+Added 2 new airframes for UK both are naval bombers that are researched in 1940 and 1943.
+Added new Naval bomer for Germany in 1937 (Fw 200 Condor) is a long range 4 engined naval bomber.
+Reduced the time for Railways to convert from 10 to 5 days (also from 5 to 2 days if its a core state)
+Time it takes to relocate supply capital reduced from 10 to 4 days
+Removed Armored trains but increased the research cost of both railway gun techs.
+Added Hobarts Funnies for South Africa and Canada, these are like red guard division for Soviets, they are a tank template that can be recruited after completeing focuses Black devils (Canada) and south african military college (SAF). This will unlock a dececision which will increase the number of Hobart funnies divisions as well change it to Heavy tank template if desired. The division has a unquie support company which gives the division Naval invasion attack. This means these are a way for South Africa and Canada to convert tanks into amphbious tanks without needing the tech or equipment. However this can only be done after 1941 jan and are limit to 2. It takes 240 days before you can increase the cap again. They are also expensive divisions and have worse naval invasion attack when compared to a Amphibous tank division.
+Added Heavy arty research bonus for Hungary
+Added a Volunteer cap that means that only Soviet, Germany, Italy, Japan, France (If they do the path) can send at most 5 divisions. (Other natioins like mongolia or bulgaria can send so long as they do the focuses for it)
+Requirements for Sending volunters removed so you don't need to spam divisions.
+Spainish volunteers to Germany is capped at 13
+
+Patch 22
+-Fixed Brazil Capybara
+-Fixed France only able to send 1 volunteer to spain
+-Reduced Air xp from training aircraft (They will still train but the amount of air xp is reduced)
+-Potential fix for ships having no range, This happens when they run out of fuel (but you still have fuel its just not reaching the ships). When a ship runs out of fuel its range was reduced by 75% which in most cases meant they get stuck. This will no longer happen however it will still be slow and certainly die in battle if caught.
+-Added a new event for germany when they research the HE 111 airframe in which they can convert existing civllian aircraft into tactical bombers (Basically you use 5 civs for 70 days and get 120 tactical bombers of the HE 111 variant).
+-Fixed bug with Malata not getting its state modifier after its recaptured by allies.
+-Added some text within the Itallian Air tree to show where cas and naval bombers are
+-Fixed one of the Itallian Air frames not giving the cas and naval bomber varient when researched
+-Reduced Naval targeting for Dive bombers (roughly 2-4 per airframe)
+-Increased Naval damage of torpedo bombers (1-3 increase)
+-Fixed Intel removing planning bonus completly now it only removes 20% at max strength.
+-Removed Hill on El-alamein and replaced it with desert. 
+-Now costs 25 pp to recall volunteers
+-France Now gets Early Mob from Election event + 5% more war support as well. (may 1936)
+-Fixed some bugs in Soviet air tree (one fighter did not create a airframe and another had the wrong research date)
+-Object to Attache removed
+-Cost of removing modules set to 0
+
+Patch 23
+-Made a bunch of spawn in divisions for Germany and Soviets create templates that are decommissions so they don't clutter division screen.
+-Fixed spawn in divisions for soviets spawning on border with iran and Afghanistan (this is the decision to spawn in every frontline tile)
+-The Munich confrence events now fire after 1 day and both UK and France have 7 days to pick an option (this prevents allies holding the event for as long as 40 days to now 14 days max)
+-Made Soviet reservist spawn ins 30w, however created a new unit of infantry called "Strelki" which is infantry but requires less equipment this way soviets don't get more equipment from spawn ins and should be the same.
+-BEF units should now be deletable after france falls.
+-Some Soviet Generals start as level 4
+-USA Thunder bolt airframe now also creates a fighter design.
+-Added new events and missions for UK (and commonwealth) when they lose africa they can choose to pay civs and factory output to rebuild an army to take back africa. Until they do so UK suffers a -5 to naval invasion capacity. Unless they choose to ride it out which will only give -5 naval capcity for a year.
+
+-Pulled changes from TFB :
+//
+- COMBAT_MULTIPLANE_CAP = 3 -> 2.5 -- How many planes can shoot at each plane on other side ( if there are 100 planes we are attacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+- ESCORT_FACTOR 4 -> 5
+- DISRUPTION_DEFENCE_DEFENCE_FACTOR = 1 -> 0.9
+- DISRUPTION_DEFENCE_ATTACK_FACTOR 0.75 -> 0.8 -- % how many max disrupted only planes are allowed to die in a single combat
+- SHBB Are now split into their own category internally, so they correctly cost 8 Cap now. You will notice new icons for them as well
+- The Naval GUI telling you how many screens you need now takes into account the Fleet Protector bonus to screening
+- Netherlands now has a pair of decisions to swap their capital between the Netherlands and Java to fix supply and trade issues often seen with them
+- Fixed portraits/icons/localization for ENG_stewart_menzies, ENG_alan_turing, SOV_invade_germany_idea, SOV_new_officers, Medium TD Gun Category, USA_james_byrne
+- Artillery Designer now works for Pack AT
+- You are now prevented from making a Heavy SPAA tank, as there is no batallion to use it so it couldn't be used.
+//
+
+Patch 24
+-Fixed Uk lend leases to Soviets not working after the 2nd soviet agreement.
+-Time locked the host decision to end China war to jan 1940
+-Uk focus to fortify Egypt now only gives 1 fortress and 4 forts in el-alamein (instead of 2 and 3).
+-Increased the chance for Cas to be shot down in battle from anti air. This has been doubled and the reason behind this is in most battles Cas joins the battle and does damage and the battle ends before there is even a single chance for aa to do damage.
+-Nerfed Tora Tora Tora, Port strike from 200% > 100%, Naval attack 25% > 10%, Naval targeting 25% > 10%, naval attack agility 25% > 10%
+-Japan should declare war on France and Canada when they do strike west.
+-Reduced Cas attack on some late game techs (by 1) and made it so 1941-42 cas airframes start with rocket 1 instead of rocket 2, Typhoon and thunderbolt (Also the IL-2) are the main 2 which in approximation means that they go from ~50 ground attack to ~42. The later techs will increase it to ~52 (tempest and thunderbolt upgrades)
+-Increased the IC cost of Cas modules (2-8 IC increases)
+-Increased naval bombing on tactical bombs by 1 for each level.
+-Reduced material module now reduces Cas damage by -10%
+-Fixed the research times of thunderbolt and mustang 1944 techs.
+-Finland Winter war bonus changed to have 5% less core attack, 25% less cas damage reduction (from 50% to 25%), army movement speed of 10% removed.
+-Finland Revanchism spirit changed: core attack from 15% to 5%, core defence from 5% to 10%
+-Finland Sisu core attack from 10% to 5%, later on Sisu would give you -50% out of supply factor which is now -25% out of supply (reduced by 25%).
+Collectively Finland has lost a good chunk of its core attack however core defence has gone up by a bit. This is to attempt to balance out that Finland gets good guns therefore reducing core attack values should bring it in line. It should also make it a bit easier for Soviet during winter war and make Finland less able to fight in continuation with the greater impact from lack of supply and reduced movement speed.
+-Increased the Tough terrain state modifier in Murmansk region from -25% to -60% (this is to encourage soviets to hold there but also to encourage Finland to do the decisions to push in these regions.)
+-Converting the light gun on light cruiser to medium gun now costs more than if you build the medium gun outright.
+-Vichy France should get pacific and state of med spirits
+-Bulgaria now starts with no grinding spirit (idk how i missed this for this long but also no one else told me breh)
+-Pulled changes from TFB :
+//
+- Fixed a bug where Poland was unable to do Agrarian Reform if they got the Peasent Strike debuff
+- Added a new option when Vichy asks for its land back to have the Germans tell Vichy they need to do it again later. Vichy then gets a decision they can click to re-send the event to Germany at a later date.
+- Furthermore, the option to not give back Vichy its land no longer causes them to unify with Free France
+- Modified the event that happens at the start of the game to also display the state of the game rules so everyone knows what they are set to. (Idea taken from PMFU)
+- Added a new Game Rule that will make it so Assault Guns are only useable as Support Companies. This can be toggled on or off before game start.
+- Support Company AG's require double the amount of AG's, and have had their terrain modifiers halved.
+//
+*WEEEE* *WOOOO* Warning I (Hotsky super cool guy 1 million) am currently in the process of moving hence why updates have been on the smaller scale (but also so I can concentrate on fixing previous implemented features as well balancing them) but it’s also likely that there may be no update next week as things on my end of in more crazed state of limbo, but I will try to make any fixes needed (TFB updates). I cannot say how long this will last as it has already taken a good chunk of time in the last few weeks i would expect it could continue to do so. However, I will still be able to look at the suggestion channel it may be a more delayed response on my end. TLDR: Currently moving places going to be busy, updates will be small if there will be updates in the coming weeks.
+
+Patch 25
+-Fixed Befriend Siam Foucus which will bypass if Siam is already in the faction.
+-Siam Will now declare war on Canada and France in Strike West
+-Recall volunteers now cost 100pp and 25cp
+-Soviet Focus to send equipment to China now costs 5 civs for 140 days
+-Added a ton of optimization changes (map graphics in, this is more hopeful that it will improve game speed, if it does not I will revert these changes.)
+-Overhauled Soviet Merging aircraft designers, This is because it did not work half most the time so it has been changed so that you just get an idea with the bonuses (-10% cas cost ect)
+-Added some Gui for construction in the construction tab to see construction speed modifiers for each building
+-Tweaked UK and German fighters so stats are more linear (i.e Focke wulf has better stats than the BF109, I am planning on doing a large shake-up on air since at currently still on an alpha version.)
+-Added two new focuses for South Africa which can be done after 1940 august which grants -35% build cost to tanks for 90 days at cost of 5 civs, later they can gain the same buff for 120 days at the cost of 5 civs from both South Africa and UK.
+-Heavy cruisers now cost 3 in command limit.
+
+Special forces changes (Alpha):
+-Added unique special forces equipment that is a designer: Marine equipment, Mountaineer Equipment, Paratrooper Equipment, and Special Forces Equipment.
+-These equipments are needed to create their respective divisions however special forces equipment is needed for a new unit: 'Elite Infantry'which is a cheaper special forces unit. (Arditi also uses special forces equipment.)
+-In all Special forces have higher stats but are more expensive in resources and equipment. They can also be specialised for defence or attack, soft or hard attack.
+-Special forces technology (the far right in the infantry tech tree) is now locked behind focuses. This will mean the special forces is capped for each nation until they focus on expanding. This focus will also enable recruiting Elite Infantry. Some Countries will be able to unlock this sooner than others. This is to try to keep the number of special forces down in the early game, this is where special forces are arguably the strongest as they don't scale as well. (There are a few other modules you can unlock later through techs, i.e better anti-tank, or better breakthrough modules, Better communications). The cost of special forces equipment is higher in resources but this is also dependent on what modules you put into it but its made more difficult to build since you require a unquie special forces equipment for respective special forces. To compensate for special forces being more expensive minor nations can get cheaper special forces through focuses typically the same focuses that unlock elite infantry.
+-Nerfed some focuses/decisions that gave special forces attack by half, this is to try and balance it so they are not too strong.
+-Given France more special forces equipment (Mountaineer equipment, this should help give France a leg up.)
+
+Soviet Industry Changes (Alpha):
+-Soviets now start with the 2nd 5 year Plan Mission. This mission now aims for Soviets to build in certain regions/states and after the mission completed, they will gain additional civs/resources/steel mills/infrastructure. This is limited to a certain amount in each region and is different what will give extra factories (North Russia requires only 3 civs in a state for it to apply while in Moscow region needs at least 4). Soviets have a year to do it. In total, this should be a good civ or resource bonus to the soviets at the expense that the factories are in less ideal locations (places that might get captured by axis or in it force soviets to build in states with less ideal construction speed.)
+-Spread out half of the civ factories that you get from focuses to random states in europe, this may make it easier to get more factories.

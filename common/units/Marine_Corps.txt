@@ -58,7 +58,7 @@ sub_units = {
 			infantry_equipment = 50
 			motorized_equipment = 15
 			radio_equipment = 15
-			sf_equipment = 75
+			Special_Forces_Marine_Equipment = 75
 		}
 		
 		river = {

@@ -1,0 +1,190 @@
+scripted_gui = {
+
+	SOVIET_LEND_LEASE_Ui = {
+		context_type = decision_category
+		window_name = "SOVIET_LEND_LEASE_Ui_Window"
+		#context_type = player_context
+		
+		visible = {
+		SOV = {
+			has_war_with = GER
+			}
+		}
+		
+		triggers = {
+		
+		MURMANSK_OPEN_visible = {
+			AND = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+						}
+					213 = {
+						is_controlled_by = SOV
+					}
+					215 = {
+						is_controlled_by = SOV
+					}
+				}
+			}	
+		MURMANSK_CLOSED_visible = {
+			OR = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+						}
+					213 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					215 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+				}
+			}
+		ARKHANGLESK_OPEN_visible = {
+					AND = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+						}
+					214 = {
+						is_controlled_by = SOV
+					}
+					}
+				}
+		ARKHANGLESK_CLOSED_visible = {
+				OR = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+						}
+					214 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+				}	
+				}
+				
+		NORTH_SEA_CONVOY_OPEN_visible = {
+					AND = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_OPEN
+						}
+					OR = {
+					214 = {
+						is_controlled_by = SOV
+					}
+					213 = {
+						is_controlled_by = SOV
+					}
+					}
+					}
+				}
+		NORTH_SEA_CONVOY_CLOSED_visible = {
+					OR = {
+					SOV = {
+					has_country_flag = NORTHERN_CONVOY_ROUTE_CLOSED
+						}
+						AND = {
+					214 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					213 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					}
+				}
+				}
+
+			BAKU_OPEN_visible = {
+				AND = {
+					229 = {
+						is_controlled_by = SOV
+					}
+					413 = {
+						is_controlled_by = PER
+					}
+					ENG = {
+						has_completed_focus = ENG_operation_countenance
+					}
+				}
+			}
+			BAKU_CLOSED_visible = {
+				OR = {
+					229 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					413 = {
+						NOT = {
+						is_controlled_by = PER
+						}
+					}
+				}
+			}
+			IRAN_OPEN_visible = {
+				AND = {
+					413 = {
+						is_controlled_by = PER
+					}
+					ENG = {
+						has_completed_focus = ENG_operation_countenance
+					}
+					229 = {
+						is_controlled_by = SOV
+					}
+				}
+			}
+			IRAN_CLOSED_visible = {
+				OR = {
+					413 = {
+						NOT = {
+						is_controlled_by = PER
+						}
+					}
+					229 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					ENG = {
+						NOT = {
+						has_completed_focus = ENG_operation_countenance
+						}
+					}
+				}
+			}
+
+			VLADIVOSTOK_OPEN_visible = {
+				AND = {
+					408 = {
+						is_controlled_by = SOV
+					}
+					SOV = {
+						NOT = {
+						has_war_with = JAP
+						}
+					}
+				}
+			}
+			VLADIVOSTOK_CLOSED_visible = {
+				OR = {
+					408 = {
+						NOT = {
+						is_controlled_by = SOV
+						}
+					}
+					SOV = {
+						has_war_with = JAP
+					}
+				}
+			}
+		}
+	}
+}

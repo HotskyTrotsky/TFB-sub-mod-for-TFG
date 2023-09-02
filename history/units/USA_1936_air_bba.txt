@@ -4,7 +4,7 @@ air_wings = {
 	362 = {
 		# 7th Bombardment Group 
 		# 19th Bombardment Group 
-		small_plane_cas_airframe_0_usa = {
+		medium_plane_airframe_0_usa = {
 			owner = "USA" 
 			amount = 100
 			version_name = "Douglas B-18 Bolo"

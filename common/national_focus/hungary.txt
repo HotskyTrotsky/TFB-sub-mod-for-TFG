@@ -2908,6 +2908,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			swap_ideas = {
 				add_idea = HUN_modern_hussars
 				remove_idea = HUN_hussar_legacy
@@ -3055,6 +3059,12 @@ focus_tree = {
 				bonus = 0.75
 				uses = 2
 				category = artillery
+			}
+			add_tech_bonus = {
+				name = art_bonus
+				bonus = 0.75
+				uses = 2
+				category = heavy_artillery
 			}
 		}
 	}

@@ -525,17 +525,6 @@ on_actions = {
 					give_resource_rights = { receiver = USA state = 480 }
 				}
 			}
-			#Romania owns oil in Libya
-			#if = {
-			#	limit = {
-			#		has_dlc = "Man the Guns"
-			#	}
-			#	ITA = {
-			#		give_resource_rights = { receiver = ROM state = 450 }
-			#		give_resource_rights = { receiver = ROM state = 451 }
-			#		give_resource_rights = { receiver = ROM state = 663 }
-			#	}
-			#}
 			# Game Rules - Decolonization
 			if = {
 				limit = {

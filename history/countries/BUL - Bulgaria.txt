@@ -21,6 +21,7 @@ set_technology = {
 	hq_1 = 1
 	support_weapons = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
 set_convoys = 50
@@ -39,6 +40,7 @@ add_ideas = { #DLC
 	BUL_imro_01
 	peace_training
 	AFRICA_COMMONWEALTH_controls_axis_idea_6
+	no_grinding_0
 }
 
 #SET FLAGS AND VARIABLES

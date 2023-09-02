@@ -1155,6 +1155,26 @@ small_plane_airframe_0_eng = {
 			}
 		}
 	}
+	small_plane_naval_bomber_airframe_NAV_0_eng = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/air/eng/eng_nav_2.dds"
+			}
+			models = {
+				ENG_light_plane_entity
+			}
+		}
+	}
+	small_plane_naval_bomber_airframe_NAV_1_eng = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/air/eng/eng_nav_4.dds"
+			}
+			models = {
+				ENG_light_plane_entity
+			}
+		}
+	}
 	small_plane_airframe_0_eng = {
 		pool = {
 			icons = {

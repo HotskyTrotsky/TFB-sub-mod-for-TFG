@@ -2688,6 +2688,18 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_paris_ger
+		hidden_effect = {
+			FRA = {
+		set_division_template_lock = {
+				division_template = "British Expeditionary Force"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "British Expeditionary Force Tank Divsion"
+				is_locked = no
+			}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2891,22 +2903,60 @@ news_event = {
 	title = news.106.t
 	desc = news.106.d
 	picture = GFX_news_event_soldiers_marching
-	
+	#fire_only_once = yes
 	major = yes
-	
+	mean_time_to_happen = {
+		days = 2
+	}
 	trigger = {
-		219 = { is_controlled_by = GER }
-		219 = { is_owned_by = SOV }
-		SOV = { has_war_with = GER }
-		NOT = { has_global_flag = fall_of_moscow }
+		AND = {
+			SOV = {
+				NOT = {has_country_flag = fall_of_moscow}
+			}
+		SOV = {
+			NOT = {
+				controls_state = 219
+				}
+			}
+		}
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_moscow
-	}
-	
-	mean_time_to_happen = {
-		days = 2
+		SOV = {
+		set_country_flag = fall_of_moscow
+		}
+		if = {
+			limit = {
+				
+				SOV = {
+					NOT = {
+						controls_state = 219
+						controls_state = 195
+						controls_state = 217
+						}
+					}
+			}
+			SOV = {
+				set_country_flag = Stalin_Dead
+			}
+			every_country = {
+			news_event = { id = news.405 days = 3}
+			}
+		}
+		else_if = {
+			limit = {
+				SOV = {
+					surrender_progress > 0.60
+				}
+			}
+			SOV = {
+				set_country_flag = Stalin_Missing
+			}
+			hidden_effect = {
+			news_event = { id = news.406 days = 3}
+			}
+				
+			}
 	}
 	
 	option = {
@@ -13138,7 +13188,7 @@ news_event = {
 	desc = news.401.d 
 	picture = GFX_news_event_news_event_capture_london
 	hidden = yes
-
+	
 	trigger = {
 	AND = {
 		date > 1940.6.22
@@ -13273,5 +13323,222 @@ news_event = {
 	
 	mean_time_to_happen = {
 		days = 2
+	}
+}
+#####Stalin found dead
+news_event = {
+	id = news.405
+	title = news.405.t
+	desc = news.405.d
+	picture = GFX_news_event_Stalin_Dead
+	
+	major = yes
+	#fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		SOV = {
+			has_country_flag = Stalin_Dead
+			NOT = {has_country_flag = Stalin_Dead_Event_Fired}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+		SOV = {
+			set_country_flag = Stalin_Dead_Event_Fired
+			retire_country_leader = yes
+			create_country_leader = {
+			name = "Leaderless"
+			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = "gfx/leaders/SOV/Soviet_Empty_Chamber.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			set_politics = {
+				ruling_party = communism
+				}
+			}
+			SOV = {
+			
+			country_event = { id = soviet.3011 days = 4}
+			}
+		}
+		}
+	}
+	
+
+	
+	option = {
+		name = news.405.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.405.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.405.c
+		trigger = { TAG = SOV }
+	}
+}
+####Stalin goes missing
+news_event = {
+	id = news.406
+	title = news.406.t
+	desc = news.406.d
+	picture = GFX_news_event_012
+	#fire_only_once = yes
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+		SOV = {
+				has_country_flag = Stalin_Missing
+				NOT = {has_country_flag = Stalin_Missing_event_fired}
+			}
+	}
+	immediate = {
+		hidden_effect = {
+			SOV = {
+				set_country_flag = Stalin_Missing_event_fired
+			}
+		SOV = {
+			country_event = { id = soviet.3012 days = 4}
+			}
+		}
+	}
+	
+	
+	
+	option = {
+		name = news.406.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.406.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.406.c
+		trigger = { TAG = SOV }
+	}
+}
+
+####Stalin found
+news_event = {
+	id = news.407
+	title = news.407.t
+	desc = news.407.d
+	picture = GFX_news_event_dimitrov_and_stalin
+	#fire_only_once = yes
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = news.407.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = news.407.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = news.407.c
+		trigger = { TAG = SOV }
+	}
+}
+####Stalin Presumed dead
+news_event = {
+	id = news.408
+	title = news.408.t
+	desc = news.408.d
+	picture = GFX_news_event_Stalin_Dead
+	#fire_only_once = yes
+	major = yes
+	trigger = {
+		SOV ={
+			has_country_flag = Stalin_Presumed_Dead
+			NOT = {has_country_flag = Stalin_Presumed_Dead_event_fired}
+		}
+	}
+	immediate = {
+		SOV = {
+			set_country_flag = Stalin_Presumed_Dead_event_fired
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.408.a
+	}
+}
+#####Stalin vanishing after Capitulation
+news_event = {
+	id = news.411
+	title = news.411.t
+	desc = news.411.d
+	picture = GFX_news_event_SOV_supreme_soviet
+	#fire_only_once = yes
+	major = yes
+	trigger = {
+		SOV ={
+			has_country_flag = Stalin_Vanish
+			NOT = {has_country_flag =Stalin_Vanish_event_fired}
+		}
+	}
+	immediate = {
+		SOV = {
+			set_country_flag = Stalin_Vanish_event_fired
+		}
+		hidden_effect = {
+			SOV = {
+				country_event = {id = soviet.3011 days = 1}
+			}
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.409.a
+	}
+}
+####Soviet Capitulation
+news_event = {
+	id = news.410
+	title = news.410.t
+	desc = news.410.d
+	picture = GFX_news_event_soviet_soldiers_ruins
+	#fire_only_once = yes
+	major = yes
+	trigger = {
+		SOV ={
+			has_country_flag = Soviet_Capitluation
+			NOT = {has_country_flag =Soviet_Capitluation_event_fired}
+		}
+	}
+	immediate = {
+		SOV = {
+			set_country_flag = Soviet_Capitluation_event_fired
+		}
+		hidden_effect = {
+			SOV = {
+				country_event = {id = soviet.3011 days = 1}
+			}
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.410.a
 	}
 }

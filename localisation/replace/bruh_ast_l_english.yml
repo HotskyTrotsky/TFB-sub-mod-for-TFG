@@ -15,6 +15,7 @@
   ###Exiled Focuses
   A_Nation_Lost:0 "A Nation Lost"
   A_Future_Without_A_Home_Is_No_Future_AST:0 "A Future Without A Home Is No Future AST"
+  Meeting_Of_The_Soliders_Of_Gallipoli:0 "Meeting Of The Soliders Of Gallipoli"
   Stick_With_Britain:0 "Stick With Britain"
   Reaffirm_Commitment_To_Commonwealth:0 "Reaffirm Commitment To Commonwealth"
   Appeal_To_Commonwealth_For_Support:0 "Appeal To Commonwealth For Support"
@@ -64,9 +65,25 @@
   AST.2.b:0 "We Need A New Direction Follow The Americans."
 
   ##Decisions
+  AST_Defense_Set_Up:0 "Australian Defense Set Up"
   Purchase_American_Equipment:0 "Purchase American Equipment"
   Operation_Oboe:0 "Operation Oboe"
   Operation_Cartwheel:0 "Operation Cartwheel"
+  AST_REQUEST_MATERIA_TT:0 "Allows the purchaseing of equipment in decisions."
+
+
+  AST_operations:0 "Australian Defense Of South East Asia"
+  AST_operations_desc:0 "We can invest into the defense of areas of the South West Region giving us §Clocal supply and a small defense bonus§!. However, we §Ccan only invest into 2 regions at 1 time§!. Furthermore Singapore can only be invested into after §Ccompleteing SWPA Protector focus aswell allowing us to invest into another region§!.\n However losing the state will remove the modifier and upon recapture will we need to reinvest to build the defenses again.\n\nIt is also possible to remove the defenses and relocate, however this will take time (30days)."
+
+  Set_Up_Sumatra_Defense:0 "Set Up Sumatra Defense"
+  Set_Up_Singapore_Defense:0 "Set Up Singapore Defense"
+  Set_Up_Java_Defense:0 "Set Up Java Defense"
+  Set_Up_Papua_Defense:0 "Set Up Papua Defense"
+
+  Remove_Singapore_Defense:0 "Remove Singapore Defense"
+  Remove_Sumatra_Defense:0 "Remove Sumatra Defense"
+  Remove_Java_Defense:0 "Remove Java Defense"
+  Remove_Papua_Defense:0 "Remove Papua Defense"
   #### IDEAS ####
   AST_tank_conversion_spirit:0 "Streamlined Tank Factories"
   AST_z_special_unit_idea:0 "Z Special Unit"
@@ -74,4 +91,5 @@
   AST_rats_of_tobruk_idea:0 "Rats of Tobruk"
 
   #### TOOLTIP ####
+  AST_SWPA_TT:0 "§CUnlocks the ability to invest into defenses of Singapore aswell making is possible to defend another region.§!"
   AST_jungle_adaptable_armor_designs:0 "Enables §HAdaptable Jungle Armor Designs§!\n§HAll Tanks and Variants:\n    Jungle§!\n     Attack: §G+5%§!\n      Defense: §G+5%§!\n      Movement: §G+10%§!"

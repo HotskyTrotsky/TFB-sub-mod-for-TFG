@@ -33,7 +33,7 @@ country_event = {
 			}
 		} 
 		JAP = {
-			country_event = { days = 5 id = japan.6 }
+			country_event = { days = 3 id = japan.6 }
 		}
 	}
 }
@@ -483,6 +483,8 @@ country_event = {
 				}
 				
 				add_ideas = FRA_occupation_costs_4
+				add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
+				add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 				load_focus_tree = vichy_french_focus
 				FRA = {
 					transfer_units_fraction = {

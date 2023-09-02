@@ -1397,6 +1397,10 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
             army_experience = 50
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = SIA_air_superiority
@@ -1500,6 +1504,10 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
+			set_technology = {
+				tech_special_forces = 1
+				Minor_Nation_Special_Forces_Boost = 1
+			}
 			SIA_greg = {
 				add_attack = 2
 				add_defense = 2

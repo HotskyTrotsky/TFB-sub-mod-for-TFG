@@ -50,6 +50,11 @@ script_enum_equipment_bonus_type = {
 	horse_equipment
 	support_equipment
 	sf_equipment
+	Special_Forces_Equipment
+	Special_Forces_Equipment_0
+	Special_Forces_Mountaineer_Equipment
+	Special_Forces_Paratrooper_Equipment
+	Special_Forces_Marine_Equipment
 	artillery_equipment
 	rocket_artillery_equipment
 	anti_tank

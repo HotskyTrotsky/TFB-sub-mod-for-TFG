@@ -388,6 +388,7 @@ technologies = {
 
 		enable_subunits = {
 			hq_company
+			Basic_Coms
 		}	
 
 		path = {
@@ -414,7 +415,9 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.1
 		}
-	
+		enable_equipment_modules = {
+			Improved_Coms
+		}
 		path = {
 			leads_to_tech = hq_3
 			research_cost_coeff = 1
@@ -439,7 +442,9 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.1
 		}
-
+		enable_equipment_modules = {
+			Advanced_Coms
+		}
 		research_cost = 1.0
 		start_year = 1942
 		folder = {
@@ -458,6 +463,12 @@ technologies = {
 		enable_subunits = {
 			paratrooper
 		}
+		enable_equipment_modules = {
+			Paratrooper_Equipment
+		}
+		enable_equipments = {
+			Special_Forces_Paratrooper_Equipment_0
+		}
 		
 		path = {
 			leads_to_tech = paratroopers2
@@ -468,7 +479,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 5 y = @1936 }
 		}
 		
 		on_research_complete_limit = {
@@ -481,6 +492,20 @@ technologies = {
 				load_oob = "unlock_paratroopers"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			create_equipment_variant = {
+				name = "Special Forces Paratrooper Equipment"
+				type = Special_Forces_Paratrooper_Equipment_0
+				modules = {
+					Design_Slot = Paratrooper_Equipment
+					Main_Equipment_Slot = Assualt
+					Special_slot_1 = Sniper_Teams
+					Special_slot_2 = Additional_Grenades
+					Special_slot_3 = Additional_Ammuntion
+					Radio_slot = Basic_Coms
+					Supporting_Weapons_slot = Mortars
+					
+				}
+			}
 		}
 		
 		categories = {
@@ -523,7 +548,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 5 y = @1940 }
 		}
 		
 		categories = {
@@ -562,7 +587,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1943 }
+			position = { x = 5 y = @1943 }
 		}
 		
 		categories = {
@@ -596,17 +621,38 @@ technologies = {
 			marine
 			
 		}
+		enable_equipment_modules = {
+			Marine_Equipment
+		}
+		enable_equipments = {
+			Special_Forces_Marine_Equipment_0
+		}
 		
 		on_research_complete_limit = {
 			NOT = {
 				has_template_containing_unit = marine
 			}
 		}
+		
 		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_marines"
 			}			
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			create_equipment_variant = {
+				name = "Special Forces Marine Equipment"
+				type = Special_Forces_Marine_Equipment_0
+				modules = {
+					Design_Slot = Marine_Equipment
+					Main_Equipment_Slot = Assualt
+					Special_slot_1 = Sniper_Teams
+					Special_slot_2 = Additional_Grenades
+					Special_slot_3 = Additional_Ammuntion
+					Radio_slot = Basic_Coms
+					Supporting_Weapons_slot = Mortars
+					
+				}
+			}
 		}
 
 		path = {
@@ -646,13 +692,13 @@ technologies = {
 		marine = {
 			max_organisation = 5
 						need = {
-			   sf_equipment = -4
+			  Special_Forces_Marine_Equipment = 10
 		    }
 		}
 		amphibious_mechanized = {
 			max_organisation = 5
 						need = {
-			   sf_equipment = -4
+			   Special_Forces_Marine_Equipment = 5
 		    }
 		}
 		path = {
@@ -693,13 +739,13 @@ technologies = {
 		marine = {
 			max_organisation = 5
 						need = {
-			   sf_equipment = -4
+			   Special_Forces_Marine_Equipment = 10
 		    }
 		}
 		amphibious_mechanized = {
 			max_organisation = 5
 						need = {
-			   sf_equipment = -4
+			   Special_Forces_Marine_Equipment = 5
 		    }
 		}
 
@@ -735,7 +781,13 @@ technologies = {
 		enable_subunits = {
 			mountaineers
 		}
-
+		enable_equipment_modules = {
+			Mountaineer_Equipment
+		}
+		enable_equipments = {
+			Special_Forces_Mountaineer_Equipment_0
+		}
+		
 		on_research_complete_limit = {
 			NOT = {
 				has_template_containing_unit = mountaineers
@@ -746,6 +798,20 @@ technologies = {
 				load_oob = "unlock_mountineers"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			create_equipment_variant = {
+				name = "Special Forces Mountaineer Equipment"
+				type = Special_Forces_Mountaineer_Equipment_0
+				modules = {
+					Design_Slot = Mountaineer_Equipment
+					Main_Equipment_Slot = Assualt
+					Special_slot_1 = Sniper_Teams
+					Special_slot_2 = Additional_Grenades
+					Special_slot_3 = Additional_Ammuntion
+					Radio_slot = Basic_Coms
+					Supporting_Weapons_slot = Mortars
+					
+				}
+			}
 		}
 		
 		path = {
@@ -757,7 +823,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 3 y = @1936 }
 		}
 		
 		categories = {
@@ -786,7 +852,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 3 y = @1940 }
 		}
 		
 		categories = {
@@ -809,7 +875,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1943 }
+			position = { x = 3 y = @1943 }
 		}
 		
 		categories = {
@@ -824,12 +890,38 @@ technologies = {
 	}
 
 	tech_special_forces = {
+		allow = {always = no}
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.05
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
 		special_forces_cap = 0.05
-		
+		enable_equipment_modules = {
+			Larger_Explosives
+			Special_Forces_Equipment
+		}
+		enable_equipments = {
+			Special_Forces_Equipment_0
+		}
+		enable_subunits = {
+			Elite_Infantry
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+				name = "Special Forces Equipment"
+				type = Special_Forces_Equipment_0
+				modules = {
+					Design_Slot = Special_Forces_Equipment
+					Main_Equipment_Slot = Defense_Unit
+					Special_slot_1 = Anti_Tank_Rifles
+					Special_slot_2 = Additional_Grenades
+					Special_slot_3 = Additional_Ammuntion
+					Radio_slot = Basic_Coms
+					Supporting_Weapons_slot = Mortars
+					
+				}
+			}
+		}
 		#dependencies = {
 		#	OR = {
 		#		marines = 1
@@ -852,7 +944,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1938 }
+			position = { x = 6 y = @1938 }
 		}
 		
 		categories = {
@@ -891,7 +983,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 5 y = @1940 }
 		}
 		
 		categories = {
@@ -923,7 +1015,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1940 }
+			position = { x = 7 y = @1940 }
 		}
 		
 		categories = {
@@ -960,7 +1052,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1942 }
+			position = { x = 5 y = @1942 }
 		}
 		
 		categories = {
@@ -994,7 +1086,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1942 }
+			position = { x = 7 y = @1942 }
 		}
 		
 		categories = {
@@ -1025,7 +1117,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1944 }
+			position = { x = 6 y = @1944 }
 		}
 		
 		categories = {
@@ -1255,6 +1347,7 @@ technologies = {
 			secondary_turret_hmg
 			tank_heavy_machine_gun
 			additional_machine_guns
+			Machine_Gun_Squad
 		}
 		
 		path = {
@@ -1280,7 +1373,9 @@ technologies = {
 		enable_equipments = {
 			squad_equipment_1
 		}
-		
+		enable_equipment_modules = {
+			Anti_Tank_Weapons
+		}
 		path = {
 			leads_to_tech = support_weapons3
 			research_cost_coeff = 1
@@ -1923,7 +2018,7 @@ technologies = {
 				attack = 0.2
 			}
 			need = {
-				sf_equipment = 5
+				Special_Forces_Marine_Equipment = 50
 			}
 			training_time = 20
 		}
@@ -2019,7 +2114,21 @@ technologies = {
 		research_cost = 2.0
 		start_year = 1942
 	}
+	Minor_Nation_Special_Forces_Boost = {
+		category_special_forces = {					
+			need = {
+			   infantry_equipment = -40
+			   squad_equipment = -15					   
+			}					
+		}
+					
+		allow = {
+			always = no
+		}
 
+		research_cost = 2.0
+		start_year = 1942
+	}
 	tank_riders = {
 
 		mechanized = {
@@ -2193,6 +2302,39 @@ technologies = {
 		}
 	}
 
+	Special_Forces_Equipment_Technology = {
+
+		enable_equipment_modules = {
+			Special_Forces_Equipment
+			Defense_Unit
+			Assualt
+			Mortars
+			Anti_Tank_Rifles
+			Molotovs 
+			Additional_Grenades
+			Additional_Ammuntion
+			Sniper_Teams 
+		}
+		
+		enable_subunits = {
+			
+		}
+		
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	penal_infantry = {
 		
 		allow = {

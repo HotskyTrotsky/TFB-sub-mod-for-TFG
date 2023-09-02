@@ -12,7 +12,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	motorised_infantry = 1
-	marines = 1
+	tech_mountaineers = 1
 	ger_cze_tank_1 = 1
 	ger_cze_tank_2 = 1
 	gw_artillery = 1
@@ -37,8 +37,23 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
+create_equipment_variant = {
+	name = "Special Forces Marine Equipment"
+	type = Special_Forces_Marine_Equipment_0
+	modules = {
+		Design_Slot = Marine_Equipment
+		Main_Equipment_Slot = Assualt
+		Special_slot_1 = Sniper_Teams
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 add_equipment_to_stockpile = {
 
 type = infantry_equipment_0

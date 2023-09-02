@@ -19,7 +19,11 @@ state=
 			}
 		}
 		set_state_flag = AFRICA_COMMONWEALTH_controls
-		add_core_of = ENG
+		#add_core_of = ENG
+		add_dynamic_modifier = {
+		modifier = Fortress_Island_Of_Malta_Under_Developed
+		scope = ENG
+		}
 	}
 	provinces= { 12003 }
 }

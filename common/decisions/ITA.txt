@@ -128,6 +128,7 @@ political_actions = {
 		available = {
 			ITA = { has_war_with = ENG }
 			BUL = {is_ai = yes}
+			BUL = {has_capitulated = no}
 		}
 
 		ai_will_do = {
@@ -158,7 +159,7 @@ political_actions = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 120
+		days_mission_timeout = 180
 		is_good = no
 		fire_only_once = yes
 
@@ -177,39 +178,9 @@ political_actions = {
 		timeout_effect = {
 			add_war_support = -0.20
 			add_stability =  -0.20
-			activate_decision = ITA_go_to_war_with_france2
+			#activate_decision = ITA_go_to_war_with_france2
 			set_global_flag = ITA_not_at_war
 			ITA = {country_event = { id = italy.503 }}
-		}
-	}
-
-	ITA_go_to_war_with_france2 = {
-		priority = 100
-		allowed = { tag = ITA }
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		days_mission_timeout = 60
-		is_good = no
-		fire_only_once = yes
-
-		cancel_trigger = {
-			has_war_with = FRA
-		}
-
-		visible = {
-			always = yes
-		}
-
-		activation = {
-			has_global_flag = ITA_not_at_war
-		}
-		
-		timeout_effect = {
 			ENG = {
 				create_wargoal = {
 					type = topple_government
@@ -219,6 +190,43 @@ political_actions = {
 			ENG = {country_event = { id = britain.504 }}
 		}
 	}
+
+	# ITA_go_to_war_with_france2 = {
+	# 	priority = 100
+	# 	allowed = { tag = ITA }
+
+	# 	icon = generic_prepare_civil_war
+
+	# 	available = {
+	# 		hidden_trigger = { always = no }
+	# 	}
+
+	# 	days_mission_timeout = 60
+	# 	is_good = no
+	# 	fire_only_once = yes
+
+	# 	cancel_trigger = {
+	# 		has_war_with = FRA
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 	}
+
+	# 	activation = {
+	# 		has_global_flag = ITA_not_at_war
+	# 	}
+		
+	# 	timeout_effect = {
+	# 		ENG = {
+	# 			create_wargoal = {
+	# 				type = topple_government
+	# 				target = ITA
+	# 			}
+	# 		}
+	# 		ENG = {country_event = { id = britain.504 }}
+	# 	}
+	# }
 
 	ITA_go_to_war_with_france_event = {
 		priority = 100
@@ -248,6 +256,119 @@ political_actions = {
 }
 
 operations = {
+	Operation_Herkules = {
+
+		icon = decision_generic_air
+		allowed = {
+		
+			tag = ITA 
+		}
+		available = {
+			ITA = {
+			has_war_with = ENG
+			has_deployed_air_force_size = {
+				size > 300
+				type = tactical_bomber
+			}
+			}
+			GER = {
+				has_deployed_air_force_size = {
+				size > 2000
+				type = fighter
+			}
+			}
+			tag = ITA
+			116 = {
+				is_controlled_by = ENG
+			}
+			
+		}
+	
+		visible = {
+			has_war_with = ENG
+			tag = ITA
+			116 = {
+				is_controlled_by = ENG
+			}
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 46
+	
+		cost = 25
+	
+		
+
+		complete_effect = {
+			if = {
+				limit = {
+					116 = {
+						has_dynamic_modifier = {
+							modifier = Fortress_Island_Of_Malta_Under_Developed
+							scope = ENG
+						}
+					}
+				}
+		116 = {
+			set_state_flag = Under_Developed_Malta
+				remove_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta_Under_Developed
+					scope = ENG
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					116 = {
+						has_dynamic_modifier = {
+							modifier = Fortress_Island_Of_Malta
+							scope = ENG
+						}
+					}
+				}
+		116 = {
+			set_state_flag = Developed_Malta
+				remove_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta
+					scope = ENG
+					}
+				}
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					116 = {
+						has_state_flag = Under_Developed_Malta
+						is_controlled_by = ENG
+					}
+				}
+		116 = {
+			clr_state_flag = Under_Developed_Malta
+				add_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta_Under_Developed
+					scope = ENG
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					116 = {
+						has_state_flag = Developed_Malta
+						is_controlled_by = ENG
+					}
+				}
+		116 = {
+			clr_state_flag = Developed_Malta
+				add_dynamic_modifier = {
+					modifier = Fortress_Island_Of_Malta
+					scope = ENG
+					}
+				}
+			}
+			}
+	}
 Develop_Africa_Railways_ITA = {
 
 		icon = generic_construction

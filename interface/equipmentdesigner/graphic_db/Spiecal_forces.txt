@@ -1,0 +1,38 @@
+default = {
+	Special_Forces_Equipment_0 = {
+		pool = {
+			weight = 1
+			icons = { 
+				GFX_Special_Forces_Equipment_0
+			}
+		}
+
+	}
+	Special_Forces_Mountaineer_Equipment_0 = {
+		pool = {
+			weight = 1
+			icons = { 
+				GFX_Special_Forces_Mountaineer_Equipment_0
+			}
+		}
+
+	}
+	Special_Forces_Marine_Equipment_0 = {
+		pool = {
+			weight = 1
+			icons = { 
+				GFX_Special_Forces_Marine_Equipment_0
+			}
+		}
+
+	}
+	Special_Forces_Paratrooper_Equipment_0 = {
+		pool = {
+			weight = 1
+			icons = { 
+				GFX_Special_Forces_Paratrooper_Equipment_0
+			}
+		}
+
+	}
+}

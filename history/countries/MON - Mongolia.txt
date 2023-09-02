@@ -32,6 +32,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 
 add_ideas = {

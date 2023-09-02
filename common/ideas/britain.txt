@@ -1,6 +1,82 @@
 ideas = {
 
 	country = {
+		####AFRICA lost but will attempt to retake
+			Africa_Lost = {
+
+			picture = Africa_Lost			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				naval_invasion_capacity	= -5
+				convoy_escort_efficiency = -0.2
+				war_support_factor = -0.05
+			}
+		}
+	##Lend lease
+		Idea_UK_Lend_Lease_1 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 15
+			}
+		}
+		Idea_UK_Lend_Lease_2 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 20
+			}
+		}
+		Idea_UK_Lend_Lease_3 = {
+
+			picture = Lend_Lease			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 25
+			}
+		}
 		ENG_tallboys = {
 
 			picture = generic_air_research
@@ -2265,11 +2341,14 @@ ideas = {
 			special_forces_training_time_factor = -0.20
 			special_forces_no_supply_grace = 120
 			special_forces_out_of_supply_factor = -0.1
-			special_forces_attack_factor = 0.15
-			special_forces_defence_factor = 0.15
+			special_forces_attack_factor = 0.10
+			special_forces_defence_factor = 0.10
 			}
 			equipment_bonus = {
-				sf_equipment = {
+				Special_Forces_Equipment = {
+					build_cost_ic = -0.1 instant = yes
+					}
+				Special_Forces_Marine_Equipment = {
 					build_cost_ic = -0.1 instant = yes
 					}
 				}

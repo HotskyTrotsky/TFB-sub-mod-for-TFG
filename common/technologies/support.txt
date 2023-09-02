@@ -89,6 +89,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			flamethrower
+			Sapper_Teams
+			flame_support
 		}
 		path = {
 			leads_to_tech = tech_engineers2
@@ -1862,7 +1864,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = armored_train
+			leads_to_tech = railway_gun
 			research_cost_coeff = 1
 		}
 		
@@ -1898,7 +1900,7 @@ technologies = {
 			railway_gun_equipment_1
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -2033,7 +2035,7 @@ technologies = {
 			railway_gun_equipment_2
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1939
 		folder = {
 			name = support_folder

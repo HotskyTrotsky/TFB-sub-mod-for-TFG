@@ -27,7 +27,7 @@ characters={
 		portraits = {
 			army = {
 				large = "GFX_Mongolia_Throat_Singer"
-				small = "GFX_Mongolia_Throat_Singer"
+				small = "GFX_Mongolia_Throat_Singer_small"
 			}
 		}
 		corps_commander = {

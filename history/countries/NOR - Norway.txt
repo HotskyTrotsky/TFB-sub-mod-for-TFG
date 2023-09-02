@@ -15,7 +15,20 @@ add_ideas = {
 	limited_conscription
 	
 }
-
+create_equipment_variant = {
+	name = "Special Forces Mountaineer Equipment"
+	type = Special_Forces_Mountaineer_Equipment_0
+	modules = {
+		Design_Slot = Mountaineer_Equipment
+		Main_Equipment_Slot = Defense_Unit
+		Special_slot_1 = Anti_Tank_Rifles
+		Special_slot_2 = Additional_Grenades
+		Special_slot_3 = Additional_Ammuntion
+		Radio_slot = Basic_Coms
+		Supporting_Weapons_slot = Mortars
+		
+	}
+}
 add_equipment_to_stockpile = {
 
 type = infantry_equipment_1
@@ -66,6 +79,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	support_weapons = 1
+	tech_mountaineers = 1
 	gw_artillery = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -73,6 +87,7 @@ set_technology = {
 	#early_bomber = 1
 	tech_recon = 1
 	basic_train = 1
+	Special_Forces_Equipment_Technology = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

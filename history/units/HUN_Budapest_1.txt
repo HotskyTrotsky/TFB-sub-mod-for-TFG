@@ -29,7 +29,7 @@ division_template = {
 	logistics_company  = { x = 0 y = 3 }
 	anti_air = { x = 1 y = 0 }
 	}
-	override_model = GER_infantry_weapon_mg_right_entity
+	#override_model = GER_infantry_weapon_mg_right_entity
 	template_counter = 109
 }
 division_template = {

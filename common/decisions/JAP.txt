@@ -487,8 +487,8 @@ JAP_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			special_forces_attack_factor = 0.05 
-			special_forces_defence_factor = 0.05
+			special_forces_attack_factor = 0.025 
+			special_forces_defence_factor = 0.025
 		}
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -1004,7 +1004,7 @@ JAP_southern_expansion = {
 						}
 					}
 				}
-				FRA = { country_event = { id = france.1 } }
+				FRA = { country_event = { id = france.1 days = 2} }
 			}
 			else_if = {
 				limit = {
@@ -1019,7 +1019,7 @@ JAP_southern_expansion = {
 						}
 					}
 				}
-				VIC = { country_event = { id = france.1 } }
+				VIC = { country_event = { id = france.1 days = 2} }
 			}
 		}
 

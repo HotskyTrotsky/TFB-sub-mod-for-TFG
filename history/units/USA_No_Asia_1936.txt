@@ -268,7 +268,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = sf_equipment_0
+			type = Special_Forces_Marine_Equipment_0
 			creator = "USA" 
 		}
 		requested_factories = 1

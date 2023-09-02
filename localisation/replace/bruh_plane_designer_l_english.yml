@@ -341,7 +341,10 @@ large_plane_airframe_1_eng:0 "Vickers Wellington"
 large_plane_airframe_2_eng:0 "Handley Page Halifax"
 large_plane_airframe_3_eng:0 "Avro Lancaster"
 large_plane_airframe_4_eng:0 "Avro Lincoln"
-
+small_plane_airframe_NAV_0_eng:0 "Fairey Albacore"
+small_plane_airframe_NAV_1_eng:0 "Fairey Barracuda"
+Fairey_Albacore:0 "Fairey Albacore"
+Fairey_Barracuda:0 "Fairey Barracuda"
 #########FRANCE
 small_plane_airframe_0_fra:0 "Dewoitine D.500"
 small_plane_airframe_1_fra:0 "Morane-Saulnier M.S.406"
@@ -390,6 +393,8 @@ Pe_8_Bombing_Upgrade:0 "Improved Payload for PE-8"
 
 
 ########JAPAN
+IJA_Air:0 "Imperial Japanese Army Airforce"
+IJA_Navy:0 "Imperial Japanese Navy Airforce"
 small_plane_airframe_0_jap:0 "Kawasaki Ki-10"
 small_plane_airframe_1_jap:0 "Nakajima Ki-27"
 small_plane_airframe_2_jap:0 "Nakajima Ki-43 Hayabusa"
@@ -530,3 +535,5 @@ He_111_H11:0 "He 111 H11"
 large_plane_airframe_1_ger:0 "Dornier Do 17"
 large_plane_airframe_2_ger:0 "Dornier Do 217"
 large_plane_airframe_3_ger:0 "Heinkel He 177 Greif"
+large_plane_airframe_4_ger:0 "Focke-Wulf Fw 200 Condor"
+Fw_200_Condor:0 "Focke-Wulf Fw 200 Condor"
