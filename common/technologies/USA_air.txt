@@ -154,6 +154,7 @@ technologies = {
 		icon = "GFX_Curtiss_P-40_Warhawk_medium"
 			}
 		}
+<<<<<<< Updated upstream
 		
 		on_research_complete = {
 			create_equipment_variant = {
@@ -163,6 +164,16 @@ technologies = {
 			fixed_main_weapon_slot = medium_bomb_locks
 			fixed_auxiliary_weapon_slot_1 = small_bomb_locks
 			fixed_auxiliary_weapon_slot_2 = small_bomb_locks
+=======
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Curtiss P-40 Warhawk"
+			type = small_plane_airframe_2_usa
+			modules = {
+			fixed_main_weapon_slot = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+>>>>>>> Stashed changes
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = Self_Sealing_Tanks
 			special_type_slot_2 = fuel_injection
@@ -170,6 +181,10 @@ technologies = {
 		icon = "GFX_Curtiss_P-40_Warhawk_medium"
 			}
 		}
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
 		path = {
 			leads_to_tech = Bell_P-39_Airacobra
 			research_cost_coeff = 1
@@ -468,7 +483,11 @@ technologies = {
 			aircraft_cannon_1_2x
 			fuel_injection2
 			Drop_Tank
+<<<<<<< Updated upstream
 			#large_bomb_locks
+=======
+			large_bomb_locks
+>>>>>>> Stashed changes
 			medium_bomb_locks
 			Reflex_sight_1
 			rocket_rails_1
@@ -484,9 +503,15 @@ technologies = {
 			Republic_P-47_Thunderbolt_plane_armor_upgrade = 0
 			}
 			modules = {
+<<<<<<< Updated upstream
 			fixed_main_weapon_slot = rocket_rails_1
 			fixed_auxiliary_weapon_slot_1 = rocket_rails_1
 			fixed_auxiliary_weapon_slot_2 = tank_buster_2
+=======
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_2
+			fixed_auxiliary_weapon_slot_2 = rocket_rails_2
+>>>>>>> Stashed changes
 			engine_type_slot = engine_4_1x
 			special_type_slot_1 = Reflex_sight_1
 			special_type_slot_2 = fuel_injection2
@@ -494,6 +519,7 @@ technologies = {
 		}
 		icon = "GFX_Republic_P-47_Thunderbolt_medium"
 			}
+<<<<<<< Updated upstream
 			create_equipment_variant = {
 			name = "P-51 Mustang"
 			type = small_plane_airframe_5_usa
@@ -510,6 +536,9 @@ technologies = {
 			}
 		}
 		
+=======
+		}
+>>>>>>> Stashed changes
 		path = {
 			leads_to_tech = Republic_P-47_Thunderbolt_Improvements
 			research_cost_coeff = 1
@@ -574,7 +603,26 @@ technologies = {
 		icon = "GFX_Republic_P-47_Thunderbolt_medium"
 			}
 		}
-		
+		on_research_complete = {
+			create_equipment_variant = {
+			name = "Republic P-47 Thunderbolt II"
+			type = small_plane_cas_airframe_5_usa
+			upgrades = {
+			Republic_P-47_Thunderbolt_plane_engine_upgrade = 0
+			Republic_P-47_Thunderbolt_plane_armor_upgrade = 0
+			}
+			modules = {
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = rocket_rails_2
+			fixed_auxiliary_weapon_slot_2 = rocket_rails_2
+			engine_type_slot = engine_4_1x
+			special_type_slot_1 = Reflex_sight_2
+			special_type_slot_2 = fuel_injection2
+			special_type_slot_3 = radio_navigation_2
+		}
+		icon = "GFX_Republic_P-47_Thunderbolt_medium"
+			}
+		}
 		
 		research_cost = 2
 		start_year = 1944

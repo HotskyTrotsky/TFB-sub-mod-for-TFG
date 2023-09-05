@@ -56,7 +56,11 @@ sub_units = {
 			amphibious_mechanized_equipment = 70
 			infantry_equipment = 160
 			squad_equipment = 40
+<<<<<<< Updated upstream
 			Special_Forces_Marine_Equipment = 30
+=======
+			sf_equipment = 40
+>>>>>>> Stashed changes
 		}
 
 		forest = {

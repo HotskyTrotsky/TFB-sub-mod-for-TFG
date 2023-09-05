@@ -18,6 +18,7 @@ Allied_Lend_Lease = {
 		}
 	}
 }
+<<<<<<< Updated upstream
 Second_Year_Plan = {
 	priority = 101
 
@@ -31,6 +32,8 @@ Second_Year_Plan = {
 		tag = SOV
 	}
 }
+=======
+>>>>>>> Stashed changes
 Soviet_Reserves = {
 	priority = 102
 

@@ -1,6 +1,7 @@
 ideas = {
 
 	country = {
+<<<<<<< Updated upstream
 		####AFRICA lost but will attempt to retake
 			Africa_Lost = {
 
@@ -22,6 +23,8 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+=======
+>>>>>>> Stashed changes
 	##Lend lease
 		Idea_UK_Lend_Lease_1 = {
 

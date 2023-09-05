@@ -408,7 +408,10 @@ small_plane_airframe_2_usa = { #P-40 Warhawk
 				recon_camera
 				Fighter_weapon_1
 				Fighter_weapon_2
+<<<<<<< Updated upstream
 				cas_weapon1
+=======
+>>>>>>> Stashed changes
 		}
 	}
 		engine_type_slot = {
@@ -722,7 +725,11 @@ small_plane_airframe_5_usa = { #Thunderbolt
 	weight = 4
 	naval_strike_attack = 1
 	naval_strike_targetting =3
+<<<<<<< Updated upstream
 	build_cost_ic = 60
+=======
+	build_cost_ic = 52
+>>>>>>> Stashed changes
 	resources = {
 			aluminium = 35
 			rubber = 5
@@ -1695,7 +1702,11 @@ small_plane_airframe_NAV_6_usa = { #Vought F4U Corsair
 	}
 
 	module_count_limit = {
+<<<<<<< Updated upstream
 		module = Dive_Brakes
+=======
+		module = Dive_Bomber
+>>>>>>> Stashed changes
 		count < 2
 	}
 	module_count_limit = {

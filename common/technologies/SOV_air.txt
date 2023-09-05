@@ -84,7 +84,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "I 153"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_2_sov
+=======
+			type = small_plane_cas_airframe_2_sov
+>>>>>>> Stashed changes
 			modules = {
 			fixed_main_weapon_slot = light_mg_4x
 			fixed_auxiliary_weapon_slot_1 = light_mg_4x
@@ -134,13 +138,21 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "YAK 1"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_3_sov
+=======
+			type = small_plane_cas_airframe_3_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_YAK_armor_upgrade = 0
 				plane_YAK_engine_upgrade = 0
 			}
 			modules = {
+<<<<<<< Updated upstream
 			fixed_main_weapon_slot = aircraft_cannon_1_2x
+=======
+			fixed_main_weapon_slot = heavy_mg_4x
+>>>>>>> Stashed changes
 			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
 			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
 			engine_type_slot = engine_3_1x
@@ -199,7 +211,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "YAK 7"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_3_sov
+=======
+			type = small_plane_cas_airframe_3_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_YAK_armor_upgrade = 1
 				plane_YAK_engine_upgrade = 1
@@ -262,7 +278,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "YAK 7"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_3_sov
+=======
+			type = small_plane_cas_airframe_3_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_YAK_armor_upgrade = 1
 				plane_YAK_engine_upgrade = 3
@@ -419,7 +439,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "LaGG-3"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_4_sov
+=======
+			type = small_plane_cas_airframe_4_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_LAGG_armor_upgrade = 0
 				plane_LAGG_engine_upgrade = 0
@@ -478,7 +502,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "LA-5"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_4_sov
+=======
+			type = small_plane_cas_airframe_4_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_LAGG_armor_upgrade = 1
 				plane_LAGG_engine_upgrade = 1
@@ -536,7 +564,11 @@ technologies = {
 		on_research_complete = {
 		create_equipment_variant = {
 			name = "LA-7"
+<<<<<<< Updated upstream
 			type = small_plane_airframe_4_sov
+=======
+			type = small_plane_cas_airframe_4_sov
+>>>>>>> Stashed changes
 			Upgrades = {
 				plane_LAGG_armor_upgrade = 2
 				plane_LAGG_engine_upgrade = 2
@@ -661,9 +693,15 @@ technologies = {
 			name = "IL 2"
 			type = small_plane_cas_airframe_8_sov
 			modules = {
+<<<<<<< Updated upstream
 			fixed_main_weapon_slot = rocket_rails_1
 			fixed_auxiliary_weapon_slot_1 = tank_buster_2
 			fixed_auxiliary_weapon_slot_2 = medium_bomb_locks
+=======
+			fixed_main_weapon_slot = rocket_rails_2
+			fixed_auxiliary_weapon_slot_1 = tank_buster_2
+			fixed_auxiliary_weapon_slot_2 = tank_buster_2
+>>>>>>> Stashed changes
 			engine_type_slot = engine_3_1x
 			special_type_slot_1 = Reflex_sight_1
 			special_type_slot_2 = lmg_defense_turret

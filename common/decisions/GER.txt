@@ -14,7 +14,11 @@ GER_Eastern_Occupied_Nations = {
 			check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = greater_than}
 		}
 		fire_only_once = no
+<<<<<<< Updated upstream
 		days_mission_timeout = 120
+=======
+		days_mission_timeout = 160
+>>>>>>> Stashed changes
 		#cost = 50
 
 		ai_will_do = {
@@ -30,6 +34,7 @@ GER_Eastern_Occupied_Nations = {
 			
 		}
 		timeout_effect = {
+<<<<<<< Updated upstream
 			if = {
 				limit = {
 				check_variable =  {var = BARB_CAPTURED_LAND value = 0 compare = greater_than}
@@ -47,6 +52,11 @@ GER_Eastern_Occupied_Nations = {
 				var = BARB_CAPTURED_LAND
 				value = 0.0025
 				}
+=======
+				subtract_from_variable = {
+				var = BARB_CAPTURED_LAND
+				value = 0.0025
+>>>>>>> Stashed changes
 			}
 		}
 	}
@@ -205,7 +215,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				203 = {
 					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
@@ -330,7 +343,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				203 = {
 					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
@@ -458,7 +474,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				203 = {
 					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
@@ -592,7 +611,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				203 = {
 					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
@@ -730,7 +752,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				203 = {
 					create_unit = {division = "division_template = \"Ukrainian Cossack\" start_experience_factor = 0.4" owner = GER }
@@ -980,7 +1005,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				206 = {
 					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
@@ -1074,7 +1102,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				206 = {
 					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
@@ -1173,7 +1204,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				206 = {
 					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
@@ -1277,7 +1311,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				206 = {
 					create_unit = {division = "division_template = \"Belarussian Conscripts\" start_experience_factor = 0.4" owner = GER }
@@ -1469,6 +1506,7 @@ GER_Eastern_Occupied_Nations = {
 		}
 		timeout_effect = {
 			hidden_effect = {
+<<<<<<< Updated upstream
 				GER = {
 					create_corps_commander = {
 					name = "Quak"
@@ -1481,6 +1519,8 @@ GER_Eastern_Occupied_Nations = {
 					logistics_skill = 1
 			}
 				}
+=======
+>>>>>>> Stashed changes
 						division_template = {
 						name = "Estonian Recruits"
 						division_names_group = GER_Inf_01
@@ -1511,7 +1551,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				13 = {
 					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -1600,7 +1643,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				13 = {
 					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -1693,7 +1739,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				13 = {
 					create_unit = {division = "division_template = \"Estonian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -1851,7 +1900,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				12 = {
 					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -1941,7 +1993,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				12 = {
 					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -2035,7 +2090,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				12 = {
 					create_unit = {division = "division_template = \"Latvian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -2193,7 +2251,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				11 = {
 					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -2283,7 +2344,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				11 = {
 					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }
@@ -2377,7 +2441,10 @@ GER_Eastern_Occupied_Nations = {
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
 						}
+<<<<<<< Updated upstream
 						obsolete = yes
+=======
+>>>>>>> Stashed changes
 				}
 				11 = {
 					create_unit = {division = "division_template = \"Lithuanian Recruits\" start_experience_factor = 0.2" owner = GER }

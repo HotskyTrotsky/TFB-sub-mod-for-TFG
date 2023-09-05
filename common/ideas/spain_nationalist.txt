@@ -421,7 +421,10 @@ ideas = {
 					original_tag = ITA
 					original_tag = GER
 					original_tag = SOV
+<<<<<<< Updated upstream
 					original_tag = JAP
+=======
+>>>>>>> Stashed changes
 					original_tag = FRA
 				}
 			}
@@ -431,9 +434,14 @@ ideas = {
 			}
 
 			modifier = {
+<<<<<<< Updated upstream
 				send_volunteer_size = 4
 				send_volunteer_divisions_required = -1
 				
+=======
+				send_volunteer_size = 3
+				send_volunteer_divisions_required = -1
+>>>>>>> Stashed changes
 				lend_lease_tension = -0.30
 			}
 		}
@@ -857,7 +865,11 @@ ideas = {
 			}
 
 			modifier = {
+<<<<<<< Updated upstream
 				send_volunteer_size = 12
+=======
+				send_volunteer_size = 6
+>>>>>>> Stashed changes
 				send_volunteer_divisions_required = -0.25
 				send_volunteers_tension = -0.20
 				acclimatization_cold_climate_gain_factor = 0.25

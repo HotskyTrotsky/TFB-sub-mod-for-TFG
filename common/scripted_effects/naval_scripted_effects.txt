@@ -100,6 +100,7 @@ HMP_check_fleet_size = {
 			var = needed_screen_count
 			value = capital_count
 		}
+<<<<<<< Updated upstream
 		if= {
             limit = { has_trait = fleet_protector }
             multiply_variable = { 
@@ -113,6 +114,12 @@ HMP_check_fleet_size = {
                 value = 3
             }
         }
+=======
+		multiply_variable = { 
+			var = needed_screen_count
+			value = 3
+		}
+>>>>>>> Stashed changes
 
 		
 		set_temp_variable = {
@@ -124,7 +131,11 @@ HMP_check_fleet_size = {
 			value = heavy_cruiser_count 
 		}
 		multiply_temp_variable  = { 
+<<<<<<< Updated upstream
 			var =  heavy_cruiser_count_temp value = 3
+=======
+			var =  heavy_cruiser_count_temp value = 2
+>>>>>>> Stashed changes
 		}
 		add_to_temp_variable = {
 			var = command_limit_used_temp
@@ -217,7 +228,11 @@ HMP_check_fleet_size = {
 			}
 			subtract_from_temp_variable = {
 				var = command_limit_penalty_calc
+<<<<<<< Updated upstream
 				value = 145
+=======
+				value = 150
+>>>>>>> Stashed changes
 			}
 			multiply_temp_variable = {
 				var = command_limit_penalty_calc
@@ -237,6 +252,7 @@ HMP_check_fleet_size = {
 			custom_trigger_tooltip = {  
 				OR = { 
 					check_variable = { num_ships_with_type@carrier > 0 }
+<<<<<<< Updated upstream
 					check_variable = { num_ships_with_type@sh_battleship > 0 } 
 					check_variable = { num_ships_with_type@light_cruiser > 0 } 
 					check_variable = {  num_ships_with_type@battleship > 0 } 
@@ -244,6 +260,13 @@ HMP_check_fleet_size = {
 					check_variable = {  num_ships_with_type@heavy_cruiser > 0  }  
 					check_variable = {  num_ships_with_type@destroyer > 1  }  
 					check_variable = {  num_ships_with_type@submarine > 1  }  
+=======
+					check_variable = { num_ships_with_type@sh_battleship > 1 } 
+					check_variable = { num_ships_with_type@light_cruiser > 1 } 
+					check_variable = {  num_ships_with_type@battleship > 0 } 
+					check_variable = { num_ships_with_type@battle_cruiser > 0 } 
+					check_variable = {  num_ships_with_type@heavy_cruiser > 0  }  
+>>>>>>> Stashed changes
 				}
 			}	
 		}

@@ -796,7 +796,11 @@ technologies = {
 			large_bomb_locks
 			Reflex_sight_1
 			rocket_rails_1
+<<<<<<< Updated upstream
 			#rocket_rails_2
+=======
+			rocket_rails_2
+>>>>>>> Stashed changes
 			tank_buster_1
 			tank_buster_2
 			medium_Armor_Plates
@@ -809,7 +813,11 @@ technologies = {
 			name = "Typhoon"
 			type = small_plane_cas_airframe_5_eng
 			modules = {
+<<<<<<< Updated upstream
 			fixed_main_weapon_slot = rocket_rails_1
+=======
+			fixed_main_weapon_slot = rocket_rails_2
+>>>>>>> Stashed changes
 			fixed_auxiliary_weapon_slot_1 = rocket_rails_1
 			fixed_auxiliary_weapon_slot_2 = tank_buster_1
 			engine_type_slot = engine_3_1x
@@ -887,7 +895,11 @@ technologies = {
 			modules = {
 			fixed_main_weapon_slot = rocket_rails_2
 			fixed_auxiliary_weapon_slot_1 = rocket_rails_2
+<<<<<<< Updated upstream
 			fixed_auxiliary_weapon_slot_2 = tank_buster_3
+=======
+			fixed_auxiliary_weapon_slot_2 = rocket_rails_2
+>>>>>>> Stashed changes
 			engine_type_slot = engine_4_1x
 			special_type_slot_1 = Self_Sealing_Tanks
 			special_type_slot_2 = Reflex_sight_2

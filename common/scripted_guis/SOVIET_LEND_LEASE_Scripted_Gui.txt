@@ -136,9 +136,12 @@ scripted_gui = {
 					ENG = {
 						has_completed_focus = ENG_operation_countenance
 					}
+<<<<<<< Updated upstream
 					229 = {
 						is_controlled_by = SOV
 					}
+=======
+>>>>>>> Stashed changes
 				}
 			}
 			IRAN_CLOSED_visible = {

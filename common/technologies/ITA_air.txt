@@ -506,7 +506,11 @@ technologies = {
 			}
 			create_equipment_variant = {
 			name = "Macchi C.2001 Saetta Torpedo Bomber"
+<<<<<<< Updated upstream
 			type = small_plane_naval_bomber_airframe_4_ita
+=======
+			type = small_plane_naval_bomber_airframe_3_ita
+>>>>>>> Stashed changes
 			modules = {
 			fixed_main_weapon_slot = mid_torp
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -520,7 +524,11 @@ technologies = {
 			}
 			create_equipment_variant = {
 			name = "Macchi C.2001 Saetta Bomber"
+<<<<<<< Updated upstream
 			type = small_plane_cas_airframe_4_ita
+=======
+			type = small_plane_cas_airframe_3_ita
+>>>>>>> Stashed changes
 			modules = {
 			fixed_main_weapon_slot = medium_bomb_locks
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks

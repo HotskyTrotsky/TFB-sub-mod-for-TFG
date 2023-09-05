@@ -12950,7 +12950,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+<<<<<<< Updated upstream
 		icon = "GFX_sov_medium_tank_equipment_4_medium"
+=======
+		icon = "GFX_sov_medium_tank_3_medium"
+>>>>>>> Stashed changes
 					}
 				load_oob = SOV_Far_East_Reserves_0
 				}
@@ -12981,7 +12985,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+<<<<<<< Updated upstream
 		icon = "GFX_sov_medium_tank_equipment_4_medium"
+=======
+		icon = "GFX_sov_medium_tank_3_medium"
+>>>>>>> Stashed changes
 					}
 					load_oob = SOV_Far_East_Reserves_1
 				}
@@ -13057,7 +13065,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+<<<<<<< Updated upstream
 		icon = "GFX_sov_medium_tank_equipment_3_medium"
+=======
+		icon = "GFX_sov_medium_tank_3_medium"
+>>>>>>> Stashed changes
 					}
 				load_oob = SOV_Far_East_Reserves_3
 				}
@@ -13087,7 +13099,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+<<<<<<< Updated upstream
 		icon = "GFX_sov_medium_tank_equipment_4_medium"
+=======
+		icon = "GFX_sov_medium_tank_3_medium"
+>>>>>>> Stashed changes
 					}
 					load_oob = SOV_Far_East_Reserves_4
 				}
@@ -13116,7 +13132,11 @@ country_event = {
 		engine_type_slot = tank_gasoline_engine
 					}
 		obsolete = yes
+<<<<<<< Updated upstream
 		icon = "GFX_sov_medium_tank_equipment_3_medium"
+=======
+		icon = "GFX_sov_medium_tank_2_medium"
+>>>>>>> Stashed changes
 					}
 					load_oob = SOV_Far_East_Reserves_5
 				}
@@ -13180,7 +13200,11 @@ country_event = {
 			create_country_leader = {
 			name = "Georgy Zhukov"
 			#desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+<<<<<<< Updated upstream
 			picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+=======
+			picture = "GFX_SOV_georgy_zhukov.dds"
+>>>>>>> Stashed changes
 			expire = "1965.1.1"
 			ideology = stalinism
 			set_politics = {

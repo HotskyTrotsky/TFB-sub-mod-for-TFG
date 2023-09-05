@@ -34,6 +34,7 @@ BARB_ECONOMIC_BONUS = { #NATIONAL SPIRIT
 	industrial_capacity_factory = BARB_CAPTURED_LAND 
 	
 }
+<<<<<<< Updated upstream
 
 AST_Defense_Set_Up = {
 	enable = { always = yes }
@@ -70,15 +71,24 @@ Fortress_Island_Of_Malta_Under_Developed = {
 	max_dig_in_factor = 0.1
 	local_supplies_for_controller = 0.25
 }
+=======
+>>>>>>> Stashed changes
 The_Fronzen_Front = {
 	icon = GFX_modifiers_SOV_invaders_must_die
 	attacker_modifier = yes
 
 	air_cas_present_factor = -0.75
+<<<<<<< Updated upstream
 	army_attack_factor = -0.25
 	army_speed_factor = -0.1
 	ground_attack_factor = -0.75
 	local_org_regain = -0.1
+=======
+	army_attack_factor = -0.5
+	army_speed_factor = -0.25
+	ground_attack_factor = -0.75
+	local_org_regain = -0.25
+>>>>>>> Stashed changes
 }
 
 Tough_Terrain = {
@@ -86,20 +96,34 @@ Tough_Terrain = {
 	attacker_modifier = yes
 
 	air_cas_present_factor = -0.75
+<<<<<<< Updated upstream
 	army_attack_factor = -0.60
 	army_speed_factor = -0.1
 	ground_attack_factor = -0.75
 	local_org_regain = -0.1
+=======
+	army_attack_factor = -0.5
+	army_speed_factor = -0.25
+	ground_attack_factor = -0.75
+	local_org_regain = -0.25
+>>>>>>> Stashed changes
 }
 Tough_Terrain_Adapted = {
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 	attacker_modifier = yes
 
 	air_cas_present_factor = -0.5
+<<<<<<< Updated upstream
 	army_attack_factor = -0.1
 	army_speed_factor = -0.05
 	ground_attack_factor = -0.5
 	local_org_regain = -0.05
+=======
+	army_attack_factor = -0.25
+	army_speed_factor = -0.1
+	ground_attack_factor = -0.5
+	local_org_regain = -0.1
+>>>>>>> Stashed changes
 }
 Alan_Turing_Intel = {
 	remove_trigger = { 

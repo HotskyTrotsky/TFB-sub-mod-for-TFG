@@ -22,7 +22,11 @@ operations = {
 					motorized_equipment >750
 					}
 					has_equipment = {
+<<<<<<< Updated upstream
 					Special_Forces_Equipment > 300
+=======
+					sf_equipment > 750
+>>>>>>> Stashed changes
 					}
 					has_equipment = {
 					radio_equipment > 500
@@ -51,8 +55,13 @@ operations = {
     			amount = -750
 				}
 				add_equipment_to_stockpile = {
+<<<<<<< Updated upstream
     			type = Special_Forces_Equipment
     			amount = -300
+=======
+    			type = sf_equipment
+    			amount = -750
+>>>>>>> Stashed changes
 				}
 				add_equipment_to_stockpile = {
     			type = radio_equipment
@@ -264,6 +273,7 @@ operations = {
 				relation = non_aggression_pact
 			}
 			hidden_effect = {
+<<<<<<< Updated upstream
 				SOV = {
 					add_ideas = peace_training
 				}
@@ -273,6 +283,10 @@ operations = {
 				MON = {
 					remove_ideas = MON_brothers_war
 					add_ideas = peace_training
+=======
+				MON = {
+					remove_ideas = MON_brothers_war
+>>>>>>> Stashed changes
 				}
 			}
 		}
@@ -321,6 +335,7 @@ operations = {
 			hidden_effect = {
 				MON = {
 					remove_ideas = MON_brothers_war
+<<<<<<< Updated upstream
 					add_ideas = peace_training
 				}
 				FIN = {
@@ -328,6 +343,10 @@ operations = {
 				}
 				SOV = {
 					add_ideas = peace_training
+=======
+				}
+				SOV = {
+>>>>>>> Stashed changes
 					add_days_mission_timeout = {
 						mission = SOV_winter_war
 						days = -300

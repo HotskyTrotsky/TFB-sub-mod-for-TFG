@@ -1062,6 +1062,7 @@ technologies = {
 			fixed_auxiliary_weapon_slot_2 = small_tactical_bombs
 			engine_type_slot = engine_1_2x
 			special_type_slot_1 = lmg_defense_turret
+<<<<<<< Updated upstream
 			special_type_slot_2 = lmg_defense_turret
 			}
 		icon = "GFX_medium_plane_airframe_1_ger_medium"
@@ -1073,6 +1074,12 @@ technologies = {
 				GER = { country_event = { id = germany.2006 hours = 6 } }
 			}
 			
+=======
+			special_type_slot_2 = hmg_defense_turret
+			}
+		icon = "GFX_medium_plane_airframe_1_ger_medium"
+			}
+>>>>>>> Stashed changes
 		}
 		path = {
 			leads_to_tech = He_111_E_P

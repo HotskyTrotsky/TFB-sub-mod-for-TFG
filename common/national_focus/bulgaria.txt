@@ -537,10 +537,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+<<<<<<< Updated upstream
 			set_technology = {
 				tech_special_forces = 1
 				Minor_Nation_Special_Forces_Boost = 1
 			}
+=======
+>>>>>>> Stashed changes
 			add_tech_bonus = {
 				name = bulgaria
 				bonus = 0.5

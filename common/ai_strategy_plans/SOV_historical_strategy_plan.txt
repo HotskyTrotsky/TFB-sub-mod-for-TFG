@@ -24,6 +24,7 @@ SOV_historical_plan = {
 	}
 
 	ai_national_focuses = {
+<<<<<<< Updated upstream
 		SOV_fareast_reserves
 		SOV_First_Wave_Training
 		SOV_Second_Wave_Training
@@ -31,6 +32,11 @@ SOV_historical_plan = {
 		#SOV_germans_are_coming
 		SOV_fareast_reserves
 		#SOV_frontline_mob
+=======
+		#SOV_germans_are_coming
+		SOV_fareast_reserves
+		SOV_frontline_mob
+>>>>>>> Stashed changes
 		SOV_defend_moscow
 		SOV_defend_stalingrad
 		SOV_defend_leningrad
@@ -44,9 +50,12 @@ SOV_historical_plan = {
 		SOV_lessons_of_war
 		SOV_red_army
 		SOV_tankograd
+<<<<<<< Updated upstream
 		SOV_Quantity_Over_Quality
 		SOV_slacken_armor
 		SOV_tank_riders
+=======
+>>>>>>> Stashed changes
 		SOV_guards
 		SOV_closed_city
 		SOV_technical_assistance
@@ -54,7 +63,11 @@ SOV_historical_plan = {
 		SOV_persian_corridor
 		SOV_american_tool_deliveries
 		SOV_war_mobilisation
+<<<<<<< Updated upstream
 		#SOV_allied_lend_lease
+=======
+		SOV_allied_lend_lease
+>>>>>>> Stashed changes
 		SOV_claims_on_baltic
 		SOV_baltic_security
 		SOV_claim_bessarabia
@@ -114,6 +127,7 @@ SOV_historical_plan = {
 		SOV_capitals_of_socialism
 		SOV_modernize_aircraft_facilities
 		#SOV_deep_operations
+<<<<<<< Updated upstream
 		#SOV_tank1
 		#SOV_tank2
 		#SOV_medium_tank1
@@ -122,6 +136,16 @@ SOV_historical_plan = {
 		#SOV_arty2
 		#SOV_arty3
 		#SOV_infantry1
+=======
+		SOV_tank1
+		#SOV_tank2
+		#SOV_medium_tank1
+		#SOV_medium_tank2
+		SOV_arty1
+		SOV_arty2
+		#SOV_arty3
+		SOV_infantry1
+>>>>>>> Stashed changes
 		SOV_infantry2
 		SOV_rehabilitated_army
 		SOV_stavka

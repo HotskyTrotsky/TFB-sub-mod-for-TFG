@@ -49,7 +49,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -2 }
 		}
 		
 		categories = {
@@ -62,14 +62,14 @@ technologies = {
 		}
 	}	
 
-	ger_light_tank_2 = { 
+	ger_light_tank_2 = { #panzer II A
 
 		enable_equipments = {
 			ger_light_tank_chassis_p2
 		}
 	
 		path = {
-			leads_to_tech = ger_light_tank_3
+			leads_to_tech = ger_light_tank_II
 			research_cost_coeff = 1
 		}
 		
@@ -90,6 +90,62 @@ technologies = {
 		}
 	}
 	
+ger_light_tank_II = { #Ausf. C/D
+
+		enable_equipments = {
+			ger_light_tank_chassis_p2
+		}
+	
+		path = {
+			leads_to_tech = ger_light_tank_III
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1938
+		folder = {
+			name = ger_armour_folder
+			position = { x = -6 y = 4 }
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+ger_light_tank_III = { #Ausf. F/L
+
+		enable_equipments = {
+			ger_light_tank_chassis_p2
+		}
+	
+		path = {
+			leads_to_tech = ger_light_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = ger_armour_folder
+			position = { x = -6 y = 10 }
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	ger_light_tank_3 = { 
 
 		enable_equipments = {
@@ -104,7 +160,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = ger_armour_folder
-			position = { x = -6 y = 10 }
+			position = { x = -10 y = 10 }
 		}
 		
 		categories = {
@@ -216,10 +272,13 @@ technologies = {
 
 		enable_equipments = {
 			ger_medium_tank_chassis_p3
+			
 		}
-	
+		enable_equipment_modules = {
+			tank_med_hv_gun_1
+		}
 		path = {
-			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			leads_to_tech = ger_p3_tank_2
 			research_cost_coeff = 1
 		}
 		
@@ -227,7 +286,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = -2 y = 2 }
+			position = { x = -3 y = 2 }
 		}
 		
 		categories = {
@@ -239,15 +298,137 @@ technologies = {
 			factor = 0
 		}
 	}
+	ger_p3_tank_2 = { 
 
+		enable_equipments = {
+			ger_medium_tank_chassis_p3
+		}
+		enable_equipment_modules = {
+			tank_med_hv_gun_2
+		}
+	
+		path = {
+			leads_to_tech = ger_p3_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1938
+		folder = {
+			name = ger_armour_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p3_tank_3 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p3
+		}
+		enable_equipment_modules = {
+			tank_med_hv_gun_3
+			tank_medium_turret_2
+		}
+		path = {
+			leads_to_tech = ger_p3_tank_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ger_p5_tank_1
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1939
+		folder = {
+			name = ger_armour_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p3_tank_4 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p3
+		}
+	enable_equipment_modules = {
+			tank_med_hv_gun_4
+		}
+		path = {
+			leads_to_tech = ger_p3_tank_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = ger_armour_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p3_tank_5 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p3
+		}
+		enable_equipment_modules = {
+			tank_med_hv_gun_5
+		}
+		path = {
+			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = ger_armour_folder
+			position = { x = -3 y = 12 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	ger_p4_tank_1 = { 
 
 		enable_equipments = {
 			ger_medium_tank_chassis_p4
 		}
-	
+		enable_equipment_modules = {
+			tank_med_gun_1
+		}
 		path = {
-			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			leads_to_tech = ger_p4_tank_2
 			research_cost_coeff = 1
 		}
 		
@@ -255,7 +436,71 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = 2 y = 2 }
+			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p4_tank_2 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p4
+		}
+		enable_equipment_modules = {
+			tank_med_gun_3
+			tank_medium_turret_2
+		}
+		path = {
+			leads_to_tech = ger_p4_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1939
+		folder = {
+			name = ger_armour_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ger_p4_tank_3 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p4
+		}
+		enable_equipment_modules = {
+			tank_med_gun_4
+		}
+	
+		path = {
+			leads_to_tech = ger_p4_tank_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ger_p5_tank_1
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = ger_armour_folder
+			position = { x = 3 y = 10 }
 		}
 		
 		categories = {
@@ -268,7 +513,37 @@ technologies = {
 		}
 	}
 	
-	ger_p34_tank_2 = {
+	ger_p4_tank_4 = { 
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p4
+		}
+		enable_equipment_modules = {
+			tank_med_gun_5
+		}
+	
+		path = {
+			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = ger_armour_folder
+			position = { x = 3 y = 14 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p34_tank_2 = { #upgrade
 	
 		
 		enable_equipment_modules = {
@@ -284,16 +559,16 @@ technologies = {
 			leads_to_tech = ger_p34_tank_3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = ger_p5_tank_1
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = ger_p5_tank_1
+		#	research_cost_coeff = 1
+		#}
 		
 		research_cost = 1.0
 		start_year = 1940
 		folder = {
 			name = ger_armour_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 18 }
 		}
 		
 		categories = {
@@ -320,7 +595,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = ger_armour_folder
-			position = { x = -1 y = 12 }
+			position = { x = -1 y = 20 }
 		}
 		
 		categories = {
@@ -333,7 +608,39 @@ technologies = {
 		}
 	}
 	
-	ger_p5_tank_1 = { 
+	ger_p5_tank_1 = { #panther
+
+		enable_equipments = {
+			ger_medium_tank_chassis_p5
+		}
+		enable_equipment_modules = {
+			sloped_armor
+			tank_medium_turret_3
+			tank_large_medium_superstructure
+		}
+		
+		path = {
+			leads_to_tech = ger_p5_tank_1_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.0
+		start_year = 1942
+		folder = {
+			name = ger_armour_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ger_p5_tank_1_2 = { #panther X
 
 		enable_equipments = {
 			ger_medium_tank_chassis_p5
@@ -353,7 +660,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = ger_armour_folder
-			position = { x = 1 y = 14 }
+			position = { x = 7 y = 14 }
 		}
 		
 		categories = {
@@ -365,7 +672,6 @@ technologies = {
 			factor = 0
 		}
 	}
-	
 	ger_p5_tank_2 = { 
 
 		enable_equipments = {
@@ -379,7 +685,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = ger_armour_folder
-			position = { x = 1 y = 18 }
+			position = { x = 6 y = 18 }
 		}
 		
 		categories = {
@@ -413,7 +719,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = 0 }
+			position = { x = 20 y = 0 }
 		}
 		
 		categories = {
@@ -449,7 +755,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = 10 }
+			position = { x = 20 y = 10 }
 		}
 		
 		categories = {
@@ -511,7 +817,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = 14 }
+			position = { x = 20 y = 14 }
 		}
 		
 		categories = {
@@ -537,7 +843,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = ger_armour_folder
-			position = { x = 6 y = 18 }
+			position = { x = 20 y = 18 }
 		}
 		
 		categories = {

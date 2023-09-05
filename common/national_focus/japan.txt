@@ -2196,9 +2196,12 @@
 					}
 				}	
 			}
+<<<<<<< Updated upstream
 		}
 		bypass = {
 			SIA = {is_in_faction_with = JAP}
+=======
+>>>>>>> Stashed changes
 		}
 		completion_reward = {
 			SIA = { country_event = generic.5 }

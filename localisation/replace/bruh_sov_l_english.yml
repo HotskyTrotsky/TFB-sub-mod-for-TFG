@@ -419,8 +419,11 @@
   SOV_explain_loss_winter_war:0 "Why can I only go Blyukher/Tukhachevsky after losing the winter war?"
 
   #### IDEAS ####
+<<<<<<< Updated upstream
   SOV_Volunteers_China_0:0 "Volunteers To China"
   SOV_Volunteers_China_1:0 "Volunteers To China including Air Wings."
+=======
+>>>>>>> Stashed changes
   Stavka:0 "Stavka High Command"
   ZHUKOV:0 "Zhukov In Charge"
   THE_SUPREME_SOVIET:0 "Supreme Soviet Council"
@@ -496,6 +499,7 @@
   SOV_Third_Wave_Training:0 "Third Wave Training"
   SOV_fareast_reserves:0 "Fareast reserves"
   #####allied ideas
+<<<<<<< Updated upstream
 
   Idea_UK_Lend_Lease_1:0 "1st Anglo-Soviet Agreement"
   Idea_UK_Lend_Lease_2:0 "2nd Anglo-Soviet Agreement"
@@ -508,7 +512,18 @@
   Tough_Terrain_Adapted:0 "Adapted To Terrain"
   SOV_krasnaya_gorka_battery_Disabled:0 "Krasnaya Gorka Battery Disabled"
   SOV_armored_battery_35_Disabled:0 "Armored Battery 35 Disabled"
+=======
+>>>>>>> Stashed changes
 
+  Idea_UK_Lend_Lease_1:0 "1st Anglo-Soviet Agreement"
+  Idea_UK_Lend_Lease_2:0 "2nd Anglo-Soviet Agreement"
+  Idea_UK_Lend_Lease_3:0 "Anglo-Soviet Military Supplies Agreement"
+  Idea_USA_Lend_Lease_1:0 "First protocol period"
+  Idea_USA_Lend_Lease_2:0 "Second protocol period"
+  Idea_USA_Lend_Lease_3:0 "Third protocol period"
+ #####dynamic state modifiers
+  Tough_Terrain:0 "Tough Terrain"
+  Tough_Terrain_Adapted:0 "Adapted To Terrain"
   #### DESIGNER ####
   kharkiv:0 "Versatile Tank Desginer"
   okmo_trait:0 "Experimental Tank Designer"
@@ -581,10 +596,14 @@
   USA_lend_Lease_2:0 "Third protocol period"
   USA_lend_Lease_3:0 "Fourth protocol period"
   
+<<<<<<< Updated upstream
   ########5 year plan gui
   Second_Year_Plan:0 "Second 5 Year Plan"
   Second_Year_Plan_desc:0 "In different regions of the Soviet (as shown in the picture) will grant extra §Gcivs/infantrstructure/resources/Steel mills§! if built enough in states.\nIn §YMoscow, Leningrad, Stalingrad, Ukraine, Belarus, East Russia,Caucuses,North East Russia,Kazakhstan§! all require §R4 civs to be built in a state§! to gain the additional bonus. §YNorth Russia requires only 3 civs, Siberia Requires 3 civs and atleast 6 infastructure§! in the state.\n You can also see that these bonuses are capped after a certain amount of states reach the required amount. Kazakhstan, North East Russia, East Russia, North Russia, Caucuses all provide different bonus factories or resources such as §GRubber, Aluminum, Tungsten§!"
   Second_Year_Plan_In_Motion:0 "Second 5 Year Plan In Motion"
+=======
+
+>>>>>>> Stashed changes
   #####Factory relocation
   SOV_industry_relocation_Rush:0 "Moving Industry to Urals"
   SOV_industry_relocation_Rush_1:0 "Phase 2"

@@ -1986,7 +1986,11 @@ small_plane_airframe_NAV_5_jap = { #Yokosuka_D4Y
 	}
 
 	module_count_limit = {
+<<<<<<< Updated upstream
 		module = Dive_Brakes
+=======
+		module = Dive_Bomber
+>>>>>>> Stashed changes
 		count < 2
 	}
 	module_count_limit = {

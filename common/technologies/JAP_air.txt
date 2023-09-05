@@ -1090,7 +1090,11 @@ Yokosuka_B4Y = {
 			fixed_main_weapon_slot = small_tactical_bombs
 			fixed_auxiliary_weapon_slot_1 = medium_bomb_locks
 			fixed_auxiliary_weapon_slot_2 = small_bomb_locks
+<<<<<<< Updated upstream
 			engine_type_slot = engine_2_1x
+=======
+			engine_type_slot = engine_2_2x
+>>>>>>> Stashed changes
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = empty
 			#special_type_slot_3 = empty
@@ -1399,7 +1403,10 @@ Yokosuka_B4Y = {
 			fixed_main_weapon_slot = medium_tactical_bombs
 			fixed_auxiliary_weapon_slot_1 = medium_tactical_bombs
 			fixed_auxiliary_weapon_slot_2 = medium_tactical_bombs
+<<<<<<< Updated upstream
 			fixed_auxiliary_weapon_slot_3 = medium_tactical_bombs
+=======
+>>>>>>> Stashed changes
 			engine_type_slot = engine_3_2x
 			special_type_slot_1 = bomb_sights_1
 			special_type_slot_2 = lmg_defense_turret
@@ -1414,7 +1421,10 @@ Yokosuka_B4Y = {
 			fixed_main_weapon_slot = medium_tactical_bombs
 			fixed_auxiliary_weapon_slot_1 = Long_Range_Naval_Bomb
 			fixed_auxiliary_weapon_slot_2 = Long_Range_Naval_Bomb
+<<<<<<< Updated upstream
 			fixed_auxiliary_weapon_slot_3 = Long_Range_Naval_Bomb
+=======
+>>>>>>> Stashed changes
 			engine_type_slot = engine_3_2x
 			special_type_slot_1 = flying_boat_medium
 			special_type_slot_2 = Extra_Fuel_Tank

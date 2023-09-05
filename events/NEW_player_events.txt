@@ -254,4 +254,8 @@ country_event = {
 	option = {
 		name = startingevent.1001.a
 	}
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

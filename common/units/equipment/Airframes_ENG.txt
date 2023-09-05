@@ -369,7 +369,11 @@ small_plane_airframe_6_eng = { #Tempest
 	weight = 6
 	naval_strike_attack = 1
 	naval_strike_targetting = 3
+<<<<<<< Updated upstream
 	build_cost_ic = 62
+=======
+	build_cost_ic = 58
+>>>>>>> Stashed changes
 	resources = {
 			aluminium = 35
 			rubber = 5

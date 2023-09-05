@@ -13,10 +13,14 @@ scripted_diplomatic_actions = {
 			# doing this for nicer tooltips
 			if = {
 				limit = {
+<<<<<<< Updated upstream
 					AND = {
 					NOT = { has_volunteers_amount_from = { tag = ROOT count > 0 } }
 					
 					}
+=======
+					NOT = { has_volunteers_amount_from = { tag = ROOT count > 0 } }
+>>>>>>> Stashed changes
 				}
 				custom_trigger_tooltip = {
 					tooltip = RECALL_VOLUNTEERS_TOOLTIP
@@ -31,9 +35,15 @@ scripted_diplomatic_actions = {
 			}
 		}
 
+<<<<<<< Updated upstream
 		cost = 100
 		command_power = 25
 		
+=======
+		cost = 0
+		command_power = 0
+
+>>>>>>> Stashed changes
 		show_acceptance_on_action_button = no
 
 		icon = 1

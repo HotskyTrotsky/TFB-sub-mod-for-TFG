@@ -230,11 +230,15 @@
   germany.2003.t:0 "Spanish Gold Trade"
   germany.2003.d:0 "We now get 33% more resources per civ given to Spain."
   germany.2003.a:0 "Excellent!"
+<<<<<<< Updated upstream
   germany.2006.t:0 "The Heinkel He 111"
   germany.2006.d:0 "The Heinkel He 111 is what many in the aviation industry would describe as a "Wolf in sheeps clothing" It has good characteristics as a transport but its real intentions to higher ups in the German Luftwaffe would be that i fill the need for a heavy bomber. Although designed in 1935 its only now we have worked a configuration would allow to convert existing He 111 into bombers. Although this conversion will come at a cost it will increase the amount of modern bombers in service."
   germany.2006.a:0 "Convert Existing Stocks Into Bombers"
   germany.2006.b:0 "We Have No Need For These Transports"
   HE111_PURCHASE:0 "§CAdds 120 He 111 Tactical Bombers To Stockpile§!"
+=======
+
+>>>>>>> Stashed changes
   #### IDEAS ####
   german_cooperation_focus:0 "German Advisors"
   GER_expand_mefo_fast:0 "Expanded MEFO: Production Focus"

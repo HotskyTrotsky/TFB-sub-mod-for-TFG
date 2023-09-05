@@ -139,7 +139,10 @@ operations = {
 			has_full_control_of_state = 78
 			has_full_control_of_state = 766
 		}
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 		visible = {
 			SOV = {
 				owns_state = 80

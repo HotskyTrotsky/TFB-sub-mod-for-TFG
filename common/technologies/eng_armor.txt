@@ -37,7 +37,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = eng_armour_folder
-			position = { x = -5 y = 0 }
+			position = { x = -10 y = 0 }
 		}
 		
 		categories = {
@@ -65,10 +65,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1938
+		start_year = 1939
 		folder = {
 			name = eng_armour_folder
-			position = { x = -5 y = 4 }
+			position = { x = -10 y = 6 }
 		}
 		
 		categories = {
@@ -91,10 +91,10 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1942
+		start_year = 1943
 		folder = {
 			name = eng_armour_folder
-			position = { x = -5 y = 12 }
+			position = { x = -10 y = 12 }
 		}
 		
 		categories = {
@@ -108,11 +108,60 @@ technologies = {
 	}	
 
 	### MEDIUM ###
+
+	eng_medium_tank_1 = { #MkII
 	
-	eng_medium_tank_1 = {
+	enable_equipments = {
+			eng_medium_tank_chassis_a10
+		}
+		enable_equipment_modules = {
+			tank_riveted_armor
+			tank_welded_armor
+			tank_gasoline_engine
+			tank_diesel_engine
+			tank_petrol_electric_engine
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
+			interleaf_suspension
+			boogie_suspension
+			christie_suspension
+			tank_christie_suspension
+			tank_bogie_suspension
+			tank_interleaved_suspension
+			tank_horstmann_suspension
+			tank_torsion_bar_suspension
+			expanded_fuel_tank
+			tank_hydropneumatic_suspension
+			}
+	path = {
+			leads_to_tech = eng_medium_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	eng_medium_tank_2 = { #MkIII
 
 		enable_equipments = {
-			eng_medium_tank_chassis_a10
+			eng_medium_tank_chassis_a13
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
@@ -138,52 +187,15 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = eng_medium_tank_2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1934
-		folder = {
-			name = eng_armour_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	eng_medium_tank_2 = { 
-
-		enable_equipments = {
-			eng_medium_tank_chassis_a13
-		}
-	
-		path = {
 			leads_to_tech = eng_medium_tank_3
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = eng_medium_tank_4
+			leads_to_tech = eng_medium_tank_Val
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = ast_medium_tank_1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = can_medium_tank_1
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 2
-		start_year = 1938
+		start_year = 1936
 		folder = {
 			name = eng_armour_folder
 			position = { x = 0 y = 4 }
@@ -197,32 +209,84 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 		}
-	}	
-	
-	# eng_medium_tank_3 = { 
+	}
 
-	# 	enable_equipments = {
-	# 		eng_medium_tank_chassis_cov
-	# 	}
-	
-	# 	research_cost = 2
-	# 	start_year = 1939
-	# 	folder = {
-	# 		name = eng_armour_folder
-	# 		position = { x =2 y = 6 }
-	# 	}
+
+	eng_medium_tank_3 = { #MkIV
+
+		enable_equipments = {
+			eng_medium_tank_chassis_a13
+		}
+		on_research_complete = {
+		custom_effect_tooltip = crusader_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = eng_medium_tank_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ast_medium_tank_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = can_medium_tank_1
+			research_cost_coeff = 1
+		}
 		
-	# 	categories = {
-	# 		armor
-	# 		cat_medium_armor
-	# 	}
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 6 }
+		}
 		
-	# 	ai_will_do = {
-	# 		factor = 0
-	# 	}
-	# }	
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	 eng_medium_tank_4 = { #Coventer
+
+	 	enable_equipments = {
+	 		eng_medium_tank_chassis_a13
+	 	}
+		on_research_complete = {
+
+		}
+			
+	 	research_cost = 2
+	 	start_year = 1940
+	 	folder = {
+	 		name = eng_armour_folder
+	 		position = { x = 0 y = 8 }
+	 	}
+		
+	 	categories = {
+	 		armor
+	 		cat_medium_armor
+	 	}
+		
+	 	ai_will_do = {
+	 		factor = 0
+	 	}
 	
-	eng_medium_tank_4 = { 
+		path = {
+			leads_to_tech = eng_medium_tank_5
+			research_cost_coeff = 1
+		}
+	
+	 }	
+
+	
+	eng_medium_tank_5 = { #Crusader
 
 		enable_equipments = {
 			eng_medium_tank_chassis_a15
@@ -233,19 +297,153 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = eng_medium_tank_5
+			leads_to_tech = eng_medium_tank_6
 			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = eng_crusader_upgrade
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = eng_crusader_III
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = eng_armour_folder
+			position = { x = 3 y = 8 }
+		}
 		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	eng_crusader_III = { #Crusader III
+
+		enable_equipments = {
+			eng_medium_tank_chassis_a15
+		}
+
+		enable_equipment_modules = {
+			sloped_armor
+		}
+	
+		
+		
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = eng_armour_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_medium_tank_Val = { #Valentine MKI
+
+		enable_equipments = {
+			eng_heavy_tank_chassis_val
+		}
+
+		enable_equipment_modules = {
+			sloped_armor
+		}
+	
+		path = {
+			leads_to_tech = eng_crusader_upgrade
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = eng_medium_tank_Val_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = eng_armour_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	eng_medium_tank_Val_2 = { #Valentine MKIII
+
+		enable_equipments = {
+			eng_heavy_tank_chassis_val
+		}
+
+		enable_equipment_modules = {
+			sloped_armor
+		}
+	
+		
+		path = {
+			leads_to_tech = eng_crusader_upgrade
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = eng_medium_tank_Val_3
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = eng_armour_folder
-			position = { x = 0 y = 8 }
+			position = { x = 10 y = 8 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	eng_medium_tank_Val_3 = { #Valentine MKIX
+
+		enable_equipments = {
+			eng_heavy_tank_chassis_val
+		}
+
+		enable_equipment_modules = {
+			sloped_armor
+		}
+	
+		
+		
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = eng_armour_folder
+			position = { x = 10 y = 12 }
 		}
 		
 		categories = {
@@ -295,7 +493,7 @@ technologies = {
 		}
 	}
 	
-	eng_medium_tank_5 = {
+	eng_medium_tank_6 = { #Cromwell Cavelier
 
 		enable_equipments = {
 			eng_medium_tank_chassis_a27
@@ -305,22 +503,16 @@ technologies = {
 			
 		}
 		path = {
-			leads_to_tech = eng_medium_tank_6
+			leads_to_tech = eng_medium_tank_6_2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = eng_medium_tank_7
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = eng_heavy_tank_7
-			research_cost_coeff = 1
-		}
+		
+		
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1941
 		folder = {
 			name = eng_armour_folder
-			position = { x = 0 y = 14 }
+			position = { x = 6 y = 10 }
 		}
 		
 		categories = {
@@ -332,8 +524,72 @@ technologies = {
 			factor = 0
 		}
 	}
+	eng_medium_tank_6_2 = { #Cromwell Centaur
+
+		enable_equipments = {
+			eng_medium_tank_chassis_a27
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+			
+		}
+		path = {
+			leads_to_tech = eng_medium_tank_6_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = eng_armour_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	eng_medium_tank_6_3 = { #Cromwell MKVIII
+
+		enable_equipments = {
+			eng_medium_tank_chassis_a27
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_3
+			
+		}
+		
 	
-	eng_medium_tank_6 = {
+		path = {
+			leads_to_tech = eng_medium_tank_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = eng_heavy_tank_7
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = eng_armour_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	eng_medium_tank_7 = {
 
 		enable_equipments = {
 			eng_medium_tank_chassis_a34
@@ -344,7 +600,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = eng_armour_folder
-			position = { x = 2 y = 16 }
+			position = { x = 8 y = 24 }
 		}
 		
 		categories = {
@@ -378,7 +634,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = eng_armour_folder
-			position = { x = 3 y = 14 }
+			position = { x = 0 y = 24 }
 		}
 		
 		categories = {
@@ -390,7 +646,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	eng_medium_tank_7 = {
+	eng_medium_tank_8 = {
 
 		enable_equipments = {
 			eng_medium_tank_chassis_a41
@@ -404,7 +660,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = eng_armour_folder
-			position = { x = 0 y = 18 }
+			position = { x = 4 y = 24 }
 		}
 		
 		categories = {
@@ -450,12 +706,16 @@ technologies = {
 			leads_to_tech = eng_heavy_tank_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = eng_medium_tank_Val
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
-		start_year = 1935
+		start_year = 1937
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 0 }
+			position = { x = 18 y = 2 }
 		}
 		
 		categories = {
@@ -481,15 +741,15 @@ technologies = {
 			}
 		}
 		path = {
-			leads_to_tech = eng_heavy_tank_3
+			leads_to_tech = eng_heavy_tank_4
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1939
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 2 }
+			position = { x = 18 y = 6 }
 		}
 		
 		categories = {
@@ -502,6 +762,7 @@ technologies = {
 		}
 	}	
 	
+<<<<<<< Updated upstream
 	eng_heavy_tank_3 = {
 
 		enable_equipments = {
@@ -539,6 +800,39 @@ technologies = {
 			factor = 0
 		}
 	}
+=======
+#	eng_heavy_tank_3 = {
+#
+#		enable_equipments = {
+#			eng_heavy_tank_chassis_val
+#		}
+#	
+#		path = {
+#			leads_to_tech = eng_heavy_tank_4
+#			research_cost_coeff = 1
+#		}
+#		path = {
+#			leads_to_tech = eng_valentine_upgrade
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 2
+#		start_year = 1939
+#		folder = {
+#			name = eng_armour_folder
+#			position = { x = 6 y = 6 }
+#		}
+#		
+#		categories = {
+#			armor
+#			cat_heavy_armor
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+>>>>>>> Stashed changes
 	
 	
 	eng_heavy_tank_4 = {
@@ -566,7 +860,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 10 }
+			position = { x = 20 y = 10 }
 		}
 		
 		categories = {
@@ -597,10 +891,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 14 }
+			position = { x = 20 y = 12 }
 		}
 		
 		categories = {
@@ -622,7 +916,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = eng_armour_folder
-			position = { x = 8 y = 16 }
+			position = { x = 20 y = 16 }
 		}
 		
 		categories = {
@@ -648,7 +942,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 18 }
+			position = { x = 20 y = 18 }
 		}
 		
 		categories = {
@@ -770,7 +1064,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = eng_armour_folder
-			position = { x = 2 y = 10 }
+			position = { x = -4 y = 10 }
 		}
 		
 		categories = {

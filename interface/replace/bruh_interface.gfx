@@ -435,6 +435,7 @@ SpriteType = {
 		name = "GFX_VLADIVOSTOK_CLOSED"
 		texturefile = "gfx/interface/SOVIET_LEND_LEASE_GUI/VLADIVOSTOK_CLOSED.dds"
 	}
+<<<<<<< Updated upstream
 	######Soviet 2nd year plan gui
 	spriteType = {
 		name = "GFX_Base"
@@ -528,6 +529,8 @@ SpriteType = {
 		name = "GFX_3_3"
 		texturefile = "gfx/interface/2nd_Year_Plan_GUI/3_3.dds"
 	}
+=======
+>>>>>>> Stashed changes
 	#######German Barb occupied nations
 	spriteType = {
 		name = "GFX_GER_BARB_BASE"
@@ -954,6 +957,7 @@ SpriteType = {
 		texturefile = "gfx/leaders/MON/Mongolia_Gen_small.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
 		name = "GFX_Quak"
 		texturefile = "gfx/leaders/GER/Quak.dds"
 	}
@@ -962,6 +966,8 @@ SpriteType = {
 		texturefile = "gfx/leaders/GER/Quak_Small.dds"
 	}
 	spriteType = {
+=======
+>>>>>>> Stashed changes
 		name = "GFX_idea_portrait_kublai"
 		texturefile ="gfx/leaders/MON/portrait_kublai.dds"
 	}
